@@ -24,7 +24,7 @@ export default function StoreSubNav() {
           return (
             <li key={tab.href} className="flex">
               <Link href={tab.href} className="flex">
-                <div className="relative flex cursor-pointer items-center whitespace-nowrap px-[6px] text-center lg:px-[20px] flex-1 justify-center">
+                <div className="relative flex cursor-pointer items-center whitespace-nowrap px-[6px] text-center lg:px-[20px] flex-1 justify-center min-h-[44px]">
                   <div className="relative flex items-center gap-x-[8px]">
                     <p
                       className={

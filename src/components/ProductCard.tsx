@@ -94,7 +94,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <Link href={href} className="block group">
-      <article className="w-full overflow-hidden bg-blue-1 p-[20px] transition-shadow duration-200 group-hover:shadow-md group-hover:ring-1 group-hover:ring-blue-7/20">
+      <article className="w-full overflow-hidden bg-blue-1 p-[10px] lg:p-[20px] transition-shadow duration-200 group-hover:shadow-md group-hover:ring-1 group-hover:ring-blue-7/20">
         {/* 미디어 영역 — 원본: 비디오(16:9) + 타이머 바 */}
         <div className="relative w-full shrink-0">
           <div className="relative w-full bg-white" style={{ aspectRatio: "16 / 9" }}>
@@ -102,7 +102,7 @@ export default function ProductCard({ product }: { product: Product }) {
               src={product.imageUrl}
               alt={product.goodsNm}
               fill
-              className={`object-contain p-[20px] transition-transform duration-200 group-hover:scale-[1.02] ${isSoldOut ? "opacity-40" : ""}`}
+              className={`object-contain p-[10px] lg:p-[20px] transition-transform duration-200 group-hover:scale-[1.02] ${isSoldOut ? "opacity-40" : ""}`}
               sizes="(max-width: 1024px) 90vw, 480px"
             />
             {isSoldOut && (
@@ -125,17 +125,17 @@ export default function ProductCard({ product }: { product: Product }) {
         <div className="mt-[12px]">
           {/* 추천 문구 */}
           <div>
-            <p className="mb-[4px] line-clamp-2 break-all text-[20px] font-bold leading-[30px] text-gray-10 whitespace-pre-line">
+            <p className="mb-[4px] line-clamp-2 break-all text-[13px] lg:text-[20px] font-bold leading-[1.5] lg:leading-[30px] text-gray-10 whitespace-pre-line">
               {title}
             </p>
-            <p className="mb-[12px] line-clamp-2 break-all text-[14px] font-medium leading-[21px] text-gray-10">
+            <p className="mb-[12px] line-clamp-2 break-all text-[11px] lg:text-[14px] font-medium leading-[1.5] lg:leading-[21px] text-gray-10">
               {desc}
             </p>
           </div>
 
           {/* 상품 정보 + 가격 */}
           <div className="border-t border-gray-3 pt-[12px]">
-            <p className="mb-[4px] line-clamp-1 break-all text-[22px] font-extrabold leading-[33px] text-gray-10 group-hover:text-blue-7 transition-colors">
+            <p className="mb-[4px] line-clamp-1 break-all text-[14px] lg:text-[22px] font-extrabold leading-[1.5] lg:leading-[33px] text-gray-10 group-hover:text-blue-7 transition-colors">
               {productName}
             </p>
             <div className="relative flex items-center">
@@ -146,7 +146,7 @@ export default function ProductCard({ product }: { product: Product }) {
                   </div>
                 </div>
               )}
-              <p className="mr-[8px] text-[24px] font-extrabold text-gray-10">
+              <p className="mr-[8px] text-[18px] lg:text-[24px] font-extrabold text-gray-10">
                 {formatPrice(product.goodsPrice)}원
               </p>
               {discount > 0 && (

@@ -1,6 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from 'next';
 import AuthProvider from "@/components/AuthProvider";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "스마트홈딜 - 스마트한 소비자들의 최종 선택",

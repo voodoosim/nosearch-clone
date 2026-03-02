@@ -40,7 +40,7 @@ export default function LoginPage() {
         placeholder="전화번호 또는 이메일"
         value={identifier}
         onChange={(e) => setIdentifier(e.target.value)}
-        className="h-[50px] w-full rounded-[8px] border border-white/20 bg-white/10 px-[16px] text-[15px] text-white placeholder:text-white/40 outline-none focus:border-blue-5"
+        className="h-[50px] w-full rounded-[8px] border border-white/20 bg-white/10 px-[16px] text-[16px] text-white placeholder:text-white/40 outline-none focus:border-blue-5"
         required
       />
       <input
@@ -48,7 +48,7 @@ export default function LoginPage() {
         placeholder="비밀번호"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        className="h-[50px] w-full rounded-[8px] border border-white/20 bg-white/10 px-[16px] text-[15px] text-white placeholder:text-white/40 outline-none focus:border-blue-5"
+        className="h-[50px] w-full rounded-[8px] border border-white/20 bg-white/10 px-[16px] text-[16px] text-white placeholder:text-white/40 outline-none focus:border-blue-5"
         required
       />
 

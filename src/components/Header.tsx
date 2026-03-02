@@ -100,10 +100,10 @@ export default function Header() {
             {/* Search Bar */}
             <section className="flex-1 px-[20px] lg:ml-[20px] lg:mr-[40px] lg:mt-[2px]">
               <div className="flex w-full items-center justify-center bg-white">
-                <div className="flex w-full flex-1 items-center justify-center bg-gray-1 px-[16px] h-[36px] lg:h-[40px] lg:rounded-[5px] lg:border lg:border-gray-2 rounded-full">
+                <div className="flex w-full flex-1 items-center justify-center bg-gray-1 px-[16px] h-[44px] lg:h-[40px] lg:rounded-[5px] lg:border lg:border-gray-2 rounded-full">
                   <input
                     placeholder="검색어를 입력하세요"
-                    className="h-full w-full bg-gray-1 text-[12px] placeholder:text-gray-7 focus:outline-none"
+                    className="h-full w-full bg-gray-1 text-[16px] lg:text-[14px] placeholder:text-gray-7 focus:outline-none"
                   />
                   <div className="pl-[10px]">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none">

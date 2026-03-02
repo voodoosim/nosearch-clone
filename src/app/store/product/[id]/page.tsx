@@ -131,7 +131,7 @@ export default async function ProductDetailPage({
   const pickColor = getPickColor(product.pickType);
 
   return (
-    <div className="mx-auto max-w-[1200px] px-[20px] py-[24px] lg:px-[30px] lg:py-[40px]">
+    <div className="mx-auto max-w-[1200px] px-[20px] py-[24px] pb-[80px] lg:px-[30px] lg:py-[40px] lg:pb-[40px]">
       {/* 브레드크럼 */}
       <nav className="mb-[20px] flex items-center gap-[6px] text-[13px] text-gray-6">
         <Link href="/store" className="hover:text-blue-7 transition-colors">
@@ -342,7 +342,7 @@ export default async function ProductDetailPage({
 
           <div className="flex items-center gap-[24px] bg-gray-1 rounded-[12px] p-[24px]">
             <div className="text-center">
-              <p className="text-[48px] font-extrabold text-gray-10 leading-none">{product.reviewAvg.toFixed(1)}</p>
+              <p className="text-[36px] lg:text-[48px] font-extrabold text-gray-10 leading-none">{product.reviewAvg.toFixed(1)}</p>
               <div className="mt-[8px]">
                 <StarRating avg={product.reviewAvg} cnt={product.reviewCnt} />
               </div>

@@ -27,8 +27,7 @@ export default function NosearchDealPage() {
       {/* 상품 그리드 — 원본: grid 2열 580px, gap-y 50px */}
       <div className="mx-auto max-w-[1200px] px-[20px] pb-[150px] pt-[30px]">
         <div
-          className="grid justify-center gap-y-[50px]"
-          style={{ gridTemplateColumns: "repeat(2, 520px)", columnGap: "40px" }}
+          className="grid grid-cols-1 gap-y-[30px] lg:grid-cols-2 lg:gap-x-[40px]"
         >
           {dealProducts.map((product) => (
             <ProductCard key={product.id} product={product} />

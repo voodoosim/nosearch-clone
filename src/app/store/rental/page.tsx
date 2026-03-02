@@ -119,7 +119,7 @@ function RentalCard({ product }: RentalCardProps) {
         {/* 월 렌탈료 강조 */}
         <div className="mb-[10px] rounded-[8px] bg-blue-1 px-[12px] py-[10px]">
           <p className="text-[11px] font-medium text-blue-7">월 렌탈료 ({RENTAL_MONTHS}개월)</p>
-          <p className="mt-[2px] text-[20px] font-extrabold text-blue-8">
+          <p className="mt-[2px] text-[16px] font-extrabold text-blue-8 lg:text-[20px]">
             월 {formatPrice(product.monthlyRental)}원~
           </p>
         </div>
@@ -152,7 +152,7 @@ function RentalCard({ product }: RentalCardProps) {
 
         {/* 렌탈 신청 버튼 */}
         <button
-          className={`mt-[12px] w-full rounded-[8px] py-[10px] text-[14px] font-bold transition-colors ${
+          className={`mt-[12px] w-full rounded-[8px] py-[12px] text-[14px] font-bold transition-colors ${
             isSoldOut
               ? 'cursor-not-allowed bg-gray-2 text-gray-5'
               : 'bg-blue-7 text-white hover:bg-blue-8'

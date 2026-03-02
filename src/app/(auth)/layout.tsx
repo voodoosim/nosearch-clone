@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative flex min-h-screen items-center justify-center bg-gray-10">
+    <div className="relative flex min-h-[100dvh] items-start justify-center overflow-y-auto bg-gray-10 lg:items-center">
       {/* 배경 오버레이 */}
       <div className="absolute inset-0 bg-black/60" />
 
