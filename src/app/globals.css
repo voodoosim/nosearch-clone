@@ -6,11 +6,12 @@
   --color-background: #ffffff;
   --color-foreground: #1a1a1a;
 
-  /* nosearch 색상 시스템 */
-  --color-blue-7: #256FFF;
-  --color-blue-6: #4a8aff;
-  --color-blue-5: #6ea4ff;
-  --color-blue-1: #F5F9FF;
+  /* nosearch 색상 시스템 — 오렌지 테마 */
+  --color-blue-7: #E8701A;
+  --color-blue-6: #F28C28;
+  --color-blue-5: #F5A855;
+  --color-blue-1: #FFF5EB;
+  --color-blue-8: #C45A0F;
   --color-gray-1: #f9f9f9;
   --color-gray-2: #f0f0f0;
   --color-gray-3: #e5e5e5;
@@ -22,7 +23,7 @@
   --color-gray-10: #1a1a1a;
   --color-red-4: #ff4d4f;
   --color-red-5: #ff4d4f;
-  --color-primary: #256FFF;
+  --color-primary: #E8701A;
 }
 
 body {
@@ -45,4 +46,84 @@ body {
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+/* ===== 애니메이션 & 시각 효과 ===== */
+
+/* 페이드인 애니메이션 (페이지 진입 시) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* 카드 호버 효과 */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.12);
+}
+
+/* 부드러운 스크롤 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 이미지 로딩 효과 (스켈레톤) */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* 버튼 프레스 효과 */
+.btn-press:active {
+  transform: scale(0.97);
+  transition: transform 0.1s;
+}
+
+/* 그라디언트 텍스트 (히어로 섹션용) */
+.text-gradient {
+  background: linear-gradient(135deg, #F28C28, #E07020);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 스크롤바 스타일링 (고급) */
+.scrollbar-hide-advanced::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide-advanced {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 포커스 링 스타일 (접근성) */
+*:focus-visible {
+  outline: 2px solid #F28C28;
+  outline-offset: 2px;
+  border-radius: 4px;
 }

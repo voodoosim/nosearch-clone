@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative flex min-h-[100dvh] items-start justify-center overflow-y-auto bg-gray-10 lg:items-center">
+    <div className="relative flex min-h-[100dvh] items-start justify-center overflow-y-auto lg:items-center" style={{ background: 'linear-gradient(135deg, #3D1A00 0%, #6B2E00 50%, #3D1A00 100%)' }}>
       {/* 배경 오버레이 */}
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, rgba(232,112,26,0.15) 0%, rgba(0,0,0,0.5) 100%)' }} />
 
       {/* 콘텐츠 */}
       <div className="relative z-10 w-full max-w-[400px] px-[20px] py-[40px]">

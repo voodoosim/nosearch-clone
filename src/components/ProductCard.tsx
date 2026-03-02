@@ -141,7 +141,7 @@ export default function ProductCard({ product }: { product: Product }) {
             <div className="relative flex items-center">
               {discount > 0 && (
                 <div className="mr-[10px]">
-                  <div className="inline-flex h-[28px] items-center px-[8px] text-[12px] font-extrabold leading-none text-white" style={{ backgroundColor: '#FF455B' }}>
+                  <div className="inline-flex h-[28px] items-center px-[8px] text-[12px] font-extrabold leading-none text-white" style={{ backgroundColor: '#E8701A' }}>
                     최저가 이하 특가
                   </div>
                 </div>

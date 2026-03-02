@@ -68,7 +68,7 @@ function getPickColor(pickType: string): string {
     case 'plus':
       return 'bg-purple-600 text-white';
     case 'premium':
-      return 'bg-amber-600 text-white';
+      return 'bg-amber-700 text-white';
     default:
       return '';
   }
@@ -201,7 +201,7 @@ export default async function ProductDetailPage({
               <div className="flex items-center gap-[8px] mb-[6px]">
                 <span
                   className="inline-flex items-center px-[8px] py-[3px] text-[12px] font-extrabold text-white leading-none"
-                  style={{ backgroundColor: '#FF455B' }}
+                  style={{ backgroundColor: '#E8701A' }}
                 >
                   {discount}% 할인
                 </span>

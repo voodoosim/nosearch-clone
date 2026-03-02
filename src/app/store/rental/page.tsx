@@ -99,7 +99,7 @@ function RentalCard({ product }: RentalCardProps) {
           </div>
         )}
         {discount > 0 && !isSoldOut && (
-          <div className="absolute left-[10px] top-[10px] rounded-[6px] bg-red-500 px-[8px] py-[4px]">
+          <div className="absolute left-[10px] top-[10px] rounded-[6px] bg-orange-600 px-[8px] py-[4px]">
             <span className="text-[12px] font-bold text-white">{discount}% 할인</span>
           </div>
         )}

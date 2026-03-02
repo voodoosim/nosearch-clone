@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 
 const NAV_ITEMS = [
@@ -17,6 +18,17 @@ const NAV_ITEMS = [
 
 export default function Header() {
   const { data: session } = useSession();
+  const router = useRouter();
+
+  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const input = form.elements.namedItem('q') as HTMLInputElement;
+    const query = input.value.trim();
+    if (query) {
+      router.push(`/store/search?q=${encodeURIComponent(query)}`);
+    }
+  };
 
   return (
     <header>
@@ -34,12 +46,12 @@ export default function Header() {
               className="hidden lg:block"
             >
               {/* House icon */}
-              <path d="M4 18 L20 4 L36 18" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-              <rect x="8" y="18" width="24" height="16" rx="1" stroke="#2563eb" strokeWidth="2.5" />
-              <rect x="15" y="24" width="10" height="10" rx="1" fill="#2563eb" />
-              <rect x="26" y="8" width="4" height="8" rx="1" fill="#2563eb" />
-              <path d="M17 13.5 Q20 11 23 13.5" stroke="#2563eb" strokeWidth="1.8" strokeLinecap="round" opacity="0.7" />
-              <circle cx="20" cy="15.5" r="1" fill="#2563eb" />
+              <path d="M4 18 L20 4 L36 18" stroke="#E8701A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              <rect x="8" y="18" width="24" height="16" rx="1" stroke="#E8701A" strokeWidth="2.5" />
+              <rect x="15" y="24" width="10" height="10" rx="1" fill="#E8701A" />
+              <rect x="26" y="8" width="4" height="8" rx="1" fill="#E8701A" />
+              <path d="M17 13.5 Q20 11 23 13.5" stroke="#E8701A" strokeWidth="1.8" strokeLinecap="round" opacity="0.7" />
+              <circle cx="20" cy="15.5" r="1" fill="#E8701A" />
               {/* Brand text */}
               <text
                 x="46"
@@ -61,12 +73,12 @@ export default function Header() {
               fill="none"
               className="block lg:hidden"
             >
-              <path d="M4 20 L20 4 L36 20" stroke="#2563eb" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
-              <rect x="8" y="20" width="24" height="16" rx="1.5" stroke="#2563eb" strokeWidth="2.8" />
-              <rect x="14.5" y="26" width="11" height="10" rx="1" fill="#2563eb" />
-              <rect x="26" y="8" width="4.5" height="9" rx="1" fill="#2563eb" />
-              <path d="M16.5 15 Q20 12 23.5 15" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
-              <circle cx="20" cy="17.5" r="1.2" fill="#2563eb" />
+              <path d="M4 20 L20 4 L36 20" stroke="#E8701A" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
+              <rect x="8" y="20" width="24" height="16" rx="1.5" stroke="#E8701A" strokeWidth="2.8" />
+              <rect x="14.5" y="26" width="11" height="10" rx="1" fill="#E8701A" />
+              <rect x="26" y="8" width="4.5" height="9" rx="1" fill="#E8701A" />
+              <path d="M16.5 15 Q20 12 23.5 15" stroke="#E8701A" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
+              <circle cx="20" cy="17.5" r="1.2" fill="#E8701A" />
             </svg>
           </Link>
 
@@ -100,18 +112,19 @@ export default function Header() {
             {/* Search Bar */}
             <section className="flex-1 px-[20px] lg:ml-[20px] lg:mr-[40px] lg:mt-[2px]">
               <div className="flex w-full items-center justify-center bg-white">
-                <div className="flex w-full flex-1 items-center justify-center bg-gray-1 px-[16px] h-[44px] lg:h-[40px] lg:rounded-[5px] lg:border lg:border-gray-2 rounded-full">
+                <form onSubmit={handleSearch} className="flex w-full flex-1 items-center justify-center bg-gray-1 px-[16px] h-[44px] lg:h-[40px] lg:rounded-[5px] lg:border lg:border-gray-2 rounded-full">
                   <input
+                    name="q"
                     placeholder="검색어를 입력하세요"
                     className="h-full w-full bg-gray-1 text-[16px] lg:text-[14px] placeholder:text-gray-7 focus:outline-none"
                   />
-                  <div className="pl-[10px]">
+                  <button type="submit" className="pl-[10px] shrink-0">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                       <circle cx="10.5" cy="10.5" r="8" stroke="#1A1A1A" strokeWidth="1" />
                       <path d="M16 16L22 22" stroke="#1A1A1A" strokeWidth="1" />
                     </svg>
-                  </div>
-                </div>
+                  </button>
+                </form>
               </div>
             </section>
 
