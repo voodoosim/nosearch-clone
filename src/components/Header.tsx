@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSession, signOut } from "next-auth/react";
 
 const NAV_ITEMS = [
   { label: "카테고리", href: "/recommendation/item-list", active: false },
@@ -15,6 +16,8 @@ const NAV_ITEMS = [
 ];
 
 export default function Header() {
+  const { data: session } = useSession();
+
   return (
     <header>
       <div className="sticky top-0 z-[500]">
@@ -104,11 +107,22 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="flex items-center px-[14px]">
-                  <Link href="/login" className="cursor-pointer">
-                    <p className="text-[14px] font-bold text-gray-10">
-                      회원가입 | 로그인
-                    </p>
-                  </Link>
+                  {session?.user ? (
+                    <button
+                      onClick={() => signOut({ callbackUrl: "/" })}
+                      className="cursor-pointer"
+                    >
+                      <p className="text-[14px] font-bold text-gray-10">
+                        로그아웃
+                      </p>
+                    </button>
+                  ) : (
+                    <Link href="/login" className="cursor-pointer">
+                      <p className="text-[14px] font-bold text-gray-10">
+                        회원가입 | 로그인
+                      </p>
+                    </Link>
+                  )}
                 </li>
               </ul>
             </section>

@@ -42,3 +42,5 @@ next-env.d.ts
 *.log
 test-*.html
 src/test.html
+
+/src/generated/prisma
