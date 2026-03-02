@@ -1,7 +1,20 @@
 import type { Metadata, Viewport } from 'next';
+import localFont from 'next/font/local';
 import AuthProvider from "@/components/AuthProvider";
 import { CartProvider } from "@/components/CartProvider";
 import "./globals.css";
+
+const pretendard = localFont({
+  src: [
+    { path: '../fonts/Pretendard-Regular.subset.woff2', weight: '400', style: 'normal' },
+    { path: '../fonts/Pretendard-Medium.subset.woff2', weight: '500', style: 'normal' },
+    { path: '../fonts/Pretendard-SemiBold.subset.woff2', weight: '600', style: 'normal' },
+    { path: '../fonts/Pretendard-Bold.subset.woff2', weight: '700', style: 'normal' },
+    { path: '../fonts/Pretendard-ExtraBold.subset.woff2', weight: '800', style: 'normal' },
+  ],
+  display: 'swap',
+  variable: '--font-pretendard',
+});
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -29,18 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
-      <head>
-        <link
-          rel="preconnect"
-          href="https://cdn.jsdelivr.net"
-        />
-        <link
-          rel="stylesheet"
-          crossOrigin="anonymous"
-          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css"
-        />
-      </head>
+    <html lang="ko" className={pretendard.variable}>
       <body>
         <AuthProvider>
           <CartProvider>{children}</CartProvider>
