@@ -2,32 +2,7 @@ services:
   nextjs:
     build: .
     ports:
-      - "0.0.0.0:3001:3000"
+      - "127.0.0.1:3000:3000"
     environment:
-      - DATABASE_URL=postgresql://nosearch:nosearch123@postgres:5432/nosearch
-      - AUTH_SECRET=${AUTH_SECRET}
-      - COOLSMS_API_KEY=${COOLSMS_API_KEY:-}
-      - COOLSMS_API_SECRET=${COOLSMS_API_SECRET:-}
-      - COOLSMS_SENDER=${COOLSMS_SENDER:-}
-    depends_on:
-      postgres:
-        condition: service_healthy
+      - AUTH_SECRET=smartdeal-secret-key-2026
     restart: unless-stopped
-
-  postgres:
-    image: postgres:16-alpine
-    environment:
-      POSTGRES_USER: nosearch
-      POSTGRES_PASSWORD: nosearch123
-      POSTGRES_DB: nosearch
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U nosearch"]
-      interval: 5s
-      timeout: 3s
-      retries: 5
-    restart: unless-stopped
-
-volumes:
-  pgdata:

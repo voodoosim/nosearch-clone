@@ -3,10 +3,14 @@ import AuthProvider from "@/components/AuthProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "노써치 - 똑똑한 소비자들의 최종 선택",
-  description: "정보의 홍수에 지친 소비자들을 위한 필수 앱! 비싸서 고민되는 가전제품, 육아용품, 매일 쓰는 생활용품까지 성능비교, 추천, 구매까지 한 번에 결정하세요!",
+  title: "스마트홈딜 - 스마트한 소비자들의 최종 선택",
+  description: "가전제품, 생활용품, 스마트홈 제품까지 최저가 비교, 추천, 구매까지 한 번에 결정하세요!",
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+  },
   openGraph: {
-    siteName: "노써치",
+    siteName: "스마트홈딜",
     locale: "ko_KR",
     type: "website",
   },

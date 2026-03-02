@@ -6,14 +6,14 @@ import dealProducts from "@/data/products-deal.json";
 import bestProducts from "@/data/products-best.json";
 
 export const metadata: Metadata = {
-  title: "노써치 스토어",
-  description: "노써치가 엄선한 최고의 제품을 만나보세요!",
+  title: "스마트홈딜 스토어",
+  description: "스마트홈딜이 엄선한 최고의 제품을 만나보세요!",
 };
 
 const SECTIONS = [
   {
     title: "공동구매",
-    description: "노써치가 먼저 써보고 추천하는 최저가 공동구매",
+    description: "스마트홈딜이 먼저 써보고 추천하는 최저가 공동구매",
     href: "/store/nosearchDeal",
     products: dealProducts as Product[],
   },

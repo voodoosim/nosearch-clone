@@ -28,7 +28,7 @@ export async function POST(request: Request) {
       await messageService.sendOne({
         to: phone,
         from: sender,
-        text: `[노써치] 인증번호 ${code}를 입력해주세요.`,
+        text: `[스마트홈딜] 인증번호 ${code}를 입력해주세요.`,
         autoTypeDetect: true,
       } as Parameters<typeof messageService.sendOne>[0]);
     } catch (e) {

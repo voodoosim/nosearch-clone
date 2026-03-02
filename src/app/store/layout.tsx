@@ -17,9 +17,9 @@ export default function StoreLayout({
           <div className="border-t border-gray-3 pt-[30px]">
             <div className="flex flex-col gap-[10px] lg:flex-row lg:justify-between">
               <div>
-                <p className="text-[14px] font-bold text-gray-10">노써치</p>
+                <p className="text-[14px] font-bold text-gray-10">스마트홈딜</p>
                 <p className="text-[14px] text-gray-7 mt-[4px]">
-                  뭐 살지 고민될 땐? 검색하지 말고 노써치 하자!
+                  뭐 살지 고민될 땐? 검색하지 말고 스마트홈딜 하자!
                 </p>
               </div>
               <div className="flex gap-[20px]">
@@ -29,7 +29,7 @@ export default function StoreLayout({
               </div>
             </div>
             <p className="text-[11px] text-gray-5 mt-[20px]">
-              (주)노써치 | 대표: 서영준 | 사업자등록번호: 000-00-00000
+              (주)스마트홈딜 | 대표: 서영준 | 사업자등록번호: 000-00-00000
             </p>
             <p className="text-[11px] text-gray-5 mt-[4px]">
               Copyright 2024 NoSearch. All rights reserved.

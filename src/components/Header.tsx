@@ -23,20 +23,50 @@ export default function Header() {
       <div className="sticky top-0 z-[500]">
         <div className="flex h-[50px] items-center border-b border-gray-3 bg-white px-[20px] lg:h-[90px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center shrink-0">
+            {/* Desktop logo */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="32"
-              viewBox="0 0 500 162"
+              width="160"
+              height="36"
+              viewBox="0 0 180 40"
               fill="none"
+              className="hidden lg:block"
             >
-              <path d="M436.087 0.718529H370.017V23.0031H436.087V0.718529Z" fill="#256FFF" />
-              <path d="M160.856 134.316V156.965H0V134.316H66.5222V103.741H93.759V134.316H160.856ZM8.16881 4.63151H34.267V65.4278H154.445V88.1767H8.16881V4.63151Z" fill="#256FFF" />
-              <path d="M309.387 79.6321H287.6V56.1095H309.387V0.718529H335.065V160.79H309.387V79.6321Z" fill="#256FFF" />
-              <path d="M454.038 36.4778V56.3748H417.759C417.483 64.4237 416.693 72.4467 415.394 80.3949C424.856 103.685 442.011 127.153 463.301 144.795L443.194 158.435C428.371 145.51 415.723 130.286 405.733 113.346C397.832 131.421 386.146 147.592 371.466 160.768L348.783 149.283C377.777 124.323 390.788 94.1459 391.772 56.3748H356.233V36.4778H454.038Z" fill="#256FFF" />
-              <path d="M500 0H474.333V161.575H500V0Z" fill="#256FFF" />
-              <path d="M305.209 134.526C280.967 115.933 278.348 76.7692 278.348 60.7963V0.420053H253.941V60.7963C253.941 78.991 251.509 103.619 240.554 121.913C229.501 103.122 227.069 78.7036 227.069 60.7963V0.420053H202.64V60.7963C202.64 76.5481 200.042 115.259 175.922 134.57L172.529 137.289L188.9 156.423L192.083 153.815C201.601 146.077 209.139 134.57 214.589 119.603C219.828 135.498 227.743 147.945 237.868 156.081L240.477 158.159L243.097 156.103C253.277 148.111 261.07 135.918 266.365 119.713C271.892 134.824 279.541 146.431 289.357 154.323L292.673 156.954L308.702 137.201L305.209 134.526Z" fill="#256FFF" />
+              {/* House icon */}
+              <path d="M4 18 L20 4 L36 18" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              <rect x="8" y="18" width="24" height="16" rx="1" stroke="#2563eb" strokeWidth="2.5" />
+              <rect x="15" y="24" width="10" height="10" rx="1" fill="#2563eb" />
+              <rect x="26" y="8" width="4" height="8" rx="1" fill="#2563eb" />
+              <path d="M17 13.5 Q20 11 23 13.5" stroke="#2563eb" strokeWidth="1.8" strokeLinecap="round" opacity="0.7" />
+              <circle cx="20" cy="15.5" r="1" fill="#2563eb" />
+              {/* Brand text */}
+              <text
+                x="46"
+                y="28"
+                fontFamily="'Pretendard', 'Noto Sans KR', sans-serif"
+                fontSize="18"
+                fontWeight="700"
+                fill="#1e293b"
+                letterSpacing="-0.5"
+              >스마트홈딜</text>
+            </svg>
+
+            {/* Mobile logo (icon only) */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 40 40"
+              fill="none"
+              className="block lg:hidden"
+            >
+              <path d="M4 20 L20 4 L36 20" stroke="#2563eb" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
+              <rect x="8" y="20" width="24" height="16" rx="1.5" stroke="#2563eb" strokeWidth="2.8" />
+              <rect x="14.5" y="26" width="11" height="10" rx="1" fill="#2563eb" />
+              <rect x="26" y="8" width="4.5" height="9" rx="1" fill="#2563eb" />
+              <path d="M16.5 15 Q20 12 23.5 15" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
+              <circle cx="20" cy="17.5" r="1.2" fill="#2563eb" />
             </svg>
           </Link>
 

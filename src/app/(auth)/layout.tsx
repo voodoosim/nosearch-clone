@@ -12,7 +12,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
         <div className="mb-[32px] text-center">
           <p className="mb-[8px] text-[14px] text-white/70">전자제품 고민될 땐?</p>
           <Link href="/">
-            <span className="text-[36px] font-extrabold text-white">노써치</span>
+            <span className="text-[36px] font-extrabold text-white">스마트홈딜</span>
           </Link>
           <p className="mt-[8px] text-[14px] leading-[22px] text-white/70">
             지금 가입하고 나에게 딱 맞는<br />
