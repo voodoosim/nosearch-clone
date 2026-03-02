@@ -6,11 +6,9 @@ import "./globals.css";
 
 const pretendard = localFont({
   src: [
-    { path: '../fonts/Pretendard-Regular.subset.woff2', weight: '400', style: 'normal' },
-    { path: '../fonts/Pretendard-Medium.subset.woff2', weight: '500', style: 'normal' },
-    { path: '../fonts/Pretendard-SemiBold.subset.woff2', weight: '600', style: 'normal' },
-    { path: '../fonts/Pretendard-Bold.subset.woff2', weight: '700', style: 'normal' },
-    { path: '../fonts/Pretendard-ExtraBold.subset.woff2', weight: '800', style: 'normal' },
+    { path: '../fonts/Pretendard-Regular.custom.woff2', weight: '400', style: 'normal' },
+    { path: '../fonts/Pretendard-Bold.custom.woff2', weight: '700', style: 'normal' },
+    { path: '../fonts/Pretendard-ExtraBold.custom.woff2', weight: '800', style: 'normal' },
   ],
   display: 'swap',
   variable: '--font-pretendard',
@@ -43,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={pretendard.variable}>
-      <body>
+      <body className={pretendard.className}>
         <AuthProvider>
           <CartProvider>{children}</CartProvider>
         </AuthProvider>
