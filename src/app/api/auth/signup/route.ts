@@ -1,55 +1,76 @@
 import { NextResponse } from "next/server";
-import { hash } from "bcryptjs";
-import { prisma } from "@/lib/prisma";
+import { createPB } from "@/lib/pocketbase";
 
 export async function POST(request: Request) {
-  const { name, birthDate, gender, phone, email, password } = await request.json();
+  const { name, email, password, passwordConfirm } = await request.json();
 
   // 필수 필드 검증
-  if (!name || !birthDate || !gender || !phone || !password) {
-    return NextResponse.json({ error: "필수 항목을 모두 입력해주세요." }, { status: 400 });
+  if (!name || !email || !password) {
+    return NextResponse.json(
+      { error: "이름, 이메일, 비밀번호를 모두 입력해주세요." },
+      { status: 400 },
+    );
   }
 
-  // 전화번호 인증 확인
-  const verified = await prisma.verificationCode.findFirst({
-    where: { phone, verified: true },
-    orderBy: { createdAt: "desc" },
-  });
-
-  if (!verified) {
-    return NextResponse.json({ error: "전화번호 인증을 먼저 완료해주세요." }, { status: 400 });
+  if (password.length < 8) {
+    return NextResponse.json(
+      { error: "비밀번호는 8자 이상이어야 합니다." },
+      { status: 400 },
+    );
   }
 
-  // 중복 체크
-  const existingPhone = await prisma.user.findUnique({ where: { phone } });
-  if (existingPhone) {
-    return NextResponse.json({ error: "이미 가입된 전화번호입니다." }, { status: 409 });
+  if (password !== passwordConfirm) {
+    return NextResponse.json(
+      { error: "비밀번호가 일치하지 않습니다." },
+      { status: 400 },
+    );
   }
 
-  if (email) {
-    const existingEmail = await prisma.user.findUnique({ where: { email } });
-    if (existingEmail) {
-      return NextResponse.json({ error: "이미 가입된 이메일입니다." }, { status: 409 });
-    }
-  }
+  try {
+    const pb = createPB();
 
-  // 비밀번호 해싱 & 저장
-  const hashedPassword = await hash(password, 12);
-
-  const user = await prisma.user.create({
-    data: {
+    const user = await pb.collection('users').create({
+      email,
+      password,
+      passwordConfirm,
       name,
-      birthDate,
-      gender,
-      phone,
-      email: email || null,
-      password: hashedPassword,
-    },
-  });
+    });
 
-  return NextResponse.json({
-    success: true,
-    message: "회원가입이 완료되었습니다.",
-    userId: user.id,
-  });
+    // 봇 회원 등록 (포인트 보너스)
+    const CHAT_API = process.env.NEXT_PUBLIC_CHAT_API || 'http://localhost:8002';
+    try {
+      await fetch(`${CHAT_API}/api/member/register`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, name }),
+      });
+    } catch {
+      // 봇 연결 실패해도 가입은 진행
+    }
+
+    return NextResponse.json({
+      success: true,
+      message: "회원가입이 완료되었습니다.",
+      userId: user.id,
+    });
+  } catch (err: unknown) {
+    const pbError = err as { response?: { data?: Record<string, { message?: string }> }; status?: number };
+
+    // PocketBase 에러 처리
+    if (pbError.response?.data) {
+      const data = pbError.response.data;
+      if (data['email']?.message) {
+        return NextResponse.json(
+          { error: "이미 가입된 이메일입니다." },
+          { status: 409 },
+        );
+      }
+    }
+
+    console.error("Signup error:", err);
+    return NextResponse.json(
+      { error: "회원가입에 실패했습니다." },
+      { status: 500 },
+    );
+  }
 }

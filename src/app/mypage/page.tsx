@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useSession, signOut } from 'next-auth/react';
 
@@ -79,9 +80,32 @@ function ChevronRight() {
   );
 }
 
+const CHAT_API = process.env.NEXT_PUBLIC_CHAT_API || 'http://localhost:8002';
+
+interface PointsHistory {
+  amount: number;
+  balance: number;
+  reason: string;
+  date: string;
+}
+
 export default function MyPage() {
   const { data: session, status } = useSession();
   const isLoggedIn = status === 'authenticated' && !!session?.user;
+  const [points, setPoints] = useState(0);
+  const [history, setHistory] = useState<PointsHistory[]>([]);
+  const [showHistory, setShowHistory] = useState(false);
+
+  useEffect(() => {
+    if (!isLoggedIn || !session?.user?.email) return;
+    fetch(`${CHAT_API}/api/member/points?email=${encodeURIComponent(session.user.email)}`)
+      .then(r => r.json())
+      .then(data => {
+        setPoints(data.points || 0);
+        setHistory(data.history || []);
+      })
+      .catch(() => {});
+  }, [isLoggedIn, session?.user?.email]);
 
   return (
     <div className="mx-auto max-w-[1200px] px-[20px] py-[24px] pb-[100px] lg:px-[30px] lg:py-[40px] lg:pb-[40px]">
@@ -123,6 +147,46 @@ export default function MyPage() {
           )}
         </div>
       </div>
+
+      {/* 포인트 카드 */}
+      {isLoggedIn && (
+        <div className="mb-[24px] p-[20px] bg-gradient-to-r from-orange-500 to-orange-400 rounded-[12px] text-white">
+          <div className="flex items-center justify-between mb-[12px]">
+            <p className="text-[14px] font-medium opacity-90">내 포인트</p>
+            <button
+              onClick={() => setShowHistory(!showHistory)}
+              className="text-[12px] opacity-80 hover:opacity-100 underline"
+            >
+              {showHistory ? '닫기' : '내역보기'}
+            </button>
+          </div>
+          <p className="text-[28px] font-bold">{points.toLocaleString()}P</p>
+
+          {showHistory && history.length > 0 && (
+            <div className="mt-[16px] pt-[12px] border-t border-white/20">
+              <div className="flex flex-col gap-[8px] max-h-[200px] overflow-y-auto">
+                {history.map((item, i) => (
+                  <div key={i} className="flex items-center justify-between text-[13px]">
+                    <div className="flex-1 min-w-0">
+                      <span className="opacity-70 mr-[8px]">{item.date.slice(5, 10)}</span>
+                      <span className="opacity-90">{item.reason}</span>
+                    </div>
+                    <span className={`font-bold shrink-0 ml-[8px] ${item.amount > 0 ? '' : 'opacity-70'}`}>
+                      {item.amount > 0 ? '+' : ''}{item.amount.toLocaleString()}P
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {showHistory && history.length === 0 && (
+            <p className="mt-[12px] pt-[12px] border-t border-white/20 text-[13px] opacity-70">
+              포인트 내역이 없습니다.
+            </p>
+          )}
+        </div>
+      )}
 
       {/* 메뉴 리스트 */}
       <div className="flex flex-col gap-[24px]">
