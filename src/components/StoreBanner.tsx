@@ -28,12 +28,12 @@ export default function StoreBanner({ type }: { type: string }) {
   if (!banner) return null;
 
   return (
-    <div className="relative h-[160px] w-full lg:h-[210px] overflow-hidden">
+    <div className="relative w-full overflow-hidden" style={{ aspectRatio: '1125 / 600' }}>
       <Image
         src={banner.src}
         alt={banner.alt}
         fill
-        className="object-cover"
+        className="object-contain"
         priority
         sizes="100vw"
       />

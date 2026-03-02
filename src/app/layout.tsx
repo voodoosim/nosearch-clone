@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import AuthProvider from "@/components/AuthProvider";
+import { CartProvider } from "@/components/CartProvider";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -41,7 +42,9 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <AuthProvider>{children}</AuthProvider>
+        <AuthProvider>
+          <CartProvider>{children}</CartProvider>
+        </AuthProvider>
       </body>
     </html>
   );

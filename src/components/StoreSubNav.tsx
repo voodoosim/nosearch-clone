@@ -11,6 +11,7 @@ const STORE_TABS = [
   { label: "이번주 인기", href: "/store/best" },
   { label: "기획전", href: "/store/exhibition" },
   { label: "렌탈", href: "/store/rental" },
+  { label: "가이드", href: "/store/contents" },
 ];
 
 export default function StoreSubNav() {

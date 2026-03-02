@@ -5,6 +5,7 @@ import bestProducts from '@/data/products-best.json';
 import dealProducts from '@/data/products-deal.json';
 import timedealProducts from '@/data/products-timedeal.json';
 import reviewProducts from '@/data/products-review.json';
+import AddToCartButton from './AddToCartButton';
 
 interface Product {
   id: string;
@@ -241,24 +242,15 @@ export default async function ProductDetailPage({
             </dl>
           </div>
 
-          {/* 구매하기 버튼 */}
-          <div className="flex flex-col gap-[10px]">
-            {isSoldOut ? (
-              <button
-                disabled
-                className="w-full py-[16px] text-[16px] font-bold text-gray-5 bg-gray-3 rounded-[8px] cursor-not-allowed"
-              >
-                품절
-              </button>
-            ) : (
-              <button className="w-full py-[16px] text-[16px] font-bold text-white bg-blue-7 rounded-[8px] hover:bg-blue-6 active:bg-blue-7 transition-colors">
-                구매하기
-              </button>
-            )}
-            <button className="w-full py-[14px] text-[15px] font-semibold text-blue-7 border-2 border-blue-7 rounded-[8px] hover:bg-blue-1 transition-colors">
-              찜하기
-            </button>
-          </div>
+          {/* 구매하기 + 장바구니 버튼 */}
+          <AddToCartButton
+            goodsNo={product.goodsNo || product.id}
+            goodsNm={product.goodsNm}
+            imageUrl={product.imageUrl}
+            goodsPrice={product.goodsPrice}
+            fixedPrice={product.fixedPrice}
+            isSoldOut={isSoldOut}
+          />
 
           {/* 배송 안내 */}
           <div className="mt-[20px] pt-[20px] border-t border-gray-3">
