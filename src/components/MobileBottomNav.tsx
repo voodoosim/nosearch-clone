@@ -106,8 +106,8 @@ export default function MobileBottomNav() {
   return (
     <nav className='lg:hidden'>
       <ul
-        className='fixed bottom-0 z-[999] flex w-full items-center justify-around border-t border-white/8'
-        style={{ background: 'rgba(22,22,22,0.98)', backdropFilter: 'blur(16px)', paddingBottom: 'env(safe-area-inset-bottom)' }}
+        className='fixed bottom-0 z-[999] flex w-full items-center justify-around border-t border-gray-3 bg-gray-1/97'
+        style={{ backdropFilter: 'blur(12px)', paddingBottom: 'env(safe-area-inset-bottom)' }}
       >
         {NAV_ITEMS.map((item) => (
           <li key={item.label} className='flex-1'>

@@ -50,7 +50,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <Link href={href} className="block group">
-      <article className="w-full overflow-hidden bg-gray-1 rounded-xl border border-white/8 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.6)] group-hover:border-blue-7/30">
+      <article className="w-full overflow-hidden bg-gray-1 rounded-xl border border-gray-3 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_12px_32px_-8px_rgba(100,70,40,0.18)] group-hover:border-blue-5/40">
         {/* 이미지 영역 */}
         <div className="relative w-full bg-gray-2 overflow-hidden" style={{ aspectRatio: "1 / 1" }}>
           <Image
@@ -98,19 +98,19 @@ export default function ProductCard({ product }: { product: Product }) {
         {/* 정보 영역 */}
         <div className="px-[12px] pt-[10px] pb-[14px] lg:px-[16px] lg:pt-[12px] lg:pb-[18px]">
           {/* 브랜드 */}
-          <p className="text-[11px] font-medium text-blue-7 uppercase tracking-wide mb-[4px]">
+          <p className="text-[11px] font-medium text-blue-5 uppercase tracking-wide mb-[4px]">
             {product.brandName}
           </p>
 
           {/* 상품명 */}
-          <p className="text-[13px] lg:text-[15px] font-semibold text-gray-9 leading-[1.45] line-clamp-2 mb-[10px] group-hover:text-blue-5 transition-colors">
+          <p className="text-[13px] lg:text-[15px] font-semibold text-gray-9 leading-[1.45] line-clamp-2 mb-[10px] group-hover:text-blue-7 transition-colors">
             {product.goodsNm}
           </p>
 
           {/* 리뷰 */}
           {product.reviewCnt > 0 && (
             <div className="flex items-center gap-[4px] mb-[8px]">
-              <span className="text-[11px] text-amber-400 font-bold">★ {product.reviewAvg.toFixed(1)}</span>
+              <span className="text-[11px] text-amber-600 font-bold">★ {product.reviewAvg.toFixed(1)}</span>
               <span className="text-[11px] text-gray-5">({product.reviewCnt.toLocaleString()})</span>
             </div>
           )}

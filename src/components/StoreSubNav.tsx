@@ -18,7 +18,7 @@ export default function StoreSubNav() {
   const pathname = usePathname();
 
   return (
-    <div className="sticky top-[56px] z-[100] lg:top-[80px] border-b border-white/8" style={{ background: 'rgba(22,22,22,0.97)', backdropFilter: 'blur(16px)' }}>
+    <div className="sticky top-[56px] z-[100] lg:top-[80px] border-b border-gray-3 bg-gray-1/95" style={{ backdropFilter: 'blur(12px)' }}>
       <ul className="scrollbar-hide flex w-full overflow-auto px-[16px] lg:px-[30px] gap-x-[4px]" style={{ minHeight: '44px' }}>
         {STORE_TABS.map((tab) => {
           const isActive = pathname === tab.href;

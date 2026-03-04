@@ -4,7 +4,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
   return (
     <div
       className="relative flex min-h-[100dvh] items-start justify-center overflow-y-auto lg:items-center"
-      style={{ background: 'linear-gradient(160deg, #0D2B1E 0%, #1A4A30 40%, #0F3020 100%)' }}
+      style={{ background: 'linear-gradient(160deg, #2A1A0A 0%, #3D2812 40%, #2A1A0A 100%)' }}
     >
       {/* 배경 패턴 */}
       <div
@@ -15,8 +15,8 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
         }}
       />
       {/* 배경 그라디언트 오버레이 */}
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 30% 20%, rgba(74,144,112,0.2) 0%, transparent 60%)' }} />
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 70% 80%, rgba(26,85,64,0.3) 0%, transparent 60%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 30% 20%, rgba(180,120,60,0.2) 0%, transparent 60%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 70% 80%, rgba(120,70,30,0.3) 0%, transparent 60%)' }} />
 
       {/* 콘텐츠 */}
       <div className="relative z-10 w-full max-w-[420px] px-[20px] py-[48px]">
