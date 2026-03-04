@@ -40,7 +40,7 @@ export default function LoginPage() {
         placeholder="이메일"
         value={identifier}
         onChange={(e) => setIdentifier(e.target.value)}
-        className="h-[50px] w-full rounded-[8px] border border-white/20 bg-white/10 px-[16px] text-[16px] text-white placeholder:text-white/40 outline-none focus:border-blue-5"
+        className="h-[50px] w-full rounded-[10px] border border-white/15 bg-white/8 px-[16px] text-[15px] text-white placeholder:text-white/35 outline-none focus:border-blue-5 focus:bg-white/12 transition-all"
         required
       />
       <input
@@ -48,7 +48,7 @@ export default function LoginPage() {
         placeholder="비밀번호"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        className="h-[50px] w-full rounded-[8px] border border-white/20 bg-white/10 px-[16px] text-[16px] text-white placeholder:text-white/40 outline-none focus:border-blue-5"
+        className="h-[50px] w-full rounded-[10px] border border-white/15 bg-white/8 px-[16px] text-[15px] text-white placeholder:text-white/35 outline-none focus:border-blue-5 focus:bg-white/12 transition-all"
         required
       />
 
@@ -59,7 +59,7 @@ export default function LoginPage() {
       <button
         type="submit"
         disabled={loading}
-        className="h-[50px] w-full rounded-[8px] bg-blue-7 text-[18px] font-bold text-white disabled:opacity-50"
+        className="h-[50px] w-full rounded-[10px] bg-blue-7 hover:bg-blue-6 text-[16px] font-bold text-white disabled:opacity-50 transition-colors"
       >
         {loading ? "로그인 중..." : "로그인"}
       </button>

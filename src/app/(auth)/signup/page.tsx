@@ -15,7 +15,7 @@ export default function SignupPage() {
   const [loading, setLoading] = useState(false);
 
   const inputClass =
-    'h-[50px] w-full rounded-[8px] border border-white/20 bg-white/10 px-[16px] text-[16px] text-white placeholder:text-white/40 outline-none focus:border-blue-5';
+    'h-[50px] w-full rounded-[10px] border border-white/15 bg-white/8 px-[16px] text-[15px] text-white placeholder:text-white/35 outline-none focus:border-blue-5 focus:bg-white/12 transition-all';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -120,7 +120,7 @@ export default function SignupPage() {
       <button
         type="submit"
         disabled={loading}
-        className="h-[50px] w-full rounded-[8px] bg-blue-7 text-[18px] font-bold text-white disabled:opacity-50"
+        className="h-[50px] w-full rounded-[10px] bg-blue-7 hover:bg-blue-6 text-[16px] font-bold text-white disabled:opacity-50 transition-colors"
       >
         {loading ? "가입 중..." : "가입하기"}
       </button>

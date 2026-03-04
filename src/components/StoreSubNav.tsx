@@ -18,27 +18,25 @@ export default function StoreSubNav() {
   const pathname = usePathname();
 
   return (
-    <div className="sticky top-[50px] z-[100] lg:top-[90px]">
-      <ul className="scrollbar-hide flex w-full overflow-auto bg-white px-[20px] lg:min-h-[48px] lg:px-[30px] gap-x-[10px] lg:gap-x-[20px]" style={{ minHeight: '48px' }}>
+    <div className="sticky top-[56px] z-[100] lg:top-[80px] bg-white border-b border-gray-3/60" style={{ boxShadow: '0 1px 0 0 rgba(0,0,0,0.04)' }}>
+      <ul className="scrollbar-hide flex w-full overflow-auto px-[16px] lg:px-[30px] gap-x-[4px]" style={{ minHeight: '44px' }}>
         {STORE_TABS.map((tab) => {
           const isActive = pathname === tab.href;
           return (
-            <li key={tab.href} className="flex">
+            <li key={tab.href} className="flex shrink-0">
               <Link href={tab.href} className="flex">
-                <div className="relative flex cursor-pointer items-center whitespace-nowrap px-[6px] text-center lg:px-[20px] flex-1 justify-center min-h-[44px]">
-                  <div className="relative flex items-center gap-x-[8px]">
-                    <p
-                      className={
-                        isActive
-                          ? "text-[15px] font-bold text-blue-7"
-                          : "text-[15px] font-medium text-gray-10"
-                      }
-                    >
-                      {tab.label}
-                    </p>
-                  </div>
+                <div className="relative flex cursor-pointer items-center whitespace-nowrap px-[10px] min-h-[44px] justify-center">
+                  <p
+                    className={`text-[13px] transition-colors ${
+                      isActive
+                        ? "font-bold text-blue-7"
+                        : "font-medium text-gray-6 hover:text-gray-10"
+                    }`}
+                  >
+                    {tab.label}
+                  </p>
                   {isActive && (
-                    <div className="absolute bottom-0 left-0 h-[3px] w-full bg-blue-7" />
+                    <div className="absolute bottom-0 left-[10px] right-[10px] h-[2px] rounded-full bg-blue-7" />
                   )}
                 </div>
               </Link>

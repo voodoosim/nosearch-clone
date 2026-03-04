@@ -8,28 +8,30 @@
   --color-background: #ffffff;
   --color-foreground: #1a1a1a;
 
-  /* nosearch 색상 시스템 — 오렌지 테마 */
-  --color-blue-7: #E8701A;
-  --color-blue-6: #F28C28;
-  --color-blue-5: #F5A855;
-  --color-blue-1: #FFF5EB;
-  --color-blue-8: #C45A0F;
-  --color-gray-1: #f9f9f9;
-  --color-gray-2: #f0f0f0;
-  --color-gray-3: #e5e5e5;
-  --color-gray-4: #d9d9d9;
-  --color-gray-5: #bfbfbf;
-  --color-gray-6: #949494;
-  --color-gray-7: #8c8c8c;
-  --color-gray-9: #3a3a3a;
-  --color-gray-10: #1a1a1a;
-  --color-red-4: #ff4d4f;
-  --color-red-5: #ff4d4f;
-  --color-primary: #E8701A;
+  /* 스마트홈딜 색상 시스템 — 딥 포레스트 그린 테마 */
+  --color-blue-7: #1A5540;
+  --color-blue-6: #236B4E;
+  --color-blue-5: #4A9070;
+  --color-blue-1: #EFF7F3;
+  --color-blue-8: #134232;
+  --color-gray-1: #F7F7F5;
+  --color-gray-2: #EFEFEC;
+  --color-gray-3: #E3E3DF;
+  --color-gray-4: #D4D4CF;
+  --color-gray-5: #ABABAB;
+  --color-gray-6: #888888;
+  --color-gray-7: #777777;
+  --color-gray-9: #2E2E2E;
+  --color-gray-10: #181818;
+  --color-red-4: #E53935;
+  --color-red-5: #E53935;
+  --color-primary: #1A5540;
+  --color-gold: #B8860B;
+  --color-gold-light: #F5E6B8;
 }
 
 body {
-  background: var(--color-background);
+  background: #FAFAF8;
   color: var(--color-foreground);
   font-family: var(--font-pretendard), 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   min-width: 280px;
@@ -107,7 +109,7 @@ html {
 
 /* 그라디언트 텍스트 (히어로 섹션용) */
 .text-gradient {
-  background: linear-gradient(135deg, #F28C28, #E07020);
+  background: linear-gradient(135deg, #1A5540, #4A9070);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -125,7 +127,7 @@ html {
 
 /* 포커스 링 스타일 (접근성) */
 *:focus-visible {
-  outline: 2px solid #F28C28;
+  outline: 2px solid #1A5540;
   outline-offset: 2px;
   border-radius: 4px;
 }
