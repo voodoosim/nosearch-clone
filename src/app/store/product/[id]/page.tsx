@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getProductById } from '@/lib/products';
 import AddToCartButton from './AddToCartButton';
+import TabSection from './TabSection';
+import StickyCartButtons from './StickyCartButtons';
 
 export const revalidate = 60;
 
@@ -30,11 +32,11 @@ function getPickColor(pickType: string): string {
     case 'best':
       return 'bg-blue-7 text-white';
     case 'cost_effective':
-      return 'bg-green-600 text-white';
+      return 'bg-blue-7 text-white';
     case 'plus':
-      return 'bg-purple-600 text-white';
+      return 'bg-gray-9 text-white';
     case 'premium':
-      return 'bg-amber-700 text-white';
+      return 'bg-gold text-white';
     default:
       return '';
   }
@@ -59,7 +61,7 @@ function StarRating({ avg, cnt }: { avg: number; cnt: number }) {
             <defs>
               <linearGradient id="half">
                 <stop offset="50%" stopColor="currentColor" />
-                <stop offset="50%" stopColor="#e5e7eb" />
+                <stop offset="50%" stopColor="#E2D8CC" />
               </linearGradient>
             </defs>
             <path fill="url(#half)" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -96,7 +98,7 @@ export default async function ProductDetailPage({
   const pickColor = getPickColor(product.pickType);
 
   return (
-    <div className="mx-auto max-w-[1200px] px-[20px] py-[24px] pb-[80px] lg:px-[30px] lg:py-[40px] lg:pb-[40px]">
+    <div className="mx-auto max-w-[1200px] px-[20px] py-[24px] pb-[100px] lg:px-[30px] lg:py-[40px] lg:pb-[40px]">
       {/* 브레드크럼 */}
       <nav className="mb-[20px] flex items-center gap-[6px] text-[13px] text-gray-6">
         <Link href="/store" className="hover:text-blue-7 transition-colors">
@@ -110,18 +112,29 @@ export default async function ProductDetailPage({
       <div className="flex flex-col gap-[24px] lg:flex-row lg:gap-[48px]">
         {/* 이미지 영역 */}
         <div className="w-full lg:w-[520px] lg:shrink-0">
-          <div className="relative w-full bg-white border border-gray-3" style={{ aspectRatio: '1 / 1' }}>
+          <div
+            className="relative w-full rounded-2xl border border-gray-3 overflow-hidden"
+            style={{ aspectRatio: '1 / 1', backgroundColor: '#F5F1EB' }}
+          >
             <Image
               src={product.imageUrl}
               alt={product.goodsNm}
               fill
-              className={`object-contain p-[24px] ${isSoldOut ? 'opacity-40' : ''}`}
+              className={`object-contain p-[32px] ${isSoldOut ? 'opacity-40' : ''}`}
               sizes="(max-width: 1024px) 100vw, 520px"
               priority
             />
             {isSoldOut && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                <span className="text-[24px] font-bold text-white">SOLD OUT</span>
+              <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-2xl">
+                <span className="text-[24px] font-bold text-white tracking-widest">SOLD OUT</span>
+              </div>
+            )}
+            {/* 픽 뱃지 — 이미지 좌상단 */}
+            {pickLabel && (
+              <div className="absolute top-[14px] left-[14px]">
+                <span className={`inline-flex items-center px-[10px] py-[4px] text-[11px] font-bold rounded-md shadow-sm ${pickColor}`}>
+                  {pickLabel}
+                </span>
               </div>
             )}
           </div>
@@ -129,14 +142,9 @@ export default async function ProductDetailPage({
 
         {/* 상품 정보 영역 */}
         <div className="flex flex-1 flex-col">
-          {/* 카테고리 + 픽 뱃지 */}
-          <div className="flex items-center gap-[8px] mb-[8px]">
+          {/* 카테고리 + 태그 */}
+          <div className="flex items-center gap-[8px] mb-[8px] flex-wrap">
             <span className="text-[13px] text-gray-6">{product.categoryName}</span>
-            {pickLabel && (
-              <span className={`inline-flex items-center px-[8px] py-[2px] text-[11px] font-bold rounded-sm ${pickColor}`}>
-                {pickLabel}
-              </span>
-            )}
             {product.isTimedeal && (
               <span className="inline-flex items-center px-[8px] py-[2px] text-[11px] font-bold rounded-sm bg-red-5 text-white">
                 타임딜
@@ -145,10 +153,12 @@ export default async function ProductDetailPage({
           </div>
 
           {/* 브랜드명 */}
-          <p className="text-[15px] font-semibold text-blue-7 mb-[4px]">{product.brandName}</p>
+          <p className="text-[14px] font-semibold text-blue-7 mb-[6px] tracking-wide uppercase">
+            {product.brandName}
+          </p>
 
           {/* 상품명 */}
-          <h1 className="text-[20px] font-bold leading-[1.4] text-gray-10 mb-[16px] lg:text-[22px]">
+          <h1 className="text-[20px] font-bold leading-[1.4] text-gray-10 mb-[14px] lg:text-[22px]">
             {product.goodsNm}
           </h1>
 
@@ -159,15 +169,11 @@ export default async function ProductDetailPage({
             </div>
           )}
 
-          {/* 구분선 */}
+          {/* 구분선 + 가격 */}
           <div className="border-t border-gray-3 pt-[20px] mb-[20px]">
-            {/* 가격 영역 */}
             {discount > 0 && (
               <div className="flex items-center gap-[8px] mb-[6px]">
-                <span
-                  className="inline-flex items-center px-[8px] py-[3px] text-[12px] font-extrabold text-white leading-none"
-                  style={{ backgroundColor: '#E8701A' }}
-                >
+                <span className="inline-flex items-center px-[8px] py-[3px] text-[12px] font-extrabold text-white bg-red-5 leading-none rounded-sm">
                   {discount}% 할인
                 </span>
                 <span className="text-[15px] text-gray-5 line-through">
@@ -175,34 +181,36 @@ export default async function ProductDetailPage({
                 </span>
               </div>
             )}
-            <p className="text-[32px] font-extrabold text-gray-10 leading-none">
+            <p className="text-[34px] font-extrabold text-gray-10 leading-none">
               {formatPrice(product.goodsPrice)}
-              <span className="text-[20px] font-bold ml-[2px]">원</span>
+              <span className="text-[20px] font-bold ml-[3px]">원</span>
             </p>
             {discount > 0 && (
-              <p className="mt-[6px] text-[13px] text-gray-6">
+              <p className="mt-[6px] text-[13px] text-blue-7 font-medium">
                 최저가 이하 공동구매 특가
               </p>
             )}
           </div>
 
-          {/* 상품 기본 정보 */}
-          <div className="bg-gray-1 rounded-[8px] px-[16px] py-[14px] mb-[24px]">
-            <dl className="flex flex-col gap-[8px]">
-              <div className="flex gap-[12px]">
-                <dt className="text-[13px] text-gray-6 shrink-0 w-[56px]">브랜드</dt>
-                <dd className="text-[13px] text-gray-10 font-medium">{product.brandName}</dd>
+          {/* 배송 정보 박스 */}
+          <div className="bg-gray-1 rounded-xl border border-gray-3 p-[16px] mb-[20px]">
+            <dl className="flex flex-col gap-[10px]">
+              <div className="flex gap-[16px]">
+                <dt className="text-[13px] text-gray-6 shrink-0 w-[52px] font-medium">배송</dt>
+                <dd className="text-[13px] text-gray-10 font-semibold">무료배송 · 오늘 출발</dd>
               </div>
-              <div className="flex gap-[12px]">
-                <dt className="text-[13px] text-gray-6 shrink-0 w-[56px]">카테고리</dt>
-                <dd className="text-[13px] text-gray-10">{product.categoryName}</dd>
+              <div className="flex gap-[16px]">
+                <dt className="text-[13px] text-gray-6 shrink-0 w-[52px] font-medium">도착</dt>
+                <dd className="text-[13px] text-gray-10">내일(평일 기준) 도착 예정</dd>
               </div>
-              {product.productCategoryKey && (
-                <div className="flex gap-[12px]">
-                  <dt className="text-[13px] text-gray-6 shrink-0 w-[56px]">상품코드</dt>
-                  <dd className="text-[13px] text-gray-10">{product.goodsNo}</dd>
-                </div>
-              )}
+              <div className="flex gap-[16px]">
+                <dt className="text-[13px] text-gray-6 shrink-0 w-[52px] font-medium">반품</dt>
+                <dd className="text-[13px] text-gray-10">수령 후 7일 이내 무료반품</dd>
+              </div>
+              <div className="flex gap-[16px]">
+                <dt className="text-[13px] text-gray-6 shrink-0 w-[52px] font-medium">브랜드</dt>
+                <dd className="text-[13px] text-gray-10">{product.brandName}</dd>
+              </div>
             </dl>
           </div>
 
@@ -216,97 +224,32 @@ export default async function ProductDetailPage({
             isSoldOut={isSoldOut}
           />
 
-          {/* 배송 안내 */}
-          <div className="mt-[20px] pt-[20px] border-t border-gray-3">
-            <dl className="flex flex-col gap-[8px]">
-              <div className="flex gap-[12px]">
-                <dt className="text-[13px] text-gray-6 shrink-0 w-[56px]">배송</dt>
-                <dd className="text-[13px] text-gray-10">무료배송 · 오늘 출발</dd>
-              </div>
-              <div className="flex gap-[12px]">
-                <dt className="text-[13px] text-gray-6 shrink-0 w-[56px]">반품</dt>
-                <dd className="text-[13px] text-gray-10">수령 후 7일 이내</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </div>
-
-      {/* 상품 설명 섹션 */}
-      <div className="mt-[48px]">
-        <div className="border-b border-gray-3 mb-[32px]">
-          <div className="inline-block border-b-2 border-gray-10 pb-[12px]">
-            <span className="text-[16px] font-bold text-gray-10">상품 설명</span>
-          </div>
-        </div>
-
-        <div className="bg-blue-1 rounded-[12px] p-[24px] lg:p-[32px]">
-          <div className="flex flex-col gap-[16px]">
-            <div>
-              <p className="text-[18px] font-extrabold text-gray-10 mb-[8px]">
-                스마트홈딜이 추천하는 {product.categoryName}
-              </p>
-              <p className="text-[15px] text-gray-9 leading-[1.7]">
-                전문가가 직접 사용하고 엄선한 {product.brandName}의 {product.categoryName} 제품입니다.
-                수많은 제품 중 성능, 가성비, 내구성을 종합 평가하여 추천합니다.
-              </p>
+          {/* 신뢰 배지 3개 */}
+          <div className="mt-[20px] grid grid-cols-3 gap-[8px]">
+            <div className="flex flex-col items-center gap-[6px] bg-gray-1 border border-gray-3 rounded-xl p-[12px]">
+              <svg className="w-[22px] h-[22px] text-blue-7" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+              </svg>
+              <span className="text-[11px] font-semibold text-gray-8 text-center leading-tight">정품보증</span>
             </div>
-
-            <div className="border-t border-gray-3 pt-[16px]">
-              <p className="text-[14px] font-bold text-gray-9 mb-[10px]">이 상품을 추천하는 이유</p>
-              <ul className="flex flex-col gap-[8px]">
-                <li className="flex items-start gap-[8px]">
-                  <span className="mt-[2px] text-blue-7 shrink-0">&#10003;</span>
-                  <span className="text-[14px] text-gray-9">스마트홈딜 전문가 직접 테스트 및 검증 완료</span>
-                </li>
-                <li className="flex items-start gap-[8px]">
-                  <span className="mt-[2px] text-blue-7 shrink-0">&#10003;</span>
-                  <span className="text-[14px] text-gray-9">합리적인 가격 대비 뛰어난 성능</span>
-                </li>
-                {product.reviewCnt > 0 && (
-                  <li className="flex items-start gap-[8px]">
-                    <span className="mt-[2px] text-blue-7 shrink-0">&#10003;</span>
-                    <span className="text-[14px] text-gray-9">
-                      실제 구매자 {product.reviewCnt.toLocaleString('ko-KR')}명의 평균 {product.reviewAvg.toFixed(1)}점 높은 만족도
-                    </span>
-                  </li>
-                )}
-                {discount >= 20 && (
-                  <li className="flex items-start gap-[8px]">
-                    <span className="mt-[2px] text-blue-7 shrink-0">&#10003;</span>
-                    <span className="text-[14px] text-gray-9">
-                      정가 대비 {discount}% 할인된 공동구매 특가
-                    </span>
-                  </li>
-                )}
-              </ul>
+            <div className="flex flex-col items-center gap-[6px] bg-gray-1 border border-gray-3 rounded-xl p-[12px]">
+              <svg className="w-[22px] h-[22px] text-blue-7" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+              </svg>
+              <span className="text-[11px] font-semibold text-gray-8 text-center leading-tight">무료반품</span>
+            </div>
+            <div className="flex flex-col items-center gap-[6px] bg-gray-1 border border-gray-3 rounded-xl p-[12px]">
+              <svg className="w-[22px] h-[22px] text-blue-7" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+              </svg>
+              <span className="text-[11px] font-semibold text-gray-8 text-center leading-tight">안전결제</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* 리뷰 섹션 */}
-      {product.reviewCnt > 0 && (
-        <div className="mt-[48px]">
-          <div className="border-b border-gray-3 mb-[24px]">
-            <div className="inline-block border-b-2 border-gray-10 pb-[12px]">
-              <span className="text-[16px] font-bold text-gray-10">
-                리뷰 {product.reviewCnt.toLocaleString('ko-KR')}
-              </span>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-[24px] bg-gray-1 rounded-[12px] p-[24px]">
-            <div className="text-center">
-              <p className="text-[36px] lg:text-[48px] font-extrabold text-gray-10 leading-none">{product.reviewAvg.toFixed(1)}</p>
-              <div className="mt-[8px]">
-                <StarRating avg={product.reviewAvg} cnt={product.reviewCnt} />
-              </div>
-              <p className="mt-[4px] text-[12px] text-gray-6">총 {product.reviewCnt.toLocaleString('ko-KR')}개 리뷰</p>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* 탭 + 콘텐츠 섹션 */}
+      <TabSection product={product} discount={discount} />
 
       {/* 뒤로가기 */}
       <div className="mt-[48px] flex justify-center">
@@ -319,6 +262,31 @@ export default async function ProductDetailPage({
           </svg>
           목록으로 돌아가기
         </Link>
+      </div>
+
+      {/* 하단 sticky 구매 바 (모바일) */}
+      <div
+        className="fixed bottom-0 left-0 right-0 z-[998] bg-gray-1 border-t border-gray-3 lg:hidden"
+        style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
+      >
+        <div className="px-[16px] py-[12px]">
+          {!isSoldOut ? (
+            <StickyCartButtons
+              goodsNo={product.goodsNo || product.id}
+              goodsNm={product.goodsNm}
+              imageUrl={product.imageUrl}
+              goodsPrice={product.goodsPrice}
+              fixedPrice={product.fixedPrice}
+            />
+          ) : (
+            <button
+              disabled
+              className="w-full h-[52px] text-[16px] font-bold text-gray-5 bg-gray-3 rounded-xl cursor-not-allowed"
+            >
+              품절
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

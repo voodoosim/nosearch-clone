@@ -29,7 +29,7 @@ export default function CategoryFilter({
         className={`shrink-0 rounded-full border px-[16px] py-[8px] text-[13px] lg:text-[15px] font-medium transition-colors ${
           isAll
             ? 'border-blue-7 bg-blue-7 text-white'
-            : 'border-gray-3 bg-white text-gray-9 hover:border-gray-5'
+            : 'border-gray-3 bg-gray-1 text-gray-9 hover:border-gray-5'
         }`}
       >
         전체
@@ -43,7 +43,7 @@ export default function CategoryFilter({
             className={`shrink-0 rounded-full border px-[16px] py-[8px] text-[13px] lg:text-[15px] font-medium transition-colors ${
               isActive
                 ? 'border-blue-7 bg-blue-7 text-white'
-                : 'border-gray-3 bg-white text-gray-9 hover:border-gray-5'
+                : 'border-gray-3 bg-gray-1 text-gray-9 hover:border-gray-5'
             }`}
           >
             {cat.label}

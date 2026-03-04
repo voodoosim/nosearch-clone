@@ -7,6 +7,14 @@ import {
   getCategoryKeyLabel,
 } from '@/lib/products';
 
+const CATEGORY_ICON_BG: Record<string, string> = {
+  kitchen: 'bg-[#FF7A5C]',
+  cleaning: 'bg-[#3DC0D1]',
+  living: 'bg-[#34C48A]',
+  seasonal: 'bg-[#F5A623]',
+  health: 'bg-[#C47AB0]',
+};
+
 export const revalidate = 60;
 
 export const metadata: Metadata = {
@@ -36,12 +44,12 @@ export default async function RecommendationPage() {
       </div>
 
       {/* 카테고리별 섹션 */}
-      {groups.map(({ category, products }) => (
-        <section key={category.key} className="mb-[50px]">
+      {groups.map(({ category, products }, idx) => (
+        <section key={category.key} className={`mb-[50px] ${idx > 0 ? 'pt-[50px] border-t border-gray-3' : ''}`}>
           {/* 카테고리 헤더 */}
           <div className="mb-[16px] flex items-center justify-between">
-            <div className="flex items-center gap-[8px]">
-              <span className="text-[20px] lg:text-[24px]">
+            <div className="flex items-center gap-[10px]">
+              <span className={`w-[36px] h-[36px] lg:w-[40px] lg:h-[40px] rounded-full flex items-center justify-center text-[18px] lg:text-[20px] shrink-0 ${CATEGORY_ICON_BG[category.key] || 'bg-gray-3'}`}>
                 {category.icon}
               </span>
               <h2 className="text-[18px] font-extrabold text-gray-10 lg:text-[22px]">
@@ -53,10 +61,10 @@ export default async function RecommendationPage() {
             </div>
             <Link
               href={`/store/recommendation/${category.key}`}
-              className="flex items-center gap-[4px] text-[13px] text-gray-9 hover:text-blue-7 lg:text-[15px]"
+              className="flex items-center gap-[4px] text-[13px] text-blue-7 font-medium hover:text-blue-8 lg:text-[15px]"
             >
               더보기
-              <span className="text-[12px] text-gray-7">&gt;</span>
+              <span className="text-[12px]">&gt;</span>
             </Link>
           </div>
 

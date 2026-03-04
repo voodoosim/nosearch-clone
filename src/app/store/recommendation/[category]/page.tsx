@@ -86,7 +86,7 @@ export default async function CategoryPage({ params }: PageProps) {
             <a
               key={group.key}
               href={`#${group.key}`}
-              className="rounded-full border border-gray-3 bg-white px-[12px] py-[6px] text-[12px] font-medium text-gray-9 transition-colors hover:border-blue-7 hover:text-blue-7 lg:text-[13px]"
+              className="rounded-full border border-gray-3 bg-gray-1 px-[12px] py-[6px] text-[12px] font-medium text-gray-9 transition-colors hover:border-blue-7 hover:text-blue-7 lg:text-[13px]"
             >
               {group.label} ({group.products.length})
             </a>
@@ -100,7 +100,7 @@ export default async function CategoryPage({ params }: PageProps) {
           <div className="mb-[16px] flex items-center gap-[8px]">
             <div
               className="h-[4px] w-[4px] rounded-full"
-              style={{ backgroundColor: '#E8701A' }}
+              style={{ backgroundColor: '#1E6B3E' }}
             />
             <h2 className="text-[16px] font-bold text-gray-10 lg:text-[20px]">
               {group.label}
@@ -121,6 +121,9 @@ export default async function CategoryPage({ params }: PageProps) {
       {/* 상품 없음 */}
       {products.length === 0 && (
         <div className="flex flex-col items-center justify-center py-[80px]">
+          <svg className="w-[48px] h-[48px] text-gray-4 mb-[16px]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-.375c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v.375c0 .621.504 1.125 1.125 1.125z" />
+          </svg>
           <p className="text-[16px] font-bold text-gray-6">
             해당 카테고리에 상품이 없습니다
           </p>

@@ -111,13 +111,13 @@ export default function MyPage() {
     <div className="mx-auto max-w-[1200px] px-[20px] py-[24px] pb-[100px] lg:px-[30px] lg:py-[40px] lg:pb-[40px]">
       {/* 프로필 섹션 */}
       <div className="flex items-center gap-[16px] mb-[32px] p-[20px] bg-gray-1 rounded-[12px]">
-        <div className="w-[56px] h-[56px] rounded-full bg-gray-3 flex items-center justify-center shrink-0">
+        <div className="w-[56px] h-[56px] rounded-full bg-blue-7 flex items-center justify-center shrink-0">
           {isLoggedIn ? (
-            <span className="text-[22px] font-bold text-blue-7">
+            <span className="text-[22px] font-bold text-white">
               {(session.user?.name || 'U')[0].toUpperCase()}
             </span>
           ) : (
-            <svg className="w-[28px] h-[28px] text-gray-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+            <svg className="w-[28px] h-[28px] text-white/80" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
             </svg>
           )}
@@ -139,7 +139,7 @@ export default function MyPage() {
               </p>
               <Link
                 href="/login"
-                className="text-[13px] text-blue-7 font-medium hover:underline"
+                className="inline-block mt-[6px] px-[14px] py-[6px] bg-blue-7 text-white text-[13px] font-medium rounded-xl hover:bg-blue-8 transition-colors"
               >
                 로그인 / 회원가입
               </Link>
@@ -150,7 +150,7 @@ export default function MyPage() {
 
       {/* 포인트 카드 */}
       {isLoggedIn && (
-        <div className="mb-[24px] p-[20px] bg-gradient-to-r from-orange-500 to-orange-400 rounded-[12px] text-white">
+        <div className="mb-[24px] p-[20px] rounded-[12px] text-white" style={{ background: 'linear-gradient(135deg, #0D3822 0%, #1E6B3E 100%)' }}>
           <div className="flex items-center justify-between mb-[12px]">
             <p className="text-[14px] font-medium opacity-90">내 포인트</p>
             <button
@@ -196,11 +196,11 @@ export default function MyPage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`flex items-center gap-[14px] px-[20px] min-h-[52px] hover:bg-gray-1 transition-colors active:bg-gray-2 ${
+                className={`flex items-center gap-[14px] px-[20px] min-h-[52px] hover:bg-gray-2 transition-colors active:bg-gray-2 ${
                   ii < group.length - 1 ? 'border-b border-gray-3' : ''
                 }`}
               >
-                <span className="text-gray-7 shrink-0">{item.icon}</span>
+                <span className="text-blue-7 shrink-0">{item.icon}</span>
                 <span className="flex-1 text-[15px] font-medium text-gray-10">
                   {item.label}
                 </span>

@@ -83,51 +83,61 @@ function RentalCard({ product }: RentalCardProps) {
       : 0;
 
   return (
-    <article className="w-full overflow-hidden rounded-[12px] border border-gray-2 bg-white transition-shadow hover:shadow-md">
+    <article className="group w-full overflow-hidden rounded-2xl border border-gray-3 bg-gray-1 transition-all duration-200 hover:-translate-y-[3px] hover:border-blue-5 hover:shadow-[0_10px_28px_-6px_rgba(30,107,62,0.12)]">
       {/* 상품 이미지 */}
-      <div className="relative w-full bg-gray-1" style={{ aspectRatio: '4 / 3' }}>
+      <div className="relative w-full overflow-hidden bg-[#F5F1EB]" style={{ aspectRatio: '4 / 3' }}>
         <Image
           src={product.imageUrl}
           alt={product.goodsNm}
           fill
-          className={`object-contain p-[16px] ${isSoldOut ? 'opacity-40' : ''}`}
+          className={`object-contain p-[16px] transition-transform duration-300 group-hover:scale-[1.04] ${isSoldOut ? 'opacity-35' : ''}`}
           sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 280px"
         />
+
+        {/* 품절 오버레이 */}
         {isSoldOut && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-t-[12px]">
-            <span className="text-[18px] font-bold text-white">SOLD OUT</span>
+          <div className="absolute inset-0 flex items-center justify-center bg-black/25">
+            <span className="text-[16px] font-bold tracking-widest text-gray-1">SOLD OUT</span>
           </div>
         )}
-        {discount > 0 && !isSoldOut && (
-          <div className="absolute left-[10px] top-[10px] rounded-[6px] bg-orange-600 px-[8px] py-[4px]">
-            <span className="text-[12px] font-bold text-white">{discount}% 할인</span>
+
+        {/* 할인율 뱃지 */}
+        {discount >= 10 && !isSoldOut && (
+          <div className="absolute left-[10px] top-[10px] rounded-[6px] px-[8px] py-[4px]" style={{ background: '#C0392B' }}>
+            <span className="text-[12px] font-bold text-gray-1">-{discount}%</span>
           </div>
         )}
+
         {/* 렌탈 뱃지 */}
-        <div className="absolute right-[10px] top-[10px] rounded-[6px] bg-blue-6 px-[8px] py-[4px]">
-          <span className="text-[11px] font-bold text-white">렌탈</span>
+        <div className="absolute right-[10px] top-[10px] rounded-[6px] bg-blue-7 px-[8px] py-[4px]">
+          <span className="text-[11px] font-bold text-gray-1">렌탈</span>
         </div>
       </div>
 
       {/* 상품 정보 */}
-      <div className="p-[16px]">
-        <p className="mb-[4px] text-[12px] font-medium text-gray-5">{product.categoryName}</p>
-        <p className="mb-[12px] line-clamp-2 text-[14px] font-semibold leading-[20px] text-gray-10">
+      <div className="p-[14px] lg:p-[16px]">
+        {/* 브랜드 & 카테고리 */}
+        <p className="mb-[4px] text-[10px] font-bold uppercase tracking-widest text-blue-7">
+          {product.brandName || product.categoryName}
+        </p>
+
+        {/* 상품명 */}
+        <p className="mb-[12px] line-clamp-2 text-[13px] font-medium leading-[1.5] text-gray-9 lg:text-[14px]">
           {productName}
         </p>
 
-        {/* 월 렌탈료 강조 */}
-        <div className="mb-[10px] rounded-[8px] bg-blue-1 px-[12px] py-[10px]">
-          <p className="text-[11px] font-medium text-blue-7">월 렌탈료 ({RENTAL_MONTHS}개월)</p>
-          <p className="mt-[2px] text-[16px] font-extrabold text-blue-8 lg:text-[20px]">
+        {/* 월 렌탈료 강조 박스 */}
+        <div className="mb-[10px] rounded-xl bg-blue-1 px-[12px] py-[10px]">
+          <p className="text-[11px] font-medium text-blue-6">{RENTAL_MONTHS}개월 기준 월 렌탈료</p>
+          <p className="mt-[2px] text-[18px] font-extrabold leading-none text-blue-7 lg:text-[20px]">
             월 {formatPrice(product.monthlyRental)}원~
           </p>
         </div>
 
-        {/* 정상가 */}
-        <div className="flex items-center justify-between">
+        {/* 구매가 / 정가 */}
+        <div className="flex items-baseline justify-between">
           <div>
-            <p className="text-[11px] text-gray-5">구매가</p>
+            <p className="text-[10px] text-gray-5">구매가</p>
             <p className="text-[15px] font-bold text-gray-10">
               {formatPrice(product.goodsPrice)}원
             </p>
@@ -141,21 +151,21 @@ function RentalCard({ product }: RentalCardProps) {
 
         {/* 리뷰 */}
         {product.reviewCnt > 0 && (
-          <div className="mt-[10px] flex items-center gap-[4px] border-t border-gray-1 pt-[10px]">
-            <span className="text-[12px] text-yellow-500">★</span>
+          <div className="mt-[10px] flex items-center gap-[4px] border-t border-gray-3 pt-[10px]">
+            <span className="text-[12px] text-amber-500">★</span>
             <span className="text-[12px] font-semibold text-gray-8">
               {product.reviewAvg.toFixed(1)}
             </span>
-            <span className="text-[12px] text-gray-4">({product.reviewCnt.toLocaleString()})</span>
+            <span className="text-[12px] text-gray-5">({product.reviewCnt.toLocaleString()})</span>
           </div>
         )}
 
         {/* 렌탈 신청 버튼 */}
         <button
-          className={`mt-[12px] w-full rounded-[8px] py-[12px] text-[14px] font-bold transition-colors ${
+          className={`mt-[12px] w-full rounded-xl py-[11px] text-[14px] font-bold transition-colors ${
             isSoldOut
-              ? 'cursor-not-allowed bg-gray-2 text-gray-5'
-              : 'bg-blue-7 text-white hover:bg-blue-8'
+              ? 'cursor-not-allowed bg-gray-3 text-gray-5'
+              : 'bg-blue-7 text-gray-1 hover:bg-blue-8'
           }`}
           disabled={isSoldOut}
         >
@@ -174,10 +184,10 @@ interface RentalBenefitProps {
 
 function RentalBenefit({ icon, title, desc }: RentalBenefitProps) {
   return (
-    <div className="flex flex-col items-center rounded-[12px] border border-gray-2 bg-white px-[16px] py-[20px] text-center">
+    <div className="flex flex-col items-center rounded-xl border border-gray-3 bg-gray-1 px-[16px] py-[20px] text-center">
       <span className="mb-[8px] text-[28px]">{icon}</span>
       <p className="text-[14px] font-bold text-gray-10">{title}</p>
-      <p className="mt-[4px] text-[12px] leading-[18px] text-gray-6">{desc}</p>
+      <p className="mt-[4px] whitespace-pre-line text-[12px] leading-[1.6] text-gray-6">{desc}</p>
     </div>
   );
 }
@@ -242,7 +252,7 @@ export default async function RentalPage() {
           </p>
         </div>
 
-        {/* 렌탈 혜택 배너 */}
+        {/* 렌탈 혜택 카드 */}
         <div className="mb-[40px] grid grid-cols-2 gap-[10px] lg:grid-cols-4 lg:gap-[16px]">
           {benefits.map((b) => (
             <RentalBenefit key={b.title} {...b} />
@@ -250,7 +260,7 @@ export default async function RentalPage() {
         </div>
 
         {/* 렌탈 안내 띠 */}
-        <div className="mb-[40px] flex items-center gap-[12px] rounded-[10px] bg-blue-1 px-[20px] py-[16px]">
+        <div className="mb-[40px] flex items-center gap-[12px] rounded-xl border border-blue-5 bg-blue-1 px-[20px] py-[16px]">
           <div className="shrink-0 rounded-full bg-blue-7 p-[8px]">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
               <circle cx="12" cy="12" r="10" stroke="white" strokeWidth="2" />
@@ -259,7 +269,7 @@ export default async function RentalPage() {
           </div>
           <div>
             <p className="text-[13px] font-bold text-blue-8">렌탈료 산정 기준</p>
-            <p className="text-[12px] text-blue-7">
+            <p className="text-[12px] leading-[1.6] text-blue-6">
               표시된 월 렌탈료는 판매가 기준 36개월 분할 금액입니다. 실제 렌탈료는 업체별로 다를 수
               있습니다.
             </p>
@@ -278,7 +288,7 @@ export default async function RentalPage() {
                   <h2 className="text-[18px] font-extrabold text-gray-10 lg:text-[20px]">
                     {category}
                   </h2>
-                  <span className="rounded-full bg-gray-1 px-[8px] py-[2px] text-[12px] font-medium text-gray-6">
+                  <span className="rounded-full border border-gray-3 bg-gray-2 px-[8px] py-[2px] text-[12px] font-medium text-gray-6">
                     {catProducts.length}개
                   </span>
                 </div>
@@ -293,9 +303,9 @@ export default async function RentalPage() {
         ) : (
           <div className="flex items-center justify-center py-[100px]">
             <div className="text-center">
-              <div className="mx-auto flex h-[120px] w-[120px] items-center justify-center rounded-full bg-gray-1 lg:h-[160px] lg:w-[160px]">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2L12 22M2 12L22 12" stroke="#D9D9D9" strokeWidth="2" />
+              <div className="mx-auto flex h-[120px] w-[120px] items-center justify-center rounded-full bg-gray-2">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M8 20h24M20 8v24" stroke="#CEC3B4" strokeWidth="2.5" strokeLinecap="round" />
                 </svg>
               </div>
               <p className="mt-[20px] text-[14px] text-gray-7">
@@ -305,15 +315,15 @@ export default async function RentalPage() {
           </div>
         )}
 
-        {/* 렌탈 문의 CTA */}
-        <div className="mt-[20px] rounded-[16px] bg-gray-10 px-[24px] py-[32px] text-center">
-          <p className="text-[18px] font-extrabold text-white lg:text-[22px]">
+        {/* 렌탈 상담 CTA */}
+        <div className="mt-[20px] rounded-2xl bg-blue-7 px-[24px] py-[36px] text-center">
+          <p className="text-[18px] font-extrabold text-gray-1 lg:text-[22px]">
             렌탈 상담이 필요하신가요?
           </p>
-          <p className="mt-[8px] text-[14px] text-gray-4">
+          <p className="mt-[8px] text-[14px]" style={{ color: 'rgba(250,247,242,0.7)' }}>
             전문 상담사가 최적의 렌탈 플랜을 안내해 드립니다
           </p>
-          <button className="mt-[20px] rounded-[10px] bg-white px-[28px] py-[12px] text-[15px] font-bold text-gray-10 hover:bg-gray-1 transition-colors">
+          <button className="mt-[24px] rounded-xl border border-gray-3 bg-gray-1 px-[32px] py-[13px] text-[15px] font-bold text-blue-7 transition-colors hover:bg-gray-2">
             렌탈 상담 신청
           </button>
         </div>

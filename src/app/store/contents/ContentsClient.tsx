@@ -7,10 +7,10 @@ import type { ContentItem } from "./page";
 const CATEGORIES = ["전체", "구매가이드", "비교분석", "사용팁", "트렌드"];
 
 const CATEGORY_COLORS: Record<string, string> = {
-  "구매가이드": "bg-blue-7 text-white",
-  "비교분석": "bg-blue-8 text-white",
-  "사용팁": "bg-blue-5 text-gray-10",
-  "트렌드": "bg-blue-6 text-white",
+  "구매가이드": "bg-blue-1 text-blue-7",
+  "비교분석": "bg-blue-1 text-blue-7",
+  "사용팁": "bg-blue-1 text-blue-7",
+  "트렌드": "bg-blue-1 text-blue-7",
 };
 
 const THUMBNAIL_GRADIENTS: Record<string, string> = {
@@ -38,7 +38,7 @@ function ContentCard({ item }: { item: ContentItem }) {
 
   return (
     <Link href={`/store/contents/${item.id}`} className="block group">
-      <article className="overflow-hidden bg-white transition-shadow duration-200 group-hover:shadow-md group-hover:ring-1 group-hover:ring-blue-7/20 card-hover">
+      <article className="overflow-hidden bg-gray-1 border border-gray-3 rounded-[12px] transition-all duration-200 group-hover:border-blue-5 group-hover:shadow-[0_8px_20px_-4px_rgba(30,107,62,0.1)] card-hover">
         {/* 썸네일 */}
         <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
           {item.thumbnail ? (
@@ -130,7 +130,7 @@ export default function ContentsClient({ contents }: { contents: ContentItem[] }
               className={`shrink-0 px-[16px] py-[8px] rounded-full text-[13px] lg:text-[14px] font-medium transition-colors ${
                 activeCategory === cat
                   ? "bg-blue-7 text-white"
-                  : "bg-gray-2 text-gray-7 hover:bg-gray-3"
+                  : "bg-gray-1 border border-gray-3 text-gray-7 hover:border-gray-4 hover:bg-gray-2"
               }`}
             >
               {cat}

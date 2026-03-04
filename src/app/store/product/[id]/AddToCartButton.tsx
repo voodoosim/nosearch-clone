@@ -34,7 +34,7 @@ export default function AddToCartButton({
       <div className="flex flex-col gap-[10px]">
         <button
           disabled
-          className="w-full py-[16px] text-[16px] font-bold text-gray-5 bg-gray-3 rounded-[8px] cursor-not-allowed"
+          className="w-full h-[52px] text-[16px] font-bold text-gray-5 bg-gray-3 rounded-xl cursor-not-allowed"
         >
           품절
         </button>
@@ -44,18 +44,18 @@ export default function AddToCartButton({
 
   return (
     <div className="flex flex-col gap-[10px]">
-      <button className="w-full py-[16px] text-[16px] font-bold text-white bg-blue-7 rounded-[8px] hover:bg-blue-6 active:bg-blue-7 transition-colors">
+      <button className="w-full h-[52px] text-[16px] font-bold text-white bg-blue-7 rounded-xl hover:bg-blue-6 active:bg-blue-8 transition-colors btn-press">
         구매하기
       </button>
       <button
         onClick={handleAdd}
-        className={`w-full py-[14px] text-[15px] font-semibold rounded-[8px] transition-colors ${
+        className={`w-full h-[52px] text-[15px] font-semibold rounded-xl transition-colors btn-press ${
           added
             ? 'text-white bg-blue-7'
-            : 'text-blue-7 border-2 border-blue-7 hover:bg-blue-1'
+            : 'text-blue-7 border border-blue-7 bg-gray-1 hover:bg-blue-1'
         }`}
       >
-        {added ? '장바구니에 담았습니다' : '장바구니'}
+        {added ? '장바구니에 담았습니다 ✓' : '장바구니 담기'}
       </button>
     </div>
   );
