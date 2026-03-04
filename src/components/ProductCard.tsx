@@ -33,7 +33,7 @@ function getPickBadge(pickType: string): { label: string; className: string } | 
     case "plus":
       return { label: "PLUS", className: "bg-violet-600 text-white" };
     case "premium":
-      return { label: "PREMIUM", className: "text-white", style: "background:#B8860B" };
+      return { label: "PREMIUM", className: "bg-yellow-800 text-white" };
     default:
       return null;
   }
