@@ -52,14 +52,13 @@ export default function NotFound() {
         >
           스토어 홈
         </Link>
-        <button
-          type="button"
-          onClick={() => history.back()}
+        <Link
+          href="/store"
           className="w-full text-center px-[24px] py-[13px] rounded-[10px] border border-gray-3 text-gray-9 text-[14px] font-semibold hover:bg-gray-2 transition-colors"
           style={{ background: '#FAF7F2' }}
         >
-          이전 페이지
-        </button>
+          스토어로 가기
+        </Link>
       </div>
     </div>
   );
