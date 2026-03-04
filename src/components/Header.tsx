@@ -89,13 +89,10 @@ export default function Header() {
                       <Link href={item.href}>
                         <div className="flex h-[44px] w-[105px] cursor-pointer items-center justify-center">
                           <p
-                            className={`text-[16px] font-bold relative ${
+                            className={`text-[16px] font-bold ${
                               item.active ? "text-blue-7" : "text-gray-10"
                             }`}
                           >
-                            {item.badge && (
-                              <span className="absolute -top-[2px] -right-[8px] w-[6px] h-[6px] bg-red-500 rounded-full" />
-                            )}
                             {item.label}
                           </p>
                         </div>
