@@ -36,32 +36,30 @@ export default async function StoreHomePage() {
   return (
     <div className="mx-auto max-w-[1200px] pb-[80px] pt-[32px]">
       {SECTIONS.map((section) => (
-        <div key={section.title} className="mb-[60px]">
-          {/* 섹션 헤더 — 초록 띠 */}
-          <div className="mb-[24px] mx-[20px] lg:mx-[30px] rounded-2xl overflow-hidden" style={{ background: 'linear-gradient(135deg, #155530 0%, #257A48 100%)' }}>
-            <div className="px-[20px] py-[20px] lg:px-[28px] lg:py-[24px] flex items-center justify-between">
-              <div>
-                <span className="inline-block text-[11px] font-bold tracking-[0.15em] uppercase mb-[6px]" style={{ color: '#86EFAC' }}>
-                  {section.accent}
-                </span>
-                <h2 className="text-[22px] font-extrabold text-white lg:text-[26px] tracking-tight leading-none mb-[6px]">
-                  {section.title}
-                </h2>
-                <p className="text-[13px]" style={{ color: 'rgba(255,255,255,0.6)' }}>{section.description}</p>
-              </div>
-              <Link href={section.href}>
-                <div className="flex cursor-pointer items-center gap-[6px] rounded-xl px-[14px] py-[8px] transition-colors" style={{ background: 'rgba(255,255,255,0.12)' }}>
-                  <p className="text-[13px] font-medium text-white">더보기</p>
-                  <svg className="w-[14px] h-[14px] text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </Link>
+        <div key={section.title} className="mb-[64px]">
+          {/* 섹션 헤더 */}
+          <div className="mb-[20px] px-[20px] lg:px-[30px] flex items-end justify-between">
+            <div>
+              <p className="text-[11px] font-bold text-blue-7 tracking-[0.18em] uppercase mb-[6px]">
+                {section.accent}
+              </p>
+              <h2 className="text-[24px] font-extrabold text-gray-10 lg:text-[28px] tracking-tight leading-none">
+                {section.title}
+              </h2>
+              <p className="text-[13px] text-gray-5 mt-[6px]">{section.description}</p>
             </div>
+            <Link href={section.href}>
+              <div className="flex items-center gap-[4px] group pb-[2px]">
+                <span className="text-[13px] text-gray-6 group-hover:text-blue-7 transition-colors">전체보기</span>
+                <svg className="w-[13px] h-[13px] text-gray-5 group-hover:text-blue-7 transition-colors" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </Link>
           </div>
 
           {/* 상품 그리드 */}
-          <div className="grid grid-cols-2 gap-x-[12px] gap-y-[16px] px-[20px] lg:grid-cols-4 lg:gap-x-[20px] lg:gap-y-[24px] lg:px-[30px]">
+          <div className="grid grid-cols-2 gap-x-[10px] gap-y-[10px] px-[20px] lg:grid-cols-4 lg:gap-x-[16px] lg:gap-y-[16px] lg:px-[30px]">
             {section.products.slice(0, 8).map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}

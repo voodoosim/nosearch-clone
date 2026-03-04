@@ -50,7 +50,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <Link href={href} className="block group">
-      <article className="w-full overflow-hidden bg-gray-1 rounded-xl border border-gray-3 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_12px_32px_-8px_rgba(100,70,40,0.18)] group-hover:border-blue-5/40">
+      <article className="w-full overflow-hidden bg-gray-1 rounded-2xl transition-all duration-200 group-hover:-translate-y-[3px] group-hover:shadow-[0_8px_24px_-4px_rgba(0,0,0,0.12)]">
         {/* 이미지 영역 */}
         <div className="relative w-full bg-gray-2 overflow-hidden" style={{ aspectRatio: "1 / 1" }}>
           <Image
@@ -71,12 +71,6 @@ export default function ProductCard({ product }: { product: Product }) {
             </span>
           )}
 
-          {/* 할인율 뱃지 */}
-          {discount >= 5 && !isSoldOut && (
-            <span className="absolute top-[10px] right-[10px] px-[7px] py-[3px] text-[10px] font-extrabold text-white rounded-sm bg-red-5">
-              {discount}%
-            </span>
-          )}
 
           {/* 타이머 */}
           {!isSoldOut && product.periodDiscountEnd && (
@@ -96,36 +90,40 @@ export default function ProductCard({ product }: { product: Product }) {
         </div>
 
         {/* 정보 영역 */}
-        <div className="px-[12px] pt-[10px] pb-[14px] lg:px-[16px] lg:pt-[12px] lg:pb-[18px]">
+        <div className="px-[12px] pt-[10px] pb-[14px] lg:px-[14px] lg:pt-[12px] lg:pb-[16px]">
           {/* 브랜드 */}
-          <p className="text-[11px] font-medium text-blue-5 uppercase tracking-wide mb-[4px]">
+          <p className="text-[10px] font-semibold text-blue-7 uppercase tracking-widest mb-[4px] opacity-80">
             {product.brandName}
           </p>
 
           {/* 상품명 */}
-          <p className="text-[13px] lg:text-[15px] font-semibold text-gray-9 leading-[1.45] line-clamp-2 mb-[10px] group-hover:text-blue-7 transition-colors">
+          <p className="text-[13px] lg:text-[14px] font-medium text-gray-9 leading-[1.5] line-clamp-2 mb-[10px]">
             {product.goodsNm}
           </p>
 
           {/* 리뷰 */}
           {product.reviewCnt > 0 && (
-            <div className="flex items-center gap-[4px] mb-[8px]">
-              <span className="text-[11px] text-amber-600 font-bold">★ {product.reviewAvg.toFixed(1)}</span>
+            <div className="flex items-center gap-[3px] mb-[8px]">
+              <span className="text-[11px] text-amber-500">★</span>
+              <span className="text-[11px] font-semibold text-gray-7">{product.reviewAvg.toFixed(1)}</span>
               <span className="text-[11px] text-gray-5">({product.reviewCnt.toLocaleString()})</span>
             </div>
           )}
 
           {/* 가격 */}
-          <div className="flex items-baseline gap-[6px]">
+          <div className="flex items-baseline gap-[5px]">
             {discount > 0 && (
-              <span className="text-[12px] text-gray-5 line-through">
-                {formatPrice(product.fixedPrice)}원
+              <span className="text-[11px] text-gray-4 line-through">
+                {formatPrice(product.fixedPrice)}
               </span>
             )}
-            <span className="text-[18px] lg:text-[20px] font-extrabold text-gray-10 leading-none">
+            <span className="text-[17px] lg:text-[18px] font-extrabold text-gray-10 leading-none">
               {formatPrice(product.goodsPrice)}
-              <span className="text-[13px] font-semibold ml-[1px]">원</span>
+              <span className="text-[12px] font-medium ml-[1px]">원</span>
             </span>
+            {discount > 0 && (
+              <span className="text-[12px] font-bold text-blue-7">{discount}%</span>
+            )}
           </div>
         </div>
       </article>
