@@ -32,7 +32,7 @@ export default function StoreLayout({
               (주)스마트홈딜 | 대표: 서영준 | 사업자등록번호: 000-00-00000
             </p>
             <p className="text-[11px] text-gray-5 mt-[4px]">
-              Copyright 2024 NoSearch. All rights reserved.
+              Copyright 2026 스마트홈딜. All rights reserved.
             </p>
           </div>
         </div>

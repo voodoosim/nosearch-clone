@@ -82,8 +82,8 @@ const NAV_ITEMS = [
     ),
   },
   {
-    label: '휴대폰 비교',
-    href: 'https://bidding.nosearch.com/',
+    label: '마이페이지',
+    href: '/mypage',
     icon: (active: boolean) => (
       <svg
         className={`w-[22px] h-[22px] ${active ? 'text-blue-7' : 'text-gray-5'}`}

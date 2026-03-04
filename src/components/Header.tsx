@@ -9,12 +9,7 @@ const NAV_ITEMS = [
   { label: "카테고리", href: "/recommendation/item-list", active: false },
   { label: "구매가이드", href: "/contents/guide", active: false },
   { label: "스토어", href: "/store", active: true },
-  {
-    label: "휴대폰 견적비교",
-    href: "https://bidding.nosearch.com/",
-    active: false,
-    badge: true,
-  },
+  { label: "고객센터", href: "/store/contents", active: false },
 ];
 
 export default function Header() {

@@ -20,7 +20,7 @@ export default async function StoreHomePage() {
     {
       title: "공동구매",
       description: "스마트홈딜이 먼저 써보고 추천하는 최저가 공동구매",
-      href: "/store/nosearchDeal",
+      href: "/store/deal",
       products: dealProducts,
     },
     {

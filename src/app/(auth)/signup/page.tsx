@@ -71,7 +71,7 @@ export default function SignupPage() {
       // 가입은 성공했으나 자동 로그인 실패 시 로그인 페이지로
       router.push("/login");
     } else {
-      router.push("/store/nosearchDeal");
+      router.push("/store");
       router.refresh();
     }
   };

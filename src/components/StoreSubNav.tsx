@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 const STORE_TABS = [
   { label: "스토어홈", href: "/store" },
-  { label: "공동구매", href: "/store/nosearchDeal" },
+  { label: "공동구매", href: "/store/deal" },
   { label: "리뷰템", href: "/store/reviewTem" },
   { label: "타임딜", href: "/store/timedeal" },
   { label: "이번주 인기", href: "/store/best" },

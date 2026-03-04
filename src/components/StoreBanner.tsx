@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const BANNERS: Record<string, { src: string; alt: string }> = {
-  nosearchDeal: {
+  deal: {
     src: "/images/store_banner_nosearchDeal.png",
     alt: "스마트홈딜이 먼저 써보고 추천하는 가전제품 최저가 공동구매!",
   },
