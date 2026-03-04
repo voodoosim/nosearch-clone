@@ -7,14 +7,16 @@ import {
   getCategoryKeyLabel,
 } from '@/lib/products';
 
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: '스마트홈딜 추천',
   description:
     '스마트홈딜이 카테고리별로 엄선한 추천 상품을 만나보세요.',
 };
 
-export default function RecommendationPage() {
-  const groups = getProductsGroupedByCategory();
+export default async function RecommendationPage() {
+  const groups = await getProductsGroupedByCategory();
 
   return (
     <div className="mx-auto max-w-[1200px] px-[20px] pb-[150px] pt-[30px] lg:px-[30px]">

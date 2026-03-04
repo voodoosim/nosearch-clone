@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 import AuthProvider from "@/components/AuthProvider";
 import { CartProvider } from "@/components/CartProvider";
+import ChatWidget from "@/components/ChatWidget";
 import "./globals.css";
 
 const pretendard = localFont({
@@ -43,7 +44,10 @@ export default function RootLayout({
     <html lang="ko" className={pretendard.variable}>
       <body className={pretendard.className}>
         <AuthProvider>
-          <CartProvider>{children}</CartProvider>
+          <CartProvider>
+            {children}
+            <ChatWidget />
+          </CartProvider>
         </AuthProvider>
       </body>
     </html>

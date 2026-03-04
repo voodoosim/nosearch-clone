@@ -2,14 +2,15 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import StoreBanner from '@/components/StoreBanner';
 import type { Product } from '@/components/ProductCard';
-import products from '@/data/products-best.json';
+import { getAllProducts } from '@/lib/products';
+
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: '렌탈 상품',
   description: '부담 없이 시작하는 렌탈 상품을 확인하세요!',
 };
 
-// 렌탈 대상 카테고리 — 일반적으로 렌탈이 많은 품목
 const RENTAL_CATEGORY_KEYS = [
   'water_purifier',
   'bidet',
@@ -24,7 +25,6 @@ const RENTAL_CATEGORY_KEYS = [
   'garbage_disposer',
 ];
 
-// 렌탈 카테고리명 폴백
 const RENTAL_CATEGORY_NAMES = [
   '정수기',
   '비데',
@@ -182,8 +182,8 @@ function RentalBenefit({ icon, title, desc }: RentalBenefitProps) {
   );
 }
 
-export default function RentalPage() {
-  const allProducts = products as Product[];
+export default async function RentalPage() {
+  const allProducts = await getAllProducts();
 
   const rentalProducts: RentalProduct[] = allProducts
     .filter(

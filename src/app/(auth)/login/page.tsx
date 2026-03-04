@@ -26,7 +26,7 @@ export default function LoginPage() {
     setLoading(false);
 
     if (result?.error) {
-      setError("전화번호(이메일) 또는 비밀번호가 올바르지 않습니다.");
+      setError("이메일 또는 비밀번호가 올바르지 않습니다.");
     } else {
       router.push("/store/nosearchDeal");
       router.refresh();
@@ -37,7 +37,7 @@ export default function LoginPage() {
     <form onSubmit={handleSubmit} className="space-y-[12px]">
       <input
         type="text"
-        placeholder="전화번호 또는 이메일"
+        placeholder="이메일"
         value={identifier}
         onChange={(e) => setIdentifier(e.target.value)}
         className="h-[50px] w-full rounded-[8px] border border-white/20 bg-white/10 px-[16px] text-[16px] text-white placeholder:text-white/40 outline-none focus:border-blue-5"

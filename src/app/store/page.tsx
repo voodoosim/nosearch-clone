@@ -1,31 +1,36 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
-import type { Product } from "@/components/ProductCard";
-import dealProducts from "@/data/products-deal.json";
-import bestProducts from "@/data/products-best.json";
+import { getDealProducts, getBestProducts } from "@/lib/products";
+
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "스마트홈딜 스토어",
   description: "스마트홈딜이 엄선한 최고의 제품을 만나보세요!",
 };
 
-const SECTIONS = [
-  {
-    title: "공동구매",
-    description: "스마트홈딜이 먼저 써보고 추천하는 최저가 공동구매",
-    href: "/store/nosearchDeal",
-    products: dealProducts as Product[],
-  },
-  {
-    title: "이번주 인기",
-    description: "이번주 가장 많이 팔린 인기 상품",
-    href: "/store/best",
-    products: bestProducts as Product[],
-  },
-];
+export default async function StoreHomePage() {
+  const [dealProducts, bestProducts] = await Promise.all([
+    getDealProducts(),
+    getBestProducts(),
+  ]);
 
-export default function StoreHomePage() {
+  const SECTIONS = [
+    {
+      title: "공동구매",
+      description: "스마트홈딜이 먼저 써보고 추천하는 최저가 공동구매",
+      href: "/store/nosearchDeal",
+      products: dealProducts,
+    },
+    {
+      title: "이번주 인기",
+      description: "이번주 가장 많이 팔린 인기 상품",
+      href: "/store/best",
+      products: bestProducts,
+    },
+  ];
+
   return (
     <div className="mx-auto max-w-[1200px] pb-[150px] pt-[30px]">
       {SECTIONS.map((section) => (

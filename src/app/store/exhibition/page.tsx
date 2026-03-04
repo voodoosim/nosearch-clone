@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import ProductCard from '@/components/ProductCard';
 import type { Product } from '@/components/ProductCard';
-import products from '@/data/products-best.json';
+import { getAllProducts } from '@/lib/products';
+
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: '기획전',
@@ -73,9 +74,8 @@ const EXHIBITIONS: Exhibition[] = [
   },
 ];
 
-function getProductsForExhibition(exhibition: Exhibition): Product[] {
-  const all = products as Product[];
-  return all.filter(
+function getProductsForExhibition(exhibition: Exhibition, allProducts: Product[]): Product[] {
+  return allProducts.filter(
     (p) =>
       exhibition.categoryKeys.includes(p.productCategoryKey || '') ||
       exhibition.categoryNames.includes(p.categoryName),
@@ -166,10 +166,12 @@ function ExhibitionSection({ exhibition, products: sectionProducts, index }: Exh
   );
 }
 
-export default function ExhibitionPage() {
+export default async function ExhibitionPage() {
+  const allProducts = await getAllProducts();
+
   const exhibitionsWithProducts = EXHIBITIONS.map((exhibition) => ({
     exhibition,
-    products: getProductsForExhibition(exhibition),
+    products: getProductsForExhibition(exhibition, allProducts),
   })).filter(({ products: p }) => p.length > 0);
 
   return (

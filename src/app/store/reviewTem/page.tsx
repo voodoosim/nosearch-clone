@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import StoreBanner from "@/components/StoreBanner";
 import ProductCard from "@/components/ProductCard";
-import type { Product } from "@/components/ProductCard";
-import products from "@/data/products-review.json";
+import { getReviewProducts } from "@/lib/products";
+
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "스마트홈딜이 직접 써보고 추천하는 리뷰템",
   description: "스마트홈딜이 직접 사용해보고 추천하는 리뷰템을 만나보세요!",
 };
 
-export default function ReviewTemPage() {
+export default async function ReviewTemPage() {
+  const products = await getReviewProducts();
+
   return (
     <div>
       <StoreBanner type="reviewTem" />
@@ -23,7 +26,7 @@ export default function ReviewTemPage() {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-x-[16px] gap-y-[30px] lg:grid-cols-4 lg:gap-x-[20px] lg:gap-y-[50px]">
-          {(products as Product[]).map((product) => (
+          {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>

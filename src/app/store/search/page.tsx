@@ -1,38 +1,7 @@
-import ProductCard, { Product } from '@/components/ProductCard';
-import bestData from '@/data/products-best.json';
-import dealData from '@/data/products-deal.json';
-import timedeaData from '@/data/products-timedeal.json';
-import reviewData from '@/data/products-review.json';
+import ProductCard from '@/components/ProductCard';
+import { searchProducts } from '@/lib/products';
 
-const ALL_PRODUCTS: Product[] = [
-  ...(bestData as Product[]),
-  ...(dealData as Product[]),
-  ...(timedeaData as Product[]),
-  ...(reviewData as Product[]),
-];
-
-function deduplicateProducts(products: Product[]): Product[] {
-  const seen = new Set<string>();
-  return products.filter((p) => {
-    const key = p.goodsNo || p.id;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
-}
-
-function searchProducts(query: string): Product[] {
-  const q = query.trim().toLowerCase();
-  if (!q) return [];
-
-  return deduplicateProducts(
-    ALL_PRODUCTS.filter((p) =>
-      p.goodsNm.toLowerCase().includes(q) ||
-      p.brandName.toLowerCase().includes(q) ||
-      p.categoryName.toLowerCase().includes(q)
-    )
-  );
-}
+export const revalidate = 60;
 
 interface SearchPageProps {
   searchParams: Promise<{ q?: string }>;
@@ -40,7 +9,7 @@ interface SearchPageProps {
 
 export default async function SearchPage({ searchParams }: SearchPageProps) {
   const { q = '' } = await searchParams;
-  const results = searchProducts(q);
+  const results = await searchProducts(q);
 
   return (
     <div className="mx-auto max-w-[1200px] px-[20px] py-[32px]">

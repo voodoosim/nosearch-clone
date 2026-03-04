@@ -1,7 +1,6 @@
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
-import { compare } from "bcryptjs";
-import { prisma } from "@/lib/prisma";
+import { createPB } from "@/lib/pocketbase";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [
@@ -18,23 +17,21 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
         if (!identifier || !password) return null;
 
-        const user = await prisma.user.findFirst({
-          where: {
-            OR: [{ email: identifier }, { phone: identifier }],
-          },
-        });
+        try {
+          const pb = createPB();
+          const authData = await pb.collection('users').authWithPassword(
+            identifier,
+            password,
+          );
 
-        if (!user) return null;
-
-        const isValid = await compare(password, user.password);
-        if (!isValid) return null;
-
-        return {
-          id: user.id,
-          name: user.name,
-          email: user.email,
-          phone: user.phone,
-        };
+          return {
+            id: authData.record.id,
+            name: authData.record['name'] as string || '',
+            email: authData.record.email || '',
+          };
+        } catch {
+          return null;
+        }
       },
     }),
   ],
@@ -45,14 +42,12 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     jwt({ token, user }) {
       if (user) {
         token.id = user.id;
-        token.phone = (user as { phone?: string }).phone;
       }
       return token;
     },
     session({ session, token }) {
       if (session.user) {
         session.user.id = token.id as string;
-        (session.user as { phone?: string }).phone = token.phone as string;
       }
       return session;
     },

@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import StoreBanner from "@/components/StoreBanner";
 import ProductCard from "@/components/ProductCard";
-import type { Product } from "@/components/ProductCard";
-import products from "@/data/products-best.json";
+import { getBestProducts } from "@/lib/products";
+
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "이번주 인기 상품",
   description: "이번주 가장 인기있는 상품을 확인하세요!",
 };
 
-export default function BestPage() {
+export default async function BestPage() {
+  const products = await getBestProducts();
+
   return (
     <div>
       <StoreBanner type="best" />
@@ -23,7 +26,7 @@ export default function BestPage() {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-x-[16px] gap-y-[30px] lg:grid-cols-4 lg:gap-x-[20px] lg:gap-y-[50px]">
-          {(products as Product[]).map((product) => (
+          {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>

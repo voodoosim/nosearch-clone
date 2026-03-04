@@ -1,45 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import bestProducts from '@/data/products-best.json';
-import dealProducts from '@/data/products-deal.json';
-import timedealProducts from '@/data/products-timedeal.json';
-import reviewProducts from '@/data/products-review.json';
+import { getProductById } from '@/lib/products';
 import AddToCartButton from './AddToCartButton';
 
-interface Product {
-  id: string;
-  goodsNo: string;
-  goodsNm: string;
-  brandName: string;
-  categoryName: string;
-  goodsPrice: number;
-  fixedPrice: number;
-  imageUrl: string;
-  pickType: string;
-  soldOutFl: string;
-  reviewAvg: number;
-  reviewCnt: number;
-  productCategoryKey?: string;
-  periodDiscountEnd?: string;
-  isTimedeal?: boolean;
-}
-
-function getAllProducts(): Product[] {
-  const all = [
-    ...(bestProducts as Product[]),
-    ...(dealProducts as Product[]),
-    ...(timedealProducts as Product[]),
-    ...(reviewProducts as Product[]),
-  ];
-  const seen = new Set<string>();
-  return all.filter((p) => {
-    const key = p.goodsNo || p.id;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
-}
+export const revalidate = 60;
 
 function formatPrice(price: number): string {
   return price.toLocaleString('ko-KR');
@@ -118,8 +83,7 @@ export default async function ProductDetailPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const products = getAllProducts();
-  const product = products.find((p) => p.goodsNo === id || p.id === id);
+  const product = await getProductById(id);
 
   if (!product) notFound();
 
@@ -142,7 +106,7 @@ export default async function ProductDetailPage({
         <span className="text-gray-9">{product.categoryName}</span>
       </nav>
 
-      {/* 메인 콘텐츠 — 모바일: 1컬럼, 데스크탑: 2컬럼 */}
+      {/* 메인 콘텐츠 */}
       <div className="flex flex-col gap-[24px] lg:flex-row lg:gap-[48px]">
         {/* 이미지 영역 */}
         <div className="w-full lg:w-[520px] lg:shrink-0">

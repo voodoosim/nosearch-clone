@@ -9,6 +9,8 @@ import {
   getCategoryKeyLabel,
 } from '@/lib/products';
 
+export const revalidate = 60;
+
 interface PageProps {
   params: Promise<{ category: string }>;
 }
@@ -43,7 +45,7 @@ export default async function CategoryPage({ params }: PageProps) {
     notFound();
   }
 
-  const products = getProductsByRecommendationCategory(categoryKey);
+  const products = await getProductsByRecommendationCategory(categoryKey);
 
   // 서브카테고리별 그룹화
   const subGroups = category.keys

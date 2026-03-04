@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import StoreBanner from "@/components/StoreBanner";
 import ProductCard from "@/components/ProductCard";
-import type { Product } from "@/components/ProductCard";
-import products from "@/data/products-timedeal.json";
+import { getTimedealProducts } from "@/lib/products";
+
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "놓치면 후회할 타임딜",
   description: "한정 시간 특가! 놓치면 후회할 타임딜 상품을 확인하세요.",
 };
 
-export default function TimedealPage() {
+export default async function TimedealPage() {
+  const products = await getTimedealProducts();
+
   return (
     <div>
       <StoreBanner type="timedeal" />
@@ -23,7 +26,7 @@ export default function TimedealPage() {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-x-[16px] gap-y-[30px] lg:grid-cols-4 lg:gap-x-[20px] lg:gap-y-[50px]">
-          {(products as Product[]).map((product) => (
+          {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>

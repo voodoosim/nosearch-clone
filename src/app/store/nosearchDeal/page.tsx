@@ -1,30 +1,31 @@
 import type { Metadata } from "next";
 import StoreBanner from "@/components/StoreBanner";
 import ProductCard from "@/components/ProductCard";
-import type { Product } from "@/components/ProductCard";
-import products from "@/data/products-deal.json";
+import { getDealProducts } from "@/lib/products";
+
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "스마트홈딜이 먼저 써보고 추천하는 가전제품 최저가 공동구매!",
   description: "온라인 최저가 이하 특가상품 가전제품 공동구매 기회를 놓치지 마세요!",
 };
 
-export default function NosearchDealPage() {
-  // 원본 사이트처럼 활성 딜만 표시 (최대 6개)
-  const dealProducts = (products as Product[]).slice(0, 6);
+export default async function NosearchDealPage() {
+  const products = await getDealProducts();
+  const dealProducts = products.slice(0, 6);
 
   return (
     <div>
       <StoreBanner type="nosearchDeal" />
 
-      {/* 스마트홈딜 공동구매 버튼 — 원본: 650px 풀너비 중앙정렬 */}
+      {/* 스마트홈딜 공동구매 버튼 */}
       <div className="mx-auto max-w-[1200px] px-[20px] pt-[20px]">
         <button className="mx-auto flex h-[44px] w-full max-w-[650px] items-center justify-center rounded-[10px] border border-blue-7 bg-white text-[15px] font-bold text-blue-7">
           스마트홈딜 공동구매
         </button>
       </div>
 
-      {/* 상품 그리드 — 원본: grid 2열 580px, gap-y 50px */}
+      {/* 상품 그리드 */}
       <div className="mx-auto max-w-[1200px] px-[20px] pb-[150px] pt-[30px]">
         <div
           className="grid grid-cols-1 gap-y-[30px] lg:grid-cols-2 lg:gap-x-[40px]"
