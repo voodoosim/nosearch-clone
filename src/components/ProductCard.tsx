@@ -39,7 +39,7 @@ function getPickBadge(pickType: string): { label: string; className: string } | 
   }
 }
 
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({ product, rank }: { product: Product; rank?: number }) {
   const isSoldOut = product.soldOutFl === "y";
   const badge = getPickBadge(product.pickType);
   const discount = product.fixedPrice > product.goodsPrice
@@ -50,9 +50,9 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <Link href={href} className="block group">
-      <article className="w-full overflow-hidden bg-gray-1 rounded-2xl transition-all duration-200 group-hover:-translate-y-[3px] group-hover:shadow-[0_8px_24px_-4px_rgba(0,0,0,0.12)]">
+      <article className="w-full overflow-hidden bg-gray-1 rounded-2xl border border-gray-3 transition-all duration-200 group-hover:-translate-y-[3px] group-hover:shadow-[0_10px_28px_-6px_rgba(30,107,62,0.12)] group-hover:border-blue-5">
         {/* 이미지 영역 */}
-        <div className="relative w-full bg-gray-2 overflow-hidden" style={{ aspectRatio: "1 / 1" }}>
+        <div className="relative w-full bg-[#F5F1EB] overflow-hidden" style={{ aspectRatio: "1 / 1" }}>
           <Image
             src={product.imageUrl}
             alt={product.goodsNm}
@@ -61,20 +61,33 @@ export default function ProductCard({ product }: { product: Product }) {
             sizes="(max-width: 1024px) 50vw, 300px"
           />
 
-          {/* 뱃지 */}
-          {badge && !isSoldOut && (
-            <span
-              className={`absolute top-[10px] left-[10px] px-[7px] py-[3px] text-[10px] font-bold tracking-wider rounded-sm ${badge.className}`}
-              style={(badge as { label: string; className: string; style?: string }).style ? { background: '#B8860B' } : undefined}
+          {/* 랭킹 번호 */}
+          {rank && !isSoldOut && (
+            <div
+              className="absolute top-[8px] left-[8px] w-[26px] h-[26px] flex items-center justify-center rounded-full text-[11px] font-extrabold text-white"
+              style={{ background: rank <= 3 ? '#1E6B3E' : '#2A1F14' }}
             >
+              {rank}
+            </div>
+          )}
+
+          {/* 픽 뱃지 */}
+          {badge && !isSoldOut && !rank && (
+            <span className={`absolute top-[10px] left-[10px] px-[7px] py-[3px] text-[10px] font-bold tracking-wider rounded-sm ${badge.className}`}>
               {badge.label}
             </span>
           )}
 
+          {/* 할인율 뱃지 */}
+          {discount >= 10 && !isSoldOut && (
+            <span className="absolute top-[10px] right-[10px] px-[7px] py-[3px] text-[10px] font-extrabold text-white rounded-sm" style={{ background: '#C0392B' }}>
+              -{discount}%
+            </span>
+          )}
 
           {/* 타이머 */}
           {!isSoldOut && product.periodDiscountEnd && (
-            <div className="absolute bottom-0 left-0 right-0 bg-gray-10/80 py-[5px] text-center">
+            <div className="absolute bottom-0 left-0 right-0 py-[5px] text-center" style={{ background: 'rgba(42,31,20,0.82)' }}>
               <span className="text-[11px] font-bold text-white">
                 <CountdownTimer endDate={product.periodDiscountEnd} />
               </span>
@@ -92,7 +105,7 @@ export default function ProductCard({ product }: { product: Product }) {
         {/* 정보 영역 */}
         <div className="px-[12px] pt-[10px] pb-[14px] lg:px-[14px] lg:pt-[12px] lg:pb-[16px]">
           {/* 브랜드 */}
-          <p className="text-[10px] font-semibold text-blue-7 uppercase tracking-widest mb-[4px] opacity-80">
+          <p className="text-[10px] font-bold text-blue-7 uppercase tracking-widest mb-[4px]">
             {product.brandName}
           </p>
 
@@ -111,7 +124,7 @@ export default function ProductCard({ product }: { product: Product }) {
           )}
 
           {/* 가격 */}
-          <div className="flex items-baseline gap-[5px]">
+          <div className="flex items-baseline gap-[5px] flex-wrap">
             {discount > 0 && (
               <span className="text-[11px] text-gray-4 line-through">
                 {formatPrice(product.fixedPrice)}
@@ -121,9 +134,6 @@ export default function ProductCard({ product }: { product: Product }) {
               {formatPrice(product.goodsPrice)}
               <span className="text-[12px] font-medium ml-[1px]">원</span>
             </span>
-            {discount > 0 && (
-              <span className="text-[12px] font-bold text-blue-7">{discount}%</span>
-            )}
           </div>
         </div>
       </article>
