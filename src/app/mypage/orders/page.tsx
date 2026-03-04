@@ -3,11 +3,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-export const metadata = {
-  title: '주문내역 | 스마트홈딜',
-  description: '나의 주문내역을 확인하세요.',
-};
-
 type OrderStatus = '전체' | '결제완료' | '배송중' | '배송완료' | '취소환불';
 
 const STATUS_TABS: OrderStatus[] = ['전체', '결제완료', '배송중', '배송완료', '취소환불'];
