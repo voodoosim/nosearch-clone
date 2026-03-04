@@ -31,8 +31,8 @@ export default function Header() {
     <header>
       <div className="sticky top-0 z-[500]">
         <div
-          className="flex h-[56px] items-center border-b border-gray-3/60 bg-white/95 px-[20px] lg:h-[80px]"
-          style={{ backdropFilter: 'blur(12px)', boxShadow: '0 1px 8px 0 rgba(0,0,0,0.06)' }}
+          className="flex h-[56px] items-center border-b border-white/8 px-[20px] lg:h-[80px]"
+          style={{ background: 'rgba(22,22,22,0.97)', backdropFilter: 'blur(16px)', boxShadow: '0 1px 0 0 rgba(255,255,255,0.06)' }}
         >
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
@@ -45,19 +45,19 @@ export default function Header() {
               fill="none"
               className="hidden lg:block"
             >
-              <path d="M4 18 L20 4 L36 18" stroke="#1A5540" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-              <rect x="8" y="18" width="24" height="16" rx="1" stroke="#1A5540" strokeWidth="2.5" />
-              <rect x="15" y="24" width="10" height="10" rx="1" fill="#1A5540" />
-              <rect x="26" y="8" width="4" height="8" rx="1" fill="#1A5540" />
-              <path d="M17 13.5 Q20 11 23 13.5" stroke="#1A5540" strokeWidth="1.8" strokeLinecap="round" opacity="0.7" />
-              <circle cx="20" cy="15.5" r="1" fill="#1A5540" />
+              <path d="M4 18 L20 4 L36 18" stroke="#2DB670" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              <rect x="8" y="18" width="24" height="16" rx="1" stroke="#2DB670" strokeWidth="2.5" />
+              <rect x="15" y="24" width="10" height="10" rx="1" fill="#2DB670" />
+              <rect x="26" y="8" width="4" height="8" rx="1" fill="#2DB670" />
+              <path d="M17 13.5 Q20 11 23 13.5" stroke="#2DB670" strokeWidth="1.8" strokeLinecap="round" opacity="0.7" />
+              <circle cx="20" cy="15.5" r="1" fill="#2DB670" />
               <text
                 x="46"
                 y="28"
                 fontFamily="'Pretendard', 'Noto Sans KR', sans-serif"
                 fontSize="18"
                 fontWeight="700"
-                fill="#181818"
+                fill="#F0F0F0"
                 letterSpacing="-0.5"
               >스마트홈딜</text>
             </svg>
@@ -71,12 +71,12 @@ export default function Header() {
               fill="none"
               className="block lg:hidden"
             >
-              <path d="M4 20 L20 4 L36 20" stroke="#1A5540" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
-              <rect x="8" y="20" width="24" height="16" rx="1.5" stroke="#1A5540" strokeWidth="2.8" />
-              <rect x="14.5" y="26" width="11" height="10" rx="1" fill="#1A5540" />
-              <rect x="26" y="8" width="4.5" height="9" rx="1" fill="#1A5540" />
-              <path d="M16.5 15 Q20 12 23.5 15" stroke="#1A5540" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
-              <circle cx="20" cy="17.5" r="1.2" fill="#1A5540" />
+              <path d="M4 20 L20 4 L36 20" stroke="#2DB670" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
+              <rect x="8" y="20" width="24" height="16" rx="1.5" stroke="#2DB670" strokeWidth="2.8" />
+              <rect x="14.5" y="26" width="11" height="10" rx="1" fill="#2DB670" />
+              <rect x="26" y="8" width="4.5" height="9" rx="1" fill="#2DB670" />
+              <path d="M16.5 15 Q20 12 23.5 15" stroke="#2DB670" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
+              <circle cx="20" cy="17.5" r="1.2" fill="#2DB670" />
             </svg>
           </Link>
 
@@ -106,15 +106,15 @@ export default function Header() {
 
             {/* Search Bar */}
             <section className="flex-1 px-[16px] lg:ml-[16px] lg:mr-[32px] lg:mt-[2px]">
-              <div className="flex w-full items-center justify-center bg-white">
+              <div className="flex w-full items-center justify-center">
                 <form
                   onSubmit={handleSearch}
-                  className="flex w-full flex-1 items-center justify-center bg-gray-1 px-[14px] h-[40px] rounded-full border border-gray-3 transition-shadow focus-within:shadow-sm focus-within:border-blue-5"
+                  className="flex w-full flex-1 items-center justify-center bg-gray-1 px-[14px] h-[40px] rounded-full border border-gray-3 transition-all focus-within:border-blue-7 focus-within:bg-gray-2"
                 >
                   <input
                     name="q"
                     placeholder="어떤 제품을 찾으시나요?"
-                    className="h-full w-full bg-transparent text-[14px] placeholder:text-gray-5 focus:outline-none"
+                    className="h-full w-full bg-transparent text-[14px] text-gray-10 placeholder:text-gray-5 focus:outline-none"
                   />
                   <button type="submit" className="pl-[8px] shrink-0 text-gray-5 hover:text-blue-7 transition-colors">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -132,7 +132,7 @@ export default function Header() {
                 <li>
                   <Link href="/store/cart">
                     <div className="relative flex items-center px-[12px] py-[6px] rounded-lg hover:bg-gray-1 cursor-pointer transition-colors">
-                      <svg width="22" height="22" viewBox="0 0 24 25" fill="none" className="text-gray-9">
+                      <svg width="22" height="22" viewBox="0 0 24 25" fill="none" className="text-gray-7">
                         <path d="M3.47169 1.33325V0.833252H3.89323L3.9645 1.24872L3.47169 1.33325ZM4.27221 5.99992L3.78082 6.09264L3.77941 6.08445L4.27221 5.99992ZM21.3776 16.8726L21.8669 16.9756L21.3776 16.8726ZM6.31994 16.852L6.81127 16.7593L6.31994 16.852ZM7.3026 17.1666H20.3991V18.1666H7.3026V17.1666Z" fill="currentColor" />
                         <circle r="1.83333" cx="18.9999" cy="22.3333" stroke="currentColor" strokeWidth="1.3" />
                         <circle r="1.83333" cx="8.49992" cy="22.3333" stroke="currentColor" strokeWidth="1.3" />
@@ -150,7 +150,7 @@ export default function Header() {
                     href="/mypage"
                     className="flex items-center px-[12px] py-[6px] rounded-lg hover:bg-gray-1 cursor-pointer transition-colors"
                   >
-                    <p className="text-[13px] font-semibold text-gray-9">마이페이지</p>
+                    <p className="text-[13px] font-semibold text-gray-7">마이페이지</p>
                   </Link>
                 </li>
                 <li>
@@ -159,7 +159,7 @@ export default function Header() {
                       onClick={() => signOut({ callbackUrl: "/" })}
                       className="flex items-center px-[12px] py-[6px] rounded-lg hover:bg-gray-1 cursor-pointer transition-colors"
                     >
-                      <p className="text-[13px] font-semibold text-gray-6">로그아웃</p>
+                      <p className="text-[13px] font-semibold text-gray-5">로그아웃</p>
                     </button>
                   ) : (
                     <Link
