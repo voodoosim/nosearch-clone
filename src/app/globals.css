@@ -8,12 +8,12 @@
   --color-background: #F0EAE0;
   --color-foreground: #2A1F14;
 
-  /* 스마트홈딜 — 베이지 웜톤 테마 */
-  --color-blue-7: #7C4F2A;
-  --color-blue-6: #9A6235;
-  --color-blue-5: #B87A4A;
-  --color-blue-1: #F5ECD9;
-  --color-blue-8: #5E3A1E;
+  /* 스마트홈딜 — 베이지 + 그린 액센트 */
+  --color-blue-7: #1E6B3E;
+  --color-blue-6: #257A48;
+  --color-blue-5: #35A062;
+  --color-blue-1: #E8F5EE;
+  --color-blue-8: #155530;
 
   /* 베이지 서피스 */
   --color-gray-1: #FAF7F2;
@@ -28,7 +28,7 @@
 
   --color-red-4: #C0392B;
   --color-red-5: #C0392B;
-  --color-primary: #7C4F2A;
+  --color-primary: #1E6B3E;
   --color-gold: #C9933A;
   --color-gold-light: #F5E6C8;
 }

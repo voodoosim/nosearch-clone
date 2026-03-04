@@ -37,27 +37,27 @@ export default async function StoreHomePage() {
     <div className="mx-auto max-w-[1200px] pb-[80px] pt-[32px]">
       {SECTIONS.map((section) => (
         <div key={section.title} className="mb-[60px]">
-          {/* 섹션 헤더 */}
-          <div className="mb-[24px] flex items-end justify-between px-[20px] lg:px-[30px]">
-            <div>
-              <div className="flex items-center gap-[10px] mb-[4px]">
-                <span className="inline-flex items-center px-[8px] py-[2px] rounded-sm text-[10px] font-bold text-white bg-blue-7 tracking-wide">
+          {/* 섹션 헤더 — 초록 띠 */}
+          <div className="mb-[24px] mx-[20px] lg:mx-[30px] rounded-2xl overflow-hidden" style={{ background: 'linear-gradient(135deg, #155530 0%, #257A48 100%)' }}>
+            <div className="px-[20px] py-[20px] lg:px-[28px] lg:py-[24px] flex items-center justify-between">
+              <div>
+                <span className="inline-block text-[11px] font-bold tracking-[0.15em] uppercase mb-[6px]" style={{ color: '#86EFAC' }}>
                   {section.accent}
                 </span>
-                <h2 className="text-[22px] font-extrabold text-gray-10 lg:text-[26px] tracking-tight">
+                <h2 className="text-[22px] font-extrabold text-white lg:text-[26px] tracking-tight leading-none mb-[6px]">
                   {section.title}
                 </h2>
+                <p className="text-[13px]" style={{ color: 'rgba(255,255,255,0.6)' }}>{section.description}</p>
               </div>
-              <p className="text-[13px] text-gray-6">{section.description}</p>
+              <Link href={section.href}>
+                <div className="flex cursor-pointer items-center gap-[6px] rounded-xl px-[14px] py-[8px] transition-colors" style={{ background: 'rgba(255,255,255,0.12)' }}>
+                  <p className="text-[13px] font-medium text-white">더보기</p>
+                  <svg className="w-[14px] h-[14px] text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </Link>
             </div>
-            <Link href={section.href}>
-              <div className="flex cursor-pointer items-center gap-[4px] group">
-                <p className="text-[13px] text-gray-6 group-hover:text-blue-7 transition-colors">더보기</p>
-                <svg className="w-[14px] h-[14px] text-gray-5 group-hover:text-blue-7 transition-colors" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
           </div>
 
           {/* 상품 그리드 */}

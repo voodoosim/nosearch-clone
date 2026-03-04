@@ -45,12 +45,12 @@ export default function Header() {
               fill="none"
               className="hidden lg:block"
             >
-              <path d="M4 18 L20 4 L36 18" stroke="#7C4F2A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-              <rect x="8" y="18" width="24" height="16" rx="1" stroke="#7C4F2A" strokeWidth="2.5" />
-              <rect x="15" y="24" width="10" height="10" rx="1" fill="#7C4F2A" />
-              <rect x="26" y="8" width="4" height="8" rx="1" fill="#7C4F2A" />
-              <path d="M17 13.5 Q20 11 23 13.5" stroke="#7C4F2A" strokeWidth="1.8" strokeLinecap="round" opacity="0.7" />
-              <circle cx="20" cy="15.5" r="1" fill="#7C4F2A" />
+              <path d="M4 18 L20 4 L36 18" stroke="#1E6B3E" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              <rect x="8" y="18" width="24" height="16" rx="1" stroke="#1E6B3E" strokeWidth="2.5" />
+              <rect x="15" y="24" width="10" height="10" rx="1" fill="#1E6B3E" />
+              <rect x="26" y="8" width="4" height="8" rx="1" fill="#1E6B3E" />
+              <path d="M17 13.5 Q20 11 23 13.5" stroke="#1E6B3E" strokeWidth="1.8" strokeLinecap="round" opacity="0.7" />
+              <circle cx="20" cy="15.5" r="1" fill="#1E6B3E" />
               <text
                 x="46"
                 y="28"
@@ -71,12 +71,12 @@ export default function Header() {
               fill="none"
               className="block lg:hidden"
             >
-              <path d="M4 20 L20 4 L36 20" stroke="#7C4F2A" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
-              <rect x="8" y="20" width="24" height="16" rx="1.5" stroke="#7C4F2A" strokeWidth="2.8" />
-              <rect x="14.5" y="26" width="11" height="10" rx="1" fill="#7C4F2A" />
-              <rect x="26" y="8" width="4.5" height="9" rx="1" fill="#7C4F2A" />
-              <path d="M16.5 15 Q20 12 23.5 15" stroke="#7C4F2A" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
-              <circle cx="20" cy="17.5" r="1.2" fill="#7C4F2A" />
+              <path d="M4 20 L20 4 L36 20" stroke="#1E6B3E" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
+              <rect x="8" y="20" width="24" height="16" rx="1.5" stroke="#1E6B3E" strokeWidth="2.8" />
+              <rect x="14.5" y="26" width="11" height="10" rx="1" fill="#1E6B3E" />
+              <rect x="26" y="8" width="4.5" height="9" rx="1" fill="#1E6B3E" />
+              <path d="M16.5 15 Q20 12 23.5 15" stroke="#1E6B3E" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
+              <circle cx="20" cy="17.5" r="1.2" fill="#1E6B3E" />
             </svg>
           </Link>
 

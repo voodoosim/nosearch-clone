@@ -20,9 +20,9 @@ export default function StoreLayout({
               <div>
                 <div className="flex items-center gap-[8px] mb-[8px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40" fill="none">
-                    <path d="M4 20 L20 4 L36 20" stroke="#7C4F2A" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
-                    <rect x="8" y="20" width="24" height="16" rx="1.5" stroke="#7C4F2A" strokeWidth="2.8" />
-                    <rect x="14.5" y="26" width="11" height="10" rx="1" fill="#7C4F2A" />
+                    <path d="M4 20 L20 4 L36 20" stroke="#1E6B3E" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
+                    <rect x="8" y="20" width="24" height="16" rx="1.5" stroke="#1E6B3E" strokeWidth="2.8" />
+                    <rect x="14.5" y="26" width="11" height="10" rx="1" fill="#1E6B3E" />
                   </svg>
                   <p className="text-[15px] font-bold text-gray-10">스마트홈딜</p>
                 </div>
