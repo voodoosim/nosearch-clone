@@ -18,10 +18,10 @@ interface ContentItem {
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
-  "구매가이드": "bg-blue-7 text-white",
-  "비교분석": "bg-blue-8 text-white",
-  "사용팁": "bg-blue-5 text-gray-10",
-  "트렌드": "bg-blue-6 text-white",
+  "구매가이드": "bg-blue-1 text-blue-7",
+  "비교분석": "bg-blue-1 text-blue-7",
+  "사용팁": "bg-blue-1 text-blue-7",
+  "트렌드": "bg-blue-1 text-blue-7",
 };
 
 function formatViews(views: number): string {
@@ -73,7 +73,7 @@ export default async function ContentDetailPage({
       {/* 상단 네비게이션 */}
       <div className="px-[20px] lg:px-[30px] mb-[20px]">
         <div className="flex items-center gap-[6px] text-[12px] text-gray-6">
-          <Link href="/store/contents" className="hover:text-blue-7 transition-colors">
+          <Link href="/store/contents" className="text-gray-6 hover:text-blue-7 transition-colors">
             가이드
           </Link>
           <span>&gt;</span>
@@ -137,7 +137,7 @@ export default async function ContentDetailPage({
       <div className="px-[20px] lg:px-[30px]">
         <div className="border-t border-gray-3 pt-[30px]">
           <div className="mb-[20px]">
-            <p className="text-[18px] lg:text-[22px] font-extrabold text-gray-10">
+            <p className="text-[18px] lg:text-[22px] font-extrabold text-blue-7">
               관련 추천 상품
             </p>
             <p className="text-[12px] text-gray-7 mt-[4px]">

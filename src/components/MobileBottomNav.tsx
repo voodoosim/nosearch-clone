@@ -106,8 +106,8 @@ export default function MobileBottomNav() {
   return (
     <nav className='lg:hidden'>
       <ul
-        className='fixed bottom-0 z-[999] flex w-full items-center justify-around border-t border-gray-3 bg-gray-1/97'
-        style={{ backdropFilter: 'blur(12px)', paddingBottom: 'env(safe-area-inset-bottom)' }}
+        className='fixed bottom-0 z-[999] flex w-full items-center justify-around border-t border-gray-3'
+        style={{ background: '#FAF7F2', paddingBottom: 'env(safe-area-inset-bottom)' }}
       >
         {NAV_ITEMS.map((item) => (
           <li key={item.label} className='flex-1'>
@@ -115,8 +115,8 @@ export default function MobileBottomNav() {
               <div className='flex min-h-[58px] flex-col items-center justify-center cursor-pointer active:scale-95 transition-transform select-none py-[8px]'>
                 {item.icon(!!item.active)}
                 <p
-                  className={`mt-[2px] select-none text-[11px] ${
-                    item.active ? 'font-bold text-blue-7' : 'font-medium text-gray-6'
+                  className={`mt-[2px] select-none text-[10px] ${
+                    item.active ? 'font-bold text-blue-7' : 'font-medium text-gray-5'
                   }`}
                 >
                   {item.label}

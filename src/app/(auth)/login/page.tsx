@@ -35,6 +35,11 @@ export default function LoginPage() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-[12px]">
+      <div className="mb-[20px]">
+        <h2 className="text-[22px] font-extrabold text-white tracking-tight">로그인</h2>
+        <p className="text-[13px] text-white/45 mt-[4px]">스마트홈딜에 오신 것을 환영합니다</p>
+      </div>
+
       <input
         type="text"
         placeholder="이메일"
@@ -64,9 +69,9 @@ export default function LoginPage() {
         {loading ? "로그인 중..." : "로그인"}
       </button>
 
-      <div className="pt-[16px] text-center">
-        <span className="text-[14px] text-white/60">계정이 없으신가요? </span>
-        <Link href="/signup" className="text-[14px] font-bold text-white underline">
+      <div className="pt-[4px] text-center">
+        <span className="text-[13px] text-white/45">계정이 없으신가요? </span>
+        <Link href="/signup" className="text-[13px] font-bold text-white/80 hover:text-white underline underline-offset-2 transition-colors">
           회원가입
         </Link>
       </div>
