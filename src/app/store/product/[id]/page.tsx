@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getProductById, getProductsByCategory } from '@/lib/products';
 import AddToCartButton from './AddToCartButton';
+import WishlistButton from './WishlistButton';
 import TabSection from './TabSection';
 import StickyCartButtons from './StickyCartButtons';
 import TrackRecentlyViewed from './TrackRecentlyViewed';
@@ -224,7 +225,7 @@ export default async function ProductDetailPage({
             </dl>
           </div>
 
-          {/* 구매하기 + 장바구니 버튼 */}
+          {/* 구매하기 + 장바구니 + 찜 버튼 */}
           <AddToCartButton
             goodsNo={product.goodsNo || product.id}
             goodsNm={product.goodsNm}
@@ -233,6 +234,11 @@ export default async function ProductDetailPage({
             fixedPrice={product.fixedPrice}
             isSoldOut={isSoldOut}
           />
+          {!isSoldOut && (
+            <div className="mt-[8px]">
+              <WishlistButton product={product} />
+            </div>
+          )}
 
           {/* 신뢰 배지 3개 */}
           <div className="mt-[20px] grid grid-cols-3 gap-[8px]">
