@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
+import StoreBanner from "@/components/StoreBanner";
 import { getDealProducts, getBestProducts } from "@/lib/products";
 
 export const revalidate = 60;
@@ -112,6 +113,8 @@ export default async function StoreHomePage() {
   ];
 
   return (
+    <div>
+      <StoreBanner type="storeHome" />
     <div className="mx-auto max-w-[1200px] pb-[80px] pt-[28px]">
       {/* 카테고리 아이콘 */}
       <div className="mb-[44px] px-[20px] lg:px-[30px]">
@@ -165,6 +168,7 @@ export default async function StoreHomePage() {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 }
