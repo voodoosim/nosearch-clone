@@ -4,11 +4,12 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import { useCart } from "@/components/CartProvider";
+import { useWishlist } from "@/components/WishlistProvider";
 
 const NAV_ITEMS = [
-  { label: "카테고리", href: "/recommendation/item-list", active: false },
-  { label: "구매가이드", href: "/contents/guide", active: false },
   { label: "스토어", href: "/store", active: true },
+  { label: "공동구매", href: "/store/deal", active: false },
+  { label: "기획전", href: "/store/exhibition", active: false },
   { label: "고객센터", href: "/store/contents", active: false },
 ];
 
@@ -16,6 +17,7 @@ export default function Header() {
   const { data: session } = useSession();
   const router = useRouter();
   const { totalCount } = useCart();
+  const { totalCount: wishlistCount } = useWishlist();
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -129,6 +131,20 @@ export default function Header() {
             {/* Right Actions */}
             <section className="hidden items-center lg:flex">
               <ul className="flex h-[30px] items-center gap-[4px]">
+                <li>
+                  <Link href="/mypage/wishlist">
+                    <div className="relative flex items-center px-[12px] py-[6px] rounded-lg hover:bg-gray-1 cursor-pointer transition-colors">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="text-gray-9">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                      </svg>
+                      {wishlistCount > 0 && (
+                        <span className="absolute top-[2px] right-[6px] min-w-[16px] h-[16px] flex items-center justify-center rounded-full bg-red-5 text-white text-[10px] font-bold px-[3px]">
+                          {wishlistCount > 99 ? '99+' : wishlistCount}
+                        </span>
+                      )}
+                    </div>
+                  </Link>
+                </li>
                 <li>
                   <Link href="/store/cart">
                     <div className="relative flex items-center px-[12px] py-[6px] rounded-lg hover:bg-gray-1 cursor-pointer transition-colors">

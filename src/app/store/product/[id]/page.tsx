@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getProductById } from '@/lib/products';
+import { getProductById, getProductsByCategory } from '@/lib/products';
 import AddToCartButton from './AddToCartButton';
 import TabSection from './TabSection';
 import StickyCartButtons from './StickyCartButtons';
@@ -89,6 +89,12 @@ export default async function ProductDetailPage({
   const product = await getProductById(id);
 
   if (!product) notFound();
+
+  const relatedProducts = product.productCategoryKey
+    ? (await getProductsByCategory(product.productCategoryKey))
+        .filter((p) => (p.goodsNo || p.id) !== (product.goodsNo || product.id))
+        .slice(0, 6)
+    : [];
 
   const isSoldOut = product.soldOutFl === 'y';
   const discount =
@@ -254,6 +260,43 @@ export default async function ProductDetailPage({
 
       {/* 탭 + 콘텐츠 섹션 */}
       <TabSection product={product} discount={discount} />
+
+      {/* 관련 상품 */}
+      {relatedProducts.length > 0 && (
+        <section className="mt-[56px]">
+          <h2 className="text-[18px] font-bold text-gray-10 mb-[20px]">
+            이런 상품은 어떠세요?
+          </h2>
+          <div className="grid grid-cols-2 gap-x-[12px] gap-y-[20px] lg:grid-cols-4 lg:gap-x-[20px] lg:gap-y-[28px]">
+            {relatedProducts.map((p) => {
+              const d =
+                p.fixedPrice > p.goodsPrice
+                  ? Math.round(((p.fixedPrice - p.goodsPrice) / p.fixedPrice) * 100)
+                  : 0;
+              return (
+                <Link key={p.goodsNo || p.id} href={`/store/product/${p.goodsNo || p.id}`} className="group">
+                  <div className="relative w-full rounded-xl border border-gray-3 overflow-hidden mb-[10px]" style={{ aspectRatio: '1/1', backgroundColor: '#F5F1EB' }}>
+                    <Image src={p.imageUrl} alt={p.goodsNm} fill className="object-contain p-[16px] group-hover:scale-[1.04] transition-transform duration-300" sizes="(max-width: 1024px) 50vw, 25vw" />
+                  </div>
+                  <p className="text-[11px] font-bold text-blue-7 uppercase tracking-wide mb-[3px]">{p.brandName}</p>
+                  <p className="text-[13px] font-medium text-gray-9 line-clamp-2 leading-[1.4] mb-[5px] group-hover:text-blue-7 transition-colors">
+                    {p.goodsNm}
+                  </p>
+                  <div className="flex items-baseline gap-[4px]">
+                    {d > 0 && (
+                      <span className="text-[11px] font-bold text-red-5">{d}%</span>
+                    )}
+                    <span className="text-[14px] font-extrabold text-gray-10">
+                      {formatPrice(p.goodsPrice)}
+                      <span className="text-[11px] font-medium ml-[1px]">원</span>
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {/* 뒤로가기 */}
       <div className="mt-[48px] flex justify-center">
