@@ -1,6 +1,9 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 import CountdownTimer from "./CountdownTimer";
+import { useWishlist } from "./WishlistProvider";
 
 interface Product {
   id: string;
@@ -47,6 +50,8 @@ export default function ProductCard({ product, rank }: { product: Product; rank?
     : 0;
 
   const href = `/store/product/${product.goodsNo || product.id}`;
+  const { isWishlisted, toggle } = useWishlist();
+  const wishlisted = isWishlisted(product.goodsNo || product.id);
 
   return (
     <Link href={href} className="block group">
@@ -100,6 +105,35 @@ export default function ProductCard({ product, rank }: { product: Product; rank?
               <span className="text-[16px] font-bold text-white tracking-widest">SOLD OUT</span>
             </div>
           )}
+
+          {/* 찜 버튼 */}
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              toggle(product);
+            }}
+            aria-label={wishlisted ? "찜 해제" : "찜하기"}
+            className="absolute bottom-[8px] right-[8px] w-[32px] h-[32px] flex items-center justify-center rounded-full transition-all duration-150 hover:scale-110"
+            style={{
+              background: wishlisted ? 'rgba(220,38,38,0.12)' : 'rgba(255,255,255,0.85)',
+              backdropFilter: 'blur(4px)',
+              boxShadow: '0 1px 4px rgba(0,0,0,0.10)',
+            }}
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill={wishlisted ? '#DC2626' : 'none'}
+              stroke={wishlisted ? '#DC2626' : '#9CA3AF'}
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </button>
         </div>
 
         {/* 정보 영역 */}

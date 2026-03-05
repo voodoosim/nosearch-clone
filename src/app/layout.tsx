@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 import AuthProvider from "@/components/AuthProvider";
 import { CartProvider } from "@/components/CartProvider";
+import { WishlistProvider } from "@/components/WishlistProvider";
+import { RecentlyViewedProvider } from "@/components/RecentlyViewedProvider";
 import ChatWidget from "@/components/ChatWidget";
 import "./globals.css";
 
@@ -45,8 +47,12 @@ export default function RootLayout({
       <body className={pretendard.className}>
         <AuthProvider>
           <CartProvider>
-            {children}
-            <ChatWidget />
+            <WishlistProvider>
+              <RecentlyViewedProvider>
+                {children}
+                <ChatWidget />
+              </RecentlyViewedProvider>
+            </WishlistProvider>
           </CartProvider>
         </AuthProvider>
       </body>

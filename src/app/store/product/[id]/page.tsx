@@ -5,6 +5,7 @@ import { getProductById } from '@/lib/products';
 import AddToCartButton from './AddToCartButton';
 import TabSection from './TabSection';
 import StickyCartButtons from './StickyCartButtons';
+import TrackRecentlyViewed from './TrackRecentlyViewed';
 
 export const revalidate = 60;
 
@@ -99,6 +100,9 @@ export default async function ProductDetailPage({
 
   return (
     <div className="mx-auto max-w-[1200px] px-[20px] py-[24px] pb-[100px] lg:px-[30px] lg:py-[40px] lg:pb-[40px]">
+      {/* 최근 본 상품 자동 기록 */}
+      <TrackRecentlyViewed product={product} />
+
       {/* 브레드크럼 */}
       <nav className="mb-[20px] flex items-center gap-[6px] text-[13px] text-gray-6">
         <Link href="/store" className="hover:text-blue-7 transition-colors">
