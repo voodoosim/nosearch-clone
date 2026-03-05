@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useSession, signOut } from 'next-auth/react';
+import { useWishlist } from '@/components/WishlistProvider';
+import { useRecentlyViewed } from '@/components/RecentlyViewedProvider';
 
 interface MenuItem {
   label: string;
@@ -92,6 +94,8 @@ interface PointsHistory {
 export default function MyPage() {
   const { data: session, status } = useSession();
   const isLoggedIn = status === 'authenticated' && !!session?.user;
+  const { totalCount: wishlistCount } = useWishlist();
+  const { items: recentItems } = useRecentlyViewed();
   const [points, setPoints] = useState(0);
   const [history, setHistory] = useState<PointsHistory[]>([]);
   const [showHistory, setShowHistory] = useState(false);
@@ -204,6 +208,16 @@ export default function MyPage() {
                 <span className="flex-1 text-[15px] font-medium text-gray-10">
                   {item.label}
                 </span>
+                {item.href === '/mypage/wishlist' && wishlistCount > 0 && (
+                  <span className="min-w-[20px] h-[20px] flex items-center justify-center rounded-full bg-red-5 text-white text-[11px] font-bold px-[5px] mr-[4px]">
+                    {wishlistCount > 99 ? '99+' : wishlistCount}
+                  </span>
+                )}
+                {item.href === '/mypage/recent' && recentItems.length > 0 && (
+                  <span className="min-w-[20px] h-[20px] flex items-center justify-center rounded-full bg-gray-5 text-white text-[11px] font-bold px-[5px] mr-[4px]">
+                    {recentItems.length > 99 ? '99+' : recentItems.length}
+                  </span>
+                )}
                 <ChevronRight />
               </Link>
             ))}
