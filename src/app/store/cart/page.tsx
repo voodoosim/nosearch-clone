@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useCart } from '@/components/CartProvider';
 
 function formatPrice(price: number) {
@@ -10,8 +11,16 @@ function formatPrice(price: number) {
 }
 
 export default function CartPage() {
+  const router = useRouter();
   const { items, removeFromCart, updateQuantity, clearCart } = useCart();
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+
+  const handleCheckout = () => {
+    if (selectedIds.size === 0) return;
+    const pendingItems = items.filter((i) => selectedIds.has(i.goodsNo));
+    localStorage.setItem('pendingOrder', JSON.stringify(pendingItems));
+    router.push('/mypage');
+  };
 
   const allSelected = items.length > 0 && selectedIds.size === items.length;
 
@@ -307,6 +316,7 @@ export default function CartPage() {
             )}
 
             <button
+              onClick={handleCheckout}
               disabled={selectedIds.size === 0}
               className="w-full h-[52px] text-[16px] font-bold text-white bg-blue-7 rounded-xl hover:bg-blue-6 disabled:bg-gray-4 disabled:cursor-not-allowed transition-colors btn-press"
             >
@@ -364,6 +374,7 @@ export default function CartPage() {
             </div>
           )}
           <button
+            onClick={handleCheckout}
             disabled={selectedIds.size === 0}
             className="w-full h-[52px] text-[16px] font-bold text-white bg-blue-7 rounded-xl hover:bg-blue-6 disabled:bg-gray-4 disabled:cursor-not-allowed transition-colors btn-press"
           >

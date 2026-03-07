@@ -6,6 +6,16 @@ import { useSession, signOut } from 'next-auth/react';
 import { useWishlist } from '@/components/WishlistProvider';
 import { useRecentlyViewed } from '@/components/RecentlyViewedProvider';
 
+interface PendingOrderItem {
+  goodsNo: string;
+  goodsNm: string;
+  goodsPrice: number;
+  fixedPrice: number;
+  quantity: number;
+  imageUrl: string;
+  brandName?: string;
+}
+
 interface MenuItem {
   label: string;
   href: string;
@@ -99,6 +109,9 @@ export default function MyPage() {
   const [points, setPoints] = useState(0);
   const [history, setHistory] = useState<PointsHistory[]>([]);
   const [showHistory, setShowHistory] = useState(false);
+  const [pendingOrder, setPendingOrder] = useState<PendingOrderItem[] | null>(null);
+  const [orderStatus, setOrderStatus] = useState<'idle' | 'loading' | 'done' | 'error'>('idle');
+  const [orderId, setOrderId] = useState('');
 
   useEffect(() => {
     if (!isLoggedIn || !session?.user?.email) return;
@@ -111,8 +124,75 @@ export default function MyPage() {
       .catch(() => {});
   }, [isLoggedIn, session?.user?.email]);
 
+  useEffect(() => {
+    const raw = localStorage.getItem('pendingOrder');
+    if (raw) {
+      try { setPendingOrder(JSON.parse(raw)); } catch { localStorage.removeItem('pendingOrder'); }
+    }
+  }, []);
+
+  const pendingTotal = pendingOrder?.reduce((s, i) => s + i.goodsPrice * i.quantity, 0) ?? 0;
+
+  const handleOrderRequest = async () => {
+    if (!pendingOrder || orderStatus === 'loading') return;
+    setOrderStatus('loading');
+    try {
+      const res = await fetch('/api/order-request', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: pendingOrder, total: pendingTotal }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || '오류');
+      setOrderId(data.orderId);
+      setOrderStatus('done');
+      localStorage.removeItem('pendingOrder');
+    } catch {
+      setOrderStatus('error');
+    }
+  };
+
   return (
     <div className="mx-auto max-w-[1200px] px-[20px] py-[24px] pb-[100px] lg:px-[30px] lg:py-[40px] lg:pb-[40px]">
+
+      {/* 결제 대기 배너 */}
+      {pendingOrder && pendingOrder.length > 0 && orderStatus !== 'done' && (
+        <div className="mb-[24px] rounded-[14px] border border-blue-4 bg-blue-1 p-[20px]">
+          <div className="flex items-center justify-between mb-[12px]">
+            <p className="text-[15px] font-bold text-blue-8">결제 요청 대기 중</p>
+            <button onClick={() => { setPendingOrder(null); localStorage.removeItem('pendingOrder'); }} className="text-[12px] text-gray-5 hover:text-red-5">취소</button>
+          </div>
+          <ul className="flex flex-col gap-[6px] mb-[14px]">
+            {pendingOrder.map(item => (
+              <li key={item.goodsNo} className="flex justify-between text-[13px]">
+                <span className="text-gray-8 truncate max-w-[200px]">{item.goodsNm} x{item.quantity}</span>
+                <span className="font-semibold text-gray-10 shrink-0 ml-[8px]">{(item.goodsPrice * item.quantity).toLocaleString()}원</span>
+              </li>
+            ))}
+          </ul>
+          <div className="flex items-center justify-between pt-[12px] border-t border-blue-3">
+            <span className="text-[14px] font-bold text-gray-10">합계: {pendingTotal.toLocaleString()}원</span>
+            <button
+              onClick={handleOrderRequest}
+              disabled={orderStatus === 'loading' || !isLoggedIn}
+              className="px-[20px] h-[40px] bg-blue-7 text-white text-[14px] font-bold rounded-[8px] hover:bg-blue-6 disabled:bg-gray-4 disabled:cursor-not-allowed transition-colors"
+            >
+              {orderStatus === 'loading' ? '처리 중...' : !isLoggedIn ? '로그인 필요' : '결제 요청하기'}
+            </button>
+          </div>
+          {orderStatus === 'error' && <p className="mt-[8px] text-[12px] text-red-5">요청 실패. 다시 시도해주세요.</p>}
+        </div>
+      )}
+
+      {/* 결제 요청 완료 */}
+      {orderStatus === 'done' && (
+        <div className="mb-[24px] rounded-[14px] border border-emerald-400 bg-emerald-50 p-[20px]">
+          <p className="text-[15px] font-bold text-emerald-700 mb-[4px]">결제 요청이 접수되었습니다</p>
+          <p className="text-[13px] text-emerald-600">주문번호: #{orderId}</p>
+          <p className="text-[13px] text-gray-6 mt-[6px]">담당자가 확인 후 텔레그램 또는 카카오로 연락드립니다.</p>
+        </div>
+      )}
+
       {/* 프로필 섹션 */}
       <div className="flex items-center gap-[16px] mb-[32px] p-[20px] bg-gray-1 rounded-[12px]">
         <div className="w-[56px] h-[56px] rounded-full bg-blue-7 flex items-center justify-center shrink-0">
