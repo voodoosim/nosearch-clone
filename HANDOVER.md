@@ -17,7 +17,7 @@
 
 ---
 
-## 현재 구현 완료 상태 (2026-03-05 기준)
+## 현재 구현 완료 상태 (2026-03-07 기준)
 
 ### 완료된 기능
 
@@ -51,30 +51,34 @@
 #### 소트 기능
 - [x] 상품 목록 정렬 (최신순/가격순/인기순)
 
+#### 결제 플로우 (2026-03-07)
+- [x] `/store/cart` — 결제하기 클릭 → 선택상품 localStorage 저장 → `/mypage` 이동
+- [x] `/mypage` — 결제 대기 배너 + `결제 요청하기` 버튼 → `/api/order-request` 호출
+- [x] `/api/order-request` — smartdeal-bot `/api/order/notify` 호출 → 텔레그램 토픽 알림
+- [x] `smartdeal-bot /api/order/notify` — 고객 토픽 찾아서 주문 내용 + 처리 안내 전송
+
+#### 마이페이지 전체 페이지 (완료됨)
+- [x] `/mypage/wishlist`, `/mypage/recent`, `/mypage/orders` (더미)
+- [x] `/mypage/inquiry`, `/mypage/notice`, `/mypage/settings`
+
+#### 스토어 페이지 (완료됨)
+- [x] `/store/cart`, `/store/search`, `/store/rental`, `/store/recommendation`
+- [x] `/store/exhibition`, `/store/timedeal`, `/store/deal`, `/store/best`
+
 ---
 
-## TO-DO (다음 세션에서 구현할 것들)
+## TO-DO (다음 세션)
 
-> 우선순위 순. 위에서부터 차례대로.
+### [P1] 결제 플로우 완성
+- [ ] **결제 수동 처리 UX**: 직원이 텔레그램에서 확인 후 고객에게 안내 → 현금/계좌이체 처리
+- [ ] **주문내역 실제 연동**: orders 페이지 더미 → DB 연동 (주문 생성/조회)
 
-### [P1] 즉시 구현
-- [ ] **검색 기능** — `/search` 페이지 실제 동작 (현재 UI만 있음, 상품 필터링 로직 없음)
-- [ ] **장바구니 페이지** `/store/cart` — CartProvider 연결, 수량 변경, 삭제, 합계 계산
-- [ ] **주문내역 페이지** `/mypage/orders` — 현재 stub 페이지, 실제 UI 구현
-- [ ] **찜 목록 페이지** `/mypage/wishlist` — 찜한 상품 그리드, 삭제 버튼
-- [ ] **최근 본 상품 페이지** `/mypage/recent` — recentItems 그리드 표시
-
-### [P2] 중요
-- [ ] **1:1 문의 페이지** `/mypage/inquiry` — ChatWidget 연동 또는 별도 폼
-- [ ] **공지사항 페이지** `/mypage/notice` — 정적 더미 데이터라도 표시
-- [ ] **설정 페이지** `/mypage/settings` — 알림 설정, 개인정보 stub
-- [ ] **렌탈 페이지** `/store/rental` — 현재 없음, 배너 클릭 시 404
-- [ ] **추천 페이지** `/store/recommendation` — 현재 stub
+### [P2] 어드민
+- [ ] **어드민 페이지** (웹과 별도) — 주문 목록, 결제 처리 상태, 고객 관리
 
 ### [P3] 나중에
 - [ ] 리뷰 시스템 (상품 상세 탭 → 실제 리뷰 CRUD)
-- [ ] 결제 연동
-- [ ] 어드민 페이지
+- [ ] 자동 결제 연동 (현재는 수동 처리)
 
 ---
 
@@ -116,4 +120,4 @@ ssh smartdeal "docker logs nosearch-clone_app_1 -f --tail=50"
 
 ---
 
-_마지막 업데이트: 2026-03-05_
+_마지막 업데이트: 2026-03-07_
