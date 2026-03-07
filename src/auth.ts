@@ -10,10 +10,12 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         password: { label: "비밀번호", type: "password" },
       },
       async authorize(credentials) {
-        const { identifier, password } = credentials as {
+        const { identifier: rawId, password: rawPw } = credentials as {
           identifier: string;
           password: string;
         };
+        const identifier = rawId?.trim() ?? '';
+        const password = rawPw?.trim() ?? '';
 
         if (!identifier || !password) return null;
 
