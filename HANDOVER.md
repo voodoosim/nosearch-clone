@@ -57,6 +57,14 @@
 - [x] `/api/order-request` — smartdeal-bot `/api/order/notify` 호출 → 텔레그램 토픽 알림
 - [x] `smartdeal-bot /api/order/notify` — 고객 토픽 찾아서 주문 내용 + 처리 안내 전송
 
+#### 어드민 (`/admin`)
+- [x] 주문 목록 테이블 (상태 필터, 인라인 상태 변경, 메모 편집)
+- [x] `/api/admin/orders` — GET(목록)/PATCH(상태변경) API (admin role 체크)
+- [x] PocketBase `orders` 컬렉션 (order_id, user_email, items, total, status, memo)
+- [x] `/api/order-request` — 결제 요청 시 PocketBase에 주문 저장
+- [x] `auth.ts` — ADMIN_EMAILS 기반 role(admin/user) JWT 추가
+- [x] `middleware.ts` — /admin/* 인증 보호
+
 #### 마이페이지 전체 페이지 (완료됨)
 - [x] `/mypage/wishlist`, `/mypage/recent`, `/mypage/orders` (더미)
 - [x] `/mypage/inquiry`, `/mypage/notice`, `/mypage/settings`
@@ -70,11 +78,13 @@
 ## TO-DO (다음 세션)
 
 ### [P1] 결제 플로우 완성
-- [ ] **결제 수동 처리 UX**: 직원이 텔레그램에서 확인 후 고객에게 안내 → 현금/계좌이체 처리
-- [ ] **주문내역 실제 연동**: orders 페이지 더미 → DB 연동 (주문 생성/조회)
+- [x] **결제 수동 처리 UX**: 직원이 텔레그램에서 확인 → /admin에서 상태 변경 (확인됨/결제완료/취소)
+- [ ] **주문내역 실제 연동**: /mypage/orders 더미 → PocketBase orders 조회로 교체
 
-### [P2] 어드민
-- [ ] **어드민 페이지** (웹과 별도) — 주문 목록, 결제 처리 상태, 고객 관리
+### [P2] 어드민 (기본 완료, 확장 가능)
+- [x] `/admin` 주문 목록 + 상태 변경 + 메모
+- [ ] **고객 목록** — users 컬렉션 조회, 포인트 확인
+- [ ] **고객 상세** — 주문 이력, 상담 내역
 
 ### [P3] 나중에
 - [ ] 리뷰 시스템 (상품 상세 탭 → 실제 리뷰 CRUD)
@@ -119,5 +129,11 @@ ssh smartdeal "docker logs nosearch-clone_app_1 -f --tail=50"
 - VPS 배포 전 반드시 `git pull origin main` 선행 (캐시 빌드 방지)
 
 ---
+
+## 어드민 접근 방법
+- URL: `스마트홈딜.com/admin`
+- 로그인: `ADMIN_EMAILS`에 등록된 이메일 계정으로 로그인
+- 현재 어드민: `admin@smartdeal.com`
+- VPS .env `ADMIN_EMAILS`에 이메일 추가하면 어드민 권한 부여 가능
 
 _마지막 업데이트: 2026-03-07_
