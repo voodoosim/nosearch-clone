@@ -24,10 +24,13 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
             password,
           );
 
+          const adminEmails = (process.env.ADMIN_EMAILS || '').split(',').map(e => e.trim());
+          const role = adminEmails.includes(authData.record.email) ? 'admin' : 'user';
           return {
             id: authData.record.id,
             name: authData.record['name'] as string || '',
             email: authData.record.email || '',
+            role,
           };
         } catch {
           return null;
@@ -42,12 +45,14 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     jwt({ token, user }) {
       if (user) {
         token.id = user.id;
+        token.role = (user as { role?: string }).role || 'user';
       }
       return token;
     },
     session({ session, token }) {
       if (session.user) {
         session.user.id = token.id as string;
+        (session.user as { role?: string }).role = token.role as string;
       }
       return session;
     },

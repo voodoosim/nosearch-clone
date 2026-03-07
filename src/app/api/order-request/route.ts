@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { auth } from '@/auth';
+import { createAdminPB } from '@/lib/pocketbase';
 
 export async function POST(request: Request) {
   const session = await auth();
@@ -34,7 +35,25 @@ export async function POST(request: Request) {
     }
 
     const data = await res.json() as { orderId: string };
-    return NextResponse.json({ ok: true, orderId: data.orderId });
+    const orderId = data.orderId;
+
+    // PocketBase에 주문 저장
+    try {
+      const pb = await createAdminPB();
+      await pb.collection('orders').create({
+        order_id: orderId,
+        user_email: session.user.email,
+        user_name: session.user.name || '',
+        items: JSON.stringify(items),
+        total: Number(total),
+        status: 'pending',
+        memo: '',
+      });
+    } catch {
+      // 저장 실패해도 주문 알림은 이미 보냄 — 무시
+    }
+
+    return NextResponse.json({ ok: true, orderId });
   } catch {
     return NextResponse.json({ error: '서버 오류' }, { status: 500 });
   }
