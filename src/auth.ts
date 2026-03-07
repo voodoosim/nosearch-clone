@@ -32,7 +32,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
             email: authData.record.email || '',
             role,
           };
-        } catch {
+        } catch (e) {
+          console.error('[auth] PB 로그인 실패:', e);
           return null;
         }
       },
