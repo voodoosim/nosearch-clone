@@ -2,6 +2,30 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 
+function ScrollToTopButton() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 400);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  if (!visible) return null;
+
+  return (
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      className="fixed bottom-[88px] right-[20px] z-50 flex h-[44px] w-[44px] items-center justify-center rounded-full bg-white border border-gray-3 text-gray-7 shadow-md transition-all hover:bg-gray-1 hover:shadow-lg active:scale-95"
+      aria-label="맨 위로"
+    >
+      <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+  );
+}
+
 interface ChatMessage {
   id: number;
   text: string;
@@ -156,6 +180,8 @@ export default function ChatWidget() {
 
   return (
     <>
+      <ScrollToTopButton />
+
       {/* 채팅 버튼 */}
       <button
         onClick={toggleChat}
