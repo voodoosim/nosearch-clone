@@ -10,7 +10,7 @@ export default function WishlistButton({ product }: { product: Product }) {
   return (
     <button
       onClick={() => toggle(product)}
-      className={`flex-1 flex items-center justify-center gap-[8px] h-[52px] rounded-xl border text-[15px] font-bold transition-all ${
+      className={`w-full flex items-center justify-center gap-[8px] h-[52px] rounded-xl border text-[15px] font-bold transition-all ${
         wishlisted
           ? 'border-red-4 bg-red-5/10 text-red-5'
           : 'border-gray-3 bg-gray-1 text-gray-7 hover:border-red-4 hover:text-red-5'

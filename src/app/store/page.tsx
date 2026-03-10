@@ -14,60 +14,102 @@ export const metadata: Metadata = {
 
 const STORE_CATEGORIES = [
   {
-    label: "MacBook Pro",
-    href: "/store/recommendation/macbook_pro",
+    label: "주방",
+    href: "/store/category/kitchen",
+    bg: "#C0392B",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+        <path d="M7 5v6a4 4 0 004 4h0a4 4 0 004-4V5" stroke="white" strokeWidth="1.6" strokeLinecap="round"/>
+        <path d="M11 5v16M15 5v16" stroke="white" strokeWidth="1.4" strokeLinecap="round" opacity="0.5"/>
+        <path d="M19 7c0 0 1 2 1 5s-1 5-1 5" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
+      </svg>
+    ),
+  },
+  {
+    label: "청소",
+    href: "/store/category/cleaning",
+    bg: "#2980B9",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+        <circle cx="13" cy="13" r="7" stroke="white" strokeWidth="1.6"/>
+        <circle cx="13" cy="13" r="3.5" stroke="white" strokeWidth="1.4" opacity="0.6"/>
+        <path d="M13 4v2M13 20v2M4 13h2M20 13h2" stroke="white" strokeWidth="1.4" strokeLinecap="round" opacity="0.5"/>
+      </svg>
+    ),
+  },
+  {
+    label: "TV·모니터",
+    href: "/store/category/tv",
+    bg: "#1A1A2E",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+        <rect x="3" y="5" width="20" height="13" rx="2" stroke="white" strokeWidth="1.6"/>
+        <path d="M9 21h8M13 18v3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M7 10h5M7 13h3" stroke="white" strokeWidth="1.3" strokeLinecap="round" opacity="0.6"/>
+        <rect x="15" y="9" width="5" height="5" rx="1" stroke="white" strokeWidth="1.2" opacity="0.7"/>
+      </svg>
+    ),
+  },
+  {
+    label: "생활가전",
+    href: "/store/category/living",
+    bg: "#117A65",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+        <path d="M13 4c-4 3-6 6-6 9a6 6 0 0012 0c0-3-2-6-6-9z" stroke="white" strokeWidth="1.6" strokeLinejoin="round"/>
+        <path d="M13 14v4" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
+        <path d="M10 17h6" stroke="white" strokeWidth="1.4" strokeLinecap="round" opacity="0.5"/>
+      </svg>
+    ),
+  },
+  {
+    label: "헬스·뷰티",
+    href: "/store/category/health",
+    bg: "#7D3C98",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+        <path d="M13 6c0 0-2-3-5-2s-4 4-3 6 3 3 5 3l3 8 3-8c2 0 4-1 5-3s0-5-3-6-5 2-5 2z" stroke="white" strokeWidth="1.5" strokeLinejoin="round"/>
+      </svg>
+    ),
+  },
+  {
+    label: "애플관",
+    href: "/store/apple",
     bg: "#1C1C1E",
     icon: (
-      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-        <rect x="4" y="7" width="18" height="12" rx="2" stroke="white" strokeWidth="1.6"/>
-        <path d="M1 19h24" stroke="white" strokeWidth="1.6" strokeLinecap="round"/>
-        <rect x="8" y="21" width="10" height="1.5" rx="0.75" fill="white" fillOpacity="0.6"/>
-        <circle cx="13" cy="13" r="1.5" fill="white" fillOpacity="0.5"/>
+      <svg width="22" height="22" viewBox="0 0 28 28" fill="white">
+        <path d="M22.5 17.9c-.5 1.1-1 2.1-1.8 3-.9 1.1-1.8 1.7-2.8 1.7-.7 0-1.6-.4-2.5-.8-.9-.4-1.8-.8-2.9-.8s-2 .4-2.9.8c-.9.4-1.8.8-2.6.8-1 0-2-.6-2.9-1.8-.9-1.1-1.7-2.6-2.2-4.2-.5-1.7-.8-3.3-.8-4.9 0-1.9.4-3.5 1.2-4.8.8-1.3 2-2 3.4-2 .8 0 1.7.4 2.7.8.9.4 1.6.6 2.1.6.5 0 1.2-.2 2.1-.7 1-.5 1.9-.7 2.8-.6 2.2.2 3.8 1.3 4.8 3.3-1.9 1.2-2.9 2.9-2.9 5.1 0 1.7.6 3.1 1.8 4.2.5.5 1.1.9 1.7 1.1-.1.4-.3.8-.5 1.2zM17.5 1c0 1.3-.5 2.5-1.4 3.6-.9 1-2 1.7-3.1 1.6 0-.1 0-.3 0-.5 0-1.2.5-2.4 1.4-3.4.9-1 2-1.5 3.1-1.5 0 .1 0 .1 0 .2z"/>
       </svg>
     ),
   },
   {
-    label: "Mac Studio",
-    href: "/store/recommendation/mac_studio",
-    bg: "#2C2C2E",
+    label: "삼성관",
+    href: "/store/samsung",
+    bg: "#1034A6",
     icon: (
       <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-        <rect x="5" y="10" width="16" height="9" rx="2.5" stroke="white" strokeWidth="1.6"/>
-        <path d="M9 14.5h8" stroke="white" strokeWidth="1.4" strokeLinecap="round"/>
-        <path d="M9 17h4" stroke="white" strokeWidth="1.3" strokeLinecap="round" opacity="0.6"/>
-        <circle cx="18.5" cy="14.5" r="1" fill="white" fillOpacity="0.7"/>
-        <path d="M11 6h4M13 6v4" stroke="white" strokeWidth="1.4" strokeLinecap="round" opacity="0.5"/>
+        <rect x="6" y="5" width="14" height="16" rx="2" stroke="white" strokeWidth="1.6"/>
+        <path d="M9 9h8M9 12h8M9 15h5" stroke="white" strokeWidth="1.3" strokeLinecap="round" opacity="0.7"/>
+        <circle cx="13" cy="18" r="0.8" fill="white" fillOpacity="0.6"/>
       </svg>
     ),
   },
   {
-    label: "Mac Pro",
-    href: "/store/recommendation/mac_pro",
-    bg: "#3A3A3C",
+    label: "해외직구",
+    href: "/store/overseas",
+    bg: "#0D3B4A",
     icon: (
       <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-        <rect x="8" y="3" width="10" height="20" rx="3" stroke="white" strokeWidth="1.6"/>
-        <path d="M11 7h4M11 10h4M11 13h4" stroke="white" strokeWidth="1.3" strokeLinecap="round" opacity="0.7"/>
-        <circle cx="13" cy="18" r="1.2" fill="white" fillOpacity="0.8"/>
-      </svg>
-    ),
-  },
-  {
-    label: "Mac mini",
-    href: "/store/recommendation/mac_mini",
-    bg: "#48484A",
-    icon: (
-      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-        <rect x="5" y="14" width="16" height="7" rx="2" stroke="white" strokeWidth="1.6"/>
-        <path d="M9 9h8M9 12h8" stroke="white" strokeWidth="1.4" strokeLinecap="round" opacity="0.6"/>
-        <circle cx="19.5" cy="17.5" r="1" fill="white" fillOpacity="0.7"/>
-        <path d="M8 17.5h6" stroke="white" strokeWidth="1.3" strokeLinecap="round" opacity="0.5"/>
+        <circle cx="13" cy="13" r="9" stroke="white" strokeWidth="1.6"/>
+        <path d="M13 4c0 0-4 3-4 9s4 9 4 9M13 4c0 0 4 3 4 9s-4 9-4 9" stroke="white" strokeWidth="1.3" strokeLinecap="round" opacity="0.7"/>
+        <path d="M4 13h18" stroke="white" strokeWidth="1.3" strokeLinecap="round" opacity="0.5"/>
+        <path d="M5 9h16M5 17h16" stroke="white" strokeWidth="1.2" strokeLinecap="round" opacity="0.4"/>
       </svg>
     ),
   },
   {
     label: "전체보기",
-    href: "/store/recommendation",
+    href: "/store/best",
     bg: "#636366",
     icon: (
       <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
