@@ -6,6 +6,8 @@ import timedealProducts from '@/data/products-timedeal.json';
 import reviewProducts from '@/data/products-review.json';
 import samsungProducts from '@/data/products-samsung.json';
 import overseasProducts from '@/data/products-overseas.json';
+import smartExtraProducts from '@/data/products-smart-extra.json';
+import appleProducts from '@/data/products-apple.json';
 
 export interface CategoryInfo {
   key: string;
@@ -90,6 +92,8 @@ function getAllProductsFromJson(): Product[] {
     reviewProducts as Product[],
     samsungProducts as Product[],
     overseasProducts as Product[],
+    smartExtraProducts as Product[],
+    appleProducts as Product[],
   ];
   for (const source of sources) {
     for (const p of source) {

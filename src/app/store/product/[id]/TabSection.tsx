@@ -33,6 +33,254 @@ const TABS = [
 ];
 
 // 상품명 파싱으로 Apple 사양 추출
+// 일반 가전 스펙 파서 (상품명에서 추출)
+function parseGeneralSpecs(goodsNm: string, categoryKey?: string, brandName?: string): Record<string, string> {
+  const name = goodsNm;
+  const specs: Record<string, string> = {};
+
+  if (brandName) specs['브랜드'] = brandName;
+
+  // 출력/흡입력 W / AW
+  const wattMatch = name.match(/(\d[\d,]+)\s*(AW|W)\b/);
+  if (wattMatch) {
+    const label = categoryKey?.includes('vacuum') ? '흡입력' : '출력';
+    specs[label] = `${wattMatch[1]}${wattMatch[2]}`;
+  }
+
+  // 청정 면적 m²
+  const areaMatch = name.match(/(\d+)\s*m[²2]/);
+  if (areaMatch) specs['청정 면적'] = `${areaMatch[1]}m²`;
+
+  // HEPA 등급
+  const hepaMatch = name.match(/HEPA\s*(\d+)등급/);
+  if (hepaMatch) specs['필터'] = `HEPA ${hepaMatch[1]}등급`;
+
+  // 화구 수 (인덕션)
+  const burnerMatch = name.match(/(\d+)구/);
+  if (burnerMatch) specs['화구'] = `${burnerMatch[1]}구`;
+
+  // 용량 L
+  const litreMatch = name.match(/(\d+(?:\.\d+)?)\s*L\b/);
+  if (litreMatch) specs['용량'] = `${litreMatch[1]}L`;
+
+  // 인용 (식기세척기)
+  const personMatch = name.match(/(\d+)인용/);
+  if (personMatch) specs['용량'] = `${personMatch[1]}인용`;
+
+  // 스팀 g/min
+  const steamMatch = name.match(/(\d+)\s*g\/min/);
+  if (steamMatch) specs['스팀량'] = `${steamMatch[1]}g/min`;
+
+  // 압력 바 (커피머신)
+  const barMatch = name.match(/(\d+)\s*바/);
+  if (barMatch) specs['압력'] = `${barMatch[1]}바`;
+
+  // 화면 크기 형/인치
+  const screenMatch = name.match(/(\d+(?:\.\d+)?)\s*형/);
+  if (screenMatch) specs['화면 크기'] = `${screenMatch[1]}형`;
+
+  // 인치
+  const inchMatch = name.match(/"(\d+(?:\.\d+)?)"/) || name.match(/(\d+(?:\.\d+)?)[""]/);
+  if (inchMatch && !screenMatch) specs['화면 크기'] = `${inchMatch[1]}"`;
+
+  // mm (스마트워치 케이스)
+  const mmMatch = name.match(/(\d+)\s*mm/);
+  if (mmMatch) specs['케이스 크기'] = `${mmMatch[1]}mm`;
+
+  // 디스플레이 타입
+  if (name.includes('AMOLED')) specs['디스플레이'] = 'AMOLED';
+  else if (name.includes('QLED')) specs['디스플레이'] = 'QLED';
+  else if (name.includes('4K')) specs['해상도'] = '4K UHD';
+  else if (name.includes('UHD')) specs['해상도'] = '4K UHD';
+
+  // HDR
+  if (name.includes('HDR')) specs['HDR'] = '지원';
+
+  // ANC
+  if (name.includes('ANC') || name.includes('노이즈캔슬링')) specs['노이즈캔슬링'] = 'ANC 지원';
+
+  // AI
+  if (name.includes('AI')) specs['AI'] = '탑재';
+
+  // 7-in-1 등 다기능
+  const multiMatch = name.match(/(\d+)-in-(\d+)/);
+  if (multiMatch) specs['다기능'] = `${multiMatch[1]}-in-${multiMatch[2]}`;
+
+  // 프로그램 수
+  const progMatch = name.match(/(\d+)가지\s*(?:스마트\s*)?프로그램/);
+  if (progMatch) specs['프로그램'] = `${progMatch[1]}가지`;
+
+  // 물걸레 겸용
+  if (name.includes('물걸레')) specs['물걸레'] = '겸용';
+
+  // 자동먼지비움
+  if (name.includes('자동먼지비움')) specs['먼지통'] = '자동 비움';
+
+  // 레이저 먼지감지
+  if (name.includes('레이저')) specs['먼지감지'] = '레이저 감지';
+
+  return specs;
+}
+
+// 카테고리별 일반 제품 특징
+function getGeneralHighlights(product: {
+  goodsNm: string;
+  brandName: string;
+  categoryName: string;
+  productCategoryKey?: string;
+  goodsPrice: number;
+  fixedPrice: number;
+  reviewAvg: number;
+  reviewCnt: number;
+}): { title: string; desc: string }[] {
+  const name = product.goodsNm;
+  const key = product.productCategoryKey || '';
+  const highlights: { title: string; desc: string }[] = [];
+
+  // 무선청소기
+  if (key === 'cordless_vacuum_cleaner') {
+    const wMatch = name.match(/(\d[\d,]+)\s*(AW|W)\b/);
+    highlights.push(
+      { title: wMatch ? `강력한 ${wMatch[1]}${wMatch[2]} 흡입력` : '강력한 흡입력', desc: '먼지와 이물질을 강력하게 흡입. 카펫, 마루, 틈새 먼지까지 깨끗하게 처리' },
+      { title: '자유로운 무선 청소', desc: '코드 없이 집 안 어디든 자유롭게 이동하며 청소 가능' },
+      { title: '다양한 청소 모드', desc: '일반/강력 모드 전환으로 상황에 맞는 효율적인 청소' },
+      { title: '간편한 먼지통 비움', desc: '원터치 버튼으로 먼지통을 간편하게 비울 수 있어 위생적' },
+    );
+  }
+  // 로봇청소기
+  else if (key === 'robotic_vacuum_cleaner') {
+    const hasAI = name.includes('AI');
+    const hasMop = name.includes('물걸레');
+    const hasAutoEmpty = name.includes('자동먼지비움');
+    highlights.push(
+      { title: `${hasAI ? 'AI ' : ''}스마트 자율 주행`, desc: `${hasAI ? 'AI 기반 장애물 인식으로 가구와 물건을 정확하게 피하며 ' : ''}자동으로 경로를 계획해 빈틈 없이 청소` },
+      { title: hasMop ? '청소+물걸레 동시 처리' : '자동 청소', desc: hasMop ? '먼지 흡입과 물걸레질을 한 번에 처리해 바닥을 깨끗하게 관리' : '스케줄 설정으로 집을 비워도 자동으로 청소' },
+      { title: hasAutoEmpty ? '자동 먼지비움 스테이션' : '대용량 먼지통', desc: hasAutoEmpty ? '청소 후 먼지통을 자동으로 비워주는 스테이션으로 30일 이상 먼지통 관리 불필요' : '대용량 먼지통으로 자주 비우지 않아도 됨' },
+      { title: '앱/음성 제어', desc: '스마트폰 앱과 음성 명령으로 어디서든 편리하게 제어 가능' },
+    );
+  }
+  // 공기청정기
+  else if (key === 'air_purifier') {
+    const areaMatch = name.match(/(\d+)\s*m[²2]/);
+    const hepaMatch = name.match(/HEPA\s*(\d+)등급/);
+    highlights.push(
+      { title: areaMatch ? `${areaMatch[1]}m² 넓은 공간 커버` : '넓은 청정 면적', desc: `${areaMatch ? areaMatch[1] + 'm² ' : ''}공간을 빠르고 효율적으로 공기 정화` },
+      { title: hepaMatch ? `HEPA ${hepaMatch[1]}등급 필터` : '고성능 필터', desc: `미세먼지(PM2.5), 초미세먼지, 꽃가루, 박테리아까지 99.97% 이상 포집` },
+      { title: '자동 공기질 감지', desc: '실시간 공기질 센서로 오염도를 감지해 자동으로 팬 속도 조절' },
+      { title: '저소음 야간 모드', desc: '취침 시 최소 소음으로 작동해 수면을 방해하지 않음' },
+    );
+  }
+  // 인덕션
+  else if (key === 'induction') {
+    const wMatch = name.match(/(\d[\d,]+)\s*W/);
+    const burnerMatch = name.match(/(\d+)구/);
+    highlights.push(
+      { title: wMatch ? `최대 ${wMatch[1]}W 강력 화력` : '강력 화력', desc: `${wMatch ? wMatch[1] + 'W ' : ''}고출력으로 빠른 조리 가능. 끓이기, 볶기, 튀기기 모두 강력하게 처리` },
+      { title: burnerMatch ? `${burnerMatch[1]}구 동시 조리` : '다용도 조리', desc: `${burnerMatch ? burnerMatch[1] + '개 화구를 동시에 사용해 ' : ''}여러 요리를 한 번에 조리 가능` },
+      { title: '안전한 전자기 가열', desc: '용기만 가열해 주변 화상 위험 없음. 아이·반려동물이 있는 가정에 안전' },
+      { title: '쉬운 청소', desc: '평면 유리 상판으로 음식물이 눌어붙지 않아 닦기만 해도 깨끗하게 유지' },
+    );
+  }
+  // 식기세척기
+  else if (key === 'dish_washer') {
+    const personMatch = name.match(/(\d+)인용/);
+    highlights.push(
+      { title: personMatch ? `${personMatch[1]}인 가족용 대용량` : '대용량 세척', desc: `${personMatch ? personMatch[1] + '인 가족 기준 1~2끼 분량의 식기를 ' : ''}한 번에 세척 가능` },
+      { title: '고온 살균 세척', desc: '70°C 이상 고온 스팀 세척으로 식중독균과 세균을 99.9% 제거' },
+      { title: '절수·절전 효과', desc: '손 설거지 대비 물 최대 70% 절약. 장기적으로 수도·전기 요금 절감' },
+      { title: '다양한 세척 코스', desc: '일반/고온/빠른 세척/에코 등 상황에 맞는 코스 선택 가능' },
+    );
+  }
+  // 커피머신
+  else if (key === 'coffee_maker') {
+    const barMatch = name.match(/(\d+)\s*바/);
+    highlights.push(
+      { title: barMatch ? `${barMatch[1]}바 고압 추출` : '고압 에스프레소 추출', desc: `${barMatch ? barMatch[1] + '바 압력으로 ' : ''}카페 수준의 진한 크레마와 깊은 풍미 구현` },
+      { title: '전문 바리스타 수준', desc: '스팀 노즐로 우유 거품 생성 가능. 라떼, 카푸치노, 마키아토 등 다양한 메뉴 제조' },
+      { title: '빠른 예열', desc: '전원 ON 후 수초 내 추출 가능한 빠른 예열 시스템' },
+      { title: '손쉬운 청소', desc: '분리형 부품 구조로 청소가 편리하고 위생적으로 관리 가능' },
+    );
+  }
+  // 블렌더
+  else if (key === 'blender') {
+    const wMatch = name.match(/(\d[\d,]+)\s*W/);
+    highlights.push(
+      { title: wMatch ? `${wMatch[1]}W 강력 모터` : '강력한 블렌딩', desc: `${wMatch ? wMatch[1] + 'W 고출력으로 ' : ''}얼음, 냉동 과일도 부드럽게 분쇄` },
+      { title: '다목적 조리 도구', desc: '스무디, 소스, 수프, 이유식 등 다양한 요리에 활용 가능' },
+      { title: '인체공학적 그립', desc: '미끄럼 방지 손잡이로 안전하고 편안하게 사용' },
+      { title: '식기세척기 사용 가능', desc: '분리 가능한 부품은 식기세척기 세척 가능해 편리' },
+    );
+  }
+  // 스팀다리미
+  else if (key === 'steam_iron') {
+    const wMatch = name.match(/(\d[\d,]+)\s*W/);
+    const steamMatch = name.match(/(\d+)\s*g\/min/);
+    highlights.push(
+      { title: wMatch ? `${wMatch[1]}W 고출력 스팀` : '강력 스팀', desc: `${wMatch ? wMatch[1] + 'W ' : ''}강력한 열로 두꺼운 의류의 주름까지 깔끔하게 제거` },
+      { title: steamMatch ? `${steamMatch[1]}g/min 고압 스팀` : '고압 스팀', desc: `${steamMatch ? '분당 ' + steamMatch[1] + 'g의 스팀으로 ' : ''}셔츠, 정장, 두꺼운 커튼까지 빠르게 다림질` },
+      { title: '수직 스팀 기능', desc: '걸어둔 상태로 옷에 직접 스팀 분사 가능. 드라이클리닝 옷도 집에서 케어' },
+      { title: '탄탄한 스팀 베이스', desc: '비접착 솔플레이트로 부드럽게 미끄러지며 다림질' },
+    );
+  }
+  // 스마트워치
+  else if (key === 'smart_watch') {
+    const mmMatch = name.match(/(\d+)\s*mm/);
+    const hasAMOLED = name.includes('AMOLED');
+    highlights.push(
+      { title: mmMatch ? `${mmMatch[1]}mm 선명한 디스플레이` : '선명한 디스플레이', desc: `${hasAMOLED ? 'AMOLED ' : ''}디스플레이로 야외에서도 선명하게 정보 확인 가능` },
+      { title: '건강·운동 트래킹', desc: '심박수, 혈중산소, 수면, 스트레스 등 24시간 건강 모니터링' },
+      { title: '스마트폰 연동', desc: '전화, 메시지, SNS 알림을 손목에서 바로 확인. 스마트폰 없이도 다양한 기능 사용' },
+      { title: '방수 설계', desc: '일상 방수 지원으로 운동 중 땀, 수영 등 물 걱정 없이 착용 가능' },
+    );
+  }
+  // 이어폰
+  else if (key === 'bluetooth_earphone') {
+    const hasANC = name.includes('ANC') || name.includes('노이즈캔슬링');
+    highlights.push(
+      { title: hasANC ? 'ANC 액티브 노이즈 캔슬링' : '몰입감 있는 음질', desc: hasANC ? '외부 소음을 능동적으로 차단해 어느 환경에서도 음악과 통화에 집중' : '정밀한 드라이버로 풍부한 저음과 선명한 고음 구현' },
+      { title: '완전 무선 자유', desc: '케이블 없는 완전 무선으로 운동, 출퇴근 등 일상에서 자유롭게 착용' },
+      { title: '긴 배터리 사용 시간', desc: '케이스 포함 최대 수십 시간 재생 가능. 충전 케이스로 언제든 충전' },
+      { title: '편안한 착용감', desc: '인체공학적 디자인으로 장시간 착용해도 피로감 없음' },
+    );
+  }
+  // TV
+  else if (key === 'tv') {
+    const screenMatch = name.match(/(\d+)형/);
+    const isQLED = name.includes('QLED');
+    const is4K = name.includes('4K');
+    highlights.push(
+      { title: `${screenMatch ? screenMatch[1] + '형 ' : ''}${isQLED ? 'QLED ' : ''}대화면`, desc: `${screenMatch ? screenMatch[1] + '형 ' : ''}${isQLED ? 'QLED ' : ''}디스플레이로 압도적인 몰입감` },
+      { title: `${is4K ? '4K UHD ' : ''}선명한 화질`, desc: `${is4K ? '4K UHD 해상도와 ' : ''}HDR로 실감나는 색감과 선명한 화질 구현` },
+      { title: '스마트TV 기능', desc: '넷플릭스, 유튜브 등 OTT 앱 내장. 인터넷 연결만으로 다양한 콘텐츠 시청' },
+      { title: '다양한 연결 포트', desc: 'HDMI, USB 등 다양한 포트로 게임기, 사운드바 등 기기 연결 가능' },
+    );
+  }
+  // 전기압력밥솥
+  else if (key === 'electric_rice_cooker') {
+    const litreMatch = name.match(/(\d+(?:\.\d+)?)\s*L\b/);
+    const multiMatch = name.match(/(\d+)-in-(\d+)/);
+    const progMatch = name.match(/(\d+)가지/);
+    highlights.push(
+      { title: litreMatch ? `${litreMatch[1]}L 대용량` : '넉넉한 용량', desc: `${litreMatch ? litreMatch[1] + 'L 용량으로 ' : ''}가족 식사부터 파티 요리까지 한 번에 조리 가능` },
+      { title: multiMatch ? `${multiMatch[1]}-in-${multiMatch[2]} 다기능` : '다양한 조리 기능', desc: `${progMatch ? progMatch[1] + '가지 ' : ''}조리 모드로 밥솥, 찜기, 압력솥, 슬로우쿠커 등 다양하게 활용` },
+      { title: '빠른 압력 조리', desc: '고압 스팀으로 일반 냄비보다 30% 빠른 조리. 질긴 고기도 부드럽게' },
+      { title: '안전 설계', desc: '과압 방지 밸브와 잠금 장치로 안전한 사용 보장' },
+    );
+  }
+  // 기본 (분류 안 된 경우)
+  else {
+    highlights.push(
+      { title: `${product.brandName} 공식 정품`, desc: '한국 공식 유통 정품으로 A/S 및 품질 보증 완비' },
+      { title: '스마트홈딜 엄선 제품', desc: '전문가가 직접 테스트해 성능, 내구성, 가성비를 종합 검증한 제품' },
+    );
+    if (product.reviewCnt > 0) {
+      highlights.push({ title: `★ ${product.reviewAvg.toFixed(1)} 높은 만족도`, desc: `실제 구매자 ${product.reviewCnt.toLocaleString('ko-KR')}명이 인정한 제품` });
+    }
+  }
+
+  return highlights;
+}
+
 function parseAppleSpecs(goodsNm: string, categoryKey?: string) {
   const name = goodsNm;
   const specs: Record<string, string> = {};
@@ -196,9 +444,13 @@ export default function TabSection({ product, discount }: Props) {
   const APPLE_KEYS = ['macbook_pro_14', 'macbook_pro_16', 'mac_studio', 'mac_pro', 'mac_mini'];
   const isApple = APPLE_KEYS.includes(product.productCategoryKey || '');
 
-  const specs = isApple ? parseAppleSpecs(product.goodsNm, product.productCategoryKey) : {};
+  const specs = isApple
+    ? parseAppleSpecs(product.goodsNm, product.productCategoryKey)
+    : parseGeneralSpecs(product.goodsNm, product.productCategoryKey, product.brandName);
   const chipMatch = product.goodsNm.match(/(M\d+(?:\s+(?:Pro|Max|Ultra))?)/);
-  const highlights = isApple ? getAppleHighlights(product.productCategoryKey, chipMatch?.[1]) : [];
+  const highlights = isApple
+    ? getAppleHighlights(product.productCategoryKey, chipMatch?.[1])
+    : getGeneralHighlights(product);
 
   return (
     <div className="mt-[48px]">
@@ -432,15 +684,37 @@ export default function TabSection({ product, discount }: Props) {
           </h3>
           <div className="bg-gray-1 rounded-xl border border-gray-3 p-[20px]">
             <ul className="grid grid-cols-2 gap-[10px] lg:grid-cols-3">
-              {(product.productCategoryKey === 'macbook_pro_14' || product.productCategoryKey === 'macbook_pro_16'
-                ? ['MacBook Pro 본체', 'MagSafe 3 충전 케이블 (2m)', 'USB-C to MagSafe 3 케이블', '140W USB-C 전원 어댑터', '빠른 시작 안내서']
-                : product.productCategoryKey === 'mac_studio'
-                ? ['Mac Studio 본체', 'USB-C to MagSafe 3 케이블 (1m)', '전원 케이블', '빠른 시작 안내서']
-                : product.productCategoryKey === 'mac_pro'
-                ? ['Mac Pro 본체', '전원 케이블', 'Magic Keyboard (Touch ID)', 'Magic Mouse', 'USB-C 충전 케이블']
-                : product.productCategoryKey === 'mac_mini'
-                ? ['Mac mini 본체', '전원 케이블', '빠른 시작 안내서']
-                : ['본체', '전원 어댑터', '케이블', '빠른 시작 안내서']
+              {(isApple
+                ? (product.productCategoryKey === 'macbook_pro_14' || product.productCategoryKey === 'macbook_pro_16'
+                  ? ['MacBook Pro 본체', 'MagSafe 3 충전 케이블 (2m)', 'USB-C to MagSafe 3 케이블', '140W USB-C 전원 어댑터', '빠른 시작 안내서']
+                  : product.productCategoryKey === 'mac_studio'
+                  ? ['Mac Studio 본체', 'USB-C to MagSafe 3 케이블 (1m)', '전원 케이블', '빠른 시작 안내서']
+                  : product.productCategoryKey === 'mac_pro'
+                  ? ['Mac Pro 본체', '전원 케이블', 'Magic Keyboard (Touch ID)', 'Magic Mouse', 'USB-C 충전 케이블']
+                  : ['Mac mini 본체', '전원 케이블', '빠른 시작 안내서'])
+                : product.productCategoryKey === 'cordless_vacuum_cleaner'
+                ? ['본체', '흡입구 (대/소)', '충전 거치대', '충전 어댑터', '빠른 시작 안내서']
+                : product.productCategoryKey === 'robotic_vacuum_cleaner'
+                ? ['로봇청소기 본체', '자동 충전 스테이션', '전원 케이블', '사이드 브러시 × 2', '빠른 시작 안내서']
+                : product.productCategoryKey === 'air_purifier'
+                ? ['본체', '필터 (사전 설치)', '전원 케이블', '빠른 시작 안내서']
+                : product.productCategoryKey === 'dish_washer'
+                ? ['본체', '급수 호스', '배수 호스', '식기 바구니', '빠른 시작 안내서']
+                : product.productCategoryKey === 'coffee_maker'
+                ? ['본체', '물통', '포터필터', '탬퍼', '스팀 노즐', '빠른 시작 안내서']
+                : product.productCategoryKey === 'blender'
+                ? ['핸드블렌더 본체', '블렌딩 샤프트', '계량컵', '빠른 시작 안내서']
+                : product.productCategoryKey === 'steam_iron'
+                ? ['다리미 본체', '빠른 시작 안내서']
+                : product.productCategoryKey === 'smart_watch'
+                ? ['스마트워치 본체', '충전 케이블', '여분 스트랩', '빠른 시작 안내서']
+                : product.productCategoryKey === 'bluetooth_earphone'
+                ? ['이어폰 (좌/우)', '충전 케이스', 'USB-C 충전 케이블', '이어팁 (S/M/L)', '빠른 시작 안내서']
+                : product.productCategoryKey === 'tv'
+                ? ['TV 본체', '스탠드', '리모컨', '전원 케이블', '빠른 시작 안내서']
+                : product.productCategoryKey === 'electric_rice_cooker'
+                ? ['본체', '내솥', '전원 케이블', '밥주걱', '빠른 시작 안내서']
+                : ['본체', '전원 케이블', '빠른 시작 안내서']
               ).map((item, i) => (
                 <li key={i} className="flex items-center gap-[8px]">
                   <svg className="w-[14px] h-[14px] text-blue-7 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
