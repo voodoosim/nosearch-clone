@@ -193,9 +193,12 @@ export default function TabSection({ product, discount }: Props) {
     }
   };
 
-  const specs = parseAppleSpecs(product.goodsNm, product.productCategoryKey);
+  const APPLE_KEYS = ['macbook_pro_14', 'macbook_pro_16', 'mac_studio', 'mac_pro', 'mac_mini'];
+  const isApple = APPLE_KEYS.includes(product.productCategoryKey || '');
+
+  const specs = isApple ? parseAppleSpecs(product.goodsNm, product.productCategoryKey) : {};
   const chipMatch = product.goodsNm.match(/(M\d+(?:\s+(?:Pro|Max|Ultra))?)/);
-  const highlights = getAppleHighlights(product.productCategoryKey, chipMatch?.[1]);
+  const highlights = isApple ? getAppleHighlights(product.productCategoryKey, chipMatch?.[1]) : [];
 
   return (
     <div className="mt-[48px]">
@@ -276,7 +279,9 @@ export default function TabSection({ product, discount }: Props) {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                   </span>
-                  <span className="text-[14px] text-gray-9">Apple 공식 정품 인증 제품 (정품 시리얼 포함)</span>
+                  <span className="text-[14px] text-gray-9">
+                    {isApple ? 'Apple 공식 정품 인증 제품 (정품 시리얼 포함)' : `${product.brandName} 정품 인증 제품`}
+                  </span>
                 </li>
                 {product.reviewCnt > 0 && (
                   <li className="flex items-start gap-[10px]">
@@ -298,7 +303,7 @@ export default function TabSection({ product, discount }: Props) {
                       </svg>
                     </span>
                     <span className="text-[14px] text-gray-9">
-                      Apple 공식가 대비 {discount}% 할인 — 공동구매 최저가 보장
+                      {isApple ? `Apple 공식가 대비 ${discount}% 할인 — 공동구매 최저가 보장` : `정가 대비 ${discount}% 할인 — 최저가 보장`}
                     </span>
                   </li>
                 )}
@@ -335,7 +340,7 @@ export default function TabSection({ product, discount }: Props) {
               </div>
               <div>
                 <p className="text-[14px] font-bold text-gray-9 mb-[4px]">공동구매 특가</p>
-                <p className="text-[12px] text-gray-6 leading-snug">10명 이상 모이면 추가 할인<br />Apple 공식가 대비 최대 {Math.max(discount, 5)}% 절약</p>
+                <p className="text-[12px] text-gray-6 leading-snug">10명 이상 모이면 추가 할인<br />{isApple ? `Apple 공식가 대비 최대 ${Math.max(discount, 5)}% 절약` : `정가 대비 최대 ${Math.max(discount, 5)}% 절약`}</p>
               </div>
             </div>
             {/* 포인트 적립 */}
@@ -350,7 +355,7 @@ export default function TabSection({ product, discount }: Props) {
                 <p className="text-[12px] text-gray-6 leading-snug">구매금액의 1% 포인트 적립<br />다음 구매 시 현금처럼 사용</p>
               </div>
             </div>
-            {/* AppleCare+ */}
+            {/* 보증/AS */}
             <div className="flex items-start gap-[14px] bg-gray-1 rounded-xl border border-gray-3 p-[16px]">
               <div className="shrink-0 w-[40px] h-[40px] rounded-xl bg-gray-2 border border-gray-3 flex items-center justify-center">
                 <svg width="20" height="20" fill="none" stroke="#1C1C1E" strokeWidth={1.8} viewBox="0 0 24 24">
@@ -358,8 +363,17 @@ export default function TabSection({ product, discount }: Props) {
                 </svg>
               </div>
               <div>
-                <p className="text-[14px] font-bold text-gray-9 mb-[4px]">AppleCare+ 동시 구매</p>
-                <p className="text-[12px] text-gray-6 leading-snug">구매 시 AppleCare+ 함께 신청 가능<br />파손 수리 횟수 제한 없이 보장</p>
+                {isApple ? (
+                  <>
+                    <p className="text-[14px] font-bold text-gray-9 mb-[4px]">AppleCare+ 동시 구매</p>
+                    <p className="text-[12px] text-gray-6 leading-snug">구매 시 AppleCare+ 함께 신청 가능<br />파손 수리 횟수 제한 없이 보장</p>
+                  </>
+                ) : (
+                  <>
+                    <p className="text-[14px] font-bold text-gray-9 mb-[4px]">제조사 공식 A/S</p>
+                    <p className="text-[12px] text-gray-6 leading-snug">제조사 1년 보증 포함<br />전국 공식 서비스 센터 이용 가능</p>
+                  </>
+                )}
               </div>
             </div>
           </div>
@@ -461,31 +475,52 @@ export default function TabSection({ product, discount }: Props) {
                   </td>
                 </tr>
               ))}
-              <tr className="bg-gray-1">
-                <td className="px-[16px] py-[13px] font-semibold text-gray-7 border-r border-gray-3">운영체제</td>
-                <td className="px-[16px] py-[13px] text-gray-10">macOS Sequoia (최신 버전)</td>
-              </tr>
-              <tr>
-                <td className="px-[16px] py-[13px] font-semibold text-gray-7 border-r border-gray-3">보증</td>
-                <td className="px-[16px] py-[13px] text-gray-10">Apple 1년 제한 보증 포함 (AppleCare+ 별도 구매 가능)</td>
-              </tr>
-              <tr className="bg-gray-1">
-                <td className="px-[16px] py-[13px] font-semibold text-gray-7 border-r border-gray-3">정품 여부</td>
-                <td className="px-[16px] py-[13px] text-gray-10 font-medium text-green-600">Apple Korea 정품 (한국 공식 유통 제품)</td>
-              </tr>
+              {isApple ? (
+                <>
+                  <tr className="bg-gray-1">
+                    <td className="px-[16px] py-[13px] font-semibold text-gray-7 border-r border-gray-3">운영체제</td>
+                    <td className="px-[16px] py-[13px] text-gray-10">macOS Sequoia (최신 버전)</td>
+                  </tr>
+                  <tr>
+                    <td className="px-[16px] py-[13px] font-semibold text-gray-7 border-r border-gray-3">보증</td>
+                    <td className="px-[16px] py-[13px] text-gray-10">Apple 1년 제한 보증 포함 (AppleCare+ 별도 구매 가능)</td>
+                  </tr>
+                  <tr className="bg-gray-1">
+                    <td className="px-[16px] py-[13px] font-semibold text-gray-7 border-r border-gray-3">정품 여부</td>
+                    <td className="px-[16px] py-[13px] text-gray-10 font-medium text-green-600">Apple Korea 정품 (한국 공식 유통 제품)</td>
+                  </tr>
+                </>
+              ) : (
+                <>
+                  <tr className="bg-gray-1">
+                    <td className="px-[16px] py-[13px] font-semibold text-gray-7 border-r border-gray-3">브랜드</td>
+                    <td className="px-[16px] py-[13px] text-gray-10">{product.brandName}</td>
+                  </tr>
+                  <tr>
+                    <td className="px-[16px] py-[13px] font-semibold text-gray-7 border-r border-gray-3">보증</td>
+                    <td className="px-[16px] py-[13px] text-gray-10">제조사 1년 보증 (서비스센터 이용 가능)</td>
+                  </tr>
+                  <tr className="bg-gray-1">
+                    <td className="px-[16px] py-[13px] font-semibold text-gray-7 border-r border-gray-3">정품 여부</td>
+                    <td className="px-[16px] py-[13px] text-gray-10 font-medium text-green-600">공식 정품 (한국 정식 유통 제품)</td>
+                  </tr>
+                </>
+              )}
             </tbody>
           </table>
         </div>
 
-        {/* Apple 공식 사이트 링크 안내 */}
-        <div className="mt-[16px] flex items-center gap-[8px] bg-gray-1 rounded-xl border border-gray-3 p-[14px]">
-          <svg className="w-[16px] h-[16px] text-blue-7 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-          </svg>
-          <p className="text-[12px] text-gray-7">
-            상세 기술 사양은 <span className="font-semibold text-blue-7">apple.com/kr</span>에서 확인하실 수 있습니다.
-          </p>
-        </div>
+        {/* 사양 안내 */}
+        {isApple && (
+          <div className="mt-[16px] flex items-center gap-[8px] bg-gray-1 rounded-xl border border-gray-3 p-[14px]">
+            <svg className="w-[16px] h-[16px] text-blue-7 shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+            </svg>
+            <p className="text-[12px] text-gray-7">
+              상세 기술 사양은 <span className="font-semibold text-blue-7">apple.com/kr</span>에서 확인하실 수 있습니다.
+            </p>
+          </div>
+        )}
       </div>
 
       {/* 리뷰 섹션 */}
@@ -536,11 +571,15 @@ export default function TabSection({ product, discount }: Props) {
 
             {/* 샘플 리뷰 카드 */}
             <div className="flex flex-col gap-[12px]">
-              {[
+              {(isApple ? [
                 { name: '김**', rating: 5, date: '2026.02.15', text: '정말 최고의 성능입니다. 영상 편집이 이렇게 빠르고 부드럽게 되는건 처음이에요. M 칩 진짜 대단합니다.' },
                 { name: '박**', rating: 5, date: '2026.02.08', text: '배터리가 진짜 오래 갑니다. 하루 종일 써도 여유롭네요. 디스플레이도 너무 아름답고요. 가격이 비싸지만 그 이상의 가치가 있습니다.' },
                 { name: '이**', rating: 4, date: '2026.01.22', text: '스마트홈딜 공동구매로 정가보다 저렴하게 구입했습니다. 빠른 배송, 정품 확인 완료. 만족합니다!' },
-              ].map((review, i) => (
+              ] : [
+                { name: '김**', rating: 5, date: '2026.02.20', text: `${product.brandName} 제품 쓴지 3개월 됐는데 매우 만족합니다. 생각보다 훨씬 좋아요. 기능도 다양하고 쓰기 편해서 주변에도 추천했습니다.` },
+                { name: '최**', rating: 5, date: '2026.02.11', text: '스마트홈딜에서 정가보다 훨씬 저렴하게 샀어요. 배송도 빠르고 정품 확인도 됩니다. 디자인도 깔끔하고 품질도 좋아서 재구매 의향 있습니다.' },
+                { name: '박**', rating: 4, date: '2026.01.30', text: '가성비 정말 좋습니다. 이 가격에 이 성능이면 충분히 만족스럽네요. 초기 세팅도 어렵지 않았고 사용하기 편합니다.' },
+              ]).map((review, i) => (
                 <div key={i} className="bg-gray-1 rounded-xl border border-gray-3 p-[18px]">
                   <div className="flex items-center justify-between mb-[10px]">
                     <div className="flex items-center gap-[8px]">
@@ -620,7 +659,7 @@ export default function TabSection({ product, discount }: Props) {
               </div>
               <div className="flex gap-[16px]">
                 <dt className="text-[13px] text-gray-6 shrink-0 w-[64px]">포장</dt>
-                <dd className="text-[13px] text-gray-10">Apple 공식 박스 미개봉 상태 밀봉 배송</dd>
+                <dd className="text-[13px] text-gray-10">{isApple ? 'Apple 공식 박스 미개봉 상태 밀봉 배송' : '제조사 정품 박스 미개봉 상태 밀봉 배송'}</dd>
               </div>
             </dl>
           </div>
@@ -654,22 +693,39 @@ export default function TabSection({ product, discount }: Props) {
               <svg className="w-[16px] h-[16px] text-blue-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
               </svg>
-              Apple 공식 보증 안내
+              {isApple ? 'Apple 공식 보증 안내' : '보증 / A/S 안내'}
             </h3>
-            <dl className="flex flex-col gap-[8px]">
-              <div className="flex gap-[16px]">
-                <dt className="text-[13px] text-gray-6 shrink-0 w-[64px]">기본 보증</dt>
-                <dd className="text-[13px] text-gray-10">Apple 1년 제한 보증</dd>
-              </div>
-              <div className="flex gap-[16px]">
-                <dt className="text-[13px] text-gray-6 shrink-0 w-[64px]">Apple AS</dt>
-                <dd className="text-[13px] text-gray-10">전국 Apple 공인 서비스 센터 이용 가능</dd>
-              </div>
-              <div className="flex gap-[16px]">
-                <dt className="text-[13px] text-gray-6 shrink-0 w-[64px]">추가 보증</dt>
-                <dd className="text-[13px] text-gray-10">AppleCare+ 가입 시 2년 연장 (별도 구매)</dd>
-              </div>
-            </dl>
+            {isApple ? (
+              <dl className="flex flex-col gap-[8px]">
+                <div className="flex gap-[16px]">
+                  <dt className="text-[13px] text-gray-6 shrink-0 w-[64px]">기본 보증</dt>
+                  <dd className="text-[13px] text-gray-10">Apple 1년 제한 보증</dd>
+                </div>
+                <div className="flex gap-[16px]">
+                  <dt className="text-[13px] text-gray-6 shrink-0 w-[64px]">Apple AS</dt>
+                  <dd className="text-[13px] text-gray-10">전국 Apple 공인 서비스 센터 이용 가능</dd>
+                </div>
+                <div className="flex gap-[16px]">
+                  <dt className="text-[13px] text-gray-6 shrink-0 w-[64px]">추가 보증</dt>
+                  <dd className="text-[13px] text-gray-10">AppleCare+ 가입 시 2년 연장 (별도 구매)</dd>
+                </div>
+              </dl>
+            ) : (
+              <dl className="flex flex-col gap-[8px]">
+                <div className="flex gap-[16px]">
+                  <dt className="text-[13px] text-gray-6 shrink-0 w-[64px]">기본 보증</dt>
+                  <dd className="text-[13px] text-gray-10">제조사 1년 보증</dd>
+                </div>
+                <div className="flex gap-[16px]">
+                  <dt className="text-[13px] text-gray-6 shrink-0 w-[64px]">서비스</dt>
+                  <dd className="text-[13px] text-gray-10">전국 공식 서비스 센터 이용 가능</dd>
+                </div>
+                <div className="flex gap-[16px]">
+                  <dt className="text-[13px] text-gray-6 shrink-0 w-[64px]">문의</dt>
+                  <dd className="text-[13px] text-gray-10">스마트홈딜 고객센터 운영시간 내 접수 가능</dd>
+                </div>
+              </dl>
+            )}
           </div>
         </div>
       </div>
