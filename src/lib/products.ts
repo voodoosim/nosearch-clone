@@ -4,6 +4,8 @@ import bestProducts from '@/data/products-best.json';
 import dealProducts from '@/data/products-deal.json';
 import timedealProducts from '@/data/products-timedeal.json';
 import reviewProducts from '@/data/products-review.json';
+import samsungProducts from '@/data/products-samsung.json';
+import overseasProducts from '@/data/products-overseas.json';
 
 export interface CategoryInfo {
   key: string;
@@ -86,6 +88,8 @@ function getAllProductsFromJson(): Product[] {
     dealProducts as Product[],
     timedealProducts as Product[],
     reviewProducts as Product[],
+    samsungProducts as Product[],
+    overseasProducts as Product[],
   ];
   for (const source of sources) {
     for (const p of source) {
@@ -209,6 +213,45 @@ export async function getReviewProducts(): Promise<Product[]> {
     console.warn('[PocketBase] 연결 실패 - JSON fallback 사용');
     return (reviewProducts as Product[]).slice();
   }
+}
+
+export async function getSamsungProducts(): Promise<Product[]> {
+  try {
+    const records = await createPB().collection('products').getFullList({
+      filter: 'brandName = "삼성전자"',
+      sort: '-created',
+    });
+    return records.map(recordToProduct);
+  } catch {
+    return (samsungProducts as Product[]).slice();
+  }
+}
+
+export async function getOverseasProducts(): Promise<Product[]> {
+  try {
+    const records = await createPB().collection('products').getFullList({
+      filter: 'scmNo >= "700" && scmNo <= "799"',
+      sort: '-created',
+    });
+    return records.map(recordToProduct);
+  } catch {
+    return (overseasProducts as Product[]).slice();
+  }
+}
+
+const SMART_CATEGORY_KEYS = [
+  'robotic_vacuum_cleaner',
+  'cordless_vacuum_cleaner',
+  'air_purifier',
+  'smart_watch',
+  'tv',
+  'induction',
+  'dish_washer',
+];
+
+export async function getSmartProducts(): Promise<Product[]> {
+  const all = await getAllProducts();
+  return all.filter((p) => p.productCategoryKey && SMART_CATEGORY_KEYS.includes(p.productCategoryKey));
 }
 
 export async function searchProducts(query: string): Promise<Product[]> {

@@ -10,6 +10,7 @@ const STORE_TABS = [
   { label: "타임딜", href: "/store/timedeal" },
   { label: "이번주 인기", href: "/store/best" },
   { label: "기획전", href: "/store/exhibition" },
+  { label: "스마트관", href: "/store/smart" },
   { label: "애플관", href: "/store/apple" },
   { label: "삼성관", href: "/store/samsung" },
   { label: "해외직구관", href: "/store/overseas" },

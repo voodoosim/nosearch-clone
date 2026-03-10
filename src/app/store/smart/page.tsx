@@ -1,90 +1,83 @@
 import type { Metadata } from 'next';
 import ProductCard from '@/components/ProductCard';
-import { getOverseasProducts } from '@/lib/products';
+import { getSmartProducts } from '@/lib/products';
 
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: '해외직구관 — 스마트홈딜',
-  description: "Dyson, De'Longhi, Braun, Philips, iRobot — 해외 프리미엄 직구 최저가",
+  title: '스마트관 — 스마트홈딜',
+  description: '로봇청소기, 공기청정기, 스마트TV, 인덕션 — 스마트홈 가전 큐레이션',
 };
 
-const OVERSEAS_GROUPS = [
+const SMART_GROUPS = [
   {
-    key: 'vacuum',
-    label: '청소기',
-    icon: '🌀',
-    keys: ['cordless_vacuum_cleaner', 'robotic_vacuum_cleaner'],
+    key: 'clean',
+    label: '스마트 청소기',
+    icon: '🤖',
+    desc: '로봇청소기 · 무선청소기',
+    keys: ['robotic_vacuum_cleaner', 'cordless_vacuum_cleaner'],
   },
   {
     key: 'air',
-    label: '공기청정기',
+    label: '공기 관리',
     icon: '💨',
+    desc: '공기청정기 · 에어컨',
     keys: ['air_purifier'],
   },
   {
     key: 'kitchen',
-    label: '주방가전',
-    icon: '☕',
-    keys: ['coffee_maker', 'blender', 'electric_rice_cooker'],
+    label: '스마트 주방',
+    icon: '🍳',
+    desc: '인덕션 · 식기세척기',
+    keys: ['induction', 'dish_washer'],
   },
   {
-    key: 'living',
-    label: '생활가전',
-    icon: '🏠',
-    keys: ['steam_iron'],
+    key: 'it',
+    label: '스마트 기기',
+    icon: '📺',
+    desc: 'TV · 스마트워치',
+    keys: ['tv', 'smart_watch'],
   },
 ];
 
-export default async function OverseasStorePage() {
-  const products = await getOverseasProducts();
+export default async function SmartStorePage() {
+  const products = await getSmartProducts();
 
-  const groups = OVERSEAS_GROUPS.map((g) => ({
+  const groups = SMART_GROUPS.map((g) => ({
     ...g,
     products: products.filter(
       (p) => p.productCategoryKey && g.keys.includes(p.productCategoryKey)
     ),
   })).filter((g) => g.products.length > 0);
 
-  const brands = Array.from(new Set(products.map((p) => p.brandName)));
-
   return (
     <div>
       {/* 히어로 배너 */}
       <div
         className="relative overflow-hidden"
-        style={{ background: 'linear-gradient(160deg, #0D0D0D 0%, #1A0A2E 60%, #2D1B4E 100%)' }}
+        style={{ background: 'linear-gradient(160deg, #051C12 0%, #053D2C 60%, #064E3B 100%)' }}
       >
         <div
           className="absolute inset-0 opacity-20"
           style={{
             backgroundImage:
-              'radial-gradient(circle at 75% 30%, #7C3AED 0%, transparent 55%), radial-gradient(circle at 15% 75%, #C026D3 0%, transparent 50%)',
+              'radial-gradient(circle at 70% 30%, #10B981 0%, transparent 55%), radial-gradient(circle at 20% 80%, #059669 0%, transparent 50%)',
           }}
         />
         <div className="relative mx-auto max-w-[1200px] px-[20px] lg:px-[30px] py-[56px] lg:py-[80px]">
-          <div className="mb-[16px]">
-            <span className="text-[11px] font-bold text-white/40 tracking-[0.22em] uppercase border border-white/20 rounded px-[8px] py-[3px]">
-              Global Direct
+          <div className="flex items-center gap-[10px] mb-[16px]">
+            <div className="w-[8px] h-[8px] rounded-full bg-emerald-400 animate-pulse" />
+            <span className="text-[13px] font-semibold text-white/60 tracking-[0.18em] uppercase">
+              Smart Home
             </span>
           </div>
           <h1 className="text-[32px] lg:text-[48px] font-black text-white tracking-tight leading-none mb-[12px]">
-            해외직구관
+            스마트관
           </h1>
-          <p className="text-[15px] lg:text-[17px] text-white/60 mb-[12px]">
-            Dyson · De&apos;Longhi · Braun · Philips · iRobot
+          <p className="text-[15px] lg:text-[17px] text-white/60 mb-[8px]">
+            로봇청소기 · 공기청정기 · 스마트TV · 인덕션
           </p>
-          <div className="flex flex-wrap gap-[6px] mb-[12px]">
-            {brands.map((brand) => (
-              <span
-                key={brand}
-                className="text-[11px] font-semibold text-white/70 bg-white/10 rounded-full px-[10px] py-[4px]"
-              >
-                {brand}
-              </span>
-            ))}
-          </div>
-          <p className="text-[13px] text-white/40">총 {products.length}개 상품</p>
+          <p className="text-[13px] text-white/40">총 {products.length}개 스마트홈 상품</p>
         </div>
       </div>
 
@@ -95,7 +88,7 @@ export default async function OverseasStorePage() {
             <a key={g.key} href={`#cat-${g.key}`} className="shrink-0">
               <div
                 className="flex items-center gap-[8px] px-[16px] py-[10px] rounded-full text-white text-[13px] font-semibold hover:opacity-80 transition-opacity"
-                style={{ background: '#2D1B4E' }}
+                style={{ background: '#064E3B' }}
               >
                 <span>{g.icon}</span>
                 <span>{g.label}</span>
@@ -111,19 +104,22 @@ export default async function OverseasStorePage() {
             id={`cat-${g.key}`}
             className={`mb-[64px] ${idx > 0 ? 'pt-[64px] border-t border-gray-3' : ''}`}
           >
-            <div className="flex items-center gap-[12px] mb-[24px]">
+            <div className="flex items-center gap-[12px] mb-[8px]">
               <div
                 className="w-[44px] h-[44px] rounded-full flex items-center justify-center text-[20px]"
-                style={{ background: '#2D1B4E' }}
+                style={{ background: '#064E3B' }}
               >
                 {g.icon}
               </div>
-              <h2 className="text-[22px] font-extrabold text-gray-10 lg:text-[26px] tracking-tight">
-                {g.label}
-              </h2>
-              <span className="text-[13px] text-gray-5">{g.products.length}개</span>
+              <div>
+                <h2 className="text-[22px] font-extrabold text-gray-10 lg:text-[26px] tracking-tight leading-none">
+                  {g.label}
+                </h2>
+                <p className="text-[12px] text-gray-5 mt-[3px]">{g.desc}</p>
+              </div>
+              <span className="text-[13px] text-gray-5 ml-[2px]">{g.products.length}개</span>
             </div>
-            <div className="grid grid-cols-2 gap-x-[10px] gap-y-[12px] lg:grid-cols-4 lg:gap-x-[16px] lg:gap-y-[20px]">
+            <div className="mt-[20px] grid grid-cols-2 gap-x-[10px] gap-y-[12px] lg:grid-cols-4 lg:gap-x-[16px] lg:gap-y-[20px]">
               {g.products.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
@@ -134,7 +130,7 @@ export default async function OverseasStorePage() {
         {groups.length === 0 && (
           <div className="flex flex-col items-center py-[80px] text-center">
             <p className="text-[15px] font-semibold text-gray-7 mb-[8px]">상품 준비 중입니다</p>
-            <p className="text-[13px] text-gray-5">곧 다양한 해외 브랜드 제품이 등록됩니다.</p>
+            <p className="text-[13px] text-gray-5">곧 다양한 스마트홈 가전이 등록됩니다.</p>
           </div>
         )}
       </div>
