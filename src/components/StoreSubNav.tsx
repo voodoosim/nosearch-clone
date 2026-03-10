@@ -13,8 +13,6 @@ const STORE_TABS = [
   { label: "스마트관", href: "/store/smart" },
   { label: "애플관", href: "/store/apple" },
   { label: "삼성관", href: "/store/samsung" },
-  { label: "해외직구관", href: "/store/overseas" },
-  { label: "렌탈", href: "/store/rental" },
   { label: "가이드", href: "/store/contents" },
 ];
 

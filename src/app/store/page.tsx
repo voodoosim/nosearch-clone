@@ -95,19 +95,6 @@ const STORE_CATEGORIES = [
     ),
   },
   {
-    label: "해외직구",
-    href: "/store/overseas",
-    bg: "#0D3B4A",
-    icon: (
-      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-        <circle cx="13" cy="13" r="9" stroke="white" strokeWidth="1.6"/>
-        <path d="M13 4c0 0-4 3-4 9s4 9 4 9M13 4c0 0 4 3 4 9s-4 9-4 9" stroke="white" strokeWidth="1.3" strokeLinecap="round" opacity="0.7"/>
-        <path d="M4 13h18" stroke="white" strokeWidth="1.3" strokeLinecap="round" opacity="0.5"/>
-        <path d="M5 9h16M5 17h16" stroke="white" strokeWidth="1.2" strokeLinecap="round" opacity="0.4"/>
-      </svg>
-    ),
-  },
-  {
     label: "전체보기",
     href: "/store/best",
     bg: "#636366",
@@ -246,9 +233,8 @@ export default async function StoreHomePage() {
         </div>
       ))}
 
-      {/* 기획전 + 렌탈 배너 (2열) */}
-      <div className="mb-[56px] px-[20px] lg:px-[30px] grid grid-cols-1 gap-[16px] lg:grid-cols-2">
-        {/* 기획전 배너 */}
+      {/* 기획전 배너 */}
+      <div className="mb-[56px] px-[20px] lg:px-[30px]">
         <Link href="/store/exhibition" className="group">
           <div className="relative overflow-hidden rounded-2xl h-[160px] lg:h-[180px]" style={{ background: 'linear-gradient(135deg, #1A0E05 0%, #3D2009 100%)' }}>
             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 70% 50%, #F5A623 0%, transparent 60%)' }} />
@@ -262,28 +248,6 @@ export default async function StoreHomePage() {
               <p className="text-[13px] text-gray-4">MacBook Pro · Mac Studio · Mac Pro 특가전</p>
             </div>
             <div className="absolute right-[20px] bottom-[20px] flex items-center gap-[4px] text-amber-400 group-hover:translate-x-[3px] transition-transform">
-              <span className="text-[13px] font-semibold">보러가기</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-          </div>
-        </Link>
-
-        {/* 렌탈 배너 */}
-        <Link href="/store/rental" className="group">
-          <div className="relative overflow-hidden rounded-2xl h-[160px] lg:h-[180px]" style={{ background: 'linear-gradient(135deg, #0D3822 0%, #1E6B3E 100%)' }}>
-            <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 30% 50%, #6BE8A0 0%, transparent 60%)' }} />
-            <div className="absolute inset-0 flex flex-col justify-center px-[28px]">
-              <span className="inline-flex items-center px-[10px] py-[4px] bg-emerald-500 text-[11px] font-bold text-white rounded-full w-fit mb-[12px]">
-                Rental
-              </span>
-              <h3 className="text-[22px] font-extrabold text-white leading-tight mb-[6px]">
-                렌탈로 부담 없이
-              </h3>
-              <p className="text-[13px] text-emerald-200">월 소액 · 무상 AS · 무료 설치</p>
-            </div>
-            <div className="absolute right-[20px] bottom-[20px] flex items-center gap-[4px] text-emerald-300 group-hover:translate-x-[3px] transition-transform">
               <span className="text-[13px] font-semibold">보러가기</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -329,22 +293,6 @@ export default async function StoreHomePage() {
                 </div>
                 <p className="text-[15px] font-extrabold text-white">Samsung</p>
                 <p className="text-[11px] text-white/50 group-hover:text-white/70 transition-colors flex items-center gap-[4px]">Galaxy · TV
-                  <span className="px-[5px] py-[1px] bg-white/20 rounded text-[9px]">준비중</span>
-                </p>
-              </div>
-            </div>
-          </Link>
-
-          {/* 해외직구 */}
-          <Link href="/store/overseas" className="group">
-            <div className="relative overflow-hidden rounded-2xl h-[120px] lg:h-[140px]" style={{ background: 'linear-gradient(135deg, #0D1F2D 0%, #1A3A4A 100%)' }}>
-              <div className="absolute inset-0 opacity-15" style={{ backgroundImage: 'radial-gradient(circle at 70% 30%, #26C6DA 0%, transparent 60%)' }} />
-              <div className="absolute inset-0 flex flex-col justify-end px-[16px] pb-[14px]">
-                <svg width="22" height="22" fill="none" stroke="white" strokeWidth={1.5} viewBox="0 0 24 24" className="mb-[8px] opacity-90">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-[15px] font-extrabold text-white">해외직구</p>
-                <p className="text-[11px] text-white/50 group-hover:text-white/70 transition-colors flex items-center gap-[4px]">미국·일본·유럽
                   <span className="px-[5px] py-[1px] bg-white/20 rounded text-[9px]">준비중</span>
                 </p>
               </div>
