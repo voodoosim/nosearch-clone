@@ -8,7 +8,9 @@ export default function MyPageLayout({
 }) {
   return (
     <div>
-      <Header />
+      <div className="sticky top-0 z-[500]">
+        <Header />
+      </div>
       <main>{children}</main>
       <footer className="pb-[80px] lg:pb-[50px]">
         <div className="mx-auto max-w-[1200px] px-[20px] pt-[50px] lg:px-[30px]">

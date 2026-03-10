@@ -9,8 +9,10 @@ export default function StoreLayout({
 }) {
   return (
     <div>
-      <Header />
-      <StoreSubNav />
+      <div className="sticky top-0 z-[500]">
+        <Header />
+        <StoreSubNav />
+      </div>
       <main>{children}</main>
       <footer className="pb-[80px] lg:pb-0">
         <div className="mx-auto max-w-[1200px] px-[20px] pt-[60px] pb-[40px] lg:px-[30px]">

@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="sticky top-0 z-[500]">
+      <div>
         <div
           className="flex h-[56px] items-center border-b border-gray-3 bg-gray-1/95 px-[20px] lg:h-[80px]"
           style={{ backdropFilter: 'blur(12px)', boxShadow: '0 1px 6px 0 rgba(100,70,40,0.08)' }}
