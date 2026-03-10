@@ -55,9 +55,9 @@ export default function ProductCard({ product, rank }: { product: Product; rank?
 
   return (
     <Link href={href} className="block group">
-      <article className="w-full overflow-hidden bg-gray-1 rounded-2xl border border-gray-3 transition-all duration-200 group-hover:-translate-y-[3px] group-hover:shadow-[0_10px_28px_-6px_rgba(30,107,62,0.12)] group-hover:border-blue-5">
+      <article className="w-full overflow-hidden bg-white rounded-2xl border border-gray-2 transition-all duration-200 group-hover:-translate-y-[4px] group-hover:shadow-[0_16px_36px_-8px_rgba(0,0,0,0.14)] group-hover:border-blue-4">
         {/* 이미지 영역 */}
-        <div className="relative w-full bg-[#F5F1EB] overflow-hidden" style={{ aspectRatio: "1 / 1" }}>
+        <div className="relative w-full bg-[#F7F5F0] overflow-hidden" style={{ aspectRatio: "1 / 1" }}>
           <Image
             src={product.imageUrl}
             alt={product.goodsNm}
@@ -85,7 +85,7 @@ export default function ProductCard({ product, rank }: { product: Product; rank?
 
           {/* 할인율 뱃지 */}
           {discount >= 10 && !isSoldOut && (
-            <span className="absolute top-[10px] right-[10px] px-[7px] py-[3px] text-[10px] font-extrabold text-white rounded-sm" style={{ background: '#C0392B' }}>
+            <span className="absolute top-[10px] right-[10px] px-[8px] py-[3px] text-[11px] font-extrabold text-white rounded-md shadow-sm" style={{ background: '#C0392B' }}>
               -{discount}%
             </span>
           )}
@@ -137,14 +137,14 @@ export default function ProductCard({ product, rank }: { product: Product; rank?
         </div>
 
         {/* 정보 영역 */}
-        <div className="px-[12px] pt-[10px] pb-[14px] lg:px-[14px] lg:pt-[12px] lg:pb-[16px]">
+        <div className="px-[12px] pt-[11px] pb-[14px] lg:px-[14px] lg:pt-[13px] lg:pb-[16px] border-t border-gray-1">
           {/* 브랜드 */}
-          <p className="text-[10px] font-bold text-blue-7 uppercase tracking-widest mb-[4px]">
+          <p className="text-[10px] font-bold text-blue-6 uppercase tracking-widest mb-[4px]">
             {product.brandName}
           </p>
 
           {/* 상품명 */}
-          <p className="text-[13px] lg:text-[14px] font-medium text-gray-9 leading-[1.5] line-clamp-2 mb-[10px]">
+          <p className="text-[13px] lg:text-[14px] font-medium text-gray-9 leading-[1.45] line-clamp-2 mb-[9px]">
             {product.goodsNm}
           </p>
 
@@ -153,7 +153,7 @@ export default function ProductCard({ product, rank }: { product: Product; rank?
             <div className="flex items-center gap-[3px] mb-[8px]">
               <span className="text-[11px] text-amber-500">★</span>
               <span className="text-[11px] font-semibold text-gray-7">{product.reviewAvg.toFixed(1)}</span>
-              <span className="text-[11px] text-gray-5">({product.reviewCnt.toLocaleString()})</span>
+              <span className="text-[11px] text-gray-4">({product.reviewCnt.toLocaleString()})</span>
             </div>
           )}
 
@@ -164,9 +164,9 @@ export default function ProductCard({ product, rank }: { product: Product; rank?
                 {formatPrice(product.fixedPrice)}
               </span>
             )}
-            <span className="text-[17px] lg:text-[18px] font-extrabold text-gray-10 leading-none">
+            <span className={`text-[18px] lg:text-[19px] font-extrabold leading-none ${discount >= 20 ? 'text-red-5' : 'text-gray-10'}`}>
               {formatPrice(product.goodsPrice)}
-              <span className="text-[12px] font-medium ml-[1px]">원</span>
+              <span className="text-[12px] font-semibold ml-[1px] text-gray-7">원</span>
             </span>
           </div>
         </div>

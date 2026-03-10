@@ -152,18 +152,21 @@ export default async function StoreHomePage() {
     <div className="mx-auto max-w-[1200px] pb-[80px] pt-[28px]">
       {/* 카테고리 아이콘 */}
       <div className="mb-[44px] px-[20px] lg:px-[30px]">
-        <p className="text-[11px] font-bold text-blue-7 tracking-[0.18em] uppercase mb-[16px]">카테고리</p>
-        <div className="scrollbar-hide flex gap-[20px] overflow-x-auto pb-[4px] lg:justify-center">
+        <div className="mb-[16px] flex items-center justify-between">
+          <p className="text-[11px] font-bold text-blue-7 tracking-[0.18em] uppercase">카테고리</p>
+          <Link href="/store/best" className="text-[11px] text-gray-5 hover:text-blue-7 transition-colors">전체 →</Link>
+        </div>
+        <div className="scrollbar-hide flex gap-[16px] overflow-x-auto pb-[4px] lg:gap-[24px] lg:justify-center">
           {STORE_CATEGORIES.map(cat => (
             <Link key={cat.href} href={cat.href} className="shrink-0">
               <div className="flex flex-col items-center gap-[10px] group">
                 <div
-                  className="w-[60px] h-[60px] lg:w-[68px] lg:h-[68px] rounded-full flex items-center justify-center transition-all duration-200 group-hover:scale-[1.08] group-hover:shadow-[0_6px_16px_-4px_rgba(0,0,0,0.22)]"
+                  className="w-[64px] h-[64px] lg:w-[72px] lg:h-[72px] rounded-[18px] flex items-center justify-center transition-all duration-200 group-hover:scale-[1.06] group-hover:shadow-[0_8px_20px_-4px_rgba(0,0,0,0.28)]"
                   style={{ background: cat.bg }}
                 >
                   {cat.icon}
                 </div>
-                <span className="text-[11px] lg:text-[12px] font-semibold text-gray-7 text-center leading-tight group-hover:text-blue-7 transition-colors">{cat.label}</span>
+                <span className="text-[11px] lg:text-[12px] font-semibold text-gray-7 text-center leading-tight group-hover:text-blue-7 transition-colors w-[64px] lg:w-[72px]">{cat.label}</span>
               </div>
             </Link>
           ))}
@@ -172,39 +175,38 @@ export default async function StoreHomePage() {
 
       {/* 타임딜 미니 섹션 */}
       {timedealProducts.length > 0 && (
-        <div className="mb-[56px] px-[20px] lg:px-[30px]">
-          {/* 헤더 */}
-          <div className="mb-[20px] flex items-end justify-between">
-            <div>
-              <p className="text-[11px] font-bold text-red-5 tracking-[0.18em] uppercase mb-[6px]">LIMITED</p>
-              <h2 className="text-[24px] font-extrabold text-gray-10 lg:text-[28px] tracking-tight leading-none">
-                타임딜
-              </h2>
-              <p className="text-[13px] text-gray-5 mt-[6px]">오늘만 이 가격, 한정 수량 특가</p>
-            </div>
-            <Link href="/store/timedeal">
-              <div className="flex items-center gap-[4px] group pb-[2px]">
-                <span className="text-[13px] text-gray-6 group-hover:text-red-5 transition-colors">전체보기</span>
-                <svg className="w-[13px] h-[13px] text-gray-5 group-hover:text-red-5 transition-colors" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
+        <div className="mb-[56px]">
+          <div className="mx-[20px] lg:mx-[30px] rounded-2xl overflow-hidden" style={{ background: 'linear-gradient(160deg, #1A0505 0%, #4A0E0E 60%, #7B1616 100%)' }}>
+            {/* 헤더 */}
+            <div className="flex items-center justify-between px-[20px] py-[20px] lg:px-[28px] lg:py-[24px]">
+              <div className="flex items-center gap-[14px]">
+                <div className="flex h-[44px] w-[44px] items-center justify-center rounded-xl bg-red-5/30">
+                  <svg width="22" height="22" fill="none" stroke="#FF4D4D" strokeWidth={2} viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"/><path strokeLinecap="round" d="M12 6v6l4 2"/>
+                  </svg>
+                </div>
+                <div>
+                  <div className="flex items-center gap-[8px] mb-[2px]">
+                    <span className="text-[10px] font-bold tracking-[0.2em] text-red-4 uppercase">Limited</span>
+                    <span className="px-[7px] py-[1px] rounded-full bg-red-5 text-[9px] font-bold text-white">오늘마감</span>
+                  </div>
+                  <h2 className="text-[22px] font-extrabold text-white tracking-tight leading-none lg:text-[26px]">타임딜</h2>
+                </div>
               </div>
-            </Link>
-          </div>
+              <Link href="/store/timedeal" className="flex items-center gap-[4px] group">
+                <span className="text-[13px] text-white/50 group-hover:text-white transition-colors">전체보기</span>
+                <svg className="w-[13px] h-[13px] text-white/40 group-hover:text-white transition-colors" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+              </Link>
+            </div>
 
-          {/* D-day 띠 */}
-          <div className="mb-[16px] flex items-center gap-[8px] rounded-xl bg-red-5 px-[16px] py-[10px]">
-            <svg className="w-[16px] h-[16px] text-white shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="10" /><path strokeLinecap="round" d="M12 6v6l4 2" />
-            </svg>
-            <span className="text-[13px] font-bold text-white">오늘 자정까지 — 매일 자정 갱신</span>
-            <span className="ml-auto text-[11px] font-medium text-red-1 opacity-80">수량 소진 시 조기 마감</span>
-          </div>
-
-          <div className="grid grid-cols-2 gap-x-[10px] gap-y-[12px] lg:grid-cols-4 lg:gap-x-[16px] lg:gap-y-[20px]">
-            {timedealProducts.slice(0, 4).map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
+            {/* 상품 그리드 */}
+            <div className="grid grid-cols-2 gap-x-[8px] gap-y-[8px] px-[16px] pb-[20px] lg:grid-cols-4 lg:gap-x-[12px] lg:px-[20px] lg:pb-[24px]">
+              {timedealProducts.slice(0, 4).map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
           </div>
         </div>
       )}
@@ -213,20 +215,22 @@ export default async function StoreHomePage() {
       {SECTIONS.map((section) => (
         <div key={section.title} className="mb-[56px]">
           {/* 섹션 헤더 */}
-          <div className="mb-[20px] px-[20px] lg:px-[30px] flex items-end justify-between">
-            <div>
-              <p className="text-[11px] font-bold text-blue-7 tracking-[0.18em] uppercase mb-[6px]">
-                {section.accent}
-              </p>
-              <h2 className="text-[24px] font-extrabold text-gray-10 lg:text-[28px] tracking-tight leading-none">
-                {section.title}
-              </h2>
-              <p className="text-[13px] text-gray-5 mt-[6px]">{section.description}</p>
+          <div className="mb-[20px] px-[20px] lg:px-[30px] flex items-center justify-between">
+            <div className="flex items-center gap-[14px]">
+              <div className="w-[4px] h-[44px] rounded-full bg-blue-7 shrink-0" />
+              <div>
+                <p className="text-[10px] font-bold text-blue-7 tracking-[0.2em] uppercase mb-[3px]">
+                  {section.accent}
+                </p>
+                <h2 className="text-[22px] font-extrabold text-gray-10 lg:text-[26px] tracking-tight leading-none">
+                  {section.title}
+                </h2>
+              </div>
             </div>
             <Link href={section.href}>
               <div className="flex items-center gap-[4px] group pb-[2px]">
-                <span className="text-[13px] text-gray-6 group-hover:text-blue-7 transition-colors">전체보기</span>
-                <svg className="w-[13px] h-[13px] text-gray-5 group-hover:text-blue-7 transition-colors" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <span className="text-[13px] text-gray-5 group-hover:text-blue-7 transition-colors">전체보기</span>
+                <svg className="w-[13px] h-[13px] text-gray-4 group-hover:text-blue-7 transition-colors" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
               </div>
@@ -363,63 +367,48 @@ export default async function StoreHomePage() {
 
       {/* 왜 스마트홈딜? 섹션 */}
       <div className="mb-[56px] px-[20px] lg:px-[30px]">
-        <div
-          className="rounded-2xl overflow-hidden px-[24px] py-[36px] lg:px-[48px] lg:py-[48px]"
-          style={{ background: 'linear-gradient(135deg, #F5F0E8 0%, #EDE5D4 100%)' }}
-        >
-          <p className="text-[11px] font-bold text-amber-700 tracking-[0.18em] uppercase mb-[8px]">WHY US</p>
-          <h2 className="text-[22px] font-extrabold text-gray-10 lg:text-[26px] tracking-tight mb-[28px]">
-            왜 스마트홈딜인가요?
-          </h2>
-          <div className="grid grid-cols-2 gap-[16px] lg:grid-cols-4 lg:gap-[24px]">
-            {[
-              {
-                icon: (
-                  <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                ),
-                title: '정품 보장',
-                desc: '100% 애플 공식 정품만 취급',
-              },
-              {
-                icon: (
-                  <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                ),
-                title: '최저가 도전',
-                desc: '가격 비교 후 최저가로 제공',
-              },
-              {
-                icon: (
-                  <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                ),
-                title: '당일 발송',
-                desc: '오전 주문 시 당일 출고',
-              },
-              {
-                icon: (
-                  <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                  </svg>
-                ),
-                title: '전문 AS',
-                desc: '구매 후 전담 A/S 연결',
-              },
-            ].map((item) => (
-              <div key={item.title} className="flex flex-col items-start gap-[10px]">
-                <div className="w-[44px] h-[44px] rounded-xl bg-white/70 flex items-center justify-center text-amber-800 shadow-sm">
-                  {item.icon}
+        <div className="rounded-2xl overflow-hidden" style={{ background: 'linear-gradient(160deg, #0C1B2E 0%, #0F2A4A 60%, #0E3460 100%)' }}>
+          <div className="px-[24px] py-[32px] lg:px-[48px] lg:py-[44px]">
+            <div className="mb-[28px]">
+              <p className="text-[10px] font-bold tracking-[0.22em] text-blue-4 uppercase mb-[8px]">WHY SMARTHOMDEAL</p>
+              <h2 className="text-[22px] font-extrabold text-white lg:text-[26px] tracking-tight leading-tight">
+                스마트홈딜을<br className="lg:hidden"/> 선택하는 이유
+              </h2>
+            </div>
+            <div className="grid grid-cols-2 gap-[12px] lg:grid-cols-4 lg:gap-[20px]">
+              {[
+                {
+                  stat: '100%',
+                  title: '정품 보장',
+                  desc: '공식 인증 정품만 취급',
+                  color: '#3B82F6',
+                },
+                {
+                  stat: '최저가',
+                  title: '가격 도전',
+                  desc: '가격 비교 후 최저가 제공',
+                  color: '#10B981',
+                },
+                {
+                  stat: '당일',
+                  title: '발송 보장',
+                  desc: '오전 주문 시 당일 출고',
+                  color: '#F59E0B',
+                },
+                {
+                  stat: '24시',
+                  title: '전문 상담',
+                  desc: '구매 후 전담 AS 연결',
+                  color: '#8B5CF6',
+                },
+              ].map((item) => (
+                <div key={item.title} className="rounded-xl px-[16px] py-[18px] lg:px-[20px] lg:py-[20px]" style={{ background: 'rgba(255,255,255,0.06)' }}>
+                  <p className="text-[26px] font-extrabold mb-[4px] lg:text-[28px]" style={{ color: item.color }}>{item.stat}</p>
+                  <p className="text-[13px] font-bold text-white mb-[3px]">{item.title}</p>
+                  <p className="text-[11px] text-white/50 leading-snug">{item.desc}</p>
                 </div>
-                <div>
-                  <p className="text-[14px] font-bold text-gray-9 mb-[2px]">{item.title}</p>
-                  <p className="text-[12px] text-gray-6 leading-snug">{item.desc}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
