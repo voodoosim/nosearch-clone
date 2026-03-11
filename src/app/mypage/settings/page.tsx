@@ -39,10 +39,23 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 export default function SettingsPage() {
   const [orderNotif, setOrderNotif] = useState(true);
   const [marketingNotif, setMarketingNotif] = useState(false);
+  const [toastMsg, setToastMsg] = useState<string | null>(null);
+
+  const showToast = (msg: string) => {
+    setToastMsg(msg);
+    setTimeout(() => setToastMsg(null), 2500);
+  };
 
   return (
     <div className="mx-auto max-w-[600px] px-[20px] py-[24px] pb-[100px] lg:py-[40px] lg:pb-[60px]">
       <h1 className="text-[20px] font-extrabold text-gray-10 mb-[28px]">설정</h1>
+
+      {/* 인라인 토스트 */}
+      {toastMsg && (
+        <div className="fixed bottom-[100px] left-1/2 -translate-x-1/2 z-50 bg-gray-9 text-white text-[13px] px-[16px] py-[10px] rounded-[8px] shadow-lg pointer-events-none">
+          {toastMsg}
+        </div>
+      )}
 
       {/* 섹션 1: 알림 설정 */}
       <SectionTitle>알림 설정</SectionTitle>
@@ -71,7 +84,7 @@ export default function SettingsPage() {
         <button
           type="button"
           className="w-full flex items-center justify-between px-[18px] min-h-[52px] border-b border-gray-3 hover:bg-gray-2 transition-colors active:bg-gray-2"
-          onClick={() => {}}
+          onClick={() => showToast('준비 중입니다.')}
         >
           <p className="text-[14px] font-medium text-gray-10">비밀번호 변경</p>
           <svg
@@ -87,7 +100,7 @@ export default function SettingsPage() {
         <button
           type="button"
           className="w-full flex items-center justify-between px-[18px] min-h-[52px] hover:bg-gray-2 transition-colors active:bg-gray-2"
-          onClick={() => {}}
+          onClick={() => showToast('준비 중입니다.')}
         >
           <p className="text-[14px] font-medium text-gray-10">알림 수신 설정</p>
           <svg
@@ -109,7 +122,7 @@ export default function SettingsPage() {
         <button
           type="button"
           className="w-full flex items-center px-[18px] min-h-[52px] hover:bg-gray-2 transition-colors active:bg-gray-2"
-          onClick={() => {}}
+          onClick={() => showToast('준비 중입니다.')}
         >
           <p className="text-[14px] font-medium text-red-5">회원 탈퇴</p>
         </button>

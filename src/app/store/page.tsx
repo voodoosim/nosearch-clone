@@ -292,9 +292,7 @@ export default async function StoreHomePage() {
                   </svg>
                 </div>
                 <p className="text-[15px] font-extrabold text-white">Samsung</p>
-                <p className="text-[11px] text-white/50 group-hover:text-white/70 transition-colors flex items-center gap-[4px]">Galaxy · TV
-                  <span className="px-[5px] py-[1px] bg-white/20 rounded text-[9px]">준비중</span>
-                </p>
+                <p className="text-[11px] text-white/50 group-hover:text-white/70 transition-colors">Galaxy · TV</p>
               </div>
             </div>
           </Link>

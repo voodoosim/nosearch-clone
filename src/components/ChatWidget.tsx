@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 function ScrollToTopButton() {
   const [visible, setVisible] = useState(false);
@@ -37,6 +39,8 @@ const CHAT_API = process.env.NEXT_PUBLIC_CHAT_API || "http://localhost:8002";
 const CHAT_WS = process.env.NEXT_PUBLIC_CHAT_WS || "ws://localhost:8002";
 
 export default function ChatWidget() {
+  const { data: authSession, status: authStatus } = useSession();
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState("");
@@ -100,6 +104,8 @@ export default function ChatWidget() {
     setIsStarting(true);
 
     try {
+      // TODO: user_id를 메시지/세션에 포함하려면 아래 주석 해제
+      // const userId = authSession?.user?.id;
       const res = await fetch(`${CHAT_API}/api/chat/start`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -163,6 +169,12 @@ export default function ChatWidget() {
 
   // 열기/닫기
   const toggleChat = () => {
+    // 비로그인 차단: 로그인 페이지로 이동
+    if (authStatus !== "authenticated") {
+      router.push("/login");
+      return;
+    }
+
     if (!isOpen && !sessionId) {
       setIsOpen(true);
       startChat();
