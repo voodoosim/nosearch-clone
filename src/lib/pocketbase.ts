@@ -2,9 +2,13 @@ import PocketBase from 'pocketbase';
 
 const PB_URL = process.env.PB_URL || 'http://10.0.0.1:8090';
 
-export function createPB() {
+export function createPB(timeoutMs = 1500) {
   const pb = new PocketBase(PB_URL);
   pb.autoCancellation(false);
+  pb.beforeSend = function (url, options) {
+    options.signal = AbortSignal.timeout(timeoutMs);
+    return { url, options };
+  };
   return pb;
 }
 

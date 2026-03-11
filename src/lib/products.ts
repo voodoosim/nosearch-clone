@@ -157,16 +157,8 @@ export async function getProductsByCategory(
 export async function getProductById(
   goodsNo: string
 ): Promise<Product | null> {
-  try {
-    const record = await createPB()
-      .collection('products')
-      .getFirstListItem(`goodsNo = "${goodsNo}"`);
-    return recordToProduct(record);
-  } catch {
-    console.warn('[PocketBase] 연결 실패 - JSON fallback 사용');
-    const all = getAllProductsFromJson();
-    return all.find((p) => p.goodsNo === goodsNo || p.id === goodsNo) || null;
-  }
+  const all = getAllProductsFromJson();
+  return all.find((p) => p.goodsNo === goodsNo || p.id === goodsNo) || null;
 }
 
 export async function getTimedealProducts(): Promise<Product[]> {
