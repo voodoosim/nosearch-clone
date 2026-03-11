@@ -8,6 +8,7 @@ import samsungProducts from '@/data/products-samsung.json';
 import overseasProducts from '@/data/products-overseas.json';
 import smartExtraProducts from '@/data/products-smart-extra.json';
 import appleProducts from '@/data/products-apple.json';
+import lgProducts from '@/data/products-lg.json';
 
 export interface CategoryInfo {
   key: string;
@@ -94,6 +95,7 @@ function getAllProductsFromJson(): Product[] {
     overseasProducts as Product[],
     smartExtraProducts as Product[],
     appleProducts as Product[],
+    lgProducts as Product[],
   ];
   for (const source of sources) {
     for (const p of source) {
@@ -243,6 +245,18 @@ export async function getOverseasProducts(): Promise<Product[]> {
   }
 }
 
+export async function getLgProducts(): Promise<Product[]> {
+  try {
+    const records = await createPB().collection('products').getFullList({
+      filter: 'brandName = "LG전자"',
+      sort: '-created',
+    });
+    return records.map(recordToProduct);
+  } catch {
+    return (lgProducts as Product[]).slice();
+  }
+}
+
 const SMART_CATEGORY_KEYS = [
   'robotic_vacuum_cleaner',
   'cordless_vacuum_cleaner',
@@ -251,6 +265,18 @@ const SMART_CATEGORY_KEYS = [
   'tv',
   'induction',
   'dish_washer',
+  'speaker',
+  'headphone',
+  'game_console',
+  'smartphone',
+  'foldable_phone',
+  'tablet',
+  'lg_gram',
+  'lg_oled_tv',
+  'lg_styler',
+  'lg_aircon',
+  'apple_watch',
+  'apple_accessory',
 ];
 
 export async function getSmartProducts(): Promise<Product[]> {

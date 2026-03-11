@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
 import StoreBanner from "@/components/StoreBanner";
-import { getDealProducts, getBestProducts, getTimedealProducts } from "@/lib/products";
+import { getDealProducts, getBestProducts, getTimedealProducts, getLgProducts } from "@/lib/products";
 
 export const revalidate = 60;
 
@@ -95,6 +95,18 @@ const STORE_CATEGORIES = [
     ),
   },
   {
+    label: "LG관",
+    href: "/store/lg",
+    bg: "#A50034",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+        <circle cx="13" cy="13" r="9" stroke="white" strokeWidth="1.6"/>
+        <path d="M9 13v-4M9 13h4" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M16 9v8h3" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.75"/>
+      </svg>
+    ),
+  },
+  {
     label: "전체보기",
     href: "/store/best",
     bg: "#636366",
@@ -110,10 +122,11 @@ const STORE_CATEGORIES = [
 ];
 
 export default async function StoreHomePage() {
-  const [dealProducts, bestProducts, timedealProducts] = await Promise.all([
+  const [dealProducts, bestProducts, timedealProducts, lgProductsList] = await Promise.all([
     getDealProducts(),
     getBestProducts(),
     getTimedealProducts(),
+    getLgProducts(),
   ]);
 
   const SECTIONS = [
@@ -293,6 +306,20 @@ export default async function StoreHomePage() {
                 </div>
                 <p className="text-[15px] font-extrabold text-white">Samsung</p>
                 <p className="text-[11px] text-white/50 group-hover:text-white/70 transition-colors">Galaxy · TV</p>
+              </div>
+            </div>
+          </Link>
+
+          {/* LG */}
+          <Link href="/store/lg" className="group">
+            <div className="relative overflow-hidden rounded-2xl h-[120px] lg:h-[140px]" style={{ background: 'linear-gradient(135deg, #3D0016 0%, #A50034 100%)' }}>
+              <div className="absolute inset-0 opacity-15" style={{ backgroundImage: 'radial-gradient(circle at 70% 30%, #FF6B8A 0%, transparent 60%)' }} />
+              <div className="absolute inset-0 flex flex-col justify-end px-[16px] pb-[14px]">
+                <svg width="32" height="22" viewBox="0 0 56 28" fill="white" className="mb-[8px] opacity-90">
+                  <text x="0" y="22" fontFamily="sans-serif" fontSize="26" fontWeight="900">LG</text>
+                </svg>
+                <p className="text-[15px] font-extrabold text-white">LG전자</p>
+                <p className="text-[11px] text-white/50 group-hover:text-white/70 transition-colors">그램 · OLED · 스타일러</p>
               </div>
             </div>
           </Link>
