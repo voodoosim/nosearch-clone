@@ -10,6 +10,7 @@ const STORE_TABS = [
   { label: "리뷰템", href: "/store/reviewTem" },
   { label: "모니터관", href: "/store/monitor" },
   { label: "음향기기관", href: "/store/audio" },
+  { label: "가전관", href: "/store/home" },
   { label: "애플관", href: "/store/apple" },
   { label: "삼성관", href: "/store/samsung" },
   { label: "LG관", href: "/store/lg" },

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
 import StoreBanner from "@/components/StoreBanner";
-import { getDealProducts, getBestProducts, getTimedealProducts, getLgProducts, getMonitorProducts, getAudioProducts } from "@/lib/products";
+import { getDealProducts, getBestProducts, getTimedealProducts, getLgProducts, getMonitorProducts, getAudioProducts, getHomeProducts } from "@/lib/products";
 
 export const revalidate = 60;
 
@@ -148,13 +148,14 @@ const STORE_CATEGORIES = [
 ];
 
 export default async function StoreHomePage() {
-  const [dealProducts, bestProducts, timedealProducts, lgProductsList, monitorList, audioList] = await Promise.all([
+  const [dealProducts, bestProducts, timedealProducts, lgProductsList, monitorList, audioList, homeList] = await Promise.all([
     getDealProducts(),
     getBestProducts(),
     getTimedealProducts(),
     getLgProducts(),
     getMonitorProducts(),
     getAudioProducts(),
+    getHomeProducts(),
   ]);
 
   const SECTIONS = [
@@ -184,6 +185,13 @@ export default async function StoreHomePage() {
       description: "Sony · Apple · Bose · Sennheiser 프리미엄 라인업",
       href: "/store/audio",
       products: audioList,
+      accent: "신규",
+    },
+    {
+      title: "가전관",
+      description: "Dyson · LG · Samsung 청소기·건조기·에어컨·냉장고",
+      href: "/store/home",
+      products: homeList,
       accent: "신규",
     },
   ];
