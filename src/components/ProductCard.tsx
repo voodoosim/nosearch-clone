@@ -86,8 +86,8 @@ export default function ProductCard({ product, rank, certified }: { product: Pro
             </div>
           )}
 
-          {/* 인증 상품 배지 */}
-          {certified && !isSoldOut && (
+          {/* 인증 상품 배지 — rank 없을 때만 표시 (겹침 방지) */}
+          {certified && !isSoldOut && !rank && (
             <span className="absolute top-[8px] left-[8px] px-[7px] py-[3px] text-[10px] font-bold text-white rounded-sm" style={{ background: '#059669' }}>
               인증
             </span>
