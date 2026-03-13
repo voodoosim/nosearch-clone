@@ -201,41 +201,21 @@ export default async function StoreHomePage() {
         </div>
       </div>
 
-      {/* 타임딜 미니 섹션 */}
+      {/* 타임딜 배너 */}
       {timedealProducts.length > 0 && (
-        <div className="mb-[56px]">
-          <div className="mx-[20px] lg:mx-[30px] rounded-2xl overflow-hidden" style={{ background: 'linear-gradient(160deg, #1A0505 0%, #4A0E0E 60%, #7B1616 100%)' }}>
-            {/* 헤더 */}
-            <div className="flex items-center justify-between px-[20px] py-[20px] lg:px-[28px] lg:py-[24px]">
-              <div className="flex items-center gap-[14px]">
-                <div className="flex h-[44px] w-[44px] items-center justify-center rounded-xl bg-red-5/30">
-                  <svg width="22" height="22" fill="none" stroke="#FF4D4D" strokeWidth={2} viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="10"/><path strokeLinecap="round" d="M12 6v6l4 2"/>
-                  </svg>
-                </div>
-                <div>
-                  <div className="flex items-center gap-[8px] mb-[2px]">
-                    <span className="text-[10px] font-bold tracking-[0.2em] text-red-4 uppercase">Limited</span>
-                    <span className="px-[7px] py-[1px] rounded-full bg-red-5 text-[9px] font-bold text-white">오늘마감</span>
-                  </div>
-                  <h2 className="text-[22px] font-extrabold text-white tracking-tight leading-none lg:text-[26px]">타임딜</h2>
-                </div>
+        <div className="mb-[40px] px-[20px] lg:px-[30px]">
+          <Link href="/store/timedeal" className="flex items-center justify-between rounded-xl border border-gray-2 bg-gray-1 px-[18px] py-[14px] hover:border-blue-4 transition-colors group">
+            <div className="flex items-center gap-[10px]">
+              <svg width="18" height="18" fill="none" stroke="#6B7280" strokeWidth={1.8} viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/><path strokeLinecap="round" d="M12 6v6l4 2"/>
+              </svg>
+              <div>
+                <p className="text-[13px] font-bold text-gray-9">오늘의 특가</p>
+                <p className="text-[11px] text-gray-5 mt-[1px]">한정수량 · 오늘 마감</p>
               </div>
-              <Link href="/store/timedeal" className="flex items-center gap-[4px] group">
-                <span className="text-[13px] text-white/50 group-hover:text-white transition-colors">전체보기</span>
-                <svg className="w-[13px] h-[13px] text-white/40 group-hover:text-white transition-colors" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/>
-                </svg>
-              </Link>
             </div>
-
-            {/* 상품 그리드 */}
-            <div className="grid grid-cols-2 gap-x-[8px] gap-y-[8px] px-[16px] pb-[20px] lg:grid-cols-4 lg:gap-x-[12px] lg:px-[20px] lg:pb-[24px]">
-              {timedealProducts.slice(0, 4).map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          </div>
+            <span className="text-[12px] text-gray-5 group-hover:text-blue-7 transition-colors">전체보기 →</span>
+          </Link>
         </div>
       )}
 

@@ -1,0 +1,696 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - link [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img [ref=e8]:
+              - generic [ref=e15]: 스마트홈딜
+          - generic [ref=e16]:
+            - navigation [ref=e18]:
+              - list [ref=e19]:
+                - listitem [ref=e20]:
+                  - link "스토어" [ref=e21] [cursor=pointer]:
+                    - /url: /store
+                    - paragraph [ref=e23]: 스토어
+                - listitem [ref=e24]:
+                  - link "공동구매" [ref=e25] [cursor=pointer]:
+                    - /url: /store/deal
+                    - paragraph [ref=e27]: 공동구매
+                - listitem [ref=e28]:
+                  - link "기획전" [ref=e29] [cursor=pointer]:
+                    - /url: /store/exhibition
+                    - paragraph [ref=e31]: 기획전
+                - listitem [ref=e32]:
+                  - link "고객센터" [ref=e33] [cursor=pointer]:
+                    - /url: /store/contents
+                    - paragraph [ref=e35]: 고객센터
+            - generic [ref=e38]:
+              - textbox "어떤 제품을 찾으시나요?" [ref=e39]
+              - button [ref=e40]:
+                - img [ref=e41]
+            - list [ref=e45]:
+              - listitem [ref=e46]:
+                - link [ref=e47] [cursor=pointer]:
+                  - /url: /mypage/wishlist
+                  - img [ref=e49]
+              - listitem [ref=e51]:
+                - link [ref=e52] [cursor=pointer]:
+                  - /url: /store/cart
+                  - img [ref=e54]
+              - listitem [ref=e58]:
+                - link "마이페이지" [ref=e59] [cursor=pointer]:
+                  - /url: /mypage
+                  - paragraph [ref=e60]: 마이페이지
+              - listitem [ref=e61]:
+                - link "로그인" [ref=e62] [cursor=pointer]:
+                  - /url: /login
+                  - paragraph [ref=e63]: 로그인
+      - list [ref=e65]:
+        - listitem [ref=e66]:
+          - link "스토어홈" [ref=e67] [cursor=pointer]:
+            - /url: /store
+            - paragraph [ref=e69]: 스토어홈
+        - listitem [ref=e71]:
+          - link "공동구매" [ref=e72] [cursor=pointer]:
+            - /url: /store/deal
+            - paragraph [ref=e74]: 공동구매
+        - listitem [ref=e75]:
+          - link "리뷰템" [ref=e76] [cursor=pointer]:
+            - /url: /store/reviewTem
+            - paragraph [ref=e78]: 리뷰템
+        - listitem [ref=e79]:
+          - link "타임딜" [ref=e80] [cursor=pointer]:
+            - /url: /store/timedeal
+            - paragraph [ref=e82]: 타임딜
+        - listitem [ref=e83]:
+          - link "이번주 인기" [ref=e84] [cursor=pointer]:
+            - /url: /store/best
+            - paragraph [ref=e86]: 이번주 인기
+        - listitem [ref=e87]:
+          - link "기획전" [ref=e88] [cursor=pointer]:
+            - /url: /store/exhibition
+            - paragraph [ref=e90]: 기획전
+        - listitem [ref=e91]:
+          - link "애플관" [ref=e92] [cursor=pointer]:
+            - /url: /store/apple
+            - paragraph [ref=e94]: 애플관
+        - listitem [ref=e95]:
+          - link "삼성관" [ref=e96] [cursor=pointer]:
+            - /url: /store/samsung
+            - paragraph [ref=e98]: 삼성관
+        - listitem [ref=e99]:
+          - link "해외직구관" [ref=e100] [cursor=pointer]:
+            - /url: /store/overseas
+            - paragraph [ref=e102]: 해외직구관
+        - listitem [ref=e103]:
+          - link "렌탈" [ref=e104] [cursor=pointer]:
+            - /url: /store/rental
+            - paragraph [ref=e106]: 렌탈
+        - listitem [ref=e107]:
+          - link "가이드" [ref=e108] [cursor=pointer]:
+            - /url: /store/contents
+            - paragraph [ref=e110]: 가이드
+    - main [ref=e111]:
+      - generic [ref=e112]:
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - generic [ref=e120]: OFFICIAL STORE
+            - paragraph [ref=e121]: 스마트홈딜 공식 스토어
+            - heading "스마트홈딜" [level=1] [ref=e122]
+            - paragraph [ref=e123]: 가전 전문가가 직접 검증하고 선별한 최고의 제품을 합리적인 가격에
+            - generic [ref=e124]:
+              - generic [ref=e125]:
+                - img [ref=e126]
+                - text: 전문가 검증
+              - generic [ref=e129]:
+                - img [ref=e130]
+                - text: 최저가 보장
+              - generic [ref=e133]:
+                - img [ref=e134]
+                - text: 안심 결제
+          - generic [ref=e138]:
+            - generic [ref=e139]:
+              - img [ref=e140]
+              - paragraph [ref=e144]: 14,200명
+              - paragraph [ref=e145]: 누적 구매 고객
+            - paragraph [ref=e146]: 공식 인증 스토어
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - paragraph [ref=e149]: 카테고리
+            - generic [ref=e150]:
+              - link "주방" [ref=e151] [cursor=pointer]:
+                - /url: /store/category/kitchen
+                - generic [ref=e152]:
+                  - img [ref=e154]
+                  - generic [ref=e158]: 주방
+              - link "청소" [ref=e159] [cursor=pointer]:
+                - /url: /store/category/cleaning
+                - generic [ref=e160]:
+                  - img [ref=e162]
+                  - generic [ref=e166]: 청소
+              - link "TV·모니터" [ref=e167] [cursor=pointer]:
+                - /url: /store/category/tv
+                - generic [ref=e168]:
+                  - img [ref=e170]
+                  - generic [ref=e175]: TV·모니터
+              - link "생활가전" [ref=e176] [cursor=pointer]:
+                - /url: /store/category/living
+                - generic [ref=e177]:
+                  - img [ref=e179]
+                  - generic [ref=e181]: 생활가전
+              - link "헬스·뷰티" [ref=e182] [cursor=pointer]:
+                - /url: /store/category/health
+                - generic [ref=e183]:
+                  - img [ref=e185]
+                  - generic [ref=e187]: 헬스·뷰티
+              - link "애플관" [ref=e188] [cursor=pointer]:
+                - /url: /store/apple
+                - generic [ref=e189]:
+                  - img [ref=e191]
+                  - generic [ref=e193]: 애플관
+              - link "삼성관" [ref=e194] [cursor=pointer]:
+                - /url: /store/samsung
+                - generic [ref=e195]:
+                  - img [ref=e197]
+                  - generic [ref=e201]: 삼성관
+              - link "해외직구" [ref=e202] [cursor=pointer]:
+                - /url: /store/overseas
+                - generic [ref=e203]:
+                  - img [ref=e205]
+                  - generic [ref=e209]: 해외직구
+              - link "전체보기" [ref=e210] [cursor=pointer]:
+                - /url: /store/best
+                - generic [ref=e211]:
+                  - img [ref=e213]
+                  - generic [ref=e218]: 전체보기
+          - generic [ref=e219]:
+            - generic [ref=e220]:
+              - generic [ref=e221]:
+                - paragraph [ref=e222]: LIMITED
+                - heading "타임딜" [level=2] [ref=e223]
+                - paragraph [ref=e224]: 오늘만 이 가격, 한정 수량 특가
+              - link "전체보기" [ref=e225] [cursor=pointer]:
+                - /url: /store/timedeal
+                - generic [ref=e226]:
+                  - generic [ref=e227]: 전체보기
+                  - img [ref=e228]
+            - generic [ref=e230]:
+              - img [ref=e231]
+              - generic [ref=e234]: 오늘 자정까지 — 매일 자정 갱신
+              - generic [ref=e235]: 수량 소진 시 조기 마감
+            - generic [ref=e236]:
+              - link [ref=e237] [cursor=pointer]:
+                - /url: /store/product/3000003001
+                - article [ref=e238]:
+                  - generic [ref=e239]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 1TB" [ref=e240]
+                    - generic [ref=e241]: PREMIUM
+                    - generic [ref=e242]: "-20%"
+                    - generic [ref=e243]: 공동구매 진행중!
+                    - button "찜하기" [ref=e244]:
+                      - img [ref=e245]
+                  - generic [ref=e247]:
+                    - paragraph [ref=e248]: Apple
+                    - paragraph [ref=e249]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e250]:
+                      - generic [ref=e251]: ★
+                      - generic [ref=e252]: "4.9"
+                      - generic [ref=e253]: (1,245)
+                    - generic [ref=e254]:
+                      - generic [ref=e255]: 3,990,000
+                      - generic [ref=e256]: 3,190,000원
+              - link [ref=e257] [cursor=pointer]:
+                - /url: /store/product/3000003002
+                - article [ref=e258]:
+                  - generic [ref=e259]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 24GB 1TB" [ref=e260]
+                    - generic [ref=e261]: PREMIUM
+                    - generic [ref=e262]: "-21%"
+                    - generic [ref=e263]: 공동구매 진행중!
+                    - button "찜하기" [ref=e264]:
+                      - img [ref=e265]
+                  - generic [ref=e267]:
+                    - paragraph [ref=e268]: Apple
+                    - paragraph [ref=e269]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e270]:
+                      - generic [ref=e271]: ★
+                      - generic [ref=e272]: "4.9"
+                      - generic [ref=e273]: (987)
+                    - generic [ref=e274]:
+                      - generic [ref=e275]: 4,790,000
+                      - generic [ref=e276]: 3,790,000원
+              - link [ref=e277] [cursor=pointer]:
+                - /url: /store/product/3000003003
+                - article [ref=e278]:
+                  - generic [ref=e279]:
+                    - img "Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 512GB" [ref=e280]
+                    - generic [ref=e281]: PREMIUM
+                    - generic [ref=e282]: "-19%"
+                    - generic [ref=e283]: 공동구매 진행중!
+                    - button "찜하기" [ref=e284]:
+                      - img [ref=e285]
+                  - generic [ref=e287]:
+                    - paragraph [ref=e288]: Apple
+                    - paragraph [ref=e289]: Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 512GB
+                    - generic [ref=e290]:
+                      - generic [ref=e291]: ★
+                      - generic [ref=e292]: "4.9"
+                      - generic [ref=e293]: (876)
+                    - generic [ref=e294]:
+                      - generic [ref=e295]: 3,590,000
+                      - generic [ref=e296]: 2,890,000원
+              - link [ref=e297] [cursor=pointer]:
+                - /url: /store/product/3000003004
+                - article [ref=e298]:
+                  - generic [ref=e299]:
+                    - img "Apple MacBook Pro 14\" M5 Max 18코어 CPU 32코어 GPU 스페이스 블랙 36GB 2TB" [ref=e300]
+                    - generic [ref=e301]: PREMIUM
+                    - generic [ref=e302]: "-18%"
+                    - generic [ref=e303]: 공동구매 진행중!
+                    - button "찜하기" [ref=e304]:
+                      - img [ref=e305]
+                  - generic [ref=e307]:
+                    - paragraph [ref=e308]: Apple
+                    - paragraph [ref=e309]: Apple MacBook Pro 14" M5 Max 18코어 CPU 32코어 GPU 스페이스 블랙 36GB 2TB
+                    - generic [ref=e310]:
+                      - generic [ref=e311]: ★
+                      - generic [ref=e312]: "4.9"
+                      - generic [ref=e313]: (734)
+                    - generic [ref=e314]:
+                      - generic [ref=e315]: 5,990,000
+                      - generic [ref=e316]: 4,890,000원
+          - generic [ref=e317]:
+            - generic [ref=e318]:
+              - generic [ref=e319]:
+                - paragraph [ref=e320]: 특가
+                - heading "공동구매" [level=2] [ref=e321]
+                - paragraph [ref=e322]: 스마트홈딜이 먼저 써보고 추천하는 최저가 공동구매
+              - link "전체보기" [ref=e323] [cursor=pointer]:
+                - /url: /store/deal
+                - generic [ref=e324]:
+                  - generic [ref=e325]: 전체보기
+                  - img [ref=e326]
+            - generic [ref=e328]:
+              - link [ref=e329] [cursor=pointer]:
+                - /url: /store/product/3000001001
+                - article [ref=e330]:
+                  - generic [ref=e331]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 스페이스 블랙 24GB 1TB" [ref=e332]
+                    - generic [ref=e333]: PREMIUM
+                    - generic [ref=e334]: "-10%"
+                    - generic [ref=e335]: 공동구매 진행중!
+                    - button "찜하기" [ref=e336]:
+                      - img [ref=e337]
+                  - generic [ref=e339]:
+                    - paragraph [ref=e340]: Apple
+                    - paragraph [ref=e341]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e342]:
+                      - generic [ref=e343]: ★
+                      - generic [ref=e344]: "4.9"
+                      - generic [ref=e345]: (312)
+                    - generic [ref=e346]:
+                      - generic [ref=e347]: 2,990,000
+                      - generic [ref=e348]: 2,690,000원
+              - link [ref=e349] [cursor=pointer]:
+                - /url: /store/product/3000001002
+                - article [ref=e350]:
+                  - generic [ref=e351]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 실버 24GB 1TB" [ref=e352]
+                    - generic [ref=e353]: BEST
+                    - generic [ref=e354]: "-10%"
+                    - generic [ref=e355]: 공동구매 진행중!
+                    - button "찜하기" [ref=e356]:
+                      - img [ref=e357]
+                  - generic [ref=e359]:
+                    - paragraph [ref=e360]: Apple
+                    - paragraph [ref=e361]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 실버 24GB 1TB
+                    - generic [ref=e362]:
+                      - generic [ref=e363]: ★
+                      - generic [ref=e364]: "4.9"
+                      - generic [ref=e365]: (289)
+                    - generic [ref=e366]:
+                      - generic [ref=e367]: 2,990,000
+                      - generic [ref=e368]: 2,690,000원
+              - link [ref=e369] [cursor=pointer]:
+                - /url: /store/product/3000001003
+                - article [ref=e370]:
+                  - generic [ref=e371]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 스페이스 블랙 32GB 1TB" [ref=e372]
+                    - generic [ref=e373]: PREMIUM
+                    - generic [ref=e374]: 공동구매 진행중!
+                    - button "찜하기" [ref=e375]:
+                      - img [ref=e376]
+                  - generic [ref=e378]:
+                    - paragraph [ref=e379]: Apple
+                    - paragraph [ref=e380]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 스페이스 블랙 32GB 1TB
+                    - generic [ref=e381]:
+                      - generic [ref=e382]: ★
+                      - generic [ref=e383]: "4.9"
+                      - generic [ref=e384]: (198)
+                    - generic [ref=e385]:
+                      - generic [ref=e386]: 3,490,000
+                      - generic [ref=e387]: 3,190,000원
+              - link [ref=e388] [cursor=pointer]:
+                - /url: /store/product/3000001004
+                - article [ref=e389]:
+                  - generic [ref=e390]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 1TB" [ref=e391]
+                    - generic [ref=e392]: PREMIUM
+                    - generic [ref=e393]: "-10%"
+                    - generic [ref=e394]: 공동구매 진행중!
+                    - button "찜하기" [ref=e395]:
+                      - img [ref=e396]
+                  - generic [ref=e398]:
+                    - paragraph [ref=e399]: Apple
+                    - paragraph [ref=e400]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e401]:
+                      - generic [ref=e402]: ★
+                      - generic [ref=e403]: "4.9"
+                      - generic [ref=e404]: (445)
+                    - generic [ref=e405]:
+                      - generic [ref=e406]: 3,990,000
+                      - generic [ref=e407]: 3,590,000원
+              - link [ref=e408] [cursor=pointer]:
+                - /url: /store/product/3000001005
+                - article [ref=e409]:
+                  - generic [ref=e410]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 실버 24GB 1TB" [ref=e411]
+                    - generic [ref=e412]: BEST
+                    - generic [ref=e413]: "-10%"
+                    - generic [ref=e414]: 공동구매 진행중!
+                    - button "찜하기" [ref=e415]:
+                      - img [ref=e416]
+                  - generic [ref=e418]:
+                    - paragraph [ref=e419]: Apple
+                    - paragraph [ref=e420]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 실버 24GB 1TB
+                    - generic [ref=e421]:
+                      - generic [ref=e422]: ★
+                      - generic [ref=e423]: "4.8"
+                      - generic [ref=e424]: (367)
+                    - generic [ref=e425]:
+                      - generic [ref=e426]: 3,990,000
+                      - generic [ref=e427]: 3,590,000원
+              - link [ref=e428] [cursor=pointer]:
+                - /url: /store/product/3000001006
+                - article [ref=e429]:
+                  - generic [ref=e430]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 2TB" [ref=e431]
+                    - generic [ref=e432]: PREMIUM
+                    - generic [ref=e433]: 공동구매 진행중!
+                    - button "찜하기" [ref=e434]:
+                      - img [ref=e435]
+                  - generic [ref=e437]:
+                    - paragraph [ref=e438]: Apple
+                    - paragraph [ref=e439]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 2TB
+                    - generic [ref=e440]:
+                      - generic [ref=e441]: ★
+                      - generic [ref=e442]: "4.9"
+                      - generic [ref=e443]: (234)
+                    - generic [ref=e444]:
+                      - generic [ref=e445]: 4,390,000
+                      - generic [ref=e446]: 3,990,000원
+              - link [ref=e447] [cursor=pointer]:
+                - /url: /store/product/3000001007
+                - article [ref=e448]:
+                  - generic [ref=e449]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 18코어 CPU 24코어 GPU 스페이스 블랙 48GB 1TB" [ref=e450]
+                    - generic [ref=e451]: PREMIUM
+                    - generic [ref=e452]: 공동구매 진행중!
+                    - button "찜하기" [ref=e453]:
+                      - img [ref=e454]
+                  - generic [ref=e456]:
+                    - paragraph [ref=e457]: Apple
+                    - paragraph [ref=e458]: Apple MacBook Pro 14" M5 Pro 18코어 CPU 24코어 GPU 스페이스 블랙 48GB 1TB
+                    - generic [ref=e459]:
+                      - generic [ref=e460]: ★
+                      - generic [ref=e461]: "4.9"
+                      - generic [ref=e462]: (189)
+                    - generic [ref=e463]:
+                      - generic [ref=e464]: 5,490,000
+                      - generic [ref=e465]: 4,990,000원
+              - link [ref=e466] [cursor=pointer]:
+                - /url: /store/product/3000001008
+                - article [ref=e467]:
+                  - generic [ref=e468]:
+                    - img "Apple MacBook Pro 14\" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB" [ref=e469]
+                    - generic [ref=e470]: PREMIUM
+                    - generic [ref=e471]: 공동구매 진행중!
+                    - button "찜하기" [ref=e472]:
+                      - img [ref=e473]
+                  - generic [ref=e475]:
+                    - paragraph [ref=e476]: Apple
+                    - paragraph [ref=e477]: Apple MacBook Pro 14" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB
+                    - generic [ref=e478]:
+                      - generic [ref=e479]: ★
+                      - generic [ref=e480]: "4.9"
+                      - generic [ref=e481]: (156)
+                    - generic [ref=e482]:
+                      - generic [ref=e483]: 5,990,000
+                      - generic [ref=e484]: 5,490,000원
+          - generic [ref=e485]:
+            - generic [ref=e486]:
+              - generic [ref=e487]:
+                - paragraph [ref=e488]: 인기
+                - heading "이번주 인기" [level=2] [ref=e489]
+                - paragraph [ref=e490]: 이번주 가장 많이 팔린 인기 상품
+              - link "전체보기" [ref=e491] [cursor=pointer]:
+                - /url: /store/best
+                - generic [ref=e492]:
+                  - generic [ref=e493]: 전체보기
+                  - img [ref=e494]
+            - generic [ref=e496]:
+              - link [ref=e497] [cursor=pointer]:
+                - /url: /store/product/3000002001
+                - article [ref=e498]:
+                  - generic [ref=e499]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 1TB" [ref=e500]
+                    - generic [ref=e501]: PREMIUM
+                    - generic [ref=e502]: "-10%"
+                    - generic [ref=e503]: 공동구매 진행중!
+                    - button "찜하기" [ref=e504]:
+                      - img [ref=e505]
+                  - generic [ref=e507]:
+                    - paragraph [ref=e508]: Apple
+                    - paragraph [ref=e509]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e510]:
+                      - generic [ref=e511]: ★
+                      - generic [ref=e512]: "4.9"
+                      - generic [ref=e513]: (1,245)
+                    - generic [ref=e514]:
+                      - generic [ref=e515]: 3,990,000
+                      - generic [ref=e516]: 3,590,000원
+              - link [ref=e517] [cursor=pointer]:
+                - /url: /store/product/3000002002
+                - article [ref=e518]:
+                  - generic [ref=e519]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 24GB 1TB" [ref=e520]
+                    - generic [ref=e521]: PREMIUM
+                    - generic [ref=e522]: "-10%"
+                    - generic [ref=e523]: 공동구매 진행중!
+                    - button "찜하기" [ref=e524]:
+                      - img [ref=e525]
+                  - generic [ref=e527]:
+                    - paragraph [ref=e528]: Apple
+                    - paragraph [ref=e529]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e530]:
+                      - generic [ref=e531]: ★
+                      - generic [ref=e532]: "4.9"
+                      - generic [ref=e533]: (987)
+                    - generic [ref=e534]:
+                      - generic [ref=e535]: 4,790,000
+                      - generic [ref=e536]: 4,290,000원
+              - link [ref=e537] [cursor=pointer]:
+                - /url: /store/product/3000002003
+                - article [ref=e538]:
+                  - generic [ref=e539]:
+                    - img "Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 512GB" [ref=e540]
+                    - generic [ref=e541]: PREMIUM
+                    - generic [ref=e542]: 공동구매 진행중!
+                    - button "찜하기" [ref=e543]:
+                      - img [ref=e544]
+                  - generic [ref=e546]:
+                    - paragraph [ref=e547]: Apple
+                    - paragraph [ref=e548]: Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 512GB
+                    - generic [ref=e549]:
+                      - generic [ref=e550]: ★
+                      - generic [ref=e551]: "4.9"
+                      - generic [ref=e552]: (876)
+                    - generic [ref=e553]:
+                      - generic [ref=e554]: 3,590,000
+                      - generic [ref=e555]: 3,290,000원
+              - link [ref=e556] [cursor=pointer]:
+                - /url: /store/product/3000002004
+                - article [ref=e557]:
+                  - generic [ref=e558]:
+                    - img "Apple MacBook Pro 14\" M5 Max 18코어 CPU 32코어 GPU 스페이스 블랙 36GB 2TB" [ref=e559]
+                    - generic [ref=e560]: PREMIUM
+                    - generic [ref=e561]: 공동구매 진행중!
+                    - button "찜하기" [ref=e562]:
+                      - img [ref=e563]
+                  - generic [ref=e565]:
+                    - paragraph [ref=e566]: Apple
+                    - paragraph [ref=e567]: Apple MacBook Pro 14" M5 Max 18코어 CPU 32코어 GPU 스페이스 블랙 36GB 2TB
+                    - generic [ref=e568]:
+                      - generic [ref=e569]: ★
+                      - generic [ref=e570]: "4.9"
+                      - generic [ref=e571]: (734)
+                    - generic [ref=e572]:
+                      - generic [ref=e573]: 5,990,000
+                      - generic [ref=e574]: 5,490,000원
+              - link [ref=e575] [cursor=pointer]:
+                - /url: /store/product/3000002005
+                - article [ref=e576]:
+                  - generic [ref=e577]:
+                    - img "Apple MacBook Pro 16\" M5 Max 18코어 CPU 40코어 GPU 스페이스 블랙 48GB 2TB" [ref=e578]
+                    - generic [ref=e579]: PREMIUM
+                    - generic [ref=e580]: 공동구매 진행중!
+                    - button "찜하기" [ref=e581]:
+                      - img [ref=e582]
+                  - generic [ref=e584]:
+                    - paragraph [ref=e585]: Apple
+                    - paragraph [ref=e586]: Apple MacBook Pro 16" M5 Max 18코어 CPU 40코어 GPU 스페이스 블랙 48GB 2TB
+                    - generic [ref=e587]:
+                      - generic [ref=e588]: ★
+                      - generic [ref=e589]: "4.9"
+                      - generic [ref=e590]: (623)
+                    - generic [ref=e591]:
+                      - generic [ref=e592]: 9,790,000
+                      - generic [ref=e593]: 8,990,000원
+              - link [ref=e594] [cursor=pointer]:
+                - /url: /store/product/3000002006
+                - article [ref=e595]:
+                  - generic [ref=e596]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 스페이스 블랙 24GB 1TB" [ref=e597]
+                    - generic [ref=e598]: BEST
+                    - generic [ref=e599]: "-10%"
+                    - generic [ref=e600]: 공동구매 진행중!
+                    - button "찜하기" [ref=e601]:
+                      - img [ref=e602]
+                  - generic [ref=e604]:
+                    - paragraph [ref=e605]: Apple
+                    - paragraph [ref=e606]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e607]:
+                      - generic [ref=e608]: ★
+                      - generic [ref=e609]: "4.8"
+                      - generic [ref=e610]: (2,134)
+                    - generic [ref=e611]:
+                      - generic [ref=e612]: 2,990,000
+                      - generic [ref=e613]: 2,690,000원
+              - link [ref=e614] [cursor=pointer]:
+                - /url: /store/product/3000002007
+                - article [ref=e615]:
+                  - generic [ref=e616]:
+                    - img "Apple Mac Studio M3 Ultra 28코어 CPU 60코어 GPU 96GB 1TB" [ref=e617]
+                    - generic [ref=e618]: PREMIUM
+                    - generic [ref=e619]: 공동구매 진행중!
+                    - button "찜하기" [ref=e620]:
+                      - img [ref=e621]
+                  - generic [ref=e623]:
+                    - paragraph [ref=e624]: Apple
+                    - paragraph [ref=e625]: Apple Mac Studio M3 Ultra 28코어 CPU 60코어 GPU 96GB 1TB
+                    - generic [ref=e626]:
+                      - generic [ref=e627]: ★
+                      - generic [ref=e628]: "4.9"
+                      - generic [ref=e629]: (412)
+                    - generic [ref=e630]:
+                      - generic [ref=e631]: 7,190,000
+                      - generic [ref=e632]: 6,590,000원
+              - link [ref=e633] [cursor=pointer]:
+                - /url: /store/product/3000002008
+                - article [ref=e634]:
+                  - generic [ref=e635]:
+                    - img "Apple Mac Pro 타워형 최대 기본 구성 192GB 1TB SSD" [ref=e636]
+                    - generic [ref=e637]: PREMIUM
+                    - generic [ref=e638]: 공동구매 진행중!
+                    - button "찜하기" [ref=e639]:
+                      - img [ref=e640]
+                  - generic [ref=e642]:
+                    - paragraph [ref=e643]: Apple
+                    - paragraph [ref=e644]: Apple Mac Pro 타워형 최대 기본 구성 192GB 1TB SSD
+                    - generic [ref=e645]:
+                      - generic [ref=e646]: ★
+                      - generic [ref=e647]: "4.9"
+                      - generic [ref=e648]: (234)
+                    - generic [ref=e649]:
+                      - generic [ref=e650]: 11,490,000
+                      - generic [ref=e651]: 10,490,000원
+          - generic [ref=e652]:
+            - link "Special Exhibition 테마별 기획전 MacBook Pro · Mac Studio · Mac Pro 특가전 보러가기" [ref=e653] [cursor=pointer]:
+              - /url: /store/exhibition
+              - generic [ref=e654]:
+                - generic [ref=e656]:
+                  - generic [ref=e657]: Special Exhibition
+                  - heading "테마별 기획전" [level=3] [ref=e658]
+                  - paragraph [ref=e659]: MacBook Pro · Mac Studio · Mac Pro 특가전
+                - generic [ref=e660]:
+                  - generic [ref=e661]: 보러가기
+                  - img [ref=e662]
+            - link "Rental 렌탈로 부담 없이 월 소액 · 무상 AS · 무료 설치 보러가기" [ref=e664] [cursor=pointer]:
+              - /url: /store/rental
+              - generic [ref=e665]:
+                - generic [ref=e667]:
+                  - generic [ref=e668]: Rental
+                  - heading "렌탈로 부담 없이" [level=3] [ref=e669]
+                  - paragraph [ref=e670]: 월 소액 · 무상 AS · 무료 설치
+                - generic [ref=e671]:
+                  - generic [ref=e672]: 보러가기
+                  - img [ref=e673]
+          - generic [ref=e675]:
+            - generic [ref=e676]:
+              - paragraph [ref=e677]: BRAND
+              - heading "브랜드관" [level=2] [ref=e678]
+              - paragraph [ref=e679]: 브랜드별 전용관에서 특가 상품을 확인하세요
+            - generic [ref=e680]:
+              - link "Apple MacBook · Mac" [ref=e681] [cursor=pointer]:
+                - /url: /store/apple
+                - generic [ref=e684]:
+                  - img [ref=e685]
+                  - paragraph [ref=e687]: Apple
+                  - paragraph [ref=e688]: MacBook · Mac
+              - link "Samsung Galaxy · TV 준비중" [ref=e689] [cursor=pointer]:
+                - /url: /store/samsung
+                - generic [ref=e692]:
+                  - img [ref=e694]:
+                    - generic [ref=e695]: SAMSUNG
+                  - paragraph [ref=e696]: Samsung
+                  - paragraph [ref=e697]:
+                    - text: Galaxy · TV
+                    - generic [ref=e698]: 준비중
+              - link "해외직구 미국·일본·유럽 준비중" [ref=e699] [cursor=pointer]:
+                - /url: /store/overseas
+                - generic [ref=e702]:
+                  - img [ref=e703]
+                  - paragraph [ref=e705]: 해외직구
+                  - paragraph [ref=e706]:
+                    - text: 미국·일본·유럽
+                    - generic [ref=e707]: 준비중
+              - link "전체 카테고리" [ref=e708] [cursor=pointer]:
+                - /url: /store/recommendation
+                - generic [ref=e710]:
+                  - img [ref=e711]
+                  - paragraph [ref=e713]: 전체 카테고리
+          - generic [ref=e715]:
+            - paragraph [ref=e716]: WHY US
+            - heading "왜 스마트홈딜인가요?" [level=2] [ref=e717]
+            - generic [ref=e718]:
+              - generic [ref=e719]:
+                - img [ref=e721]
+                - generic [ref=e723]:
+                  - paragraph [ref=e724]: 정품 보장
+                  - paragraph [ref=e725]: 100% 애플 공식 정품만 취급
+              - generic [ref=e726]:
+                - img [ref=e728]
+                - generic [ref=e730]:
+                  - paragraph [ref=e731]: 최저가 도전
+                  - paragraph [ref=e732]: 가격 비교 후 최저가로 제공
+              - generic [ref=e733]:
+                - img [ref=e735]
+                - generic [ref=e737]:
+                  - paragraph [ref=e738]: 당일 발송
+                  - paragraph [ref=e739]: 오전 주문 시 당일 출고
+              - generic [ref=e740]:
+                - img [ref=e742]
+                - generic [ref=e744]:
+                  - paragraph [ref=e745]: 전문 AS
+                  - paragraph [ref=e746]: 구매 후 전담 A/S 연결
+    - contentinfo [ref=e747]:
+      - generic [ref=e749]:
+        - generic [ref=e750]:
+          - generic [ref=e751]:
+            - generic [ref=e752]:
+              - img [ref=e753]
+              - paragraph [ref=e757]: 스마트홈딜
+            - paragraph [ref=e758]: 뭐 살지 고민될 땐? 검색하지 말고 스마트홈딜 하자!
+          - generic [ref=e759]:
+            - paragraph [ref=e760] [cursor=pointer]: 이용약관
+            - paragraph [ref=e761] [cursor=pointer]: 개인정보처리방침
+            - paragraph [ref=e762] [cursor=pointer]: 사업자정보
+        - generic [ref=e763]:
+          - paragraph [ref=e764]: "(주)스마트홈딜 | 대표: 서영준 | 사업자등록번호: 000-00-00000"
+          - paragraph [ref=e765]: Copyright 2026 스마트홈딜. All rights reserved.
+  - button "실시간 상담" [ref=e766]:
+    - img [ref=e767]
+  - button "Open Next.js Dev Tools" [ref=e774] [cursor=pointer]:
+    - img [ref=e775]

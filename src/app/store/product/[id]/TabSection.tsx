@@ -571,18 +571,6 @@ export default function TabSection({ product, discount }: Props) {
             구매 혜택
           </h3>
           <div className="grid grid-cols-1 gap-[10px] lg:grid-cols-2">
-            {/* 무이자 할부 */}
-            <div className="flex items-start gap-[14px] bg-gray-1 rounded-xl border border-gray-3 p-[16px]">
-              <div className="shrink-0 w-[40px] h-[40px] rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center">
-                <svg width="20" height="20" fill="none" stroke="#D97706" strokeWidth={1.8} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
-                </svg>
-              </div>
-              <div>
-                <p className="text-[14px] font-bold text-gray-9 mb-[4px]">무이자 할부</p>
-                <p className="text-[12px] text-gray-6 leading-snug">신한·삼성·현대카드 2~12개월 무이자<br />롯데·BC·하나 2~6개월 무이자</p>
-              </div>
-            </div>
             {/* 공동구매 특가 */}
             <div className="flex items-start gap-[14px] bg-gray-1 rounded-xl border border-gray-3 p-[16px]">
               <div className="shrink-0 w-[40px] h-[40px] rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center">

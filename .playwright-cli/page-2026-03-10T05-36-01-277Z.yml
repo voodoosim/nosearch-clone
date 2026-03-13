@@ -1,0 +1,757 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "글로벌" [ref=e4]:
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Apple" [ref=e8] [cursor=pointer]:
+            - /url: https://www.apple.com/kr/
+            - generic:
+              - img
+            - generic: Apple
+        - listitem [ref=e9]:
+          - generic [ref=e11]:
+            - list [ref=e13]:
+              - listitem [ref=e14]:
+                - link "스토어" [ref=e15] [cursor=pointer]:
+                  - /url: /kr/store
+                  - generic [ref=e16]:
+                    - generic:
+                      - img
+                    - generic: 스토어
+              - listitem:
+                - button "스토어 메뉴":
+                  - generic:
+                    - img
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - link "Mac" [ref=e20] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/mac/
+                  - generic [ref=e21]:
+                    - generic:
+                      - img
+                    - generic: Mac
+              - listitem:
+                - button "Mac 메뉴":
+                  - generic:
+                    - img
+            - list [ref=e23]:
+              - listitem [ref=e24]:
+                - link "iPad" [ref=e25] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/ipad/
+                  - generic [ref=e26]:
+                    - generic:
+                      - img
+                    - generic: iPad
+              - listitem:
+                - button "iPad 메뉴":
+                  - generic:
+                    - img
+            - list [ref=e28]:
+              - listitem [ref=e29]:
+                - link "iPhone" [ref=e30] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/iphone/
+                  - generic [ref=e31]:
+                    - generic:
+                      - img
+                    - generic: iPhone
+              - listitem:
+                - button "iPhone 메뉴":
+                  - generic:
+                    - img
+            - list [ref=e33]:
+              - listitem [ref=e34]:
+                - link "Watch" [ref=e35] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/watch/
+                  - generic [ref=e36]:
+                    - generic:
+                      - img
+                    - generic: Watch
+              - listitem:
+                - button "Watch 메뉴":
+                  - generic:
+                    - img
+            - list [ref=e38]:
+              - listitem [ref=e39]:
+                - link "Vision" [ref=e40] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/apple-vision-pro/
+                  - generic [ref=e41]:
+                    - generic:
+                      - img
+                    - generic: Vision
+              - listitem:
+                - button "Vision menu":
+                  - generic:
+                    - img
+            - list [ref=e43]:
+              - listitem [ref=e44]:
+                - link "AirPods" [ref=e45] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/airpods/
+                  - generic [ref=e46]:
+                    - generic:
+                      - img
+                    - generic: AirPods
+              - listitem:
+                - button "AirPods 메뉴":
+                  - generic:
+                    - img
+            - list [ref=e48]:
+              - listitem [ref=e49]:
+                - link "TV 및 홈" [ref=e50] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/tv-home/
+                  - generic [ref=e51]:
+                    - generic:
+                      - img
+                    - generic: TV 및 홈
+              - listitem:
+                - button "TV 및 홈 메뉴":
+                  - generic:
+                    - img
+            - list [ref=e53]:
+              - listitem [ref=e54]:
+                - link "엔터테인먼트" [ref=e55] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/services/
+                  - generic [ref=e56]:
+                    - generic:
+                      - img
+                    - generic: 엔터테인먼트
+              - listitem:
+                - button "엔터테인먼트 메뉴":
+                  - generic:
+                    - img
+            - list [ref=e58]:
+              - listitem [ref=e59]:
+                - link "액세서리" [ref=e60] [cursor=pointer]:
+                  - /url: /kr/shop/accessories/all
+                  - generic [ref=e61]:
+                    - generic:
+                      - img
+                    - generic: 액세서리
+              - listitem:
+                - button "액세서리 메뉴":
+                  - generic:
+                    - img
+            - list [ref=e63]:
+              - listitem [ref=e64]:
+                - link "지원" [ref=e65] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/support/
+                  - generic [ref=e66]:
+                    - generic:
+                      - img
+                    - generic: 지원
+              - listitem:
+                - button "지원 메뉴":
+                  - generic:
+                    - img
+        - listitem [ref=e67]:
+          - button "apple.com 검색하기" [ref=e68] [cursor=pointer]:
+            - generic:
+              - img
+        - listitem [ref=e69]:
+          - button "쇼핑백" [ref=e71] [cursor=pointer]:
+            - generic:
+              - img
+    - main [ref=e73]:
+      - generic [ref=e74]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - link [disabled]: Mac Studio
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: ₩3,290,000부터
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - list:
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - img
+                                  - paragraph: 무료 배송
+                              - listitem:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - img
+                                  - paragraph: 매장에서 픽업
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - generic [ref=e77]:
+              - heading "Mac Studio 구입하기" [level=1] [ref=e79]
+              - generic [ref=e86]: ₩3,290,000부터
+            - generic [ref=e88]:
+              - button "보상 판매를 추가하고 새 Mac을 더 부담 없이. 각주 § " [ref=e90] [cursor=pointer]:
+                - generic [ref=e91]: 보상 판매를 추가하고 새 Mac을 더 부담 없이.
+                - superscript [ref=e93]:
+                  - generic [ref=e94]: 각주
+                  - text: §
+                - text: 
+              - link "신용 카드 할부 (새 창에서 열림) " [ref=e96] [cursor=pointer]:
+                - /url: /kr/shop/browse/financing
+                - text: 신용 카드 할부
+                - generic [ref=e97]: (새 창에서 열림)
+                - text: 
+          - generic [ref=e98]:
+            - group "Mac Studio 갤러리" [ref=e100]:
+              - tablist [ref=e102]:
+                - tab "갤러리 이미지 1" [disabled] [selected] [ref=e103]
+                - tab "갤러리 이미지 2" [disabled] [ref=e104]
+                - tab "갤러리 이미지 3" [disabled] [ref=e105]
+                - tab "갤러리 이미지 4" [disabled] [ref=e106]
+                - tab "갤러리 이미지 5" [disabled] [ref=e107]
+                - tab "갤러리 이미지 6" [disabled] [ref=e108]
+                - tab "갤러리 이미지 7" [disabled] [ref=e109]
+              - generic [ref=e111]:
+                - tabpanel "갤러리 이미지 1" [ref=e112]:
+                  - generic [ref=e114]:
+                    - img "USB-C 포트 2개, SDXC 카드 슬롯, 상태 표시등, 테이퍼형 베이스, 평평한 상단, 둥근 형태의 모서리, 직선 형태의 가장자리가 보이는 실버 색상 Mac Studio의 앞면" [ref=e117]
+                    - paragraph [ref=e119]:
+                      - generic [ref=e120]:
+                        - text: M4 Max 칩과 M3 Ultra 칩 모두 Neural Engine으로 Apple Intelligence 기능을 구동해
+                        - superscript [ref=e122]:
+                          - generic [ref=e123]: 각주
+                          - text: ¶
+                        - text: 각종 AI 워크플로를 척척 처리해내죠.
+                - tabpanel [ref=e124]:
+                  - img [ref=e129]
+              - generic:
+                - button "이전 갤러리 이미지" [disabled] [ref=e130]:
+                  - generic [ref=e131]: 이전 갤러리 이미지
+                  - img [ref=e133]
+                - button "다음 갤러리 이미지" [ref=e135] [cursor=pointer]:
+                  - generic [ref=e136]: 다음 갤러리 이미지
+                  - img [ref=e138]
+            - generic [ref=e141]:
+              - generic [ref=e142]:
+                - group "칩. 강력한 칩 중 원하는 옵션을 선택하세요." [ref=e143]:
+                  - heading "칩. 강력한 칩 중 원하는 옵션을 선택하세요." [level=2] [ref=e145]
+                  - generic [ref=e146]:
+                    - generic [ref=e148]:
+                      - radio "M4 Max 칩 프로급 워크로드와 창작 프로젝트를 위한 어마어마한 속도와 성능. 16코어 Neural Engine을 탑재한 2개 옵션 중에서 선택 가능 ₩3,290,000부터" [ref=e149] [cursor=pointer]
+                      - generic [ref=e151] [cursor=pointer]:
+                        - generic [ref=e152]:
+                          - generic [ref=e153]:
+                            - text: M4 Max 칩
+                            - generic [ref=e154]: 프로급 워크로드와 창작 프로젝트를 위한 어마어마한 속도와 성능.
+                          - generic [ref=e155]: 16코어 Neural Engine을 탑재한 2개 옵션 중에서 선택 가능
+                        - generic [ref=e158]: ₩3,290,000부터
+                    - generic [ref=e160]:
+                      - radio "M3 Ultra 칩 초고사양을 필요로 하는 전문가들을 위해 전례 없는 성능을 뿜어내는 Apple 역대 가장 강력한 칩. 32코어 Neural Engine을 탑재한 2개 옵션 중에서 선택 가능 ₩6,590,000부터" [ref=e161] [cursor=pointer]
+                      - generic [ref=e163] [cursor=pointer]:
+                        - generic [ref=e164]:
+                          - generic [ref=e165]:
+                            - text: M3 Ultra 칩
+                            - generic [ref=e166]: 초고사양을 필요로 하는 전문가들을 위해 전례 없는 성능을 뿜어내는 Apple 역대 가장 강력한 칩.
+                          - generic [ref=e167]: 32코어 Neural Engine을 탑재한 2개 옵션 중에서 선택 가능
+                        - generic [ref=e170]: ₩6,590,000부터
+                - generic [ref=e172] [cursor=pointer]:
+                  - generic [ref=e174]:
+                    - generic [ref=e175]: 칩 선택에 도움이 필요하다면?
+                    - generic [ref=e176]: 꼼꼼히 비교하고, 꼭 맞는 옵션을 골라보세요.
+                  - button "자세히 보기 칩 선택에 도움이 필요하다면?" [ref=e177]:
+                    - generic [ref=e178]: 자세히 보기
+                    - text: 
+              - generic [ref=e179]:
+                - group "메모리. 알맞은 메모리를 선택하세요." [ref=e180]:
+                  - heading "메모리. 알맞은 메모리를 선택하세요." [level=2] [ref=e182]
+                  - generic [ref=e184]:
+                    - generic [ref=e185]:
+                      - radio "36GB" [disabled] [ref=e186] [cursor=pointer]
+                      - generic [ref=e189]: 36GB
+                    - generic [ref=e191]:
+                      - radio "48GB" [disabled] [ref=e192] [cursor=pointer]
+                      - generic [ref=e195]: 48GB
+                    - generic [ref=e197]:
+                      - radio "64GB" [disabled] [ref=e198] [cursor=pointer]
+                      - generic [ref=e201]: 64GB
+                    - generic [ref=e203]:
+                      - radio "96GB" [disabled] [ref=e204] [cursor=pointer]
+                      - generic [ref=e207]: 96GB
+                    - generic [ref=e209]:
+                      - radio "128GB" [disabled] [ref=e210] [cursor=pointer]
+                      - generic [ref=e213]: 128GB
+                    - generic [ref=e215]:
+                      - radio "256GB" [disabled] [ref=e216] [cursor=pointer]
+                      - generic [ref=e219]: 256GB
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: 메모리가 얼마나 필요할지 확실치 않으신가요?
+                        - generic: 통합 메모리에 대해 알아보고, Mac 용도에 꼭 맞는 옵션을 선택하세요.
+                    - button "자세히 보기 메모리가 얼마나 필요할지 확실치 않으신가요?" [disabled]:
+                      - generic: 자세히 보기
+                      - text: 
+              - generic [ref=e221]:
+                - group "저장 장치. 원하는 용량을 선택하세요." [ref=e222]:
+                  - heading "저장 장치. 원하는 용량을 선택하세요." [level=2] [ref=e224]
+                  - generic [ref=e226]:
+                    - generic [ref=e227]:
+                      - radio "512GB" [disabled] [ref=e228] [cursor=pointer]
+                      - generic [ref=e231]: 512GB
+                    - generic [ref=e233]:
+                      - radio "1TB" [disabled] [ref=e234] [cursor=pointer]
+                      - generic [ref=e237]: 1TB
+                    - generic [ref=e239]:
+                      - radio "2TB" [disabled] [ref=e240] [cursor=pointer]
+                      - generic [ref=e243]: 2TB
+                    - generic [ref=e245]:
+                      - radio "4TB" [disabled] [ref=e246] [cursor=pointer]
+                      - generic [ref=e249]: 4TB
+                    - generic [ref=e251]:
+                      - radio "8TB" [disabled] [ref=e252] [cursor=pointer]
+                      - generic [ref=e255]: 8TB
+                    - generic [ref=e257]:
+                      - radio "16TB" [disabled] [ref=e258] [cursor=pointer]
+                      - generic [ref=e261]: 16TB
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: 용량이 얼마나 필요할지 확실치 않으신가요?
+                        - generic: SSD 저장 장치에 대해 알아보고, 당신의 Mac 사용 용도에 딱 맞는 키보드 옵션을 확인해 보세요.
+                    - button "자세히 보기 용량이 얼마나 필요할지 확실치 않으신가요?" [disabled]:
+                      - generic: 자세히 보기
+                      - text: 
+              - generic [ref=e263]:
+                - heading "프로용 앱. 더욱 확장되는 Mac의 능력." [level=2] [ref=e264]
+                - generic:
+                  - generic:
+                    - paragraph:
+                      - text: 새 Mac 구입 시 Apple Creator Studio 3개월 무료 체험 혜택도 드립니다. Final Cut Pro, Logic Pro, Pixelmator Pro 등, 강력한 앱을 모두 이용할 수 있는 올인원 구독 멤버십이죠.
+                      - button "더 알아보기 Apple Creator Studio " [disabled]:
+                        - text: 더 알아보기
+                        - generic: Apple Creator Studio
+                        - text: 
+                    - paragraph: 원한다면 Final Cut Pro와 Logic Pro의 사전 설치 버전을 따로 구입할 수도 있습니다.
+                - group "Final Cut Pro" [ref=e266]:
+                  - generic [ref=e267]:
+                    - heading "Final Cut Pro" [level=3]
+                  - generic [ref=e268]:
+                    - generic [ref=e269]:
+                      - radio "선택 안 함" [disabled] [ref=e270] [cursor=pointer]
+                      - generic [ref=e273]: 선택 안 함
+                    - generic [ref=e275]:
+                      - radio "Mac에 미리 설치" [disabled] [ref=e276] [cursor=pointer]
+                      - generic [ref=e279]: Mac에 미리 설치
+                    - generic:
+                      - link "라이선스 계약서 보기 Final Cut Pro (새 창에서 열림) " [disabled]:
+                        - text: 라이선스 계약서 보기
+                        - generic: Final Cut Pro
+                        - generic: (새 창에서 열림)
+                        - text: 
+                - group "Logic Pro" [ref=e282]:
+                  - generic [ref=e283]:
+                    - heading "Logic Pro" [level=3]
+                  - generic [ref=e284]:
+                    - generic [ref=e285]:
+                      - radio "선택 안 함" [disabled] [ref=e286] [cursor=pointer]
+                      - generic [ref=e289]: 선택 안 함
+                    - generic [ref=e291]:
+                      - radio "Mac에 미리 설치" [disabled] [ref=e292] [cursor=pointer]
+                      - generic [ref=e295]: Mac에 미리 설치
+                    - generic:
+                      - link "라이선스 계약서 보기 Logic Pro (새 창에서 열림) " [disabled]:
+                        - text: 라이선스 계약서 보기
+                        - generic: Logic Pro
+                        - generic: (새 창에서 열림)
+                        - text: 
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: 사전 설치되는 창의력 도구의 능력은?
+                          - generic: 기기를 받는 즉시, 이 강력한 프로 앱이 어떻게 창의력을 끌어올려 주는지 알아보세요.
+                      - button "자세히 보기 사전 설치되는 창의력 도구의 능력은?" [disabled]:
+                        - generic: 자세히 보기
+                        - text: 
+              - generic [ref=e297]:
+                - heading "Apple Trade In. 새 Mac 구매 시 사용할 수 있는 크레딧 받기. 각주 §" [level=2] [ref=e299]:
+                  - text: Apple Trade In.
+                  - generic [ref=e300]:
+                    - text: 새 Mac 구매 시 사용할 수 있는 크레딧 받기.
+                    - superscript [ref=e302]:
+                      - generic [ref=e303]: 각주
+                      - text: §
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - group "Apple Trade In. 새 Mac 구매 시 사용할 수 있는 크레딧 받기. 각주 §":
+                              - generic:
+                                - generic:
+                                  - radio "보상 판매 내용 추가 몇 가지 질문에 답해주시면 예상 금액이 제시됩니다." [disabled]
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - text: 보상 판매 내용 추가
+                                        - generic: 몇 가지 질문에 답해주시면 예상 금액이 제시됩니다.
+                                - generic:
+                                  - radio "보상 판매 안 함" [disabled]
+                                  - generic:
+                                    - generic:
+                                      - generic: 보상 판매 안 함
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: 보상 판매 과정을 알아볼까요?
+                            - generic: 보상 판매 견적을 받아보세요. 아니면 기기를 무료로 재활용할 수도 있죠.
+                        - button "자세히 보기 보상 판매 과정을 알아볼까요?" [disabled]:
+                          - generic: 자세히 보기
+                          - text: 
+              - generic [ref=e305]:
+                - generic [ref=e306]:
+                  - heading "갖고 싶던 새 Mac Studio." [level=2] [ref=e307]
+                  - generic [ref=e308]: 이제 당신의 것으로.
+                - generic [ref=e313]: ₩3,290,000부터
+                - generic [ref=e315]:
+                  - button "계속" [disabled]
+                - generic:
+                  - heading "아직 고민 중이신가요?" [level=3]
+                  - generic: 우선 모든 구성을 저장해 두었다가 나중에 결정하거나, 친구와 공유해서 의견을 들어보세요.
+                - generic:
+                  - generic:
+                    - button "저장" [disabled]:
+                      - generic:
+                        - img
+                      - generic: 저장
+                - generic [ref=e317]:
+                  - button "공유하기 선택한 구성 공유하기" [disabled]:
+                    - generic:
+                      - img
+                    - generic: 공유하기
+                - generic [ref=e318]: 최종 가격은 장바구니에서 산출됩니다.
+      - generic [ref=e334]:
+        - link "Mac 스페셜리스트에게 문의하기 (새 창에서 열림) " [ref=e336] [cursor=pointer]
+        - text: 
+      - generic [ref=e339]:
+        - heading "스페셜리스트와 진행하는 일대일 세션을 통해 기기 설정하기." [level=2] [ref=e340]
+        - paragraph [ref=e342]: Apple에서 직접 기기 구입 시, 온라인으로 진행되는 무료 개인 맞춤 설정 세션에서 데이터를 옮기고, 새 기기를 속속들이 활용하는 방법을 배울 수 있습니다.
+        - paragraph [ref=e343]:
+          - button "개인 맞춤 설정에 대해 더 알아보기 " [ref=e344] [cursor=pointer]
+      - generic [ref=e349]:
+        - heading "새로 산 Mac과 함께 누릴 수 있는 놀라움의 세계." [level=2] [ref=e350]
+        - generic [ref=e351]:
+          - generic [ref=e352]:
+            - img "Apple TV+" [ref=e353]
+            - generic [ref=e354]:
+              - heading "Apple TV" [level=3] [ref=e355]
+              - paragraph [ref=e356]:
+                - text: 정주행하고 싶은 오리지널 영화 및 시리즈가 3개월 무료.
+                - superscript [ref=e358]:
+                  - generic [ref=e359]: 각주
+                  - text: ※
+          - generic [ref=e360]:
+            - img "Apple Music" [ref=e361]
+            - generic [ref=e362]:
+              - heading "Apple Music" [level=3] [ref=e363]
+              - paragraph [ref=e364]:
+                - text: 당신의 모든 최애곡이 광고 없이 3개월 무료.
+                - superscript [ref=e366]:
+                  - generic [ref=e367]: 각주
+                  - text: ※
+          - generic [ref=e368]:
+            - img "Apple Arcade" [ref=e369]
+            - generic [ref=e370]:
+              - heading "Apple Arcade" [level=3] [ref=e371]
+              - paragraph [ref=e372]:
+                - text: 손에서 놓고 싶지 않은 꿀잼 가득 게임이 3개월 무료.
+                - superscript [ref=e374]:
+                  - generic [ref=e375]: 각주
+                  - text: ※
+      - generic [ref=e381]:
+        - heading "대학생 및 교육자라면 새로운 Mac을 더욱 저렴하게." [level=2] [ref=e382]
+        - paragraph [ref=e383]: 교육 할인 스토어에서 특별 할인가로 만나보세요.
+        - paragraph [ref=e384]:
+          - link "지금 쇼핑하기 대학생 및 교육자라면 새로운 Mac을 더욱 저렴하게. " [ref=e385] [cursor=pointer]:
+            - /url: https://www.apple.com/kr-edu/shop/buy-mac
+            - text: 지금 쇼핑하기
+            - generic [ref=e386]: 대학생 및 교육자라면 새로운 Mac을 더욱 저렴하게.
+            - text: 
+    - contentinfo "각주" [ref=e387]:
+      - generic [ref=e388]:
+        - heading "각주" [level=2] [ref=e389]
+        - heading "각주" [level=3] [ref=e390]
+        - generic [ref=e392]:
+          - list "각주" [ref=e395]:
+            - listitem [ref=e396]:
+              - generic [ref=e397]: 각주
+              - generic [ref=e398]:
+                - text: ※ Apple TV+ 무료 체험 혜택은 신규 가입자 및 조건에 부합하는 재가입자에게만 적용됩니다. 무료 체험 기간이 끝나면 월 월 6,500원에 이용할 수 있습니다. 본인 또는 가족 구성원이 구입한 기기 수에 상관없이, 무료 체험 혜택은 Apple 계정 한 번 또는 본인이 ‘가족 공유’ 그룹의 구성원일 경우 그룹당 한 번만 제공됩니다. 본인 또는 가족 구성원이 이미 Apple TV+ 3개월 또는 1년 무료 체험 혜택을 이용한 경우에는 이 혜택을 이용할 수 없습니다. 무료 체험 혜택은 적용 대상 기기 활성화 이후 3개월 안에 신청할 수 있습니다. 멤버십은 매월 자동으로 갱신되며, 해지 시 종료됩니다. 특정 제한 사항 및 기타
+                - link "약관" [ref=e399] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/promo
+                - text: 이 적용됩니다.
+                - text: 신규 가입자에게만 적용됩니다. 무료 체험 기간이 끝나면 월 월 8,900원에 이용할 수 있습니다. 본 프로모션은 한정된 기간 동안 진행되며, 적용 대상 새 기기를 구입한 Apple Music 신규 구독자에게만 적용됩니다. 적용 대상 오디오 기기에 대해 혜택을 이용하려면 iOS 또는 iPadOS 최신 버전을 설치한 Apple 기기와 연결하거나 페어링해야 합니다. Apple Watch에 대해 혜택을 이용하려면 iOS 최신 버전을 설치한 iPhone에 연결하거나 페어링해야 합니다. 무료 체험 혜택은 적용 대상 기기 활성화 이후 3개월 안에 신청할 수 있습니다. 구입한 적용 대상 기기 수에 상관없이, 무료 체험 혜택은 Apple 계정당 한 번만 제공됩니다. 구독은 취소할 때까지 자동으로 갱신됩니다. 특정 제한 사항 및 기타
+                - link "약관" [ref=e400] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/promo
+                - text: 이 적용됩니다.
+                - text: Apple Arcade 무료 체험 혜택은 신규 가입자 및 조건에 부합하는 재가입자에게만 적용됩니다. 무료 체험 기간이 끝나면 월 월 6,500원에 이용할 수 있습니다. 본인 또는 가족 구성원이 구입한 기기 수에 상관없이, 무료 체험 혜택은 Apple 계정당 한 번 또는 본인이 ‘가족 공유’ 그룹의 구성원일 경우 그룹당 한 번만 제공됩니다. 본인 또는 가족 구성원이 이미 Apple Arcade 3개월 무료 체험 혜택을 이용한 경우에는 이 혜택을 이용할 수 없습니다. 무료 체험 혜택은 적용 대상 기기 활성화 이후 3개월 이내에 신청할 수 있습니다. 멤버십은 매월 자동으로 갱신되며, 해지 시 종료됩니다. 특정 제한 사항 및 기타
+                - link "약관" [ref=e401] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/promo
+                - text: 이 적용됩니다.
+            - listitem [ref=e402]:
+              - generic [ref=e403]: 각주
+              - generic [ref=e404]:
+                - text: ¶ Apple Intelligence는 베타로 사용할 수 있습니다. 일부 기능은 한국어로 제공되지 않습니다. 기능 및 언어 지원 여부 그리고 시스템 요구 사양은
+                - link "support.apple.com/ko-kr/121115 (새 창에서 열림)" [ref=e405] [cursor=pointer]:
+                  - /url: http://support.apple.com/ko-kr/121115
+                  - text: support.apple.com/ko-kr/121115
+                  - generic [ref=e406]: (새 창에서 열림)
+                - text: 를 참고하십시오.
+            - listitem [ref=e407]:
+              - generic [ref=e408]: 각주
+              - text: § 보상 판매 금액은 보상 판매되는 제품의 상태, 연도, 구성에 따라 달라집니다. 일부 기기는 보상 판매 대상이 아닙니다. 크레딧 또는 Apple Store Gift Card로 보상 판매를 받으려면 성인 연령 이상이어야 합니다. 보상 판매 금액은 적용 가능한 새 기기 구입 시 적용하거나 Apple Gift Card로 받을 수 있습니다. 최종 확정 금액은 보상 판매 대상 기기를 수령한 후, 예상 금액 산정 시 제시한 기기의 설명과 일치하는지 비교 검수 후 정해집니다. 판매세는 새로 구입한 기기의 총액을 바탕으로 부과될 수 있습니다. 매장에서 보상 판매를 받으려면 사진이 부착된 유효한 신분증이 필요합니다(현지 법률에 따라 해당 정보를 저장해야 할 수 있음). 일부 매장에서는 본 프로그램을 이용할 수 없으며, 매장 보상 판매와 온라인 보상 판매 간에 차이가 있을 수 있습니다. 일부 매장에서는 추가 요구 사항이 있을 수 있습니다. Apple 또는 보상 판매 파트너사는 어떤 보상 판매도 거래를 거부하거나, 취소하거나, 보상 판매 수량을 제한할 권리를 보유합니다. 적용 가능 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상 판매 파트너사에서 확인하실 수 있습니다. 규제 및 제한이 적용될 수 있습니다.
+          - paragraph
+          - paragraph [ref=e409]: 1GB = 10억 바이트, 1TB = 1조 바이트입니다. 실제로 포맷된 용량은 더 적을 수도 있습니다.
+          - paragraph
+          - paragraph [ref=e410]: 디스플레이 및 액세서리 별도 판매.
+        - navigation "이동 경로" [ref=e411]:
+          - link "Apple" [ref=e412] [cursor=pointer]:
+            - /url: https://www.apple.com/kr/
+            - generic [ref=e414]: Apple
+          - generic [ref=e415]:
+            - list:
+              - listitem [ref=e416]:
+                - link "Mac" [ref=e417] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/mac
+              - listitem [ref=e418]:
+                - link "Mac Studio" [ref=e419] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/mac-studio
+              - listitem [ref=e420]: Mac Studio 구입하기
+        - navigation "Apple Store のその他のリンク" [ref=e421]:
+          - generic [ref=e422]:
+            - generic:
+              - heading "쇼핑 및 알아보기" [level=3]:
+                - generic: 쇼핑 및 알아보기
+              - list:
+                - listitem [ref=e423]:
+                  - link "Store" [ref=e424] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/shop/goto/store
+                - listitem [ref=e425]:
+                  - link "Mac" [ref=e426] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/mac/
+                - listitem [ref=e427]:
+                  - link "iPad" [ref=e428] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/ipad/
+                - listitem [ref=e429]:
+                  - link "iPhone" [ref=e430] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/iphone/
+                - listitem [ref=e431]:
+                  - link "Watch" [ref=e432] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/watch/
+                - listitem [ref=e433]:
+                  - link "Vision" [ref=e434] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/apple-vision-pro/
+                - listitem [ref=e435]:
+                  - link "AirPods" [ref=e436] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/airpods/
+                - listitem [ref=e437]:
+                  - link "TV 및 홈" [ref=e438] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/tv/
+                - listitem [ref=e439]:
+                  - link "AirTag" [ref=e440] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/airtag/
+                - listitem [ref=e441]:
+                  - link "액세서리" [ref=e442] [cursor=pointer]:
+                    - /url: /kr/shop/accessories/all
+            - generic:
+              - heading "Apple 지갑" [level=3]:
+                - generic: Apple 지갑
+              - list:
+                - listitem [ref=e443]:
+                  - link "지갑" [ref=e444] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/wallet/
+          - generic [ref=e445]:
+            - generic:
+              - heading "계정" [level=3]:
+                - generic: 계정
+              - list:
+                - listitem [ref=e446]:
+                  - link "Apple 계정 관리" [ref=e447] [cursor=pointer]:
+                    - /url: https://appleid.apple.com/
+                - listitem [ref=e448]:
+                  - link "Apple Store 계정" [ref=e449] [cursor=pointer]:
+                    - /url: https://secure.store.apple.com/kr/shop/account/home
+                - listitem [ref=e450]:
+                  - link "iCloud.com" [ref=e451] [cursor=pointer]:
+                    - /url: https://www.icloud.com
+            - generic:
+              - heading "엔터테인먼트" [level=3]:
+                - generic: 엔터테인먼트
+              - list:
+                - listitem [ref=e452]:
+                  - link "Apple One" [ref=e453] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/apple-one/
+                - listitem [ref=e454]:
+                  - link "Apple TV" [ref=e455] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/apple-tv-plus/
+                - listitem [ref=e456]:
+                  - link "Apple Music" [ref=e457] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/apple-music/
+                - listitem [ref=e458]:
+                  - link "Apple Arcade" [ref=e459] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/apple-arcade/
+                - listitem [ref=e460]:
+                  - link "Apple Podcasts" [ref=e461] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/apple-podcasts/
+                - listitem [ref=e462]:
+                  - link "Apple Books" [ref=e463] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/apple-books/
+                - listitem [ref=e464]:
+                  - link "App Store" [ref=e465] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/app-store/
+          - generic [ref=e466]:
+            - generic:
+              - heading "Apple Store" [level=3]:
+                - generic: Apple Store
+              - list:
+                - listitem [ref=e467]:
+                  - link "매장 찾기" [ref=e468] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/retail/
+                - listitem [ref=e469]:
+                  - link "Genius Bar" [ref=e470] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/retail/geniusbar/
+                - listitem [ref=e471]:
+                  - link "Today at Apple" [ref=e472] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/today/
+                - listitem [ref=e473]:
+                  - link "Apple 캠프" [ref=e474] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/today/camp/
+                - listitem [ref=e475]:
+                  - link "Apple Store 앱" [ref=e476] [cursor=pointer]:
+                    - /url: https://itunes.apple.com/kr/app/apple-store/id375380948?mt=8
+                - listitem [ref=e477]:
+                  - link "인증 리퍼비쉬 제품" [ref=e478] [cursor=pointer]:
+                    - /url: /kr/shop/refurbished
+                - listitem [ref=e479]:
+                  - link "Apple Trade In" [ref=e480] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/trade-in
+                - listitem [ref=e481]:
+                  - link "할부 방식" [ref=e482] [cursor=pointer]:
+                    - /url: /kr/shop/browse/financing
+                - listitem [ref=e483]:
+                  - link "주문 상태" [ref=e484] [cursor=pointer]:
+                    - /url: https://secure.store.apple.com/kr/shop/order/list
+                - listitem [ref=e485]:
+                  - link "쇼핑 도움말" [ref=e486] [cursor=pointer]:
+                    - /url: /kr/shop/help
+          - generic [ref=e487]:
+            - generic:
+              - heading "비즈니스" [level=3]:
+                - generic: 비즈니스
+              - list:
+                - listitem [ref=e488]:
+                  - link "Apple과 비즈니스" [ref=e489] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/business/
+                - listitem [ref=e490]:
+                  - link "비즈니스를 위한 제품 쇼핑하기" [ref=e491] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/retail/business/
+            - generic:
+              - heading "교육" [level=3]:
+                - generic: 교육
+              - list:
+                - listitem [ref=e492]:
+                  - link "Apple 그리고 교육" [ref=e493] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/education/
+                - listitem [ref=e494]:
+                  - link "초중고용 제품 쇼핑하기" [ref=e495] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/education/k12/how-to-buy/
+                - listitem [ref=e496]:
+                  - link "대학 생활을 위한 제품 쇼핑하기" [ref=e497] [cursor=pointer]:
+                    - /url: /kr/shop/browse/home/education_routing
+          - generic [ref=e498]:
+            - generic:
+              - heading "Apple의 가치관" [level=3]:
+                - generic: Apple의 가치관
+              - list:
+                - listitem [ref=e499]:
+                  - link "손쉬운 사용" [ref=e500] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/accessibility/
+                - listitem [ref=e501]:
+                  - link "환경" [ref=e502] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/environment/
+                - listitem [ref=e503]:
+                  - link "개인정보 보호" [ref=e504] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/privacy/
+                - listitem [ref=e505]:
+                  - link "공급망" [ref=e506] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/supply-chain/
+            - generic:
+              - heading "Apple 정보" [level=3]:
+                - generic: Apple 정보
+              - list:
+                - listitem [ref=e507]:
+                  - link "Newsroom" [ref=e508] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/newsroom/
+                - listitem [ref=e509]:
+                  - link "Apple 리더십" [ref=e510] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/leadership/
+                - listitem [ref=e511]:
+                  - link "채용 안내" [ref=e512] [cursor=pointer]:
+                    - /url: https://www.apple.com/jobs/kr/
+                - listitem [ref=e513]:
+                  - link "윤리 및 규정 준수" [ref=e514] [cursor=pointer]:
+                    - /url: https://www.apple.com/compliance
+                - listitem [ref=e515]:
+                  - link "이벤트" [ref=e516] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/apple-events/
+                - listitem [ref=e517]:
+                  - link "일자리 창출" [ref=e518] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/job-creation/
+                - listitem [ref=e519]:
+                  - link "Apple 연락처" [ref=e520] [cursor=pointer]:
+                    - /url: https://www.apple.com/kr/contact/
+        - generic [ref=e521]:
+          - paragraph [ref=e523]:
+            - text: "다양한 쇼핑 방법:"
+            - link "Apple Store를 방문" [ref=e525] [cursor=pointer]:
+              - /url: https://www.apple.com/kr/retail
+            - text: 하거나,
+            - link "리셀러" [ref=e526] [cursor=pointer]:
+              - /url: https://locate.apple.com/kr/ko
+            - text: 를 찾아보거나, 080-330-8877번으로 전화하세요.
+          - link "대한민국" [ref=e528] [cursor=pointer]:
+            - /url: https://www.apple.com/choose-your-country
+          - generic [ref=e529]:
+            - generic [ref=e530]: Copyright © 2026 Apple Inc. 모든 권리 보유.
+            - list [ref=e531]:
+              - listitem [ref=e532]:
+                - link "개인정보 처리방침" [ref=e533] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/privacy/privacy-policy
+              - listitem [ref=e534]:
+                - link "약관" [ref=e535] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/legal/internet-services/terms/site.html
+              - listitem [ref=e536]:
+                - link "판매 및 환불" [ref=e537] [cursor=pointer]:
+                  - /url: /kr/shop/open/salespolicies
+              - listitem [ref=e538]:
+                - link "법적 고지" [ref=e539] [cursor=pointer]:
+                  - /url: https://www.apple.com/kr/legal
+              - listitem [ref=e540]:
+                - link "사이트 맵" [ref=e541] [cursor=pointer]:
+                  - /url: /kr/shop/browse/sitemap
+  - generic:
+    - status [ref=e542]
+    - status [ref=e543]
+    - status [ref=e544]
+    - status [ref=e545]
+    - status [ref=e546]
+    - status [ref=e547]
+    - status [ref=e548]

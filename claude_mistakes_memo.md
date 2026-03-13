@@ -26,6 +26,16 @@
 - **해결**: 항상 `docker-compose down && docker-compose up -d --build`
 - **규칙**: VPS Docker 재배포 시 down 필수
 
+### [2026-03-10] VPS에 로컬 변경사항 있을 때 git pull 실패
+- **상황**: VPS에서 `git pull` 시 "Your local changes would be overwritten" 에러
+- **해결**: `git stash` 후 `git pull` → 로컬 VPS 수정은 항상 스태시 처리
+- **규칙**: VPS 직접 수정 금지. 변경은 로컬 → push → VPS pull 순서로
+
+### [2026-03-10] 에이전트에 파일 쓰기 도구 없이 리서처 서브에이전트 사용
+- **상황**: 리서처 에이전트는 Read/Glob/Grep/WebSearch만 있어 파일 직접 저장 불가
+- **해결**: 에이전트가 JSON 내용 반환 → 부모가 Write 도구로 직접 저장
+- **규칙**: 파일 생성이 필요하면 general-purpose 에이전트 사용 (Bash/Write 포함)
+
 ---
 
 ## 코딩 규칙 (프로젝트 고유)
@@ -37,4 +47,4 @@
 
 ---
 
-_마지막 업데이트: 2026-03-05_
+_마지막 업데이트: 2026-03-10_

@@ -1,0 +1,19 @@
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8]
+  - generic [ref=e11]:
+    - link "스마트홈딜" [ref=e12] [cursor=pointer]:
+      - /url: /
+      - img "스마트홈딜" [ref=e13]:
+        - generic [ref=e16]: 스마트홈딜
+    - paragraph [ref=e17]: "404"
+    - heading "페이지를 찾을 수 없어요" [level=1] [ref=e18]
+    - paragraph [ref=e19]: 요청하신 페이지가 삭제됐거나 주소가 변경됐어요
+    - generic [ref=e20]:
+      - link "스토어 홈" [ref=e21] [cursor=pointer]:
+        - /url: /store
+      - link "스토어로 가기" [ref=e22] [cursor=pointer]:
+        - /url: /store
+  - button "실시간 상담" [ref=e23]:
+    - img [ref=e24]
+  - alert [ref=e26]

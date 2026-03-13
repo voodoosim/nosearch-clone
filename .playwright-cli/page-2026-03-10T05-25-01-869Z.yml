@@ -1,0 +1,617 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - link [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img [ref=e7]:
+            - generic [ref=e14]: 스마트홈딜
+        - generic [ref=e15]:
+          - navigation [ref=e17]:
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - link "스토어" [ref=e20] [cursor=pointer]:
+                  - /url: /store
+                  - paragraph [ref=e22]: 스토어
+              - listitem [ref=e23]:
+                - link "공동구매" [ref=e24] [cursor=pointer]:
+                  - /url: /store/deal
+                  - paragraph [ref=e26]: 공동구매
+              - listitem [ref=e27]:
+                - link "기획전" [ref=e28] [cursor=pointer]:
+                  - /url: /store/exhibition
+                  - paragraph [ref=e30]: 기획전
+              - listitem [ref=e31]:
+                - link "고객센터" [ref=e32] [cursor=pointer]:
+                  - /url: /store/contents
+                  - paragraph [ref=e34]: 고객센터
+          - generic [ref=e37]:
+            - textbox "어떤 제품을 찾으시나요?" [ref=e38]
+            - button [ref=e39]:
+              - img [ref=e40]
+          - list [ref=e44]:
+            - listitem [ref=e45]:
+              - link [ref=e46] [cursor=pointer]:
+                - /url: /mypage/wishlist
+                - img [ref=e48]
+            - listitem [ref=e50]:
+              - link [ref=e51] [cursor=pointer]:
+                - /url: /store/cart
+                - img [ref=e53]
+            - listitem [ref=e57]:
+              - link "마이페이지" [ref=e58] [cursor=pointer]:
+                - /url: /mypage
+                - paragraph [ref=e59]: 마이페이지
+            - listitem [ref=e60]:
+              - link "로그인" [ref=e61] [cursor=pointer]:
+                - /url: /login
+                - paragraph [ref=e62]: 로그인
+    - list [ref=e64]:
+      - listitem [ref=e65]:
+        - link "스토어홈" [ref=e66] [cursor=pointer]:
+          - /url: /store
+          - paragraph [ref=e68]: 스토어홈
+      - listitem [ref=e70]:
+        - link "공동구매" [ref=e71] [cursor=pointer]:
+          - /url: /store/deal
+          - paragraph [ref=e73]: 공동구매
+      - listitem [ref=e74]:
+        - link "리뷰템" [ref=e75] [cursor=pointer]:
+          - /url: /store/reviewTem
+          - paragraph [ref=e77]: 리뷰템
+      - listitem [ref=e78]:
+        - link "타임딜" [ref=e79] [cursor=pointer]:
+          - /url: /store/timedeal
+          - paragraph [ref=e81]: 타임딜
+      - listitem [ref=e82]:
+        - link "이번주 인기" [ref=e83] [cursor=pointer]:
+          - /url: /store/best
+          - paragraph [ref=e85]: 이번주 인기
+      - listitem [ref=e86]:
+        - link "기획전" [ref=e87] [cursor=pointer]:
+          - /url: /store/exhibition
+          - paragraph [ref=e89]: 기획전
+      - listitem [ref=e90]:
+        - link "렌탈" [ref=e91] [cursor=pointer]:
+          - /url: /store/rental
+          - paragraph [ref=e93]: 렌탈
+      - listitem [ref=e94]:
+        - link "가이드" [ref=e95] [cursor=pointer]:
+          - /url: /store/contents
+          - paragraph [ref=e97]: 가이드
+    - main [ref=e98]:
+      - generic [ref=e99]:
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e107]: OFFICIAL STORE
+            - paragraph [ref=e108]: 스마트홈딜 공식 스토어
+            - heading "스마트홈딜" [level=1] [ref=e109]
+            - paragraph [ref=e110]: 가전 전문가가 직접 검증하고 선별한 최고의 제품을 합리적인 가격에
+            - generic [ref=e111]:
+              - generic [ref=e112]:
+                - img [ref=e113]
+                - text: 전문가 검증
+              - generic [ref=e116]:
+                - img [ref=e117]
+                - text: 최저가 보장
+              - generic [ref=e120]:
+                - img [ref=e121]
+                - text: 안심 결제
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - img [ref=e127]
+              - paragraph [ref=e131]: 14,200명
+              - paragraph [ref=e132]: 누적 구매 고객
+            - paragraph [ref=e133]: 공식 인증 스토어
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - paragraph [ref=e136]: 카테고리
+            - generic [ref=e137]:
+              - link "주방가전" [ref=e138] [cursor=pointer]:
+                - /url: /store/recommendation/kitchen
+                - generic [ref=e139]:
+                  - img [ref=e141]
+                  - generic [ref=e144]: 주방가전
+              - link "청소가전" [ref=e145] [cursor=pointer]:
+                - /url: /store/recommendation/cleaning
+                - generic [ref=e146]:
+                  - img [ref=e148]
+                  - generic [ref=e151]: 청소가전
+              - link "생활가전" [ref=e152] [cursor=pointer]:
+                - /url: /store/recommendation/living
+                - generic [ref=e153]:
+                  - img [ref=e155]
+                  - generic [ref=e159]: 생활가전
+              - link "계절가전" [ref=e160] [cursor=pointer]:
+                - /url: /store/recommendation/seasonal
+                - generic [ref=e161]:
+                  - img [ref=e163]
+                  - generic [ref=e167]: 계절가전
+              - link "건강·뷰티" [ref=e168] [cursor=pointer]:
+                - /url: /store/recommendation/health
+                - generic [ref=e169]:
+                  - img [ref=e171]
+                  - generic [ref=e174]: 건강·뷰티
+              - link "전체보기" [ref=e175] [cursor=pointer]:
+                - /url: /store/recommendation
+                - generic [ref=e176]:
+                  - img [ref=e178]
+                  - generic [ref=e183]: 전체보기
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - generic [ref=e186]:
+                - paragraph [ref=e187]: LIMITED
+                - heading "타임딜" [level=2] [ref=e188]
+                - paragraph [ref=e189]: 오늘만 이 가격, 한정 수량 특가
+              - link "전체보기" [ref=e190] [cursor=pointer]:
+                - /url: /store/timedeal
+                - generic [ref=e191]:
+                  - generic [ref=e192]: 전체보기
+                  - img [ref=e193]
+            - generic [ref=e195]:
+              - img [ref=e196]
+              - generic [ref=e199]: 오늘 자정까지 — 매일 자정 갱신
+              - generic [ref=e200]: 수량 소진 시 조기 마감
+            - generic [ref=e201]:
+              - link [ref=e202] [cursor=pointer]:
+                - /url: /store/product/2000003001
+                - article [ref=e203]:
+                  - generic [ref=e204]:
+                    - img "삼성 Neo QLED 4K TV 65인치 QN65QN90CAFXKR" [ref=e205]
+                    - generic [ref=e206]: PREMIUM
+                    - generic [ref=e207]: "-40%"
+                    - generic [ref=e208]: 공동구매 진행중!
+                    - button "찜하기" [ref=e209]:
+                      - img [ref=e210]
+                  - generic [ref=e212]:
+                    - paragraph [ref=e213]: 삼성전자
+                    - paragraph [ref=e214]: 삼성 Neo QLED 4K TV 65인치 QN65QN90CAFXKR
+                    - generic [ref=e215]:
+                      - generic [ref=e216]: ★
+                      - generic [ref=e217]: "4.9"
+                      - generic [ref=e218]: (543)
+                    - generic [ref=e219]:
+                      - generic [ref=e220]: 2,490,000
+                      - generic [ref=e221]: 1,490,000원
+              - link [ref=e222] [cursor=pointer]:
+                - /url: /store/product/2000003002
+                - article [ref=e223]:
+                  - generic [ref=e224]:
+                    - img "삼성 비스포크 냉장고 1도어 RR39DG5604APST 390L" [ref=e225]
+                    - generic [ref=e226]: BEST
+                    - generic [ref=e227]: "-42%"
+                    - generic [ref=e228]: 공동구매 진행중!
+                    - button "찜하기" [ref=e229]:
+                      - img [ref=e230]
+                  - generic [ref=e232]:
+                    - paragraph [ref=e233]: 삼성전자
+                    - paragraph [ref=e234]: 삼성 비스포크 냉장고 1도어 RR39DG5604APST 390L
+                    - generic [ref=e235]:
+                      - generic [ref=e236]: ★
+                      - generic [ref=e237]: "4.7"
+                      - generic [ref=e238]: (345)
+                    - generic [ref=e239]:
+                      - generic [ref=e240]: 1,190,000
+                      - generic [ref=e241]: 690,000원
+              - link [ref=e242] [cursor=pointer]:
+                - /url: /store/product/2000003003
+                - article [ref=e243]:
+                  - generic [ref=e244]:
+                    - img "삼성 그랑데 AI 세탁기 WF19T6500KW 19kg" [ref=e245]
+                    - generic [ref=e246]: PREMIUM
+                    - generic [ref=e247]: "-40%"
+                    - generic [ref=e248]: 공동구매 진행중!
+                    - button "찜하기" [ref=e249]:
+                      - img [ref=e250]
+                  - generic [ref=e252]:
+                    - paragraph [ref=e253]: 삼성전자
+                    - paragraph [ref=e254]: 삼성 그랑데 AI 세탁기 WF19T6500KW 19kg
+                    - generic [ref=e255]:
+                      - generic [ref=e256]: ★
+                      - generic [ref=e257]: "4.8"
+                      - generic [ref=e258]: (678)
+                    - generic [ref=e259]:
+                      - generic [ref=e260]: 1,490,000
+                      - generic [ref=e261]: 890,000원
+              - link [ref=e262] [cursor=pointer]:
+                - /url: /store/product/2000003004
+                - article [ref=e263]:
+                  - generic [ref=e264]:
+                    - img "캐리어 스탠드 에어컨 CST-16WPH5A 16평형" [ref=e265]
+                    - generic [ref=e266]: BEST
+                    - generic [ref=e267]: "-41%"
+                    - generic [ref=e268]: 공동구매 진행중!
+                    - button "찜하기" [ref=e269]:
+                      - img [ref=e270]
+                  - generic [ref=e272]:
+                    - paragraph [ref=e273]: 캐리어
+                    - paragraph [ref=e274]: 캐리어 스탠드 에어컨 CST-16WPH5A 16평형
+                    - generic [ref=e275]:
+                      - generic [ref=e276]: ★
+                      - generic [ref=e277]: "4.6"
+                      - generic [ref=e278]: (234)
+                    - generic [ref=e279]:
+                      - generic [ref=e280]: 1,690,000
+                      - generic [ref=e281]: 990,000원
+          - generic [ref=e282]:
+            - generic [ref=e283]:
+              - generic [ref=e284]:
+                - paragraph [ref=e285]: 특가
+                - heading "공동구매" [level=2] [ref=e286]
+                - paragraph [ref=e287]: 스마트홈딜이 먼저 써보고 추천하는 최저가 공동구매
+              - link "전체보기" [ref=e288] [cursor=pointer]:
+                - /url: /store/deal
+                - generic [ref=e289]:
+                  - generic [ref=e290]: 전체보기
+                  - img [ref=e291]
+            - generic [ref=e293]:
+              - link [ref=e294] [cursor=pointer]:
+                - /url: /store/product/2000001001
+                - article [ref=e295]:
+                  - generic [ref=e296]:
+                    - img "삼성 Neo QLED 8K TV 65인치 QNC85A QN65QN85AAFXKR" [ref=e297]
+                    - generic [ref=e298]: PREMIUM
+                    - generic [ref=e299]: "-46%"
+                    - generic [ref=e300]: 공동구매 진행중!
+                    - button "찜하기" [ref=e301]:
+                      - img [ref=e302]
+                  - generic [ref=e304]:
+                    - paragraph [ref=e305]: 삼성전자
+                    - paragraph [ref=e306]: 삼성 Neo QLED 8K TV 65인치 QNC85A QN65QN85AAFXKR
+                    - generic [ref=e307]:
+                      - generic [ref=e308]: ★
+                      - generic [ref=e309]: "4.9"
+                      - generic [ref=e310]: (312)
+                    - generic [ref=e311]:
+                      - generic [ref=e312]: 3,490,000
+                      - generic [ref=e313]: 1,890,000원
+              - link [ref=e314] [cursor=pointer]:
+                - /url: /store/product/2000001002
+                - article [ref=e315]:
+                  - generic [ref=e316]:
+                    - img "LG OLED evo TV 65인치 갤러리 OLED65G3KNA" [ref=e317]
+                    - generic [ref=e318]: PREMIUM
+                    - generic [ref=e319]: "-50%"
+                    - generic [ref=e320]: 공동구매 진행중!
+                    - button "찜하기" [ref=e321]:
+                      - img [ref=e322]
+                  - generic [ref=e324]:
+                    - paragraph [ref=e325]: LG전자
+                    - paragraph [ref=e326]: LG OLED evo TV 65인치 갤러리 OLED65G3KNA
+                    - generic [ref=e327]:
+                      - generic [ref=e328]: ★
+                      - generic [ref=e329]: "4.9"
+                      - generic [ref=e330]: (189)
+                    - generic [ref=e331]:
+                      - generic [ref=e332]: 4,990,000
+                      - generic [ref=e333]: 2,490,000원
+              - link [ref=e334] [cursor=pointer]:
+                - /url: /store/product/2000001003
+                - article [ref=e335]:
+                  - generic [ref=e336]:
+                    - img "삼성 Crystal UHD TV 75인치 UN75CU8000FXKR" [ref=e337]
+                    - generic [ref=e338]: BEST
+                    - generic [ref=e339]: "-44%"
+                    - generic [ref=e340]: 공동구매 진행중!
+                    - button "찜하기" [ref=e341]:
+                      - img [ref=e342]
+                  - generic [ref=e344]:
+                    - paragraph [ref=e345]: 삼성전자
+                    - paragraph [ref=e346]: 삼성 Crystal UHD TV 75인치 UN75CU8000FXKR
+                    - generic [ref=e347]:
+                      - generic [ref=e348]: ★
+                      - generic [ref=e349]: "4.7"
+                      - generic [ref=e350]: (876)
+                    - generic [ref=e351]:
+                      - generic [ref=e352]: 1,590,000
+                      - generic [ref=e353]: 890,000원
+              - link [ref=e354] [cursor=pointer]:
+                - /url: /store/product/2000001004
+                - article [ref=e355]:
+                  - generic [ref=e356]:
+                    - img "삼성 비스포크 냉장고 4도어 RF85DB97B2APST 868L" [ref=e357]
+                    - generic [ref=e358]: PREMIUM
+                    - generic [ref=e359]: "-37%"
+                    - generic [ref=e360]: 공동구매 진행중!
+                    - button "찜하기" [ref=e361]:
+                      - img [ref=e362]
+                  - generic [ref=e364]:
+                    - paragraph [ref=e365]: 삼성전자
+                    - paragraph [ref=e366]: 삼성 비스포크 냉장고 4도어 RF85DB97B2APST 868L
+                    - generic [ref=e367]:
+                      - generic [ref=e368]: ★
+                      - generic [ref=e369]: "4.8"
+                      - generic [ref=e370]: (543)
+                    - generic [ref=e371]:
+                      - generic [ref=e372]: 3,490,000
+                      - generic [ref=e373]: 2,190,000원
+              - link [ref=e374] [cursor=pointer]:
+                - /url: /store/product/2000001005
+                - article [ref=e375]:
+                  - generic [ref=e376]:
+                    - img "LG 디오스 오브제컬렉션 냉장고 M873GBB451 870L" [ref=e377]
+                    - generic [ref=e378]: PREMIUM
+                    - generic [ref=e379]: "-38%"
+                    - generic [ref=e380]: 공동구매 진행중!
+                    - button "찜하기" [ref=e381]:
+                      - img [ref=e382]
+                  - generic [ref=e384]:
+                    - paragraph [ref=e385]: LG전자
+                    - paragraph [ref=e386]: LG 디오스 오브제컬렉션 냉장고 M873GBB451 870L
+                    - generic [ref=e387]:
+                      - generic [ref=e388]: ★
+                      - generic [ref=e389]: "4.9"
+                      - generic [ref=e390]: (234)
+                    - generic [ref=e391]:
+                      - generic [ref=e392]: 3,990,000
+                      - generic [ref=e393]: 2,490,000원
+              - link [ref=e394] [cursor=pointer]:
+                - /url: /store/product/2000001006
+                - article [ref=e395]:
+                  - generic [ref=e396]:
+                    - img "LG 트롬 세탁기 오브제컬렉션 FX21GNC 21kg" [ref=e397]
+                    - generic [ref=e398]: PREMIUM
+                    - generic [ref=e399]: "-37%"
+                    - generic [ref=e400]: 공동구매 진행중!
+                    - button "찜하기" [ref=e401]:
+                      - img [ref=e402]
+                  - generic [ref=e404]:
+                    - paragraph [ref=e405]: LG전자
+                    - paragraph [ref=e406]: LG 트롬 세탁기 오브제컬렉션 FX21GNC 21kg
+                    - generic [ref=e407]:
+                      - generic [ref=e408]: ★
+                      - generic [ref=e409]: "4.8"
+                      - generic [ref=e410]: (678)
+                    - generic [ref=e411]:
+                      - generic [ref=e412]: 1,890,000
+                      - generic [ref=e413]: 1,190,000원
+              - link [ref=e414] [cursor=pointer]:
+                - /url: /store/product/2000001007
+                - article [ref=e415]:
+                  - generic [ref=e416]:
+                    - img "삼성 그랑데 AI 세탁기 WF25T8500KV 25kg" [ref=e417]
+                    - generic [ref=e418]: BEST
+                    - generic [ref=e419]: "-36%"
+                    - generic [ref=e420]: 공동구매 진행중!
+                    - button "찜하기" [ref=e421]:
+                      - img [ref=e422]
+                  - generic [ref=e424]:
+                    - paragraph [ref=e425]: 삼성전자
+                    - paragraph [ref=e426]: 삼성 그랑데 AI 세탁기 WF25T8500KV 25kg
+                    - generic [ref=e427]:
+                      - generic [ref=e428]: ★
+                      - generic [ref=e429]: "4.7"
+                      - generic [ref=e430]: (892)
+                    - generic [ref=e431]:
+                      - generic [ref=e432]: 1,690,000
+                      - generic [ref=e433]: 1,090,000원
+              - link [ref=e434] [cursor=pointer]:
+                - /url: /store/product/2000001008
+                - article [ref=e435]:
+                  - generic [ref=e436]:
+                    - img "LG 휘센 타워 에어컨 FQ17HDKWE1 18평형" [ref=e437]
+                    - generic [ref=e438]: PREMIUM
+                    - generic [ref=e439]: "-38%"
+                    - generic [ref=e440]: 공동구매 진행중!
+                    - button "찜하기" [ref=e441]:
+                      - img [ref=e442]
+                  - generic [ref=e444]:
+                    - paragraph [ref=e445]: LG전자
+                    - paragraph [ref=e446]: LG 휘센 타워 에어컨 FQ17HDKWE1 18평형
+                    - generic [ref=e447]:
+                      - generic [ref=e448]: ★
+                      - generic [ref=e449]: "4.9"
+                      - generic [ref=e450]: (456)
+                    - generic [ref=e451]:
+                      - generic [ref=e452]: 2,390,000
+                      - generic [ref=e453]: 1,490,000원
+          - generic [ref=e454]:
+            - generic [ref=e455]:
+              - generic [ref=e456]:
+                - paragraph [ref=e457]: 인기
+                - heading "이번주 인기" [level=2] [ref=e458]
+                - paragraph [ref=e459]: 이번주 가장 많이 팔린 인기 상품
+              - link "전체보기" [ref=e460] [cursor=pointer]:
+                - /url: /store/best
+                - generic [ref=e461]:
+                  - generic [ref=e462]: 전체보기
+                  - img [ref=e463]
+            - generic [ref=e465]:
+              - link [ref=e466] [cursor=pointer]:
+                - /url: /store/product/2000002001
+                - article [ref=e467]:
+                  - generic [ref=e468]:
+                    - img "삼성 QLED 4K TV 55인치 QN55Q80CAFXKR" [ref=e469]
+                    - generic [ref=e470]: BEST
+                    - generic [ref=e471]: "-40%"
+                    - generic [ref=e472]: 공동구매 진행중!
+                    - button "찜하기" [ref=e473]:
+                      - img [ref=e474]
+                  - generic [ref=e476]:
+                    - paragraph [ref=e477]: 삼성전자
+                    - paragraph [ref=e478]: 삼성 QLED 4K TV 55인치 QN55Q80CAFXKR
+                    - generic [ref=e479]:
+                      - generic [ref=e480]: ★
+                      - generic [ref=e481]: "4.8"
+                      - generic [ref=e482]: (1,234)
+                    - generic [ref=e483]:
+                      - generic [ref=e484]: 1,490,000
+                      - generic [ref=e485]: 890,000원
+              - link [ref=e486] [cursor=pointer]:
+                - /url: /store/product/2000002002
+                - article [ref=e487]:
+                  - generic [ref=e488]:
+                    - img "LG OLED TV 55인치 OLED55B3KNA" [ref=e489]
+                    - generic [ref=e490]: PREMIUM
+                    - generic [ref=e491]: "-40%"
+                    - generic [ref=e492]: 공동구매 진행중!
+                    - button "찜하기" [ref=e493]:
+                      - img [ref=e494]
+                  - generic [ref=e496]:
+                    - paragraph [ref=e497]: LG전자
+                    - paragraph [ref=e498]: LG OLED TV 55인치 OLED55B3KNA
+                    - generic [ref=e499]:
+                      - generic [ref=e500]: ★
+                      - generic [ref=e501]: "4.9"
+                      - generic [ref=e502]: (876)
+                    - generic [ref=e503]:
+                      - generic [ref=e504]: 1,990,000
+                      - generic [ref=e505]: 1,190,000원
+              - link [ref=e506] [cursor=pointer]:
+                - /url: /store/product/2000002003
+                - article [ref=e507]:
+                  - generic [ref=e508]:
+                    - img "삼성 더 프레임 TV 65인치 QN65LS03BAFXKR 아트모드" [ref=e509]
+                    - generic [ref=e510]: PREMIUM
+                    - generic [ref=e511]: "-41%"
+                    - generic [ref=e512]: 공동구매 진행중!
+                    - button "찜하기" [ref=e513]:
+                      - img [ref=e514]
+                  - generic [ref=e516]:
+                    - paragraph [ref=e517]: 삼성전자
+                    - paragraph [ref=e518]: 삼성 더 프레임 TV 65인치 QN65LS03BAFXKR 아트모드
+                    - generic [ref=e519]:
+                      - generic [ref=e520]: ★
+                      - generic [ref=e521]: "4.7"
+                      - generic [ref=e522]: (543)
+                    - generic [ref=e523]:
+                      - generic [ref=e524]: 2,190,000
+                      - generic [ref=e525]: 1,290,000원
+              - link [ref=e526] [cursor=pointer]:
+                - /url: /store/product/2000002004
+                - article [ref=e527]:
+                  - generic [ref=e528]:
+                    - img "LG 디오스 냉장고 오브제컬렉션 2도어 M602GYY3A1 592L" [ref=e529]
+                    - generic [ref=e530]: BEST
+                    - generic [ref=e531]: "-35%"
+                    - generic [ref=e532]: 공동구매 진행중!
+                    - button "찜하기" [ref=e533]:
+                      - img [ref=e534]
+                  - generic [ref=e536]:
+                    - paragraph [ref=e537]: LG전자
+                    - paragraph [ref=e538]: LG 디오스 냉장고 오브제컬렉션 2도어 M602GYY3A1 592L
+                    - generic [ref=e539]:
+                      - generic [ref=e540]: ★
+                      - generic [ref=e541]: "4.8"
+                      - generic [ref=e542]: (678)
+                    - generic [ref=e543]:
+                      - generic [ref=e544]: 1,990,000
+                      - generic [ref=e545]: 1,290,000원
+              - link [ref=e546] [cursor=pointer]:
+                - /url: /store/product/2000002005
+                - article [ref=e547]:
+                  - generic [ref=e548]:
+                    - img "삼성 비스포크 냉장고 2도어 RF60DG9100B2ST 599L" [ref=e549]
+                    - generic [ref=e550]: PREMIUM
+                    - generic [ref=e551]: "-35%"
+                    - generic [ref=e552]: 공동구매 진행중!
+                    - button "찜하기" [ref=e553]:
+                      - img [ref=e554]
+                  - generic [ref=e556]:
+                    - paragraph [ref=e557]: 삼성전자
+                    - paragraph [ref=e558]: 삼성 비스포크 냉장고 2도어 RF60DG9100B2ST 599L
+                    - generic [ref=e559]:
+                      - generic [ref=e560]: ★
+                      - generic [ref=e561]: "4.7"
+                      - generic [ref=e562]: (456)
+                    - generic [ref=e563]:
+                      - generic [ref=e564]: 2,290,000
+                      - generic [ref=e565]: 1,490,000원
+              - link [ref=e566] [cursor=pointer]:
+                - /url: /store/product/2000002006
+                - article [ref=e567]:
+                  - generic [ref=e568]:
+                    - img "LG 트롬 세탁기 오브제컬렉션 FX25EN 25kg 직구동" [ref=e569]
+                    - generic [ref=e570]: PREMIUM
+                    - generic [ref=e571]: "-37%"
+                    - generic [ref=e572]: 공동구매 진행중!
+                    - button "찜하기" [ref=e573]:
+                      - img [ref=e574]
+                  - generic [ref=e576]:
+                    - paragraph [ref=e577]: LG전자
+                    - paragraph [ref=e578]: LG 트롬 세탁기 오브제컬렉션 FX25EN 25kg 직구동
+                    - generic [ref=e579]:
+                      - generic [ref=e580]: ★
+                      - generic [ref=e581]: "4.9"
+                      - generic [ref=e582]: (892)
+                    - generic [ref=e583]:
+                      - generic [ref=e584]: 2,190,000
+                      - generic [ref=e585]: 1,390,000원
+              - link [ref=e586] [cursor=pointer]:
+                - /url: /store/product/2000002007
+                - article [ref=e587]:
+                  - generic [ref=e588]:
+                    - img "LG 휘센 벽걸이 에어컨 FQ06HDKWE1 6평형" [ref=e589]
+                    - generic [ref=e590]: BEST
+                    - generic [ref=e591]: "-37%"
+                    - generic [ref=e592]: 공동구매 진행중!
+                    - button "찜하기" [ref=e593]:
+                      - img [ref=e594]
+                  - generic [ref=e596]:
+                    - paragraph [ref=e597]: LG전자
+                    - paragraph [ref=e598]: LG 휘센 벽걸이 에어컨 FQ06HDKWE1 6평형
+                    - generic [ref=e599]:
+                      - generic [ref=e600]: ★
+                      - generic [ref=e601]: "4.7"
+                      - generic [ref=e602]: (567)
+                    - generic [ref=e603]:
+                      - generic [ref=e604]: 1,090,000
+                      - generic [ref=e605]: 690,000원
+              - link [ref=e606] [cursor=pointer]:
+                - /url: /store/product/2000002008
+                - article [ref=e607]:
+                  - generic [ref=e608]:
+                    - img "삼성 무풍갤럭시 에어컨 벽걸이형 AR12CX5XAWUST 12평형" [ref=e609]
+                    - generic [ref=e610]: BEST
+                    - generic [ref=e611]: "-39%"
+                    - generic [ref=e612]: 공동구매 진행중!
+                    - button "찜하기" [ref=e613]:
+                      - img [ref=e614]
+                  - generic [ref=e616]:
+                    - paragraph [ref=e617]: 삼성전자
+                    - paragraph [ref=e618]: 삼성 무풍갤럭시 에어컨 벽걸이형 AR12CX5XAWUST 12평형
+                    - generic [ref=e619]:
+                      - generic [ref=e620]: ★
+                      - generic [ref=e621]: "4.6"
+                      - generic [ref=e622]: (432)
+                    - generic [ref=e623]:
+                      - generic [ref=e624]: 1,290,000
+                      - generic [ref=e625]: 790,000원
+          - generic [ref=e626]:
+            - link "Special Exhibition 테마별 기획전 겨울 난방 · 홈케어 · 주방 특가전 보러가기" [ref=e627] [cursor=pointer]:
+              - /url: /store/exhibition
+              - generic [ref=e628]:
+                - generic [ref=e630]:
+                  - generic [ref=e631]: Special Exhibition
+                  - heading "테마별 기획전" [level=3] [ref=e632]
+                  - paragraph [ref=e633]: 겨울 난방 · 홈케어 · 주방 특가전
+                - generic [ref=e634]:
+                  - generic [ref=e635]: 보러가기
+                  - img [ref=e636]
+            - link "Rental 렌탈로 부담 없이 월 소액 · 무상 AS · 무료 설치 보러가기" [ref=e638] [cursor=pointer]:
+              - /url: /store/rental
+              - generic [ref=e639]:
+                - generic [ref=e641]:
+                  - generic [ref=e642]: Rental
+                  - heading "렌탈로 부담 없이" [level=3] [ref=e643]
+                  - paragraph [ref=e644]: 월 소액 · 무상 AS · 무료 설치
+                - generic [ref=e645]:
+                  - generic [ref=e646]: 보러가기
+                  - img [ref=e647]
+    - contentinfo [ref=e649]:
+      - generic [ref=e651]:
+        - generic [ref=e652]:
+          - generic [ref=e653]:
+            - generic [ref=e654]:
+              - img [ref=e655]
+              - paragraph [ref=e659]: 스마트홈딜
+            - paragraph [ref=e660]: 뭐 살지 고민될 땐? 검색하지 말고 스마트홈딜 하자!
+          - generic [ref=e661]:
+            - paragraph [ref=e662] [cursor=pointer]: 이용약관
+            - paragraph [ref=e663] [cursor=pointer]: 개인정보처리방침
+            - paragraph [ref=e664] [cursor=pointer]: 사업자정보
+        - generic [ref=e665]:
+          - paragraph [ref=e666]: "(주)스마트홈딜 | 대표: 서영준 | 사업자등록번호: 000-00-00000"
+          - paragraph [ref=e667]: Copyright 2026 스마트홈딜. All rights reserved.
+  - button "실시간 상담" [ref=e668]:
+    - img [ref=e669]

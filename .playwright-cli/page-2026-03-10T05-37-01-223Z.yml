@@ -1,0 +1,942 @@
+- generic [active] [ref=e1]:
+  - complementary "Choose country or region" [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - text: お住まいの場所に合ったコンテンツを表示
+        - generic [ref=e5]: させ、
+        - generic [ref=e6]: オンラインで
+        - generic [ref=e7]: 購入
+        - text: できる
+        - generic [ref=e8]: ようにするには、
+        - generic [ref=e9]: 国または
+        - text: 地域を選んでくだ
+        - generic [ref=e10]: さい。
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - button " 日本 " [ref=e13]:
+            - generic [ref=e14]:
+              - generic [ref=e15]: 
+              - generic [ref=e16]: 日本
+            - text: 
+          - text: 
+        - button "続ける" [ref=e17] [cursor=pointer]
+        - button "国または地域の選択を閉じる" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+  - navigation "글로벌" [ref=e22]:
+    - list [ref=e24]:
+      - listitem [ref=e25]:
+        - link "Apple" [ref=e26] [cursor=pointer]:
+          - /url: /kr/
+          - generic:
+            - img
+          - generic: Apple
+      - listitem [ref=e27]:
+        - generic [ref=e29]:
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "스토어" [ref=e33] [cursor=pointer]:
+                - /url: /kr/shop/goto/store
+                - generic [ref=e34]:
+                  - generic:
+                    - img
+                  - generic: 스토어
+            - listitem:
+              - button "스토어 메뉴":
+                - generic:
+                  - img
+          - list [ref=e36]:
+            - listitem [ref=e37]:
+              - link "Mac" [ref=e38] [cursor=pointer]:
+                - /url: /kr/mac/
+                - generic [ref=e39]:
+                  - generic:
+                    - img
+                  - generic: Mac
+            - listitem:
+              - button "Mac 메뉴":
+                - generic:
+                  - img
+          - list [ref=e41]:
+            - listitem [ref=e42]:
+              - link "iPad" [ref=e43] [cursor=pointer]:
+                - /url: /kr/ipad/
+                - generic [ref=e44]:
+                  - generic:
+                    - img
+                  - generic: iPad
+            - listitem:
+              - button "iPad 메뉴":
+                - generic:
+                  - img
+          - list [ref=e46]:
+            - listitem [ref=e47]:
+              - link "iPhone" [ref=e48] [cursor=pointer]:
+                - /url: /kr/iphone/
+                - generic [ref=e49]:
+                  - generic:
+                    - img
+                  - generic: iPhone
+            - listitem:
+              - button "iPhone 메뉴":
+                - generic:
+                  - img
+          - list [ref=e51]:
+            - listitem [ref=e52]:
+              - link "Watch" [ref=e53] [cursor=pointer]:
+                - /url: /kr/watch/
+                - generic [ref=e54]:
+                  - generic:
+                    - img
+                  - generic: Watch
+            - listitem:
+              - button "Watch 메뉴":
+                - generic:
+                  - img
+          - list [ref=e56]:
+            - listitem [ref=e57]:
+              - link "Vision" [ref=e58] [cursor=pointer]:
+                - /url: /kr/apple-vision-pro/
+                - generic [ref=e59]:
+                  - generic:
+                    - img
+                  - generic: Vision
+            - listitem:
+              - button "Vision menu":
+                - generic:
+                  - img
+          - list [ref=e61]:
+            - listitem [ref=e62]:
+              - link "AirPods" [ref=e63] [cursor=pointer]:
+                - /url: /kr/airpods/
+                - generic [ref=e64]:
+                  - generic:
+                    - img
+                  - generic: AirPods
+            - listitem:
+              - button "AirPods 메뉴":
+                - generic:
+                  - img
+          - list [ref=e66]:
+            - listitem [ref=e67]:
+              - link "TV 및 홈" [ref=e68] [cursor=pointer]:
+                - /url: /kr/tv-home/
+                - generic [ref=e69]:
+                  - generic:
+                    - img
+                  - generic: TV 및 홈
+            - listitem:
+              - button "TV 및 홈 메뉴":
+                - generic:
+                  - img
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "엔터테인먼트" [ref=e73] [cursor=pointer]:
+                - /url: /kr/entertainment/
+                - generic [ref=e74]:
+                  - generic:
+                    - img
+                  - generic: 엔터테인먼트
+            - listitem:
+              - button "엔터테인먼트 메뉴":
+                - generic:
+                  - img
+          - list [ref=e76]:
+            - listitem [ref=e77]:
+              - link "액세서리" [ref=e78] [cursor=pointer]:
+                - /url: /kr/shop/goto/buy_accessories
+                - generic [ref=e79]:
+                  - generic:
+                    - img
+                  - generic: 액세서리
+            - listitem:
+              - button "액세서리 메뉴":
+                - generic:
+                  - img
+          - list [ref=e81]:
+            - listitem [ref=e82]:
+              - link "지원" [ref=e83] [cursor=pointer]:
+                - /url: https://support.apple.com/ko-kr/?cid=gn-ols-home-hp-tab
+                - generic [ref=e84]:
+                  - generic:
+                    - img
+                  - generic: 고객지원
+            - listitem:
+              - button "지원 메뉴":
+                - generic:
+                  - img
+      - listitem [ref=e85]:
+        - button "apple.com 검색하기" [ref=e86] [cursor=pointer]:
+          - generic:
+            - img
+      - listitem [ref=e87]:
+        - button "쇼핑백" [ref=e89] [cursor=pointer]:
+          - generic:
+            - img
+  - navigation "Local" [ref=e90]:
+    - generic [ref=e93]:
+      - link "Mac Pro" [ref=e95] [cursor=pointer]:
+        - /url: /kr/mac-pro/
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - list:
+            - listitem [ref=e98]:
+              - link "개요" [disabled] [ref=e99]
+            - listitem [ref=e100]:
+              - link "제품 사양" [ref=e101] [cursor=pointer]:
+                - /url: /kr/mac-pro/specs/
+            - listitem [ref=e102]:
+              - link "비교하기" [ref=e103] [cursor=pointer]:
+                - /url: /kr/mac-pro/compare/
+        - link "구입하기 Mac Pro" [ref=e106] [cursor=pointer]:
+          - /url: /kr/shop/goto/buy_mac/mac_pro
+          - text: 구입하기
+          - generic [ref=e107]: Mac Pro
+  - main [ref=e108]:
+    - paragraph [ref=e114]:
+      - text: 이제 최소 결제 금액 조건 충족 시 제휴 신용카드로 최대 24개월 무이자 할부 결제 가능.
+      - superscript [ref=e115]:
+        - link "Footnote ◊ 기호" [ref=e117] [cursor=pointer]:
+          - /url: "#footnote-24m-2025"
+          - text: ◊
+      - link "할부 결제에 대해 더 알아보기" [ref=e118] [cursor=pointer]:
+        - /url: /kr/shop/browse/financing
+        - generic [ref=e119]:
+          - generic [ref=e120]: 할부 결제에 대해
+          - text: 더 알아보기
+        - generic [ref=e121]: 
+    - generic [ref=e122]:
+      - generic [ref=e125]:
+        - heading "Mac Pro" [level=1] [ref=e127]
+        - heading "Apple Silicon으로 재탄생하다." [level=2] [ref=e129]
+      - figure "스테인리스 스틸 핸들, 3D 격자 무늬 통풍구가 보이는 타워형 Mac Pro의 앞면" [ref=e130]:
+        - generic [ref=e132]:
+          - generic [ref=e133]:
+            - figure [ref=e134]
+            - figure [ref=e135]
+          - figure [ref=e137]
+    - generic [ref=e145]:
+      - text: 압도적인 성능은 이제 기본.
+      - paragraph [ref=e146]: Apple Silicon의 강력한 성능과 PCIe의 유연한 확장성이라는 혁신적인 조합으로 극도로 전문적인 워크플로까지 가뿐하게 처리해 내는 Mac Pro. 어떤 구성을 선택하든 놀라운 성능을 자랑하는 M2 Ultra칩이 기본으로 탑재됩니다.
+      - paragraph [ref=e147]: ₩10,490,000부터
+      - link "새로운 Mac Pro를 선보인 WWDC 2023 이벤트 시청하기" [ref=e148] [cursor=pointer]:
+        - /url: /kr/apple-events/
+        - text: 이벤트 시청하기
+        - generic [ref=e149]: 
+    - generic [ref=e150]:
+      - figure "Apple M2 Ultra 칩 애니메이션" [ref=e154]:
+        - generic [ref=e158]: M2 Ultra
+      - generic [ref=e165]:
+        - heading "성능" [level=2] [ref=e166]
+        - text: 칩의 판도를 뒤흔들다.
+        - paragraph [ref=e167]: 모든 Mac Pro에 강력한 CPU를 탑재시켜 주는 M2 Ultra 칩. 방대한 통합 메모리를 갖춘 GPU는 다른 GPU가 하지 못하는 일들을 해내고, 미디어 엔진은 Afterburner 카드 7개가 내장된 것과 동일한 성능을 발휘합니다. 덕분에 이제 프로 사용자들은 초고사양이 요구되는 워크플로도 그 어느 때보다 빠르고 효율적으로 처리할 수 있죠.
+        - button "M2 Ultra 심층 탐구 " [ref=e169] [cursor=pointer]
+      - generic [ref=e171]:
+        - generic [ref=e172]:
+          - paragraph [ref=e173]:
+            - emphasis [ref=e174]: M2 Ultra 시대 도래.
+            - text: Mac 라인업에 혁신을 일으킨 Apple Silicon, 그중에서도 M2 Ultra가 이제 Mac Pro에 탑재됩니다. M2 Ultra 칩은 고대역폭 통합 메모리, 여러 개의 8K ProRes 동영상 스트림도 너끈히 처리해 내는 미디어 엔진, 초고속 32코어 Neural Engine, 그리고 Secure Enclave를 기반으로 설계된 엄청나게 강력한 성능의 CPU 및 GPU를 갖추고 있죠.
+          - figure "두 개의 M2 Max 다이가 연결된 아키텍처를 보여주는 Apple M2 Ultra 칩" [ref=e175]
+          - paragraph [ref=e176]:
+            - emphasis [ref=e177]: 힘을 합치다.
+            - text: M2 Ultra 칩은 강력한 성능을 자랑하는 M2 Max 칩 두 개를 합쳐 만들어집니다. 맞춤 제작된 패키징 아키텍처를 통해 M2 Max 다이 두 개를 결합해 주는 UltraFusion은 매우 적은 전력을 사용하면서도 두 다이 사이에 무려 2.5TB/s에 달하는 프로세서 간 대역폭을 제공합니다. 지연 시간을 놀라울 정도로 줄인 연결 방식이죠. 이렇게 제작된 M2 Ultra는 소프트웨어에 하나의 칩으로 인식되기 때문에, 커진 크기 만큼이나 강력해진 칩의 성능을 앱들도 고스란히 활용할 수 있답니다.
+        - generic [ref=e179]:
+          - paragraph [ref=e181]:
+            - emphasis [ref=e182]: 열일하는 코어.
+            - text: M2 Ultra에 탑재된 24코어 CPU는 고성능 코어 16개와 고효율 코어 8개의 힘을 활용해 업계 최고 수준의 와트당 성능을 뿜어냅니다. 최대 76코어 GPU는 27.2Tf의 막강한 그래픽 성능을 발휘하고, 최대 192GB까지 구성 가능한 그래픽 메모리는 가장 강력한 워크스테이션 그래픽 카드가 처리할 수 있는 것보다 더 방대한 규모의 장면들도 너끈히 다룹니다. 그리고 32코어 Neural Engine은 초당 31조 6천억 회에 달하는 연산 처리 능력으로 머신 러닝 작업 속도를 크게 높여줍니다.
+          - generic [ref=e183]:
+            - figure "Apple M2 Ultra 칩 아키텍처를 보여주는 도표" [ref=e184]
+            - generic [ref=e185]:
+              - figure [ref=e186]:
+                - generic [ref=e187]:
+                  - generic [ref=e188]: 최대
+                  - generic [ref=e189]: 192GB
+                  - generic [ref=e190]: 통합 메모리
+              - figure [ref=e191]:
+                - generic [ref=e192]:
+                  - generic [ref=e193]: 800GB/s
+                  - generic [ref=e194]: 메모리 대역폭
+              - figure [ref=e195]:
+                - generic [ref=e197]: 24코어 CPU
+              - figure [ref=e198]:
+                - generic [ref=e199]:
+                  - generic [ref=e200]: 최대
+                  - generic [ref=e201]: 76코어 GPU
+              - figure [ref=e202]:
+                - generic [ref=e203]:
+                  - generic [ref=e204]: 32코어
+                  - generic [ref=e205]: Neural Engine
+      - generic [ref=e207]:
+        - figure [ref=e208]:
+          - generic [ref=e209]:
+            - generic [ref=e210]: 24코어 CPU
+            - generic [ref=e211]:
+              - text: 28코어 Intel 프로세서 기반 Mac Pro 대비 최대 1.8배 더 빠른 속도
+              - superscript [ref=e212]:
+                - link "Footnote 1" [ref=e213] [cursor=pointer]:
+                  - /url: "#footnote-1"
+                  - text: "1"
+        - figure [ref=e214]:
+          - generic [ref=e215]:
+            - generic [ref=e216]: 최대
+            - generic [ref=e217]: 76코어 GPU
+            - generic [ref=e218]:
+              - text: 최대 3.4배 더 빠른 그래픽 성능
+              - superscript [ref=e219]:
+                - link "Footnote 2" [ref=e220] [cursor=pointer]:
+                  - /url: "#footnote-2"
+                  - text: "2"
+        - figure [ref=e221]:
+          - generic [ref=e222]:
+            - generic [ref=e223]: 800GB/s
+            - generic [ref=e224]: 메모리 대역폭
+        - figure [ref=e225]:
+          - generic [ref=e226]:
+            - generic [ref=e227]: 최대
+            - generic [ref=e228]: 192GB
+            - generic [ref=e229]: 통합 메모리
+        - figure [ref=e230]:
+          - generic [ref=e231]:
+            - generic [ref=e232]: 최대
+            - generic [ref=e233]: 22개
+            - generic [ref=e234]:
+              - text: 8K ProRes 동영상 스트림 재생
+              - superscript [ref=e235]:
+                - link "Footnote 3" [ref=e236] [cursor=pointer]:
+                  - /url: "#footnote-3"
+                  - text: "3"
+        - figure [ref=e237]:
+          - generic [ref=e238]:
+            - generic [ref=e239]: 디스플레이 지원 최대
+            - generic [ref=e240]: 8대
+      - generic [ref=e242]:
+        - heading "기본 사양 Intel 기반 Mac Pro 모델과 비교." [level=2] [ref=e243]
+        - group "M2 Ultra 및 기본 사양 Intel 비교 갤러리" [ref=e244]:
+          - generic [ref=e246]:
+            - tablist [ref=e247]:
+              - tab "3D 렌더링"
+              - text: /
+              - tab "동영상 처리" [ref=e248] [cursor=pointer]
+              - text: /
+              - tab "동영상 편집" [ref=e249] [cursor=pointer]
+              - text: /
+              - tab "3D 상호 작용" [ref=e250] [cursor=pointer]
+              - text: /
+              - tab "동영상 트랜스코딩" [ref=e251] [cursor=pointer]
+              - text: /
+              - tab "과학 컴퓨팅" [ref=e252] [cursor=pointer]
+              - text: /
+              - tab "코드 컴파일링" [ref=e253] [cursor=pointer]
+              - text: /
+              - tab "모션 그래픽" [ref=e254] [cursor=pointer]
+              - text: /
+              - tab "3D 시뮬레이션" [ref=e255] [cursor=pointer]
+              - text: /
+              - tab "사진 편집" [ref=e256] [cursor=pointer]
+            - text:  
+          - generic [ref=e258]:
+            - paragraph [ref=e259]:
+              - text: 더 빠른 OTOY Octane X 렌더링 성능
+              - superscript [ref=e260]:
+                - link "Footnote 4" [ref=e261] [cursor=pointer]:
+                  - /url: "#footnote-4"
+                  - text: "4"
+            - generic [ref=e263]:
+              - generic [ref=e264]:
+                - separator [ref=e266]
+                - generic [ref=e267]: M2 Ultra(60코어 GPU) 탑재 Mac Pro
+              - figure [ref=e268]:
+                - generic [ref=e270]:
+                  - generic [ref=e271]: "7.6"
+                  - generic [ref=e272]: 배
+              - generic [ref=e273]:
+                - separator [ref=e275]
+                - generic [ref=e276]: 8코어 Intel Xeon W 및 Radeon Pro W5500X 탑재 Mac Pro(기준치)
+        - separator [ref=e277]
+        - heading "전문가 사양으로 구성된 Intel 기반 Mac Pro 모델과 비교." [level=2] [ref=e278]
+        - group "M2 Ultra 및 전문가 사양 구성 Intel 비교 갤러리" [ref=e279]:
+          - generic [ref=e281]:
+            - tablist [ref=e282]:
+              - tab "3D 렌더링"
+              - text: /
+              - tab "동영상 처리" [ref=e283] [cursor=pointer]
+              - text: /
+              - tab "동영상 편집" [ref=e284] [cursor=pointer]
+              - text: /
+              - tab "3D 상호 작용" [ref=e285] [cursor=pointer]
+              - text: /
+              - tab "동영상 트랜스코딩" [ref=e286] [cursor=pointer]
+              - text: /
+              - tab "과학 컴퓨팅" [ref=e287] [cursor=pointer]
+              - text: /
+              - tab "코드 컴파일링" [ref=e288] [cursor=pointer]
+              - text: /
+              - tab "모션 그래픽" [ref=e289] [cursor=pointer]
+              - text: /
+              - tab "3D 시뮬레이션" [ref=e290] [cursor=pointer]
+              - text: /
+              - tab "사진 편집" [ref=e291] [cursor=pointer]
+            - text:  
+          - generic [ref=e293]:
+            - paragraph [ref=e294]:
+              - text: 더 빠른 OTOY Octane X 렌더링 성능
+              - superscript [ref=e295]:
+                - link "Footnote 4" [ref=e296] [cursor=pointer]:
+                  - /url: "#footnote-4"
+                  - text: "4"
+            - generic [ref=e298]:
+              - generic [ref=e299]:
+                - separator [ref=e301]
+                - generic [ref=e302]: M2 Ultra(76코어 GPU) 탑재 Mac Pro
+              - figure [ref=e303]:
+                - generic [ref=e305]:
+                  - generic [ref=e306]: "2.7"
+                  - generic [ref=e307]: 배
+              - generic [ref=e308]:
+                - separator [ref=e310]
+                - generic [ref=e311]: 28코어 Intel Xeon W 및 Radeon Pro W6900X 탑재 Mac Pro(기준치)
+    - generic [ref=e312]:
+      - generic [ref=e316]:
+        - generic [ref=e317]:
+          - heading "확장성" [level=2] [ref=e318]
+          - text: 역량을 확장하다.
+          - paragraph [ref=e319]:
+            - text: Apple Silicon의 혁신적인 성능이 사상 최초로 PCI의 유연한 확장성과 만났습니다. Mac Pro에 탑재된 7개의 확장 슬롯 중 6개는 PCIe gen 4 슬롯으로, 오디오 및 동영상 I/O, 네트워킹, 메모리 카드 사용 시 최대 두 배 큰 대역폭을 제공합니다. 최신 PCIe gen 4 SSD 카드의 경우 26GB/s라는 엄청난 대역폭을 자랑하죠.
+            - superscript [ref=e320]:
+              - link "Footnote 12" [ref=e321] [cursor=pointer]:
+                - /url: "#footnote-12"
+                - text: "12"
+        - generic [ref=e322]:
+          - figure [ref=e323]:
+            - generic [ref=e324]:
+              - generic [ref=e325]: PCIe
+              - generic [ref=e326]: gen 4
+              - generic [ref=e327]: 최대 2배 큰 대역폭
+          - figure [ref=e328]:
+            - generic [ref=e329]:
+              - generic [ref=e330]: 7개
+              - generic [ref=e331]:
+                - text: PCIe 슬롯
+                - superscript [ref=e332]:
+                  - link "Footnote 13" [ref=e333] [cursor=pointer]:
+                    - /url: "#footnote-13"
+                    - text: "13"
+          - figure [ref=e334]:
+            - generic [ref=e335]:
+              - generic [ref=e336]: 최대
+              - generic [ref=e337]: 300W
+              - generic [ref=e338]: 보조 전력
+      - figure "외장을 제거한 타워형 Mac Pro" [ref=e342]:
+        - generic [ref=e343]:
+          - generic [ref=e345]:
+            - text: PCIe x4 gen 3 1개
+            - text: Apple I/O 카드
+          - generic [ref=e348]:
+            - text: PCIe x8 gen 4 4개
+            - text: 싱글 슬롯 2개
+            - text: 더블 슬롯 2개
+          - generic [ref=e351]:
+            - text: PCIe x16 gen 4 2개
+            - text: 더블 슬롯
+      - generic [ref=e354]:
+        - generic [ref=e355]:
+          - generic [ref=e358]:
+            - img [ref=e360]
+            - button "3D 격자 무늬 외장 통풍구를 클로즈업한 모습 재생" [ref=e363] [cursor=pointer]:
+              - img [ref=e364]
+              - img [ref=e368]
+              - generic [ref=e371]: 
+          - generic [ref=e372]:
+            - paragraph [ref=e373]: 흐름을 만들다.
+            - paragraph [ref=e374]: 극도로 견고한 구조를 갖고 있으면서도 공기의 흐름을 극대화해 주는 가벼운 알루미늄 하우징. 내부 부품에 손대야 할 때 간편히 분리할 수 있습니다.
+        - generic [ref=e375]:
+          - figure "외장이 제거되어 스테인리스 스틸 프레임과 핸들, 냉각 팬이 노출된 타워형 Mac Pro 뒷면을 클로즈업한 모습." [ref=e376]
+          - generic [ref=e377]:
+            - paragraph [ref=e378]: 카드는 항상 쿨하게.
+            - paragraph [ref=e379]: 놀랍도록 조용한 열 관리 시스템이 방대한 워크로드를 처리할 때에도 PCI 카드와 그 외 내부 부품 온도를 낮게 유지해 줍니다.
+    - generic [ref=e380]:
+      - generic [ref=e384]:
+        - heading "고속 연결" [level=2] [ref=e385]
+        - text: 고성능 I/O 포트가 한가득.
+        - paragraph [ref=e386]:
+          - text: 8개의 Thunderbolt 포트로 한층 뛰어난 연결성을 자랑하게 된 Mac Pro. 48Gb/s의 고대역폭 HDMI를 지원하는 HDMI 포트 두 개가 최대 8K 해상도와 최대 240Hz 재생률을 구현하며, 향상된 무선 연결 기능이 Wi‑Fi 6E
+          - superscript [ref=e387]:
+            - link "Footnote 14" [ref=e388] [cursor=pointer]:
+              - /url: "#footnote-14"
+              - text: "14"
+          - text: 와 Bluetooth 5.3까지 지원하죠.
+      - generic [ref=e391]:
+        - generic [ref=e392]:
+          - figure "각종 포트와 오디오 잭, 3D 격자 무늬 외장 통풍구가 있는 타워형 Mac Pro의 뒷면을 클로즈업한 모습." [ref=e393]
+          - generic [ref=e394]:
+            - generic [ref=e395]: 후면
+            - list [ref=e396]:
+              - listitem [ref=e397]: Thunderbolt 4 6개
+              - listitem [ref=e398]: 10Gb 이더넷 2개
+              - listitem [ref=e399]: 3.5mm 헤드폰 잭 1개
+              - listitem [ref=e400]: USB-A 2개
+              - listitem [ref=e401]: HDMI 2개
+        - generic [ref=e402]:
+          - figure "전원 버튼, Thunderbolt 4 포트 2개, 스테인리스 스틸 핸들이 있는 타워형 Mac Pro 상단을 클로즈업한 모습." [ref=e403]
+          - generic [ref=e404]:
+            - generic [ref=e405]: 상단
+            - list [ref=e406]:
+              - listitem [ref=e407]: Thunderbolt 4 2개
+    - generic [ref=e408]:
+      - generic [ref=e412]:
+        - heading "랙 마운트형" [level=2] [ref=e413]
+        - text: 적재적소의 유연한 구성.
+        - paragraph [ref=e414]: Mac Pro는 랙 마운트형 시스템으로도 구입할 수 있습니다. 랙 마운트 타입이 필요한 공간에 맞는 외형으로 디자인되었다는 것을 제외하면, 성능과 기능, 구성 옵션까지 모두 일반 타워형과 동일하죠. 랙 마운트형은 전면에 공기 흐름을 극대화하는 3D 격자 패턴과 스테인리스 스틸 핸들을 갖추고 있고, 타워형 모델에 포함된 발판이나 별도 장착형 바퀴 대신 본체 측면에 스테인리스 스틸 슬라이드 레일을 쉽게 장착해 사용할 수 있게 했습니다.
+      - generic [ref=e417]:
+        - figure "랙 마운트형 Mac Pro의 앞면과 옆면. 앞면에는 3D 격자 무늬 통풍구 및 스테인리스 스틸 핸들이 배치되어 있고, 옆면에는 랙 레일이 부착되어 있습니다." [ref=e419]
+        - figure "확장 슬롯, 3.5mm 헤드폰 잭, 전원 소켓 1개, 통풍구가 있는 Mac Pro의 뒷면" [ref=e421]
+      - figure "스테인리스 스틸 핸들, 잠금 버튼 2개, Thunderbolt 4 포트 2개, 전원 버튼, 3D 격자 무늬 통풍구가 있는 랙 마운트형 Mac Pro의 앞면" [ref=e425]
+    - generic [ref=e426]:
+      - generic [ref=e430]:
+        - heading "디자인" [level=2] [ref=e431]
+        - text: 강력한 두뇌. 기발한 디자인.
+        - paragraph [ref=e432]: M2 Ultra로 완전히 업그레이드된 Mac Pro. 하지만 기존의 근사한 스테인리스 스틸 공간 프레임과 탈착식 알루미늄 하우징 그리고 첨단 열 관리 시스템은 그대로 유지했습니다. 바퀴를 장착해 사용할 때도, 랙에 설치해 사용할 때도, 구성 요소를 바꿀 때도 매우 견고하고 안정적이죠. 그리고 Apple Silicon의 탁월한 전력 효율성 덕분에 Mac Pro는 방대한 워크로드를 처리할 때조차 저발열, 저소음으로 구동됩니다. 바로 옆에 두고 작업하기에 전혀 무리가 없는 워크스테이션이죠.
+      - generic [ref=e435]:
+        - generic [ref=e437]:
+          - figure [ref=e438]
+          - figure [ref=e439]
+        - generic [ref=e441]:
+          - figure "스테인리스 스틸 상단 핸들, 알루미늄 외장, 중앙 정렬된 검은색 Apple 로고가 보이는 타워형 Mac Pro의 옆면 외장이 제거되며 내부 확장 슬롯이 드러나는 애니메이션" [ref=e442]
+          - generic [ref=e443]:
+            - figure [ref=e444]
+            - figure [ref=e445]
+      - generic [ref=e448]:
+        - generic [ref=e449]:
+          - figure "Mac Pro 하단에 별도로 장착할 수 있는 이동용 바퀴를 클로즈업한 모습." [ref=e450]
+          - generic [ref=e451]:
+            - paragraph [ref=e452]: 별도 장착형 바퀴.
+            - paragraph [ref=e453]: 옵션으로 구성 가능한 바퀴를 장착하면 세트장 내에서 또는 다른 스튜디오로 Mac Pro를 옮길 때도 간편하게 이동이 가능합니다.
+        - generic [ref=e454]:
+          - figure "스테인리스 스틸 핸들" [ref=e455]
+          - generic [ref=e456]:
+            - paragraph [ref=e457]: 스테인리스 스틸 핸들.
+            - paragraph [ref=e458]: 편안한 그립감이 특징인 튼튼하고 둥근 핸들은 공간 프레임 그 자체이기 때문에, Mac Pro를 들어 올리거나 옮길 때도 매우 견고하고 안정적입니다.
+    - generic [ref=e461]:
+      - generic [ref=e463]:
+        - paragraph [ref=e464]: Touch ID
+        - figure "블랙 색상의 Magic Mouse와 블랙 및 실버 색상의 Touch ID 및 숫자 키패드 탑재형 Magic Keyboard" [ref=e465]
+      - generic [ref=e467]:
+        - heading "Touch ID 탑재." [level=2] [ref=e468]
+        - paragraph [ref=e469]: Mac Pro 구입 시 최신 Magic 액세서리가 기본 제공됩니다. 이제 Touch ID가 탑재되어 로그인 및 결제 시 빠르고, 간편하고, 안전하게 사용자 인증을 할 수 있죠.
+    - generic [ref=e472]:
+      - generic [ref=e474]:
+        - heading "당신의 작업 공간에 놓인 Mac Pro의 모습, AR로 미리 살펴보기." [level=2] [ref=e476]
+        - paragraph [ref=e477]: iPhone 또는 iPad에서 이 페이지를 Safari로 열어보세요.
+      - figure [ref=e479]
+    - generic [ref=e483]:
+      - heading "당신에게 맞는 데스크탑은?" [level=2] [ref=e484]
+      - link "모든 Mac 모델 비교하기" [ref=e485] [cursor=pointer]:
+        - /url: /kr/mac/compare/
+        - text: 모든 Mac 모델 비교하기
+        - generic [ref=e486]: 
+      - generic [ref=e487]:
+        - img "Mac Mini를 정면에서 바라본 모습" [ref=e489]
+        - img "실버 색상으로 제공." [ref=e491]
+        - heading "Mac mini" [level=3] [ref=e492]
+        - paragraph [ref=e493]: ₩890,000부터
+        - paragraph [ref=e494]:
+          - text: Apple M4 또는
+          - text: Apple M4 Pro 칩
+        - paragraph [ref=e495]:
+          - text: Apple Intelligence
+          - superscript [ref=e496]:
+            - link "Footnote 15" [ref=e497] [cursor=pointer]:
+              - /url: "#footnote-15"
+              - text: "15"
+        - paragraph [ref=e498]: 10코어~14코어 CPU
+        - paragraph [ref=e499]: 10코어~20코어 GPU
+        - paragraph [ref=e500]: 16GB~64GB 통합 메모리
+        - paragraph [ref=e501]: 256GB~8TB 저장 장치
+        - link "Mac mini 구입하기" [ref=e503] [cursor=pointer]:
+          - /url: /kr/shop/goto/buy_mac/mac_mini
+          - text: 구입하기
+        - link "Mac mini 더 알아보기" [ref=e505] [cursor=pointer]:
+          - /url: /kr/mac-mini/
+          - text: 더 알아보기
+          - generic [ref=e506]: 
+        - img "Mac Studio를 정면에서 바라본 모습" [ref=e508]
+        - img "실버 색상으로 제공." [ref=e510]
+        - heading "Mac Studio" [level=3] [ref=e511]
+        - paragraph [ref=e512]: ₩3,290,000부터
+        - paragraph [ref=e513]:
+          - text: Apple M4 Max 또는
+          - text: Apple M3 Ultra 칩
+        - paragraph [ref=e514]:
+          - text: Apple Intelligence
+          - superscript [ref=e515]:
+            - link "Footnote 15" [ref=e516] [cursor=pointer]:
+              - /url: "#footnote-15"
+              - text: "15"
+        - paragraph [ref=e517]: 14코어~32코어 CPU
+        - paragraph [ref=e518]: 32코어~80코어 GPU
+        - paragraph [ref=e519]: 36GB~256GB 통합 메모리
+        - paragraph [ref=e520]: 512GB~16TB 저장 장치
+        - link "Mac Studio 구입하기" [ref=e522] [cursor=pointer]:
+          - /url: /kr/shop/goto/buy_mac/mac_studio
+          - text: 구입하기
+        - link "Mac Studio 더 알아보기" [ref=e524] [cursor=pointer]:
+          - /url: /kr/mac-studio/
+          - text: 더 알아보기
+          - generic [ref=e525]: 
+        - img "Mac Pro를 정면에서 바라본 모습" [ref=e527]
+        - img "실버 색상으로 제공." [ref=e529]
+        - heading "Mac Pro" [level=3] [ref=e530]
+        - paragraph [ref=e531]: ₩10,490,000부터
+        - paragraph [ref=e532]: Apple M2 Ultra 칩
+        - paragraph [ref=e533]:
+          - text: Apple Intelligence
+          - superscript [ref=e534]:
+            - link "Footnote 15" [ref=e535] [cursor=pointer]:
+              - /url: "#footnote-15"
+              - text: "15"
+        - paragraph [ref=e536]: 24코어 CPU
+        - paragraph [ref=e537]: 최대 76코어 GPU
+        - paragraph [ref=e538]: 최대 192GB 통합 메모리
+        - paragraph [ref=e539]: 최대 8TB 저장 장치
+        - link "Mac Pro 구입하기" [ref=e541] [cursor=pointer]:
+          - /url: /kr/shop/goto/buy_mac/mac_pro
+          - text: 구입하기
+    - generic [ref=e544]:
+      - generic [ref=e547]:
+        - heading "macOS" [level=2] [ref=e548]
+        - heading "파워에 끌리다. 재미에 빠지다." [level=3] [ref=e549]:
+          - text: 파워에 끌리다.
+          - text: 재미에 빠지다.
+        - paragraph [ref=e550]:
+          - link "macOS에 대해 더 알아보기" [ref=e551] [cursor=pointer]:
+            - /url: /kr/macos/
+            - generic [ref=e552]:
+              - generic [ref=e553]: macOS에 대해
+              - text: 더 알아보기
+            - generic [ref=e554]: 
+      - generic [ref=e559]:
+        - heading "지구 를 염두에 둔 설계." [level=2] [ref=e561]:
+          - generic [ref=e562]: 지구
+          - text: 를 염두에 둔 설계.
+        - paragraph [ref=e563]: 재활용 소재 사용, 책임감 있는 포장, 그 어느 때보다 뛰어난 전력 효율성까지. Mac Pro는 환경에 미치는 영향을 최소화하도록 디자인되었습니다.
+        - paragraph [ref=e564]:
+          - link "Apple과 환경에 대해 더 알아보기" [ref=e565] [cursor=pointer]:
+            - /url: /kr/environment/
+            - text: Apple과 환경에 대해 더 알아보기
+            - generic [ref=e566]: 
+      - generic [ref=e569]:
+        - heading "Apple at Work" [level=2] [ref=e570]
+        - paragraph [ref=e571]: 비즈니스를 한 단계 더 도약시키는 막강한 힘.
+        - list [ref=e572]:
+          - listitem [ref=e573]:
+            - link "Apple at Work에 대해 알아보기" [ref=e574] [cursor=pointer]:
+              - /url: /kr/business/
+              - text: Apple at Work에 대해 알아보기
+              - generic [ref=e575]: 
+          - listitem [ref=e576]:
+            - link "비즈니스를 위한 Mac에 대해 더 알아보기" [ref=e577] [cursor=pointer]:
+              - /url: /kr/business/mac/
+              - text: 비즈니스를 위한 Mac에 대해 더 알아보기
+              - generic [ref=e578]: 
+  - contentinfo "Apple Footer" [ref=e581]:
+    - generic [ref=e582]:
+      - heading "Apple Footer" [level=2] [ref=e583]
+      - region "Footnotes" [ref=e584]:
+        - list [ref=e585]:
+          - listitem [ref=e586]:
+            - text: "◊ 해당 자격을 갖춘 일반 소비자 고객과 한국 거주 고객은 제품 구입 시 제휴 신용카드 회사를 통해 무이자 또는 부분 무이자 할부 결제를 이용할 수 있습니다. 무이자 할부를 이용하려면 신용카드 할부 금액 기준으로 최소 결제 금액 조건을 충족해야 합니다. 6개월~12개월 할부는 400,000원 이상, 18개월~24개월 할부는 1,200,000원 이상입니다. 무이자 할부는 현대, 하나, 국민, 신한, 삼성 카드에 한해 적용됩니다. 최소 결제 금액 조건은 신용카드 할부 금액만으로 충족되어야 합니다. 부분 결제(예: Gift Card와 신용카드를 함께 사용)의 경우, 신용카드 결제 금액이 최소 결제 금액 조건 이상이여야 합니다. 모든 할부 구입은 신용카드 발급사의 승인을 받아야 합니다. 신용카드 발급사에서 할부 구입을 승인해 주지 않는 경우에도 Apple 직원에게 승인 거부 사유가 전달되지 않습니다. 할부 조건, 수수료, 청구액 등 승인 결과는 신용카드 발급사에 문의하십시오. 결제액은 상품이 입고되거나 배송될 때 고객 계정으로 청구됩니다. 할부 서비스를 이용하려면 구입 시 현지 발급 신용카드로 결제해야 합니다. 해외 신용카드(한국 외 다른 국가 또는 지역에서 발급 받은 신용카드), 직불/체크카드 및 현지 발급/제휴 법인카드는 할부 서비스를 이용할 수 없습니다. 할부는 광고 가격 또는 정찰 가격을 기준으로 합니다. 위 할부 서비스는 이용 가능한 기간, 할부 기간 및 적용 대상 제품을 포함하되 이에 국한되지 않은 관련 내용이 사전 공지 없이 언제든지 변경 또는 중단될 수 있습니다. 위 할부 서비스는 일반 소비자 구입 건에 한하여 적용되며, 교육 할인 구입 건에는 적용되지 않습니다. 신용카드 회사에서 진행하는 소비자 대상 프로모션 및 교육 할인 스토어에서 진행되는 프로모션에 대한 자세한 내용은"
+            - link "https://www.inicis.com/apple/popup/retail.html" [ref=e587] [cursor=pointer]:
+              - /url: https://www.inicis.com/apple/popup/retail.html
+              - text: https://www.inicis.com/apple
+              - text: /popup/retail.html
+            - text: ⁠을
+            - text: 참고하십시오. 이 정보는 2026년 1월 6일 기준 최신 정보입니다.
+        - list [ref=e588]:
+          - listitem [ref=e589]:
+            - text: 테스트는 2023년 4월과 5월 Apple에서 Apple M2 Ultra, 24코어 CPU, 76코어 GPU, 192GB RAM 및 8TB SSD를 탑재한 Mac Pro 시제품, Apple M2 Ultra, 24코어 CPU, 60코어 GPU, 64GB RAM 및 1TB SSD를 탑재한 Mac Pro 시제품 그리고 Radeon Pro W6900X 그래픽(32GB
+            - generic [ref=e590]: GDDR6)을
+            - text: 탑재하고 Afterburner, 384GB RAM 및 4TB SSD로 구성된 2.5GHz 28코어 Intel Xeon W 기반 Mac Pro 판매용 제품, Radeon Pro W5500X 그래픽(8GB GDDR6), 32GB RAM 및 512GB SSD를 탑재한 3.5GHz 8코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. NACA 0012 프로젝트를 2000번 반복해서 테스트를 진행했습니다. Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e591]:
+            - text: 테스트는 2023년 4월과 5월 Apple에서 Apple M2 Ultra, 24코어 CPU, 76코어 GPU, 192GB RAM 및 8TB SSD를 탑재한 Mac Pro 시제품, Apple M2 Ultra, 24코어 CPU, 60코어 GPU, 64GB RAM 및 1TB SSD를 탑재한 Mac Pro 시제품 그리고 Radeon Pro W6900X 그래픽(32GB
+            - generic [ref=e592]: GDDR6)을
+            - text: 탑재하고 Afterburner, 384GB RAM 및 4TB SSD로 구성된 2.5GHz 28코어 Intel Xeon W 기반 Mac Pro 판매용 제품, Radeon Pro W5500X 그래픽(8GB GDDR6), 32GB RAM 및 512GB SSD를 탑재한 3.5GHz 8코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. 테스트는 Houdini FX 19.5.534에서 대형 지오메트리에 Voronoi 프랙처링을 적용하고, 강체 역학을 이용해 파괴 효과를 시뮬레이션하는 방식으로 진행했습니다. Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e593]: 테스트는 2023년 4월과 5월 Apple에서 Apple M2 Ultra, 24코어 CPU, 76코어 GPU, 192GB RAM 및 8TB SSD를 탑재한 Mac Pro 시제품을 사용해 진행했습니다. 배포 전 단계의 Final Cut Pro 10.6.6에서 Apple ProRes 422 동영상(8192x4320 해상도 및 초당 30 프레임) 스트림 22개가 있는 1분 분량의 ‘화면 속 화면’ 프로젝트를 사용해 테스트했습니다. Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e594]:
+            - text: 테스트는 2023년 4월과 5월 Apple에서 Apple M2 Ultra, 24코어 CPU, 76코어 GPU, 192GB RAM 및 8TB SSD를 탑재한 Mac Pro 시제품, Apple M2 Ultra, 24코어 CPU, 60코어 GPU, 64GB RAM 및 1TB SSD를 탑재한 Mac Pro 시제품 그리고 Radeon Pro W6900X 그래픽(32GB
+            - generic [ref=e595]: GDDR6)을
+            - text: 탑재하고 Afterburner, 384GB RAM 및 4TB SSD로 구성된 2.5GHz 28코어 Intel Xeon W 기반 Mac Pro 판매용 제품, Radeon Pro W5500X 그래픽(8GB GDDR6), 32GB RAM 및 512GB SSD를 탑재한 3.5GHz 8코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. OTOY Octane X Prime 2022.1.1에서 복잡한 재질 및 3,500만 개의 삼각형으로 이루어진 장면을 사용해 테스트했습니다. Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e596]:
+            - text: 테스트는 2023년 4월과 5월 Apple에서 Apple M2 Ultra, 24코어 CPU, 76코어 GPU, 192GB RAM 및 8TB SSD를 탑재한 Mac Pro 시제품, Apple M2 Ultra, 24코어 CPU, 60코어 GPU, 64GB RAM 및 1TB SSD를 탑재한 Mac Pro 시제품 그리고 Radeon Pro W6900X 그래픽(32GB
+            - generic [ref=e597]: GDDR6)을
+            - text: 탑재하고 Afterburner, 384GB RAM 및 4TB SSD로 구성된 2.5GHz 28코어 Intel Xeon W 기반 Mac Pro 판매용 제품, Radeon Pro W5500X 그래픽(8GB GDDR6), 32GB RAM 및 512GB SSD를 탑재한 3.5GHz 8코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. Topaz Video AI 3.2.0에서 45초 분량의 1920x800 H.264 동영상 파일을 대상으로 2배 업스케일링을 수행해 테스트했습니다. Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e598]:
+            - text: 테스트는 2023년 4월과 5월 Apple에서 Apple M2 Ultra, 24코어 CPU, 76코어 GPU, 192GB RAM 및 8TB SSD를 탑재한 Mac Pro 시제품, Apple M2 Ultra, 24코어 CPU, 60코어 GPU, 64GB RAM 및 1TB SSD를 탑재한 Mac Pro 시제품 그리고 Radeon Pro W6900X 그래픽(32GB
+            - generic [ref=e599]: GDDR6)을
+            - text: 탑재하고 Afterburner, 384GB RAM 및 4TB SSD로 구성된 2.5GHz 28코어 Intel Xeon W 기반 Mac Pro 판매용 제품, Radeon Pro W5500X 그래픽(8GB GDDR6), 32GB RAM 및 512GB SSD를 탑재한 3.5GHz 8코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. 배포 전 단계의 Final Cut Pro 10.6.6에서 8K ProRes 422 미디어로 이루어진 5분 분량의 복잡한 프로젝트를 사용해 테스트했습니다. Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e600]:
+            - text: 테스트는 2023년 4월과 5월 Apple에서 Apple M2 Ultra, 24코어 CPU, 76코어 GPU, 192GB RAM 및 8TB SSD를 탑재한 Mac Pro 시제품, Apple M2 Ultra, 24코어 CPU, 60코어 GPU, 64GB RAM 및 1TB SSD를 탑재한 Mac Pro 시제품 그리고 Radeon Pro W6900X 그래픽(32GB
+            - generic [ref=e601]: GDDR6)을
+            - text: 탑재하고 Afterburner, 384GB RAM 및 4TB SSD로 구성된 2.5GHz 28코어 Intel Xeon W 기반 Mac Pro 판매용 제품, Radeon Pro W5500X 그래픽(8GB GDDR6), 32GB RAM 및 512GB SSD를 탑재한 3.5GHz 8코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. Autodesk Maya 2024에서 600만 개의 삼각형과 200개 이상의 고해상도 텍스처(앰비언트 오클루전, 4배 MSAA, 조명을 활성화한 Maya 뷰포트에서 구현)로 이루어진 장면을 사용해 테스트했습니다. Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e602]:
+            - text: 테스트는 2023년 4월과 5월 Apple에서 Apple M2 Ultra, 24코어 CPU, 76코어 GPU, 192GB RAM 및 8TB SSD를 탑재한 Mac Pro 시제품, Apple M2 Ultra, 24코어 CPU, 60코어 GPU, 64GB RAM 및 1TB SSD를 탑재한 Mac Pro 시제품 그리고 Radeon Pro W6900X 그래픽(32GB
+            - generic [ref=e603]: GDDR6)을
+            - text: 탑재하고 Afterburner, 384GB RAM 및 4TB SSD로 구성된 2.5GHz 28코어 Intel Xeon W 기반 Mac Pro 판매용 제품, Radeon Pro W5500X 그래픽(8GB GDDR6), 32GB RAM 및 512GB SSD를 탑재한 3.5GHz 8코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. 배포 전 단계의 Compressor 4.6.4에서 8192x4320 해상도 및 초당 30 프레임의 8K Apple ProRes 422 미디어로 구성된 2분 분량의 영상을 Apple Devices 4K HEVC 10비트로 인코딩 변환하여 테스트했습니다. Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e604]:
+            - text: 테스트는 2023년 4월과 5월 Apple에서 Apple M2 Ultra, 24코어 CPU, 76코어 GPU, 192GB RAM 및 8TB SSD를 탑재한 Mac Pro 시제품, Apple M2 Ultra, 24코어 CPU, 60코어 GPU, 64GB RAM 및 1TB SSD를 탑재한 Mac Pro 시제품 그리고 Radeon Pro W6900X 그래픽(32GB
+            - generic [ref=e605]: GDDR6)을
+            - text: 탑재하고 Afterburner, 384GB RAM 및 4TB SSD로 구성된 2.5GHz 28코어 Intel Xeon W 기반 Mac Pro 판매용 제품, Radeon Pro W5500X 그래픽(8GB GDDR6), 32GB RAM 및 512GB SSD를 탑재한 3.5GHz 8코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. 오픈 소스 프로젝트는 Apple Clang 14.0.3, Ninja 1.10.0.git 및 CMake 3.25.0을 지원하는 Xcode 14.3을 사용해 빌드되었습니다. Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e606]:
+            - text: 테스트는 2023년 4월과 5월 Apple에서 Apple M2 Ultra, 24코어 CPU, 76코어 GPU, 192GB RAM 및 8TB SSD를 탑재한 Mac Pro 시제품, Apple M2 Ultra, 24코어 CPU, 60코어 GPU, 64GB RAM 및 1TB SSD를 탑재한 Mac Pro 시제품 그리고 Radeon Pro W6900X 그래픽(32GB
+            - generic [ref=e607]: GDDR6)을
+            - text: 탑재하고 Afterburner, 384GB RAM 및 4TB SSD로 구성된 2.5GHz 28코어 Intel Xeon W 기반 Mac Pro 판매용 제품, Radeon Pro W5500X 그래픽(8GB GDDR6), 32GB RAM 및 512GB SSD를 탑재한 3.5GHz 8코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. Boris FX Sapphire 2023.5 플러그인 및 Adobe After Effects Beta 23.5.0에서 다양한 이펙트가 적용된 컴포지션 10개로 이루어진 동영상 프로젝트를 사용해 테스트했습니다. Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e608]:
+            - text: 테스트는 2023년 4월과 5월 Apple에서 Apple M2 Ultra, 24코어 CPU, 76코어 GPU, 192GB RAM 및 8TB SSD를 탑재한 Mac Pro 시제품, Apple M2 Ultra, 24코어 CPU, 60코어 GPU, 64GB RAM 및 1TB SSD를 탑재한 Mac Pro 시제품 그리고 Radeon Pro W6900X 그래픽(32GB
+            - generic [ref=e609]: GDDR6)을
+            - text: 탑재하고 Afterburner, 384GB RAM 및 4TB SSD로 구성된 2.5GHz 28코어 Intel Xeon W 기반 Mac Pro 판매용 제품, Radeon Pro W5500X 그래픽(8GB GDDR6), 32GB RAM 및 512GB SSD를 탑재한 3.5GHz 8코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. Adobe Photoshop 24.4.1에서 ‘원근 뒤틀기’, ‘렌즈 교정’, ‘텍스처화’, ‘저부조’ 및 ‘유리’ 필터 및 기능을 사용해 테스트했습니다. Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e610]: 테스트는 2023년 4월과 5월 Apple에서 Apple M2 Ultra, 24코어 CPU, 76코어 GPU, 192GB RAM 및 8TB SSD를 탑재한 Mac Pro 시제품을 사용해 진행했습니다. PCIe gen 4 SSD는 x16 슬롯에 16TB OWC Accelsior 8M2를 장착하고 AUX 전원 케이블을 연결한 상태에서 FIO 3.34, 요청 크기 2048KB, 10GB 테스트 파일 및 IO depth=8로 테스트했습니다. Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e611]: PCI Express 확장 슬롯 7개가 탑재되며, 그중 6개는 gen 4 슬롯입니다.
+          - listitem [ref=e612]: Wi‑Fi 6E는 지원되는 국가 및 지역에서만 이용할 수 있습니다.
+          - listitem [ref=e613]:
+            - text: Apple Intelligence는 베타로 사용할 수 있습니다. 일부 기능은 한국어로 제공되지 않습니다. 기능 및 언어 지원 여부 그리고 시스템 요구 사양은
+            - generic [ref=e614]:
+              - link "support.apple.com/ko-kr/121115" [ref=e615] [cursor=pointer]:
+                - /url: https://support.apple.com/ko-kr/121115
+              - text: 를
+            - text: 참고하십시오.
+        - list [ref=e616]:
+          - listitem [ref=e617]: 기능은 변경될 수 있습니다. 일부 기능, 애플리케이션 및 서비스를 이용할 수 없는 국가나 언어도 있습니다.
+      - navigation "Breadcrumbs" [ref=e618]:
+        - link "Apple" [ref=e619] [cursor=pointer]:
+          - /url: /kr/
+          - generic [ref=e620]: 
+          - generic [ref=e621]: Apple
+        - generic [ref=e622]:
+          - list:
+            - listitem [ref=e623]:
+              - link "Mac" [ref=e624] [cursor=pointer]:
+                - /url: /kr/mac/
+            - listitem [ref=e625]: Mac Pro
+      - navigation "Apple 디렉토리" [ref=e626]:
+        - generic [ref=e627]:
+          - generic:
+            - heading "쇼핑 및 알아보기" [level=3] [ref=e628]:
+              - generic [ref=e629]: 쇼핑 및 알아보기
+            - list [ref=e630]:
+              - listitem [ref=e631]:
+                - link "스토어" [ref=e632] [cursor=pointer]:
+                  - /url: /kr/shop/goto/store
+              - listitem [ref=e633]:
+                - link "Mac" [ref=e634] [cursor=pointer]:
+                  - /url: /kr/mac/
+              - listitem [ref=e635]:
+                - link "iPad" [ref=e636] [cursor=pointer]:
+                  - /url: /kr/ipad/
+              - listitem [ref=e637]:
+                - link "iPhone" [ref=e638] [cursor=pointer]:
+                  - /url: /kr/iphone/
+              - listitem [ref=e639]:
+                - link "Watch" [ref=e640] [cursor=pointer]:
+                  - /url: /kr/watch/
+              - listitem [ref=e641]:
+                - link "Vision" [ref=e642] [cursor=pointer]:
+                  - /url: /kr/apple-vision-pro/
+              - listitem [ref=e643]:
+                - link "AirPods" [ref=e644] [cursor=pointer]:
+                  - /url: /kr/airpods/
+              - listitem [ref=e645]:
+                - link "TV 및 홈" [ref=e646] [cursor=pointer]:
+                  - /url: /kr/tv-home/
+              - listitem [ref=e647]:
+                - link "AirTag" [ref=e648] [cursor=pointer]:
+                  - /url: /kr/airtag/
+              - listitem [ref=e649]:
+                - link "액세서리" [ref=e650] [cursor=pointer]:
+                  - /url: /kr/shop/goto/buy_accessories
+          - generic:
+            - heading "Apple 지갑" [level=3] [ref=e651]:
+              - generic [ref=e652]: Apple 지갑
+            - list [ref=e653]:
+              - listitem [ref=e654]:
+                - link "지갑" [ref=e655] [cursor=pointer]:
+                  - /url: /kr/wallet/
+              - listitem [ref=e656]:
+                - link "Apple Pay" [ref=e657] [cursor=pointer]:
+                  - /url: /kr/apple-pay/
+        - generic [ref=e658]:
+          - generic:
+            - heading "계정" [level=3] [ref=e659]:
+              - generic [ref=e660]: 계정
+            - list [ref=e661]:
+              - listitem [ref=e662]:
+                - link "Apple 계정 관리" [ref=e663] [cursor=pointer]:
+                  - /url: https://account.apple.com/kr/
+              - listitem [ref=e664]:
+                - link "Apple Store 계정" [ref=e665] [cursor=pointer]:
+                  - /url: /kr/shop/goto/account
+              - listitem [ref=e666]:
+                - link "iCloud.com" [ref=e667] [cursor=pointer]:
+                  - /url: https://www.icloud.com
+          - generic:
+            - heading "엔터테인먼트" [level=3] [ref=e668]:
+              - generic [ref=e669]: 엔터테인먼트
+            - list [ref=e670]:
+              - listitem [ref=e671]:
+                - link "Apple One" [ref=e672] [cursor=pointer]:
+                  - /url: /kr/apple-one/
+              - listitem [ref=e673]:
+                - link "Apple TV" [ref=e674] [cursor=pointer]:
+                  - /url: /kr/apple-tv/
+              - listitem [ref=e675]:
+                - link "Apple Music" [ref=e676] [cursor=pointer]:
+                  - /url: /kr/apple-music/
+              - listitem [ref=e677]:
+                - link "Apple Arcade" [ref=e678] [cursor=pointer]:
+                  - /url: /kr/apple-arcade/
+              - listitem [ref=e679]:
+                - link "Apple 팟캐스트" [ref=e680] [cursor=pointer]:
+                  - /url: /kr/apple-podcasts/
+              - listitem [ref=e681]:
+                - link "Apple Books" [ref=e682] [cursor=pointer]:
+                  - /url: /kr/apple-books/
+              - listitem [ref=e683]:
+                - link "App Store" [ref=e684] [cursor=pointer]:
+                  - /url: /kr/app-store/
+        - generic [ref=e685]:
+          - generic:
+            - heading "Apple Store" [level=3] [ref=e686]:
+              - generic [ref=e687]: Apple Store
+            - list [ref=e688]:
+              - listitem [ref=e689]:
+                - link "매장 찾기" [ref=e690] [cursor=pointer]:
+                  - /url: /kr/retail/
+              - listitem [ref=e691]:
+                - link "Genius Bar" [ref=e692] [cursor=pointer]:
+                  - /url: /kr/retail/geniusbar/
+              - listitem [ref=e693]:
+                - link "Today at Apple" [ref=e694] [cursor=pointer]:
+                  - /url: /kr/today/
+              - listitem [ref=e695]:
+                - link "그룹 예약" [ref=e696] [cursor=pointer]:
+                  - /url: /kr/today/groups/
+              - listitem [ref=e697]:
+                - link "Apple 캠프" [ref=e698] [cursor=pointer]:
+                  - /url: /kr/today/camp/
+              - listitem [ref=e699]:
+                - link "Apple Store 앱" [ref=e700] [cursor=pointer]:
+                  - /url: https://apps.apple.com/kr/app/apple-store/id375380948
+              - listitem [ref=e701]:
+                - link "인증 리퍼비쉬 제품" [ref=e702] [cursor=pointer]:
+                  - /url: /kr/shop/goto/special_deals
+              - listitem [ref=e703]:
+                - link "Apple Trade In" [ref=e704] [cursor=pointer]:
+                  - /url: /kr/shop/goto/trade_in
+              - listitem [ref=e705]:
+                - link "할부 방식" [ref=e706] [cursor=pointer]:
+                  - /url: /kr/shop/goto/financing
+              - listitem [ref=e707]:
+                - link "주문 상태" [ref=e708] [cursor=pointer]:
+                  - /url: /kr/shop/goto/order/list
+              - listitem [ref=e709]:
+                - link "쇼핑 도움말" [ref=e710] [cursor=pointer]:
+                  - /url: /kr/shop/goto/help
+        - generic [ref=e711]:
+          - generic:
+            - heading "비즈니스" [level=3] [ref=e712]:
+              - generic [ref=e713]: 비즈니스
+            - list [ref=e714]:
+              - listitem [ref=e715]:
+                - link "Apple과 비즈니스" [ref=e716] [cursor=pointer]:
+                  - /url: /kr/business/
+              - listitem [ref=e717]:
+                - link "비즈니스를 위한 제품 쇼핑하기" [ref=e718] [cursor=pointer]:
+                  - /url: /kr/retail/business/
+          - generic:
+            - heading "교육" [level=3] [ref=e719]:
+              - generic [ref=e720]: 교육
+            - list [ref=e721]:
+              - listitem [ref=e722]:
+                - link "Apple과 교육" [ref=e723] [cursor=pointer]:
+                  - /url: /kr/education/
+              - listitem [ref=e724]:
+                - link "초중고용 제품 쇼핑하기" [ref=e725] [cursor=pointer]:
+                  - /url: /kr/education/k12/how-to-buy/
+              - listitem [ref=e726]:
+                - link "대학 생활을 위한 제품 쇼핑하기" [ref=e727] [cursor=pointer]:
+                  - /url: /kr/shop/goto/educationrouting
+        - generic [ref=e728]:
+          - generic:
+            - heading "Apple의 가치관" [level=3] [ref=e729]:
+              - generic [ref=e730]: Apple의 가치관
+            - list [ref=e731]:
+              - listitem [ref=e732]:
+                - link "손쉬운 사용" [ref=e733] [cursor=pointer]:
+                  - /url: /kr/accessibility/
+              - listitem [ref=e734]:
+                - link "교육" [ref=e735] [cursor=pointer]:
+                  - /url: /kr/education-initiative/
+              - listitem [ref=e736]:
+                - link "환경" [ref=e737] [cursor=pointer]:
+                  - /url: /kr/environment/
+              - listitem [ref=e738]:
+                - link "개인정보 보호" [ref=e739] [cursor=pointer]:
+                  - /url: /kr/privacy/
+              - listitem [ref=e740]:
+                - link "공급망 혁신" [ref=e741] [cursor=pointer]:
+                  - /url: /kr/supply-chain/
+          - generic:
+            - heading "Apple 정보" [level=3] [ref=e742]:
+              - generic [ref=e743]: Apple 정보
+            - list [ref=e744]:
+              - listitem [ref=e745]:
+                - link "Newsroom" [ref=e746] [cursor=pointer]:
+                  - /url: /kr/newsroom/
+              - listitem [ref=e747]:
+                - link "Apple 리더십" [ref=e748] [cursor=pointer]:
+                  - /url: /kr/leadership/
+              - listitem [ref=e749]:
+                - link "채용 안내" [ref=e750] [cursor=pointer]:
+                  - /url: /careers/kr/
+              - listitem [ref=e751]:
+                - link "윤리 및 규정 준수" [ref=e752] [cursor=pointer]:
+                  - /url: /compliance/
+              - listitem [ref=e753]:
+                - link "이벤트" [ref=e754] [cursor=pointer]:
+                  - /url: /kr/apple-events/
+              - listitem [ref=e755]:
+                - link "일자리 창출" [ref=e756] [cursor=pointer]:
+                  - /url: /kr/job-creation/
+              - listitem [ref=e757]:
+                - link "Apple 연락처" [ref=e758] [cursor=pointer]:
+                  - /url: /kr/contact/
+      - generic [ref=e759]:
+        - generic [ref=e760]:
+          - text: "다양한 쇼핑 방법:"
+          - link "Apple Store를 방문" [ref=e761] [cursor=pointer]:
+            - /url: /kr/retail/
+          - text: 하거나,
+          - link "리셀러" [ref=e762] [cursor=pointer]:
+            - /url: https://locate.apple.com/kr/ko/
+          - text: 를 찾아보거나,
+          - link "080-330-8877" [ref=e763] [cursor=pointer]:
+            - /url: tel:080-330-8877
+          - text: 번으로 전화하세요.
+        - link "대한민국. 국가 또는 지역을 선택하세요." [ref=e765] [cursor=pointer]:
+          - /url: /choose-country-region/
+          - text: 대한민국
+        - generic [ref=e766]:
+          - generic [ref=e767]: Copyright © 2026 Apple Inc. 모든 권리 보유.
+          - list [ref=e768]:
+            - listitem [ref=e769]:
+              - link "개인정보 처리방침" [ref=e770] [cursor=pointer]:
+                - /url: /kr/legal/privacy/
+            - listitem [ref=e771]:
+              - link "웹 사이트 이용 약관" [ref=e772] [cursor=pointer]:
+                - /url: /kr/legal/internet-services/terms/site.html
+            - listitem [ref=e773]:
+              - link "판매 및 환불" [ref=e774] [cursor=pointer]:
+                - /url: /kr/shop/goto/help/sales_refunds
+            - listitem [ref=e775]:
+              - link "법적 고지" [ref=e776] [cursor=pointer]:
+                - /url: /kr/legal/
+            - listitem [ref=e777]:
+              - link "사이트 맵" [ref=e778] [cursor=pointer]:
+                - /url: /kr/sitemap/

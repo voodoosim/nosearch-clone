@@ -1,0 +1,1644 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - link [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img [ref=e7]:
+            - generic [ref=e14]: 스마트홈딜
+        - generic [ref=e15]:
+          - navigation [ref=e17]:
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - link "스토어" [ref=e20] [cursor=pointer]:
+                  - /url: /store
+                  - paragraph [ref=e22]: 스토어
+              - listitem [ref=e23]:
+                - link "공동구매" [ref=e24] [cursor=pointer]:
+                  - /url: /store/deal
+                  - paragraph [ref=e26]: 공동구매
+              - listitem [ref=e27]:
+                - link "기획전" [ref=e28] [cursor=pointer]:
+                  - /url: /store/exhibition
+                  - paragraph [ref=e30]: 기획전
+              - listitem [ref=e31]:
+                - link "고객센터" [ref=e32] [cursor=pointer]:
+                  - /url: /store/contents
+                  - paragraph [ref=e34]: 고객센터
+          - generic [ref=e37]:
+            - textbox "어떤 제품을 찾으시나요?" [ref=e38]
+            - button [ref=e39]:
+              - img [ref=e40]
+          - list [ref=e44]:
+            - listitem [ref=e45]:
+              - link [ref=e46] [cursor=pointer]:
+                - /url: /mypage/wishlist
+                - img [ref=e48]
+            - listitem [ref=e50]:
+              - link [ref=e51] [cursor=pointer]:
+                - /url: /store/cart
+                - img [ref=e53]
+            - listitem [ref=e57]:
+              - link "마이페이지" [ref=e58] [cursor=pointer]:
+                - /url: /mypage
+                - paragraph [ref=e59]: 마이페이지
+            - listitem [ref=e60]:
+              - link "로그인" [ref=e61] [cursor=pointer]:
+                - /url: /login
+                - paragraph [ref=e62]: 로그인
+    - list [ref=e64]:
+      - listitem [ref=e65]:
+        - link "스토어홈" [ref=e66] [cursor=pointer]:
+          - /url: /store
+          - paragraph [ref=e68]: 스토어홈
+      - listitem [ref=e69]:
+        - link "공동구매" [ref=e70] [cursor=pointer]:
+          - /url: /store/deal
+          - paragraph [ref=e72]: 공동구매
+      - listitem [ref=e73]:
+        - link "리뷰템" [ref=e74] [cursor=pointer]:
+          - /url: /store/reviewTem
+          - paragraph [ref=e76]: 리뷰템
+      - listitem [ref=e77]:
+        - link "타임딜" [ref=e78] [cursor=pointer]:
+          - /url: /store/timedeal
+          - paragraph [ref=e80]: 타임딜
+      - listitem [ref=e81]:
+        - link "이번주 인기" [ref=e82] [cursor=pointer]:
+          - /url: /store/best
+          - paragraph [ref=e84]: 이번주 인기
+      - listitem [ref=e85]:
+        - link "기획전" [ref=e86] [cursor=pointer]:
+          - /url: /store/exhibition
+          - paragraph [ref=e88]: 기획전
+      - listitem [ref=e89]:
+        - link "애플관" [ref=e90] [cursor=pointer]:
+          - /url: /store/apple
+          - paragraph [ref=e92]: 애플관
+      - listitem [ref=e94]:
+        - link "삼성관" [ref=e95] [cursor=pointer]:
+          - /url: /store/samsung
+          - paragraph [ref=e97]: 삼성관
+      - listitem [ref=e98]:
+        - link "해외직구관" [ref=e99] [cursor=pointer]:
+          - /url: /store/overseas
+          - paragraph [ref=e101]: 해외직구관
+      - listitem [ref=e102]:
+        - link "렌탈" [ref=e103] [cursor=pointer]:
+          - /url: /store/rental
+          - paragraph [ref=e105]: 렌탈
+      - listitem [ref=e106]:
+        - link "가이드" [ref=e107] [cursor=pointer]:
+          - /url: /store/contents
+          - paragraph [ref=e109]: 가이드
+    - main [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - img [ref=e116]
+            - generic [ref=e118]: Apple Store
+          - heading "애플관" [level=1] [ref=e119]
+          - paragraph [ref=e120]: MacBook Pro · Mac Studio · Mac Pro · Mac mini
+          - paragraph [ref=e121]: 총 75개 상품
+        - generic [ref=e122]:
+          - generic [ref=e123]:
+            - link "💻 MacBook Pro" [ref=e124] [cursor=pointer]:
+              - /url: "#cat-macbook_pro"
+              - generic [ref=e125]:
+                - generic [ref=e126]: 💻
+                - generic [ref=e127]: MacBook Pro
+            - link "🖥️ Mac Studio" [ref=e128] [cursor=pointer]:
+              - /url: "#cat-mac_studio"
+              - generic [ref=e129]:
+                - generic [ref=e130]: 🖥️
+                - generic [ref=e131]: Mac Studio
+            - link "⚙️ Mac Pro" [ref=e132] [cursor=pointer]:
+              - /url: "#cat-mac_pro"
+              - generic [ref=e133]:
+                - generic [ref=e134]: ⚙️
+                - generic [ref=e135]: Mac Pro
+          - generic [ref=e136]:
+            - generic [ref=e137]:
+              - generic [ref=e138]:
+                - generic [ref=e139]:
+                  - generic [ref=e140]: 💻
+                  - heading "MacBook Pro" [level=2] [ref=e141]
+                  - generic [ref=e142]: 54개
+                - paragraph [ref=e143]: M5 · M5 Pro · M5 Max 칩 탑재 최고급 프로 노트북
+              - link "전체보기" [ref=e144] [cursor=pointer]:
+                - /url: /store/recommendation/macbook_pro
+                - text: 전체보기
+                - img [ref=e145]
+            - generic [ref=e147]:
+              - generic [ref=e148]: MacBook Pro 14" (29)
+              - generic [ref=e149]: MacBook Pro 16" (25)
+            - generic [ref=e150]:
+              - link [ref=e151] [cursor=pointer]:
+                - /url: /store/product/3000002001
+                - article [ref=e152]:
+                  - generic [ref=e153]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 1TB" [ref=e154]
+                    - generic [ref=e155]: PREMIUM
+                    - generic [ref=e156]: "-10%"
+                    - generic [ref=e157]: 공동구매 진행중!
+                    - button "찜하기" [ref=e158]:
+                      - img [ref=e159]
+                  - generic [ref=e161]:
+                    - paragraph [ref=e162]: Apple
+                    - paragraph [ref=e163]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e164]:
+                      - generic [ref=e165]: ★
+                      - generic [ref=e166]: "4.9"
+                      - generic [ref=e167]: (1,245)
+                    - generic [ref=e168]:
+                      - generic [ref=e169]: 3,990,000
+                      - generic [ref=e170]: 3,590,000원
+              - link [ref=e171] [cursor=pointer]:
+                - /url: /store/product/3000002002
+                - article [ref=e172]:
+                  - generic [ref=e173]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 24GB 1TB" [ref=e174]
+                    - generic [ref=e175]: PREMIUM
+                    - generic [ref=e176]: "-10%"
+                    - generic [ref=e177]: 공동구매 진행중!
+                    - button "찜하기" [ref=e178]:
+                      - img [ref=e179]
+                  - generic [ref=e181]:
+                    - paragraph [ref=e182]: Apple
+                    - paragraph [ref=e183]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e184]:
+                      - generic [ref=e185]: ★
+                      - generic [ref=e186]: "4.9"
+                      - generic [ref=e187]: (987)
+                    - generic [ref=e188]:
+                      - generic [ref=e189]: 4,790,000
+                      - generic [ref=e190]: 4,290,000원
+              - link [ref=e191] [cursor=pointer]:
+                - /url: /store/product/3000002004
+                - article [ref=e192]:
+                  - generic [ref=e193]:
+                    - img "Apple MacBook Pro 14\" M5 Max 18코어 CPU 32코어 GPU 스페이스 블랙 36GB 2TB" [ref=e194]
+                    - generic [ref=e195]: PREMIUM
+                    - generic [ref=e196]: 공동구매 진행중!
+                    - button "찜하기" [ref=e197]:
+                      - img [ref=e198]
+                  - generic [ref=e200]:
+                    - paragraph [ref=e201]: Apple
+                    - paragraph [ref=e202]: Apple MacBook Pro 14" M5 Max 18코어 CPU 32코어 GPU 스페이스 블랙 36GB 2TB
+                    - generic [ref=e203]:
+                      - generic [ref=e204]: ★
+                      - generic [ref=e205]: "4.9"
+                      - generic [ref=e206]: (734)
+                    - generic [ref=e207]:
+                      - generic [ref=e208]: 5,990,000
+                      - generic [ref=e209]: 5,490,000원
+              - link [ref=e210] [cursor=pointer]:
+                - /url: /store/product/3000002005
+                - article [ref=e211]:
+                  - generic [ref=e212]:
+                    - img "Apple MacBook Pro 16\" M5 Max 18코어 CPU 40코어 GPU 스페이스 블랙 48GB 2TB" [ref=e213]
+                    - generic [ref=e214]: PREMIUM
+                    - generic [ref=e215]: 공동구매 진행중!
+                    - button "찜하기" [ref=e216]:
+                      - img [ref=e217]
+                  - generic [ref=e219]:
+                    - paragraph [ref=e220]: Apple
+                    - paragraph [ref=e221]: Apple MacBook Pro 16" M5 Max 18코어 CPU 40코어 GPU 스페이스 블랙 48GB 2TB
+                    - generic [ref=e222]:
+                      - generic [ref=e223]: ★
+                      - generic [ref=e224]: "4.9"
+                      - generic [ref=e225]: (623)
+                    - generic [ref=e226]:
+                      - generic [ref=e227]: 9,790,000
+                      - generic [ref=e228]: 8,990,000원
+              - link [ref=e229] [cursor=pointer]:
+                - /url: /store/product/3000002006
+                - article [ref=e230]:
+                  - generic [ref=e231]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 스페이스 블랙 24GB 1TB" [ref=e232]
+                    - generic [ref=e233]: BEST
+                    - generic [ref=e234]: "-10%"
+                    - generic [ref=e235]: 공동구매 진행중!
+                    - button "찜하기" [ref=e236]:
+                      - img [ref=e237]
+                  - generic [ref=e239]:
+                    - paragraph [ref=e240]: Apple
+                    - paragraph [ref=e241]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e242]:
+                      - generic [ref=e243]: ★
+                      - generic [ref=e244]: "4.8"
+                      - generic [ref=e245]: (2,134)
+                    - generic [ref=e246]:
+                      - generic [ref=e247]: 2,990,000
+                      - generic [ref=e248]: 2,690,000원
+              - link [ref=e249] [cursor=pointer]:
+                - /url: /store/product/3000002009
+                - article [ref=e250]:
+                  - generic [ref=e251]:
+                    - img "Apple MacBook Pro 16\" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB" [ref=e252]
+                    - generic [ref=e253]: PREMIUM
+                    - generic [ref=e254]: 공동구매 진행중!
+                    - button "찜하기" [ref=e255]:
+                      - img [ref=e256]
+                  - generic [ref=e258]:
+                    - paragraph [ref=e259]: Apple
+                    - paragraph [ref=e260]: Apple MacBook Pro 16" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB
+                    - generic [ref=e261]:
+                      - generic [ref=e262]: ★
+                      - generic [ref=e263]: "4.9"
+                      - generic [ref=e264]: (389)
+                    - generic [ref=e265]:
+                      - generic [ref=e266]: 8,190,000
+                      - generic [ref=e267]: 7,490,000원
+              - link [ref=e268] [cursor=pointer]:
+                - /url: /store/product/3000002010
+                - article [ref=e269]:
+                  - generic [ref=e270]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 실버 24GB 1TB" [ref=e271]
+                    - generic [ref=e272]: BEST
+                    - generic [ref=e273]: "-10%"
+                    - generic [ref=e274]: 공동구매 진행중!
+                    - button "찜하기" [ref=e275]:
+                      - img [ref=e276]
+                  - generic [ref=e278]:
+                    - paragraph [ref=e279]: Apple
+                    - paragraph [ref=e280]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 실버 24GB 1TB
+                    - generic [ref=e281]:
+                      - generic [ref=e282]: ★
+                      - generic [ref=e283]: "4.9"
+                      - generic [ref=e284]: (867)
+                    - generic [ref=e285]:
+                      - generic [ref=e286]: 3,990,000
+                      - generic [ref=e287]: 3,590,000원
+              - link [ref=e288] [cursor=pointer]:
+                - /url: /store/product/3000002011
+                - article [ref=e289]:
+                  - generic [ref=e290]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 18코어 CPU 24코어 GPU 스페이스 블랙 48GB 1TB" [ref=e291]
+                    - generic [ref=e292]: PREMIUM
+                    - generic [ref=e293]: 공동구매 진행중!
+                    - button "찜하기" [ref=e294]:
+                      - img [ref=e295]
+                  - generic [ref=e297]:
+                    - paragraph [ref=e298]: Apple
+                    - paragraph [ref=e299]: Apple MacBook Pro 14" M5 Pro 18코어 CPU 24코어 GPU 스페이스 블랙 48GB 1TB
+                    - generic [ref=e300]:
+                      - generic [ref=e301]: ★
+                      - generic [ref=e302]: "4.9"
+                      - generic [ref=e303]: (456)
+                    - generic [ref=e304]:
+                      - generic [ref=e305]: 5,490,000
+                      - generic [ref=e306]: 4,990,000원
+              - link [ref=e307] [cursor=pointer]:
+                - /url: /store/product/3000002012
+                - article [ref=e308]:
+                  - generic [ref=e309]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 48GB 1TB" [ref=e310]
+                    - generic [ref=e311]: PREMIUM
+                    - generic [ref=e312]: 공동구매 진행중!
+                    - button "찜하기" [ref=e313]:
+                      - img [ref=e314]
+                  - generic [ref=e316]:
+                    - paragraph [ref=e317]: Apple
+                    - paragraph [ref=e318]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 48GB 1TB
+                    - generic [ref=e319]:
+                      - generic [ref=e320]: ★
+                      - generic [ref=e321]: "4.9"
+                      - generic [ref=e322]: (534)
+                    - generic [ref=e323]:
+                      - generic [ref=e324]: 5,790,000
+                      - generic [ref=e325]: 5,290,000원
+              - link [ref=e326] [cursor=pointer]:
+                - /url: /store/product/3000002013
+                - article [ref=e327]:
+                  - generic [ref=e328]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 실버 24GB 1TB" [ref=e329]
+                    - generic [ref=e330]: BEST
+                    - generic [ref=e331]: "-10%"
+                    - generic [ref=e332]: 공동구매 진행중!
+                    - button "찜하기" [ref=e333]:
+                      - img [ref=e334]
+                  - generic [ref=e336]:
+                    - paragraph [ref=e337]: Apple
+                    - paragraph [ref=e338]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 실버 24GB 1TB
+                    - generic [ref=e339]:
+                      - generic [ref=e340]: ★
+                      - generic [ref=e341]: "4.8"
+                      - generic [ref=e342]: (1,789)
+                    - generic [ref=e343]:
+                      - generic [ref=e344]: 2,990,000
+                      - generic [ref=e345]: 2,690,000원
+              - link [ref=e346] [cursor=pointer]:
+                - /url: /store/product/3000002015
+                - article [ref=e347]:
+                  - generic [ref=e348]:
+                    - img "Apple MacBook Pro 16\" M5 Max 18코어 CPU 40코어 GPU 실버 48GB 2TB" [ref=e349]
+                    - generic [ref=e350]: PREMIUM
+                    - generic [ref=e351]: 공동구매 진행중!
+                    - button "찜하기" [ref=e352]:
+                      - img [ref=e353]
+                  - generic [ref=e355]:
+                    - paragraph [ref=e356]: Apple
+                    - paragraph [ref=e357]: Apple MacBook Pro 16" M5 Max 18코어 CPU 40코어 GPU 실버 48GB 2TB
+                    - generic [ref=e358]:
+                      - generic [ref=e359]: ★
+                      - generic [ref=e360]: "4.9"
+                      - generic [ref=e361]: (201)
+                    - generic [ref=e362]:
+                      - generic [ref=e363]: 9,790,000
+                      - generic [ref=e364]: 8,990,000원
+              - link [ref=e365] [cursor=pointer]:
+                - /url: /store/product/3000002016
+                - article [ref=e366]:
+                  - generic [ref=e367]:
+                    - img "Apple MacBook Pro 14\" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB" [ref=e368]
+                    - generic [ref=e369]: PREMIUM
+                    - generic [ref=e370]: 공동구매 진행중!
+                    - button "찜하기" [ref=e371]:
+                      - img [ref=e372]
+                  - generic [ref=e374]:
+                    - paragraph [ref=e375]: Apple
+                    - paragraph [ref=e376]: Apple MacBook Pro 14" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB
+                    - generic [ref=e377]:
+                      - generic [ref=e378]: ★
+                      - generic [ref=e379]: "4.9"
+                      - generic [ref=e380]: (334)
+                    - generic [ref=e381]:
+                      - generic [ref=e382]: 5,990,000
+                      - generic [ref=e383]: 5,490,000원
+              - link [ref=e384] [cursor=pointer]:
+                - /url: /store/product/3000002018
+                - article [ref=e385]:
+                  - generic [ref=e386]:
+                    - img "Apple MacBook Pro 16\" M5 Max Nano-texture 18코어 CPU 40코어 GPU 스페이스 블랙 64GB 4TB" [ref=e387]
+                    - generic [ref=e388]: PREMIUM
+                    - generic [ref=e389]: 공동구매 진행중!
+                    - button "찜하기" [ref=e390]:
+                      - img [ref=e391]
+                  - generic [ref=e393]:
+                    - paragraph [ref=e394]: Apple
+                    - paragraph [ref=e395]: Apple MacBook Pro 16" M5 Max Nano-texture 18코어 CPU 40코어 GPU 스페이스 블랙 64GB 4TB
+                    - generic [ref=e396]:
+                      - generic [ref=e397]: ★
+                      - generic [ref=e398]: "5.0"
+                      - generic [ref=e399]: (67)
+                    - generic [ref=e400]:
+                      - generic [ref=e401]: 12,990,000
+                      - generic [ref=e402]: 12,190,000원
+              - link [ref=e403] [cursor=pointer]:
+                - /url: /store/product/3000002019
+                - article [ref=e404]:
+                  - generic [ref=e405]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 2TB" [ref=e406]
+                    - generic [ref=e407]: PREMIUM
+                    - generic [ref=e408]: 공동구매 진행중!
+                    - button "찜하기" [ref=e409]:
+                      - img [ref=e410]
+                  - generic [ref=e412]:
+                    - paragraph [ref=e413]: Apple
+                    - paragraph [ref=e414]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 2TB
+                    - generic [ref=e415]:
+                      - generic [ref=e416]: ★
+                      - generic [ref=e417]: "4.9"
+                      - generic [ref=e418]: (567)
+                    - generic [ref=e419]:
+                      - generic [ref=e420]: 4,390,000
+                      - generic [ref=e421]: 3,990,000원
+              - link [ref=e422] [cursor=pointer]:
+                - /url: /store/product/3000002020
+                - article [ref=e423]:
+                  - generic [ref=e424]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 실버 48GB 1TB" [ref=e425]
+                    - generic [ref=e426]: PREMIUM
+                    - generic [ref=e427]: 공동구매 진행중!
+                    - button "찜하기" [ref=e428]:
+                      - img [ref=e429]
+                  - generic [ref=e431]:
+                    - paragraph [ref=e432]: Apple
+                    - paragraph [ref=e433]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 실버 48GB 1TB
+                    - generic [ref=e434]:
+                      - generic [ref=e435]: ★
+                      - generic [ref=e436]: "4.9"
+                      - generic [ref=e437]: (423)
+                    - generic [ref=e438]:
+                      - generic [ref=e439]: 5,790,000
+                      - generic [ref=e440]: 5,290,000원
+              - link [ref=e441] [cursor=pointer]:
+                - /url: /store/product/3000002022
+                - article [ref=e442]:
+                  - generic [ref=e443]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 스페이스 블랙 32GB 1TB" [ref=e444]
+                    - generic [ref=e445]: BEST
+                    - generic [ref=e446]: 공동구매 진행중!
+                    - button "찜하기" [ref=e447]:
+                      - img [ref=e448]
+                  - generic [ref=e450]:
+                    - paragraph [ref=e451]: Apple
+                    - paragraph [ref=e452]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 스페이스 블랙 32GB 1TB
+                    - generic [ref=e453]:
+                      - generic [ref=e454]: ★
+                      - generic [ref=e455]: "4.8"
+                      - generic [ref=e456]: (934)
+                    - generic [ref=e457]:
+                      - generic [ref=e458]: 3,490,000
+                      - generic [ref=e459]: 3,190,000원
+              - link [ref=e460] [cursor=pointer]:
+                - /url: /store/product/3000002023
+                - article [ref=e461]:
+                  - generic [ref=e462]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 실버 24GB 1TB" [ref=e463]
+                    - generic [ref=e464]: BEST
+                    - generic [ref=e465]: "-10%"
+                    - generic [ref=e466]: 공동구매 진행중!
+                    - button "찜하기" [ref=e467]:
+                      - img [ref=e468]
+                  - generic [ref=e470]:
+                    - paragraph [ref=e471]: Apple
+                    - paragraph [ref=e472]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 실버 24GB 1TB
+                    - generic [ref=e473]:
+                      - generic [ref=e474]: ★
+                      - generic [ref=e475]: "4.9"
+                      - generic [ref=e476]: (678)
+                    - generic [ref=e477]:
+                      - generic [ref=e478]: 4,790,000
+                      - generic [ref=e479]: 4,290,000원
+              - link [ref=e480] [cursor=pointer]:
+                - /url: /store/product/3000002025
+                - article [ref=e481]:
+                  - generic [ref=e482]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 18코어 CPU 24코어 GPU 스페이스 블랙 48GB 2TB Nano-texture" [ref=e483]
+                    - generic [ref=e484]: PREMIUM
+                    - generic [ref=e485]: 공동구매 진행중!
+                    - button "찜하기" [ref=e486]:
+                      - img [ref=e487]
+                  - generic [ref=e489]:
+                    - paragraph [ref=e490]: Apple
+                    - paragraph [ref=e491]: Apple MacBook Pro 14" M5 Pro 18코어 CPU 24코어 GPU 스페이스 블랙 48GB 2TB Nano-texture
+                    - generic [ref=e492]:
+                      - generic [ref=e493]: ★
+                      - generic [ref=e494]: "4.9"
+                      - generic [ref=e495]: (123)
+                    - generic [ref=e496]:
+                      - generic [ref=e497]: 6,790,000
+                      - generic [ref=e498]: 6,290,000원
+              - link [ref=e499] [cursor=pointer]:
+                - /url: /store/product/3000001001
+                - article [ref=e500]:
+                  - generic [ref=e501]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 스페이스 블랙 24GB 1TB" [ref=e502]
+                    - generic [ref=e503]: PREMIUM
+                    - generic [ref=e504]: "-10%"
+                    - generic [ref=e505]: 공동구매 진행중!
+                    - button "찜하기" [ref=e506]:
+                      - img [ref=e507]
+                  - generic [ref=e509]:
+                    - paragraph [ref=e510]: Apple
+                    - paragraph [ref=e511]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e512]:
+                      - generic [ref=e513]: ★
+                      - generic [ref=e514]: "4.9"
+                      - generic [ref=e515]: (312)
+                    - generic [ref=e516]:
+                      - generic [ref=e517]: 2,990,000
+                      - generic [ref=e518]: 2,690,000원
+              - link [ref=e519] [cursor=pointer]:
+                - /url: /store/product/3000001002
+                - article [ref=e520]:
+                  - generic [ref=e521]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 실버 24GB 1TB" [ref=e522]
+                    - generic [ref=e523]: BEST
+                    - generic [ref=e524]: "-10%"
+                    - generic [ref=e525]: 공동구매 진행중!
+                    - button "찜하기" [ref=e526]:
+                      - img [ref=e527]
+                  - generic [ref=e529]:
+                    - paragraph [ref=e530]: Apple
+                    - paragraph [ref=e531]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 실버 24GB 1TB
+                    - generic [ref=e532]:
+                      - generic [ref=e533]: ★
+                      - generic [ref=e534]: "4.9"
+                      - generic [ref=e535]: (289)
+                    - generic [ref=e536]:
+                      - generic [ref=e537]: 2,990,000
+                      - generic [ref=e538]: 2,690,000원
+              - link [ref=e539] [cursor=pointer]:
+                - /url: /store/product/3000001003
+                - article [ref=e540]:
+                  - generic [ref=e541]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 스페이스 블랙 32GB 1TB" [ref=e542]
+                    - generic [ref=e543]: PREMIUM
+                    - generic [ref=e544]: 공동구매 진행중!
+                    - button "찜하기" [ref=e545]:
+                      - img [ref=e546]
+                  - generic [ref=e548]:
+                    - paragraph [ref=e549]: Apple
+                    - paragraph [ref=e550]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 스페이스 블랙 32GB 1TB
+                    - generic [ref=e551]:
+                      - generic [ref=e552]: ★
+                      - generic [ref=e553]: "4.9"
+                      - generic [ref=e554]: (198)
+                    - generic [ref=e555]:
+                      - generic [ref=e556]: 3,490,000
+                      - generic [ref=e557]: 3,190,000원
+              - link [ref=e558] [cursor=pointer]:
+                - /url: /store/product/3000001004
+                - article [ref=e559]:
+                  - generic [ref=e560]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 1TB" [ref=e561]
+                    - generic [ref=e562]: PREMIUM
+                    - generic [ref=e563]: "-10%"
+                    - generic [ref=e564]: 공동구매 진행중!
+                    - button "찜하기" [ref=e565]:
+                      - img [ref=e566]
+                  - generic [ref=e568]:
+                    - paragraph [ref=e569]: Apple
+                    - paragraph [ref=e570]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e571]:
+                      - generic [ref=e572]: ★
+                      - generic [ref=e573]: "4.9"
+                      - generic [ref=e574]: (445)
+                    - generic [ref=e575]:
+                      - generic [ref=e576]: 3,990,000
+                      - generic [ref=e577]: 3,590,000원
+              - link [ref=e578] [cursor=pointer]:
+                - /url: /store/product/3000001005
+                - article [ref=e579]:
+                  - generic [ref=e580]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 실버 24GB 1TB" [ref=e581]
+                    - generic [ref=e582]: BEST
+                    - generic [ref=e583]: "-10%"
+                    - generic [ref=e584]: 공동구매 진행중!
+                    - button "찜하기" [ref=e585]:
+                      - img [ref=e586]
+                  - generic [ref=e588]:
+                    - paragraph [ref=e589]: Apple
+                    - paragraph [ref=e590]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 실버 24GB 1TB
+                    - generic [ref=e591]:
+                      - generic [ref=e592]: ★
+                      - generic [ref=e593]: "4.8"
+                      - generic [ref=e594]: (367)
+                    - generic [ref=e595]:
+                      - generic [ref=e596]: 3,990,000
+                      - generic [ref=e597]: 3,590,000원
+              - link [ref=e598] [cursor=pointer]:
+                - /url: /store/product/3000001006
+                - article [ref=e599]:
+                  - generic [ref=e600]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 2TB" [ref=e601]
+                    - generic [ref=e602]: PREMIUM
+                    - generic [ref=e603]: 공동구매 진행중!
+                    - button "찜하기" [ref=e604]:
+                      - img [ref=e605]
+                  - generic [ref=e607]:
+                    - paragraph [ref=e608]: Apple
+                    - paragraph [ref=e609]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 2TB
+                    - generic [ref=e610]:
+                      - generic [ref=e611]: ★
+                      - generic [ref=e612]: "4.9"
+                      - generic [ref=e613]: (234)
+                    - generic [ref=e614]:
+                      - generic [ref=e615]: 4,390,000
+                      - generic [ref=e616]: 3,990,000원
+              - link [ref=e617] [cursor=pointer]:
+                - /url: /store/product/3000001007
+                - article [ref=e618]:
+                  - generic [ref=e619]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 18코어 CPU 24코어 GPU 스페이스 블랙 48GB 1TB" [ref=e620]
+                    - generic [ref=e621]: PREMIUM
+                    - generic [ref=e622]: 공동구매 진행중!
+                    - button "찜하기" [ref=e623]:
+                      - img [ref=e624]
+                  - generic [ref=e626]:
+                    - paragraph [ref=e627]: Apple
+                    - paragraph [ref=e628]: Apple MacBook Pro 14" M5 Pro 18코어 CPU 24코어 GPU 스페이스 블랙 48GB 1TB
+                    - generic [ref=e629]:
+                      - generic [ref=e630]: ★
+                      - generic [ref=e631]: "4.9"
+                      - generic [ref=e632]: (189)
+                    - generic [ref=e633]:
+                      - generic [ref=e634]: 5,490,000
+                      - generic [ref=e635]: 4,990,000원
+              - link [ref=e636] [cursor=pointer]:
+                - /url: /store/product/3000001008
+                - article [ref=e637]:
+                  - generic [ref=e638]:
+                    - img "Apple MacBook Pro 14\" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB" [ref=e639]
+                    - generic [ref=e640]: PREMIUM
+                    - generic [ref=e641]: 공동구매 진행중!
+                    - button "찜하기" [ref=e642]:
+                      - img [ref=e643]
+                  - generic [ref=e645]:
+                    - paragraph [ref=e646]: Apple
+                    - paragraph [ref=e647]: Apple MacBook Pro 14" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB
+                    - generic [ref=e648]:
+                      - generic [ref=e649]: ★
+                      - generic [ref=e650]: "4.9"
+                      - generic [ref=e651]: (156)
+                    - generic [ref=e652]:
+                      - generic [ref=e653]: 5,990,000
+                      - generic [ref=e654]: 5,490,000원
+              - link [ref=e655] [cursor=pointer]:
+                - /url: /store/product/3000001009
+                - article [ref=e656]:
+                  - generic [ref=e657]:
+                    - img "Apple MacBook Pro 14\" M5 Max 18코어 CPU 32코어 GPU 스페이스 블랙 36GB 2TB" [ref=e658]
+                    - generic [ref=e659]: PREMIUM
+                    - generic [ref=e660]: 공동구매 진행중!
+                    - button "찜하기" [ref=e661]:
+                      - img [ref=e662]
+                  - generic [ref=e664]:
+                    - paragraph [ref=e665]: Apple
+                    - paragraph [ref=e666]: Apple MacBook Pro 14" M5 Max 18코어 CPU 32코어 GPU 스페이스 블랙 36GB 2TB
+                    - generic [ref=e667]:
+                      - generic [ref=e668]: ★
+                      - generic [ref=e669]: "4.9"
+                      - generic [ref=e670]: (142)
+                    - generic [ref=e671]:
+                      - generic [ref=e672]: 5,990,000
+                      - generic [ref=e673]: 5,490,000원
+              - link [ref=e674] [cursor=pointer]:
+                - /url: /store/product/3000001010
+                - article [ref=e675]:
+                  - generic [ref=e676]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 24GB 1TB" [ref=e677]
+                    - generic [ref=e678]: PREMIUM
+                    - generic [ref=e679]: "-10%"
+                    - generic [ref=e680]: 공동구매 진행중!
+                    - button "찜하기" [ref=e681]:
+                      - img [ref=e682]
+                  - generic [ref=e684]:
+                    - paragraph [ref=e685]: Apple
+                    - paragraph [ref=e686]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e687]:
+                      - generic [ref=e688]: ★
+                      - generic [ref=e689]: "4.9"
+                      - generic [ref=e690]: (523)
+                    - generic [ref=e691]:
+                      - generic [ref=e692]: 4,790,000
+                      - generic [ref=e693]: 4,290,000원
+              - link [ref=e694] [cursor=pointer]:
+                - /url: /store/product/3000001011
+                - article [ref=e695]:
+                  - generic [ref=e696]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 실버 24GB 1TB" [ref=e697]
+                    - generic [ref=e698]: BEST
+                    - generic [ref=e699]: "-10%"
+                    - generic [ref=e700]: 공동구매 진행중!
+                    - button "찜하기" [ref=e701]:
+                      - img [ref=e702]
+                  - generic [ref=e704]:
+                    - paragraph [ref=e705]: Apple
+                    - paragraph [ref=e706]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 실버 24GB 1TB
+                    - generic [ref=e707]:
+                      - generic [ref=e708]: ★
+                      - generic [ref=e709]: "4.9"
+                      - generic [ref=e710]: (478)
+                    - generic [ref=e711]:
+                      - generic [ref=e712]: 4,790,000
+                      - generic [ref=e713]: 4,290,000원
+              - link [ref=e714] [cursor=pointer]:
+                - /url: /store/product/3000001012
+                - article [ref=e715]:
+                  - generic [ref=e716]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 48GB 1TB" [ref=e717]
+                    - generic [ref=e718]: PREMIUM
+                    - generic [ref=e719]: 공동구매 진행중!
+                    - button "찜하기" [ref=e720]:
+                      - img [ref=e721]
+                  - generic [ref=e723]:
+                    - paragraph [ref=e724]: Apple
+                    - paragraph [ref=e725]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 48GB 1TB
+                    - generic [ref=e726]:
+                      - generic [ref=e727]: ★
+                      - generic [ref=e728]: "4.9"
+                      - generic [ref=e729]: (389)
+                    - generic [ref=e730]:
+                      - generic [ref=e731]: 5,790,000
+                      - generic [ref=e732]: 5,290,000원
+              - link [ref=e733] [cursor=pointer]:
+                - /url: /store/product/3000001013
+                - article [ref=e734]:
+                  - generic [ref=e735]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 실버 48GB 1TB" [ref=e736]
+                    - generic [ref=e737]: PREMIUM
+                    - generic [ref=e738]: 공동구매 진행중!
+                    - button "찜하기" [ref=e739]:
+                      - img [ref=e740]
+                  - generic [ref=e742]:
+                    - paragraph [ref=e743]: Apple
+                    - paragraph [ref=e744]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 실버 48GB 1TB
+                    - generic [ref=e745]:
+                      - generic [ref=e746]: ★
+                      - generic [ref=e747]: "4.9"
+                      - generic [ref=e748]: (312)
+                    - generic [ref=e749]:
+                      - generic [ref=e750]: 5,790,000
+                      - generic [ref=e751]: 5,290,000원
+              - link [ref=e752] [cursor=pointer]:
+                - /url: /store/product/3000001014
+                - article [ref=e753]:
+                  - generic [ref=e754]:
+                    - img "Apple MacBook Pro 16\" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB" [ref=e755]
+                    - generic [ref=e756]: PREMIUM
+                    - generic [ref=e757]: 공동구매 진행중!
+                    - button "찜하기" [ref=e758]:
+                      - img [ref=e759]
+                  - generic [ref=e761]:
+                    - paragraph [ref=e762]: Apple
+                    - paragraph [ref=e763]: Apple MacBook Pro 16" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB
+                    - generic [ref=e764]:
+                      - generic [ref=e765]: ★
+                      - generic [ref=e766]: "4.9"
+                      - generic [ref=e767]: (267)
+                    - generic [ref=e768]:
+                      - generic [ref=e769]: 8,190,000
+                      - generic [ref=e770]: 7,490,000원
+              - link [ref=e771] [cursor=pointer]:
+                - /url: /store/product/3000001015
+                - article [ref=e772]:
+                  - generic [ref=e773]:
+                    - img "Apple MacBook Pro 16\" M5 Max 18코어 CPU 32코어 GPU 스페이스 블랙 36GB 2TB" [ref=e774]
+                    - generic [ref=e775]: PREMIUM
+                    - generic [ref=e776]: 공동구매 진행중!
+                    - button "찜하기" [ref=e777]:
+                      - img [ref=e778]
+                  - generic [ref=e780]:
+                    - paragraph [ref=e781]: Apple
+                    - paragraph [ref=e782]: Apple MacBook Pro 16" M5 Max 18코어 CPU 32코어 GPU 스페이스 블랙 36GB 2TB
+                    - generic [ref=e783]:
+                      - generic [ref=e784]: ★
+                      - generic [ref=e785]: "4.9"
+                      - generic [ref=e786]: (231)
+                    - generic [ref=e787]:
+                      - generic [ref=e788]: 8,190,000
+                      - generic [ref=e789]: 7,490,000원
+              - link [ref=e790] [cursor=pointer]:
+                - /url: /store/product/3000001016
+                - article [ref=e791]:
+                  - generic [ref=e792]:
+                    - img "Apple MacBook Pro 16\" M5 Max 18코어 CPU 40코어 GPU 스페이스 블랙 48GB 2TB" [ref=e793]
+                    - generic [ref=e794]: PREMIUM
+                    - generic [ref=e795]: 공동구매 진행중!
+                    - button "찜하기" [ref=e796]:
+                      - img [ref=e797]
+                  - generic [ref=e799]:
+                    - paragraph [ref=e800]: Apple
+                    - paragraph [ref=e801]: Apple MacBook Pro 16" M5 Max 18코어 CPU 40코어 GPU 스페이스 블랙 48GB 2TB
+                    - generic [ref=e802]:
+                      - generic [ref=e803]: ★
+                      - generic [ref=e804]: "4.9"
+                      - generic [ref=e805]: (178)
+                    - generic [ref=e806]:
+                      - generic [ref=e807]: 9,790,000
+                      - generic [ref=e808]: 8,990,000원
+              - link [ref=e809] [cursor=pointer]:
+                - /url: /store/product/3000001017
+                - article [ref=e810]:
+                  - generic [ref=e811]:
+                    - img "Apple MacBook Pro 16\" M5 Max 18코어 CPU 40코어 GPU 실버 48GB 2TB" [ref=e812]
+                    - generic [ref=e813]: PREMIUM
+                    - generic [ref=e814]: 공동구매 진행중!
+                    - button "찜하기" [ref=e815]:
+                      - img [ref=e816]
+                  - generic [ref=e818]:
+                    - paragraph [ref=e819]: Apple
+                    - paragraph [ref=e820]: Apple MacBook Pro 16" M5 Max 18코어 CPU 40코어 GPU 실버 48GB 2TB
+                    - generic [ref=e821]:
+                      - generic [ref=e822]: ★
+                      - generic [ref=e823]: "4.9"
+                      - generic [ref=e824]: (165)
+                    - generic [ref=e825]:
+                      - generic [ref=e826]: 9,790,000
+                      - generic [ref=e827]: 8,990,000원
+              - link [ref=e828] [cursor=pointer]:
+                - /url: /store/product/3000001018
+                - article [ref=e829]:
+                  - generic [ref=e830]:
+                    - img "Apple MacBook Pro 16\" M5 Max Nano-texture 18코어 CPU 40코어 GPU 스페이스 블랙 64GB 4TB" [ref=e831]
+                    - generic [ref=e832]: PREMIUM
+                    - generic [ref=e833]: 공동구매 진행중!
+                    - button "찜하기" [ref=e834]:
+                      - img [ref=e835]
+                  - generic [ref=e837]:
+                    - paragraph [ref=e838]: Apple
+                    - paragraph [ref=e839]: Apple MacBook Pro 16" M5 Max Nano-texture 18코어 CPU 40코어 GPU 스페이스 블랙 64GB 4TB
+                    - generic [ref=e840]:
+                      - generic [ref=e841]: ★
+                      - generic [ref=e842]: "5.0"
+                      - generic [ref=e843]: (89)
+                    - generic [ref=e844]:
+                      - generic [ref=e845]: 12,990,000
+                      - generic [ref=e846]: 12,190,000원
+              - link [ref=e847] [cursor=pointer]:
+                - /url: /store/product/3000003001
+                - article [ref=e848]:
+                  - generic [ref=e849]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 1TB" [ref=e850]
+                    - generic [ref=e851]: PREMIUM
+                    - generic [ref=e852]: "-20%"
+                    - generic [ref=e853]: 공동구매 진행중!
+                    - button "찜하기" [ref=e854]:
+                      - img [ref=e855]
+                  - generic [ref=e857]:
+                    - paragraph [ref=e858]: Apple
+                    - paragraph [ref=e859]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e860]:
+                      - generic [ref=e861]: ★
+                      - generic [ref=e862]: "4.9"
+                      - generic [ref=e863]: (1,245)
+                    - generic [ref=e864]:
+                      - generic [ref=e865]: 3,990,000
+                      - generic [ref=e866]: 3,190,000원
+              - link [ref=e867] [cursor=pointer]:
+                - /url: /store/product/3000003002
+                - article [ref=e868]:
+                  - generic [ref=e869]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 24GB 1TB" [ref=e870]
+                    - generic [ref=e871]: PREMIUM
+                    - generic [ref=e872]: "-21%"
+                    - generic [ref=e873]: 공동구매 진행중!
+                    - button "찜하기" [ref=e874]:
+                      - img [ref=e875]
+                  - generic [ref=e877]:
+                    - paragraph [ref=e878]: Apple
+                    - paragraph [ref=e879]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e880]:
+                      - generic [ref=e881]: ★
+                      - generic [ref=e882]: "4.9"
+                      - generic [ref=e883]: (987)
+                    - generic [ref=e884]:
+                      - generic [ref=e885]: 4,790,000
+                      - generic [ref=e886]: 3,790,000원
+              - link [ref=e887] [cursor=pointer]:
+                - /url: /store/product/3000003004
+                - article [ref=e888]:
+                  - generic [ref=e889]:
+                    - img "Apple MacBook Pro 14\" M5 Max 18코어 CPU 32코어 GPU 스페이스 블랙 36GB 2TB" [ref=e890]
+                    - generic [ref=e891]: PREMIUM
+                    - generic [ref=e892]: "-18%"
+                    - generic [ref=e893]: 공동구매 진행중!
+                    - button "찜하기" [ref=e894]:
+                      - img [ref=e895]
+                  - generic [ref=e897]:
+                    - paragraph [ref=e898]: Apple
+                    - paragraph [ref=e899]: Apple MacBook Pro 14" M5 Max 18코어 CPU 32코어 GPU 스페이스 블랙 36GB 2TB
+                    - generic [ref=e900]:
+                      - generic [ref=e901]: ★
+                      - generic [ref=e902]: "4.9"
+                      - generic [ref=e903]: (734)
+                    - generic [ref=e904]:
+                      - generic [ref=e905]: 5,990,000
+                      - generic [ref=e906]: 4,890,000원
+              - link [ref=e907] [cursor=pointer]:
+                - /url: /store/product/3000003005
+                - article [ref=e908]:
+                  - generic [ref=e909]:
+                    - img "Apple MacBook Pro 16\" M5 Max 18코어 CPU 40코어 GPU 스페이스 블랙 48GB 2TB" [ref=e910]
+                    - generic [ref=e911]: PREMIUM
+                    - generic [ref=e912]: "-18%"
+                    - generic [ref=e913]: 공동구매 진행중!
+                    - button "찜하기" [ref=e914]:
+                      - img [ref=e915]
+                  - generic [ref=e917]:
+                    - paragraph [ref=e918]: Apple
+                    - paragraph [ref=e919]: Apple MacBook Pro 16" M5 Max 18코어 CPU 40코어 GPU 스페이스 블랙 48GB 2TB
+                    - generic [ref=e920]:
+                      - generic [ref=e921]: ★
+                      - generic [ref=e922]: "4.9"
+                      - generic [ref=e923]: (623)
+                    - generic [ref=e924]:
+                      - generic [ref=e925]: 9,790,000
+                      - generic [ref=e926]: 7,990,000원
+              - link [ref=e927] [cursor=pointer]:
+                - /url: /store/product/3000003006
+                - article [ref=e928]:
+                  - generic [ref=e929]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 스페이스 블랙 24GB 1TB" [ref=e930]
+                    - generic [ref=e931]: BEST
+                    - generic [ref=e932]: "-20%"
+                    - generic [ref=e933]: 공동구매 진행중!
+                    - button "찜하기" [ref=e934]:
+                      - img [ref=e935]
+                  - generic [ref=e937]:
+                    - paragraph [ref=e938]: Apple
+                    - paragraph [ref=e939]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 스페이스 블랙 24GB 1TB
+                    - generic [ref=e940]:
+                      - generic [ref=e941]: ★
+                      - generic [ref=e942]: "4.8"
+                      - generic [ref=e943]: (2,134)
+                    - generic [ref=e944]:
+                      - generic [ref=e945]: 2,990,000
+                      - generic [ref=e946]: 2,390,000원
+              - link [ref=e947] [cursor=pointer]:
+                - /url: /store/product/3000003009
+                - article [ref=e948]:
+                  - generic [ref=e949]:
+                    - img "Apple MacBook Pro 16\" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB" [ref=e950]
+                    - generic [ref=e951]: PREMIUM
+                    - generic [ref=e952]: "-18%"
+                    - generic [ref=e953]: 공동구매 진행중!
+                    - button "찜하기" [ref=e954]:
+                      - img [ref=e955]
+                  - generic [ref=e957]:
+                    - paragraph [ref=e958]: Apple
+                    - paragraph [ref=e959]: Apple MacBook Pro 16" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB
+                    - generic [ref=e960]:
+                      - generic [ref=e961]: ★
+                      - generic [ref=e962]: "4.9"
+                      - generic [ref=e963]: (389)
+                    - generic [ref=e964]:
+                      - generic [ref=e965]: 8,190,000
+                      - generic [ref=e966]: 6,690,000원
+              - link [ref=e967] [cursor=pointer]:
+                - /url: /store/product/3000003010
+                - article [ref=e968]:
+                  - generic [ref=e969]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 실버 24GB 1TB" [ref=e970]
+                    - generic [ref=e971]: BEST
+                    - generic [ref=e972]: "-20%"
+                    - generic [ref=e973]: 공동구매 진행중!
+                    - button "찜하기" [ref=e974]:
+                      - img [ref=e975]
+                  - generic [ref=e977]:
+                    - paragraph [ref=e978]: Apple
+                    - paragraph [ref=e979]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 실버 24GB 1TB
+                    - generic [ref=e980]:
+                      - generic [ref=e981]: ★
+                      - generic [ref=e982]: "4.9"
+                      - generic [ref=e983]: (867)
+                    - generic [ref=e984]:
+                      - generic [ref=e985]: 3,990,000
+                      - generic [ref=e986]: 3,190,000원
+              - link [ref=e987] [cursor=pointer]:
+                - /url: /store/product/3000003011
+                - article [ref=e988]:
+                  - generic [ref=e989]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 18코어 CPU 24코어 GPU 스페이스 블랙 48GB 1TB" [ref=e990]
+                    - generic [ref=e991]: PREMIUM
+                    - generic [ref=e992]: "-20%"
+                    - generic [ref=e993]: 공동구매 진행중!
+                    - button "찜하기" [ref=e994]:
+                      - img [ref=e995]
+                  - generic [ref=e997]:
+                    - paragraph [ref=e998]: Apple
+                    - paragraph [ref=e999]: Apple MacBook Pro 14" M5 Pro 18코어 CPU 24코어 GPU 스페이스 블랙 48GB 1TB
+                    - generic [ref=e1000]:
+                      - generic [ref=e1001]: ★
+                      - generic [ref=e1002]: "4.9"
+                      - generic [ref=e1003]: (456)
+                    - generic [ref=e1004]:
+                      - generic [ref=e1005]: 5,490,000
+                      - generic [ref=e1006]: 4,390,000원
+              - link [ref=e1007] [cursor=pointer]:
+                - /url: /store/product/3000003012
+                - article [ref=e1008]:
+                  - generic [ref=e1009]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 48GB 1TB" [ref=e1010]
+                    - generic [ref=e1011]: PREMIUM
+                    - generic [ref=e1012]: "-19%"
+                    - generic [ref=e1013]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1014]:
+                      - img [ref=e1015]
+                  - generic [ref=e1017]:
+                    - paragraph [ref=e1018]: Apple
+                    - paragraph [ref=e1019]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 스페이스 블랙 48GB 1TB
+                    - generic [ref=e1020]:
+                      - generic [ref=e1021]: ★
+                      - generic [ref=e1022]: "4.9"
+                      - generic [ref=e1023]: (534)
+                    - generic [ref=e1024]:
+                      - generic [ref=e1025]: 5,790,000
+                      - generic [ref=e1026]: 4,690,000원
+              - link [ref=e1027] [cursor=pointer]:
+                - /url: /store/product/3000003013
+                - article [ref=e1028]:
+                  - generic [ref=e1029]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 실버 24GB 1TB" [ref=e1030]
+                    - generic [ref=e1031]: BEST
+                    - generic [ref=e1032]: "-20%"
+                    - generic [ref=e1033]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1034]:
+                      - img [ref=e1035]
+                  - generic [ref=e1037]:
+                    - paragraph [ref=e1038]: Apple
+                    - paragraph [ref=e1039]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 실버 24GB 1TB
+                    - generic [ref=e1040]:
+                      - generic [ref=e1041]: ★
+                      - generic [ref=e1042]: "4.8"
+                      - generic [ref=e1043]: (1,789)
+                    - generic [ref=e1044]:
+                      - generic [ref=e1045]: 2,990,000
+                      - generic [ref=e1046]: 2,390,000원
+              - link [ref=e1047] [cursor=pointer]:
+                - /url: /store/product/3000003015
+                - article [ref=e1048]:
+                  - generic [ref=e1049]:
+                    - img "Apple MacBook Pro 16\" M5 Max 18코어 CPU 40코어 GPU 실버 48GB 2TB" [ref=e1050]
+                    - generic [ref=e1051]: PREMIUM
+                    - generic [ref=e1052]: "-18%"
+                    - generic [ref=e1053]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1054]:
+                      - img [ref=e1055]
+                  - generic [ref=e1057]:
+                    - paragraph [ref=e1058]: Apple
+                    - paragraph [ref=e1059]: Apple MacBook Pro 16" M5 Max 18코어 CPU 40코어 GPU 실버 48GB 2TB
+                    - generic [ref=e1060]:
+                      - generic [ref=e1061]: ★
+                      - generic [ref=e1062]: "4.9"
+                      - generic [ref=e1063]: (201)
+                    - generic [ref=e1064]:
+                      - generic [ref=e1065]: 9,790,000
+                      - generic [ref=e1066]: 7,990,000원
+              - link [ref=e1067] [cursor=pointer]:
+                - /url: /store/product/3000003016
+                - article [ref=e1068]:
+                  - generic [ref=e1069]:
+                    - img "Apple MacBook Pro 14\" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB" [ref=e1070]
+                    - generic [ref=e1071]: PREMIUM
+                    - generic [ref=e1072]: "-18%"
+                    - generic [ref=e1073]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1074]:
+                      - img [ref=e1075]
+                  - generic [ref=e1077]:
+                    - paragraph [ref=e1078]: Apple
+                    - paragraph [ref=e1079]: Apple MacBook Pro 14" M5 Max 18코어 CPU 32코어 GPU 실버 36GB 2TB
+                    - generic [ref=e1080]:
+                      - generic [ref=e1081]: ★
+                      - generic [ref=e1082]: "4.9"
+                      - generic [ref=e1083]: (334)
+                    - generic [ref=e1084]:
+                      - generic [ref=e1085]: 5,990,000
+                      - generic [ref=e1086]: 4,890,000원
+              - link [ref=e1087] [cursor=pointer]:
+                - /url: /store/product/3000003018
+                - article [ref=e1088]:
+                  - generic [ref=e1089]:
+                    - img "Apple MacBook Pro 16\" M5 Max Nano-texture 18코어 CPU 40코어 GPU 스페이스 블랙 64GB 4TB" [ref=e1090]
+                    - generic [ref=e1091]: PREMIUM
+                    - generic [ref=e1092]: "-17%"
+                    - generic [ref=e1093]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1094]:
+                      - img [ref=e1095]
+                  - generic [ref=e1097]:
+                    - paragraph [ref=e1098]: Apple
+                    - paragraph [ref=e1099]: Apple MacBook Pro 16" M5 Max Nano-texture 18코어 CPU 40코어 GPU 스페이스 블랙 64GB 4TB
+                    - generic [ref=e1100]:
+                      - generic [ref=e1101]: ★
+                      - generic [ref=e1102]: "5.0"
+                      - generic [ref=e1103]: (67)
+                    - generic [ref=e1104]:
+                      - generic [ref=e1105]: 12,990,000
+                      - generic [ref=e1106]: 10,790,000원
+              - link [ref=e1107] [cursor=pointer]:
+                - /url: /store/product/3000003019
+                - article [ref=e1108]:
+                  - generic [ref=e1109]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 2TB" [ref=e1110]
+                    - generic [ref=e1111]: PREMIUM
+                    - generic [ref=e1112]: "-21%"
+                    - generic [ref=e1113]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1114]:
+                      - img [ref=e1115]
+                  - generic [ref=e1117]:
+                    - paragraph [ref=e1118]: Apple
+                    - paragraph [ref=e1119]: Apple MacBook Pro 14" M5 Pro 15코어 CPU 16코어 GPU 스페이스 블랙 24GB 2TB
+                    - generic [ref=e1120]:
+                      - generic [ref=e1121]: ★
+                      - generic [ref=e1122]: "4.9"
+                      - generic [ref=e1123]: (567)
+                    - generic [ref=e1124]:
+                      - generic [ref=e1125]: 4,390,000
+                      - generic [ref=e1126]: 3,490,000원
+              - link [ref=e1127] [cursor=pointer]:
+                - /url: /store/product/3000003020
+                - article [ref=e1128]:
+                  - generic [ref=e1129]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 실버 48GB 1TB" [ref=e1130]
+                    - generic [ref=e1131]: PREMIUM
+                    - generic [ref=e1132]: "-19%"
+                    - generic [ref=e1133]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1134]:
+                      - img [ref=e1135]
+                  - generic [ref=e1137]:
+                    - paragraph [ref=e1138]: Apple
+                    - paragraph [ref=e1139]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 실버 48GB 1TB
+                    - generic [ref=e1140]:
+                      - generic [ref=e1141]: ★
+                      - generic [ref=e1142]: "4.9"
+                      - generic [ref=e1143]: (423)
+                    - generic [ref=e1144]:
+                      - generic [ref=e1145]: 5,790,000
+                      - generic [ref=e1146]: 4,690,000원
+              - link [ref=e1147] [cursor=pointer]:
+                - /url: /store/product/3000003022
+                - article [ref=e1148]:
+                  - generic [ref=e1149]:
+                    - img "Apple MacBook Pro 14\" M5 10코어 CPU 10코어 GPU 스페이스 블랙 32GB 1TB" [ref=e1150]
+                    - generic [ref=e1151]: BEST
+                    - generic [ref=e1152]: "-20%"
+                    - generic [ref=e1153]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1154]:
+                      - img [ref=e1155]
+                  - generic [ref=e1157]:
+                    - paragraph [ref=e1158]: Apple
+                    - paragraph [ref=e1159]: Apple MacBook Pro 14" M5 10코어 CPU 10코어 GPU 스페이스 블랙 32GB 1TB
+                    - generic [ref=e1160]:
+                      - generic [ref=e1161]: ★
+                      - generic [ref=e1162]: "4.8"
+                      - generic [ref=e1163]: (934)
+                    - generic [ref=e1164]:
+                      - generic [ref=e1165]: 3,490,000
+                      - generic [ref=e1166]: 2,790,000원
+              - link [ref=e1167] [cursor=pointer]:
+                - /url: /store/product/3000003023
+                - article [ref=e1168]:
+                  - generic [ref=e1169]:
+                    - img "Apple MacBook Pro 16\" M5 Pro 18코어 CPU 20코어 GPU 실버 24GB 1TB" [ref=e1170]
+                    - generic [ref=e1171]: BEST
+                    - generic [ref=e1172]: "-21%"
+                    - generic [ref=e1173]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1174]:
+                      - img [ref=e1175]
+                  - generic [ref=e1177]:
+                    - paragraph [ref=e1178]: Apple
+                    - paragraph [ref=e1179]: Apple MacBook Pro 16" M5 Pro 18코어 CPU 20코어 GPU 실버 24GB 1TB
+                    - generic [ref=e1180]:
+                      - generic [ref=e1181]: ★
+                      - generic [ref=e1182]: "4.9"
+                      - generic [ref=e1183]: (678)
+                    - generic [ref=e1184]:
+                      - generic [ref=e1185]: 4,790,000
+                      - generic [ref=e1186]: 3,790,000원
+              - link [ref=e1187] [cursor=pointer]:
+                - /url: /store/product/3000003025
+                - article [ref=e1188]:
+                  - generic [ref=e1189]:
+                    - img "Apple MacBook Pro 14\" M5 Pro 18코어 CPU 24코어 GPU 스페이스 블랙 48GB 2TB Nano-texture" [ref=e1190]
+                    - generic [ref=e1191]: PREMIUM
+                    - generic [ref=e1192]: "-16%"
+                    - generic [ref=e1193]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1194]:
+                      - img [ref=e1195]
+                  - generic [ref=e1197]:
+                    - paragraph [ref=e1198]: Apple
+                    - paragraph [ref=e1199]: Apple MacBook Pro 14" M5 Pro 18코어 CPU 24코어 GPU 스페이스 블랙 48GB 2TB Nano-texture
+                    - generic [ref=e1200]:
+                      - generic [ref=e1201]: ★
+                      - generic [ref=e1202]: "4.9"
+                      - generic [ref=e1203]: (123)
+                    - generic [ref=e1204]:
+                      - generic [ref=e1205]: 6,790,000
+                      - generic [ref=e1206]: 5,690,000원
+          - generic [ref=e1207]:
+            - generic [ref=e1208]:
+              - generic [ref=e1209]:
+                - generic [ref=e1210]:
+                  - generic [ref=e1211]: 🖥️
+                  - heading "Mac Studio" [level=2] [ref=e1212]
+                  - generic [ref=e1213]: 15개
+                - paragraph [ref=e1214]: M4 Max · M3 Ultra 칩 탑재 크리에이터용 데스크탑
+              - link "전체보기" [ref=e1215] [cursor=pointer]:
+                - /url: /store/recommendation/mac_studio
+                - text: 전체보기
+                - img [ref=e1216]
+            - generic [ref=e1219]: Mac Studio (15)
+            - generic [ref=e1220]:
+              - link [ref=e1221] [cursor=pointer]:
+                - /url: /store/product/3000002003
+                - article [ref=e1222]:
+                  - generic [ref=e1223]:
+                    - img "Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 512GB" [ref=e1224]
+                    - generic [ref=e1225]: PREMIUM
+                    - generic [ref=e1226]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1227]:
+                      - img [ref=e1228]
+                  - generic [ref=e1230]:
+                    - paragraph [ref=e1231]: Apple
+                    - paragraph [ref=e1232]: Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 512GB
+                    - generic [ref=e1233]:
+                      - generic [ref=e1234]: ★
+                      - generic [ref=e1235]: "4.9"
+                      - generic [ref=e1236]: (876)
+                    - generic [ref=e1237]:
+                      - generic [ref=e1238]: 3,590,000
+                      - generic [ref=e1239]: 3,290,000원
+              - link [ref=e1240] [cursor=pointer]:
+                - /url: /store/product/3000002007
+                - article [ref=e1241]:
+                  - generic [ref=e1242]:
+                    - img "Apple Mac Studio M3 Ultra 28코어 CPU 60코어 GPU 96GB 1TB" [ref=e1243]
+                    - generic [ref=e1244]: PREMIUM
+                    - generic [ref=e1245]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1246]:
+                      - img [ref=e1247]
+                  - generic [ref=e1249]:
+                    - paragraph [ref=e1250]: Apple
+                    - paragraph [ref=e1251]: Apple Mac Studio M3 Ultra 28코어 CPU 60코어 GPU 96GB 1TB
+                    - generic [ref=e1252]:
+                      - generic [ref=e1253]: ★
+                      - generic [ref=e1254]: "4.9"
+                      - generic [ref=e1255]: (412)
+                    - generic [ref=e1256]:
+                      - generic [ref=e1257]: 7,190,000
+                      - generic [ref=e1258]: 6,590,000원
+              - link [ref=e1259] [cursor=pointer]:
+                - /url: /store/product/3000002014
+                - article [ref=e1260]:
+                  - generic [ref=e1261]:
+                    - img "Apple Mac Studio M4 Max 16코어 CPU 40코어 GPU 64GB 1TB" [ref=e1262]
+                    - generic [ref=e1263]: PREMIUM
+                    - generic [ref=e1264]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1265]:
+                      - img [ref=e1266]
+                  - generic [ref=e1268]:
+                    - paragraph [ref=e1269]: Apple
+                    - paragraph [ref=e1270]: Apple Mac Studio M4 Max 16코어 CPU 40코어 GPU 64GB 1TB
+                    - generic [ref=e1271]:
+                      - generic [ref=e1272]: ★
+                      - generic [ref=e1273]: "4.9"
+                      - generic [ref=e1274]: (289)
+                    - generic [ref=e1275]:
+                      - generic [ref=e1276]: 4,990,000
+                      - generic [ref=e1277]: 4,690,000원
+              - link [ref=e1278] [cursor=pointer]:
+                - /url: /store/product/3000002021
+                - article [ref=e1279]:
+                  - generic [ref=e1280]:
+                    - img "Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 2TB" [ref=e1281]
+                    - generic [ref=e1282]: PREMIUM
+                    - generic [ref=e1283]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1284]:
+                      - img [ref=e1285]
+                  - generic [ref=e1287]:
+                    - paragraph [ref=e1288]: Apple
+                    - paragraph [ref=e1289]: Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 2TB
+                    - generic [ref=e1290]:
+                      - generic [ref=e1291]: ★
+                      - generic [ref=e1292]: "4.9"
+                      - generic [ref=e1293]: (312)
+                    - generic [ref=e1294]:
+                      - generic [ref=e1295]: 4,590,000
+                      - generic [ref=e1296]: 4,290,000원
+              - link [ref=e1297] [cursor=pointer]:
+                - /url: /store/product/3000002024
+                - article [ref=e1298]:
+                  - generic [ref=e1299]:
+                    - img "Apple Mac Studio M3 Ultra 28코어 CPU 80코어 GPU 192GB 2TB" [ref=e1300]
+                    - generic [ref=e1301]: PREMIUM
+                    - generic [ref=e1302]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1303]:
+                      - img [ref=e1304]
+                  - generic [ref=e1306]:
+                    - paragraph [ref=e1307]: Apple
+                    - paragraph [ref=e1308]: Apple Mac Studio M3 Ultra 28코어 CPU 80코어 GPU 192GB 2TB
+                    - generic [ref=e1309]:
+                      - generic [ref=e1310]: ★
+                      - generic [ref=e1311]: "5.0"
+                      - generic [ref=e1312]: (89)
+                    - generic [ref=e1313]:
+                      - generic [ref=e1314]: 9,990,000
+                      - generic [ref=e1315]: 9,490,000원
+              - link [ref=e1316] [cursor=pointer]:
+                - /url: /store/product/3000001019
+                - article [ref=e1317]:
+                  - generic [ref=e1318]:
+                    - img "Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 512GB" [ref=e1319]
+                    - generic [ref=e1320]: PREMIUM
+                    - generic [ref=e1321]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1322]:
+                      - img [ref=e1323]
+                  - generic [ref=e1325]:
+                    - paragraph [ref=e1326]: Apple
+                    - paragraph [ref=e1327]: Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 512GB
+                    - generic [ref=e1328]:
+                      - generic [ref=e1329]: ★
+                      - generic [ref=e1330]: "4.9"
+                      - generic [ref=e1331]: (412)
+                    - generic [ref=e1332]:
+                      - generic [ref=e1333]: 3,590,000
+                      - generic [ref=e1334]: 3,290,000원
+              - link [ref=e1335] [cursor=pointer]:
+                - /url: /store/product/3000001020
+                - article [ref=e1336]:
+                  - generic [ref=e1337]:
+                    - img "Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 1TB" [ref=e1338]
+                    - generic [ref=e1339]: PREMIUM
+                    - generic [ref=e1340]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1341]:
+                      - img [ref=e1342]
+                  - generic [ref=e1344]:
+                    - paragraph [ref=e1345]: Apple
+                    - paragraph [ref=e1346]: Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 1TB
+                    - generic [ref=e1347]:
+                      - generic [ref=e1348]: ★
+                      - generic [ref=e1349]: "4.9"
+                      - generic [ref=e1350]: (378)
+                    - generic [ref=e1351]:
+                      - generic [ref=e1352]: 3,990,000
+                      - generic [ref=e1353]: 3,690,000원
+              - link [ref=e1354] [cursor=pointer]:
+                - /url: /store/product/3000001021
+                - article [ref=e1355]:
+                  - generic [ref=e1356]:
+                    - img "Apple Mac Studio M4 Max 16코어 CPU 40코어 GPU 64GB 1TB" [ref=e1357]
+                    - generic [ref=e1358]: PREMIUM
+                    - generic [ref=e1359]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1360]:
+                      - img [ref=e1361]
+                  - generic [ref=e1363]:
+                    - paragraph [ref=e1364]: Apple
+                    - paragraph [ref=e1365]: Apple Mac Studio M4 Max 16코어 CPU 40코어 GPU 64GB 1TB
+                    - generic [ref=e1366]:
+                      - generic [ref=e1367]: ★
+                      - generic [ref=e1368]: "4.9"
+                      - generic [ref=e1369]: (245)
+                    - generic [ref=e1370]:
+                      - generic [ref=e1371]: 4,990,000
+                      - generic [ref=e1372]: 4,690,000원
+              - link [ref=e1373] [cursor=pointer]:
+                - /url: /store/product/3000001022
+                - article [ref=e1374]:
+                  - generic [ref=e1375]:
+                    - img "Apple Mac Studio M3 Ultra 28코어 CPU 60코어 GPU 96GB 1TB" [ref=e1376]
+                    - generic [ref=e1377]: PREMIUM
+                    - generic [ref=e1378]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1379]:
+                      - img [ref=e1380]
+                  - generic [ref=e1382]:
+                    - paragraph [ref=e1383]: Apple
+                    - paragraph [ref=e1384]: Apple Mac Studio M3 Ultra 28코어 CPU 60코어 GPU 96GB 1TB
+                    - generic [ref=e1385]:
+                      - generic [ref=e1386]: ★
+                      - generic [ref=e1387]: "4.9"
+                      - generic [ref=e1388]: (198)
+                    - generic [ref=e1389]:
+                      - generic [ref=e1390]: 7,190,000
+                      - generic [ref=e1391]: 6,590,000원
+              - link [ref=e1392] [cursor=pointer]:
+                - /url: /store/product/3000001023
+                - article [ref=e1393]:
+                  - generic [ref=e1394]:
+                    - img "Apple Mac Studio M3 Ultra 28코어 CPU 80코어 GPU 192GB 4TB" [ref=e1395]
+                    - generic [ref=e1396]: PREMIUM
+                    - generic [ref=e1397]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1398]:
+                      - img [ref=e1399]
+                  - generic [ref=e1401]:
+                    - paragraph [ref=e1402]: Apple
+                    - paragraph [ref=e1403]: Apple Mac Studio M3 Ultra 28코어 CPU 80코어 GPU 192GB 4TB
+                    - generic [ref=e1404]:
+                      - generic [ref=e1405]: ★
+                      - generic [ref=e1406]: "5.0"
+                      - generic [ref=e1407]: (78)
+                    - generic [ref=e1408]:
+                      - generic [ref=e1409]: 12,990,000
+                      - generic [ref=e1410]: 11,990,000원
+              - link [ref=e1411] [cursor=pointer]:
+                - /url: /store/product/3000003003
+                - article [ref=e1412]:
+                  - generic [ref=e1413]:
+                    - img "Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 512GB" [ref=e1414]
+                    - generic [ref=e1415]: PREMIUM
+                    - generic [ref=e1416]: "-19%"
+                    - generic [ref=e1417]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1418]:
+                      - img [ref=e1419]
+                  - generic [ref=e1421]:
+                    - paragraph [ref=e1422]: Apple
+                    - paragraph [ref=e1423]: Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 512GB
+                    - generic [ref=e1424]:
+                      - generic [ref=e1425]: ★
+                      - generic [ref=e1426]: "4.9"
+                      - generic [ref=e1427]: (876)
+                    - generic [ref=e1428]:
+                      - generic [ref=e1429]: 3,590,000
+                      - generic [ref=e1430]: 2,890,000원
+              - link [ref=e1431] [cursor=pointer]:
+                - /url: /store/product/3000003007
+                - article [ref=e1432]:
+                  - generic [ref=e1433]:
+                    - img "Apple Mac Studio M3 Ultra 28코어 CPU 60코어 GPU 96GB 1TB" [ref=e1434]
+                    - generic [ref=e1435]: PREMIUM
+                    - generic [ref=e1436]: "-18%"
+                    - generic [ref=e1437]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1438]:
+                      - img [ref=e1439]
+                  - generic [ref=e1441]:
+                    - paragraph [ref=e1442]: Apple
+                    - paragraph [ref=e1443]: Apple Mac Studio M3 Ultra 28코어 CPU 60코어 GPU 96GB 1TB
+                    - generic [ref=e1444]:
+                      - generic [ref=e1445]: ★
+                      - generic [ref=e1446]: "4.9"
+                      - generic [ref=e1447]: (412)
+                    - generic [ref=e1448]:
+                      - generic [ref=e1449]: 7,190,000
+                      - generic [ref=e1450]: 5,890,000원
+              - link [ref=e1451] [cursor=pointer]:
+                - /url: /store/product/3000003014
+                - article [ref=e1452]:
+                  - generic [ref=e1453]:
+                    - img "Apple Mac Studio M4 Max 16코어 CPU 40코어 GPU 64GB 1TB" [ref=e1454]
+                    - generic [ref=e1455]: PREMIUM
+                    - generic [ref=e1456]: "-18%"
+                    - generic [ref=e1457]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1458]:
+                      - img [ref=e1459]
+                  - generic [ref=e1461]:
+                    - paragraph [ref=e1462]: Apple
+                    - paragraph [ref=e1463]: Apple Mac Studio M4 Max 16코어 CPU 40코어 GPU 64GB 1TB
+                    - generic [ref=e1464]:
+                      - generic [ref=e1465]: ★
+                      - generic [ref=e1466]: "4.9"
+                      - generic [ref=e1467]: (289)
+                    - generic [ref=e1468]:
+                      - generic [ref=e1469]: 4,990,000
+                      - generic [ref=e1470]: 4,090,000원
+              - link [ref=e1471] [cursor=pointer]:
+                - /url: /store/product/3000003021
+                - article [ref=e1472]:
+                  - generic [ref=e1473]:
+                    - img "Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 2TB" [ref=e1474]
+                    - generic [ref=e1475]: PREMIUM
+                    - generic [ref=e1476]: "-17%"
+                    - generic [ref=e1477]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1478]:
+                      - img [ref=e1479]
+                  - generic [ref=e1481]:
+                    - paragraph [ref=e1482]: Apple
+                    - paragraph [ref=e1483]: Apple Mac Studio M4 Max 14코어 CPU 32코어 GPU 36GB 2TB
+                    - generic [ref=e1484]:
+                      - generic [ref=e1485]: ★
+                      - generic [ref=e1486]: "4.9"
+                      - generic [ref=e1487]: (312)
+                    - generic [ref=e1488]:
+                      - generic [ref=e1489]: 4,590,000
+                      - generic [ref=e1490]: 3,790,000원
+              - link [ref=e1491] [cursor=pointer]:
+                - /url: /store/product/3000003024
+                - article [ref=e1492]:
+                  - generic [ref=e1493]:
+                    - img "Apple Mac Studio M3 Ultra 28코어 CPU 80코어 GPU 192GB 2TB" [ref=e1494]
+                    - generic [ref=e1495]: PREMIUM
+                    - generic [ref=e1496]: "-15%"
+                    - generic [ref=e1497]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1498]:
+                      - img [ref=e1499]
+                  - generic [ref=e1501]:
+                    - paragraph [ref=e1502]: Apple
+                    - paragraph [ref=e1503]: Apple Mac Studio M3 Ultra 28코어 CPU 80코어 GPU 192GB 2TB
+                    - generic [ref=e1504]:
+                      - generic [ref=e1505]: ★
+                      - generic [ref=e1506]: "5.0"
+                      - generic [ref=e1507]: (89)
+                    - generic [ref=e1508]:
+                      - generic [ref=e1509]: 9,990,000
+                      - generic [ref=e1510]: 8,490,000원
+          - generic [ref=e1511]:
+            - generic [ref=e1512]:
+              - generic [ref=e1513]:
+                - generic [ref=e1514]:
+                  - generic [ref=e1515]: ⚙️
+                  - heading "Mac Pro" [level=2] [ref=e1516]
+                  - generic [ref=e1517]: 6개
+                - paragraph [ref=e1518]: 전문가·서버급 최상위 데스크탑 워크스테이션
+              - link "전체보기" [ref=e1519] [cursor=pointer]:
+                - /url: /store/recommendation/mac_pro
+                - text: 전체보기
+                - img [ref=e1520]
+            - generic [ref=e1523]: Mac Pro (6)
+            - generic [ref=e1524]:
+              - link [ref=e1525] [cursor=pointer]:
+                - /url: /store/product/3000002008
+                - article [ref=e1526]:
+                  - generic [ref=e1527]:
+                    - img "Apple Mac Pro 타워형 최대 기본 구성 192GB 1TB SSD" [ref=e1528]
+                    - generic [ref=e1529]: PREMIUM
+                    - generic [ref=e1530]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1531]:
+                      - img [ref=e1532]
+                  - generic [ref=e1534]:
+                    - paragraph [ref=e1535]: Apple
+                    - paragraph [ref=e1536]: Apple Mac Pro 타워형 최대 기본 구성 192GB 1TB SSD
+                    - generic [ref=e1537]:
+                      - generic [ref=e1538]: ★
+                      - generic [ref=e1539]: "4.9"
+                      - generic [ref=e1540]: (234)
+                    - generic [ref=e1541]:
+                      - generic [ref=e1542]: 11,490,000
+                      - generic [ref=e1543]: 10,490,000원
+              - link [ref=e1544] [cursor=pointer]:
+                - /url: /store/product/3000002017
+                - article [ref=e1545]:
+                  - generic [ref=e1546]:
+                    - img "Apple Mac Pro 랙형 최대 기본 구성 192GB 1TB SSD" [ref=e1547]
+                    - generic [ref=e1548]: PREMIUM
+                    - generic [ref=e1549]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1550]:
+                      - img [ref=e1551]
+                  - generic [ref=e1553]:
+                    - paragraph [ref=e1554]: Apple
+                    - paragraph [ref=e1555]: Apple Mac Pro 랙형 최대 기본 구성 192GB 1TB SSD
+                    - generic [ref=e1556]:
+                      - generic [ref=e1557]: ★
+                      - generic [ref=e1558]: "5.0"
+                      - generic [ref=e1559]: (145)
+                    - generic [ref=e1560]:
+                      - generic [ref=e1561]: 12,190,000
+                      - generic [ref=e1562]: 11,190,000원
+              - link [ref=e1563] [cursor=pointer]:
+                - /url: /store/product/3000001024
+                - article [ref=e1564]:
+                  - generic [ref=e1565]:
+                    - img "Apple Mac Pro 타워형 최대 기본 구성 192GB 1TB SSD" [ref=e1566]
+                    - generic [ref=e1567]: PREMIUM
+                    - generic [ref=e1568]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1569]:
+                      - img [ref=e1570]
+                  - generic [ref=e1572]:
+                    - paragraph [ref=e1573]: Apple
+                    - paragraph [ref=e1574]: Apple Mac Pro 타워형 최대 기본 구성 192GB 1TB SSD
+                    - generic [ref=e1575]:
+                      - generic [ref=e1576]: ★
+                      - generic [ref=e1577]: "4.9"
+                      - generic [ref=e1578]: (134)
+                    - generic [ref=e1579]:
+                      - generic [ref=e1580]: 11,490,000
+                      - generic [ref=e1581]: 10,490,000원
+              - link [ref=e1582] [cursor=pointer]:
+                - /url: /store/product/3000001025
+                - article [ref=e1583]:
+                  - generic [ref=e1584]:
+                    - img "Apple Mac Pro 랙형 최대 기본 구성 192GB 1TB SSD" [ref=e1585]
+                    - generic [ref=e1586]: PREMIUM
+                    - generic [ref=e1587]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1588]:
+                      - img [ref=e1589]
+                  - generic [ref=e1591]:
+                    - paragraph [ref=e1592]: Apple
+                    - paragraph [ref=e1593]: Apple Mac Pro 랙형 최대 기본 구성 192GB 1TB SSD
+                    - generic [ref=e1594]:
+                      - generic [ref=e1595]: ★
+                      - generic [ref=e1596]: "4.9"
+                      - generic [ref=e1597]: (98)
+                    - generic [ref=e1598]:
+                      - generic [ref=e1599]: 12,190,000
+                      - generic [ref=e1600]: 11,190,000원
+              - link [ref=e1601] [cursor=pointer]:
+                - /url: /store/product/3000003008
+                - article [ref=e1602]:
+                  - generic [ref=e1603]:
+                    - img "Apple Mac Pro 타워형 최대 기본 구성 192GB 1TB SSD" [ref=e1604]
+                    - generic [ref=e1605]: PREMIUM
+                    - generic [ref=e1606]: "-19%"
+                    - generic [ref=e1607]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1608]:
+                      - img [ref=e1609]
+                  - generic [ref=e1611]:
+                    - paragraph [ref=e1612]: Apple
+                    - paragraph [ref=e1613]: Apple Mac Pro 타워형 최대 기본 구성 192GB 1TB SSD
+                    - generic [ref=e1614]:
+                      - generic [ref=e1615]: ★
+                      - generic [ref=e1616]: "4.9"
+                      - generic [ref=e1617]: (234)
+                    - generic [ref=e1618]:
+                      - generic [ref=e1619]: 11,490,000
+                      - generic [ref=e1620]: 9,290,000원
+              - link [ref=e1621] [cursor=pointer]:
+                - /url: /store/product/3000003017
+                - article [ref=e1622]:
+                  - generic [ref=e1623]:
+                    - img "Apple Mac Pro 랙형 최대 기본 구성 192GB 1TB SSD" [ref=e1624]
+                    - generic [ref=e1625]: PREMIUM
+                    - generic [ref=e1626]: "-19%"
+                    - generic [ref=e1627]: 공동구매 진행중!
+                    - button "찜하기" [ref=e1628]:
+                      - img [ref=e1629]
+                  - generic [ref=e1631]:
+                    - paragraph [ref=e1632]: Apple
+                    - paragraph [ref=e1633]: Apple Mac Pro 랙형 최대 기본 구성 192GB 1TB SSD
+                    - generic [ref=e1634]:
+                      - generic [ref=e1635]: ★
+                      - generic [ref=e1636]: "5.0"
+                      - generic [ref=e1637]: (145)
+                    - generic [ref=e1638]:
+                      - generic [ref=e1639]: 12,190,000
+                      - generic [ref=e1640]: 9,890,000원
+    - contentinfo [ref=e1641]:
+      - generic [ref=e1643]:
+        - generic [ref=e1644]:
+          - generic [ref=e1645]:
+            - generic [ref=e1646]:
+              - img [ref=e1647]
+              - paragraph [ref=e1651]: 스마트홈딜
+            - paragraph [ref=e1652]: 뭐 살지 고민될 땐? 검색하지 말고 스마트홈딜 하자!
+          - generic [ref=e1653]:
+            - paragraph [ref=e1654] [cursor=pointer]: 이용약관
+            - paragraph [ref=e1655] [cursor=pointer]: 개인정보처리방침
+            - paragraph [ref=e1656] [cursor=pointer]: 사업자정보
+        - generic [ref=e1657]:
+          - paragraph [ref=e1658]: "(주)스마트홈딜 | 대표: 서영준 | 사업자등록번호: 000-00-00000"
+          - paragraph [ref=e1659]: Copyright 2026 스마트홈딜. All rights reserved.
+  - button "실시간 상담" [ref=e1660]:
+    - img [ref=e1661]
+  - button "Open Next.js Dev Tools" [ref=e1668] [cursor=pointer]:
+    - img [ref=e1669]

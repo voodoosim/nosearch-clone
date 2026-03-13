@@ -1,0 +1,1707 @@
+- generic [active] [ref=e1]:
+  - complementary "Choose country or region" [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - text: お住まいの場所に合ったコンテンツを表示
+        - generic [ref=e5]: させ、
+        - generic [ref=e6]: オンラインで
+        - generic [ref=e7]: 購入
+        - text: できる
+        - generic [ref=e8]: ようにするには、
+        - generic [ref=e9]: 国または
+        - text: 地域を選んでくだ
+        - generic [ref=e10]: さい。
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - button " 日本 " [ref=e13]:
+            - generic [ref=e14]:
+              - generic [ref=e15]: 
+              - generic [ref=e16]: 日本
+            - text: 
+          - text: 
+        - button "続ける" [ref=e17] [cursor=pointer]
+        - button "国または地域の選択を閉じる" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+  - navigation "글로벌" [ref=e23]:
+    - list [ref=e25]:
+      - listitem [ref=e26]:
+        - link "Apple" [ref=e27] [cursor=pointer]:
+          - /url: /kr/
+          - generic:
+            - img
+          - generic: Apple
+      - listitem [ref=e28]:
+        - generic [ref=e30]:
+          - list [ref=e32]:
+            - listitem [ref=e33]:
+              - link "스토어" [ref=e34] [cursor=pointer]:
+                - /url: /kr/shop/goto/store
+                - generic [ref=e35]:
+                  - generic:
+                    - img
+                  - generic: 스토어
+            - listitem:
+              - button "스토어 메뉴":
+                - generic:
+                  - img
+          - list [ref=e37]:
+            - listitem [ref=e38]:
+              - link "Mac" [ref=e39] [cursor=pointer]:
+                - /url: /kr/mac/
+                - generic [ref=e40]:
+                  - generic:
+                    - img
+                  - generic: Mac
+            - listitem:
+              - button "Mac 메뉴":
+                - generic:
+                  - img
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "iPad" [ref=e44] [cursor=pointer]:
+                - /url: /kr/ipad/
+                - generic [ref=e45]:
+                  - generic:
+                    - img
+                  - generic: iPad
+            - listitem:
+              - button "iPad 메뉴":
+                - generic:
+                  - img
+          - list [ref=e47]:
+            - listitem [ref=e48]:
+              - link "iPhone" [ref=e49] [cursor=pointer]:
+                - /url: /kr/iphone/
+                - generic [ref=e50]:
+                  - generic:
+                    - img
+                  - generic: iPhone
+            - listitem:
+              - button "iPhone 메뉴":
+                - generic:
+                  - img
+          - list [ref=e52]:
+            - listitem [ref=e53]:
+              - link "Watch" [ref=e54] [cursor=pointer]:
+                - /url: /kr/watch/
+                - generic [ref=e55]:
+                  - generic:
+                    - img
+                  - generic: Watch
+            - listitem:
+              - button "Watch 메뉴":
+                - generic:
+                  - img
+          - list [ref=e57]:
+            - listitem [ref=e58]:
+              - link "Vision" [ref=e59] [cursor=pointer]:
+                - /url: /kr/apple-vision-pro/
+                - generic [ref=e60]:
+                  - generic:
+                    - img
+                  - generic: Vision
+            - listitem:
+              - button "Vision menu":
+                - generic:
+                  - img
+          - list [ref=e62]:
+            - listitem [ref=e63]:
+              - link "AirPods" [ref=e64] [cursor=pointer]:
+                - /url: /kr/airpods/
+                - generic [ref=e65]:
+                  - generic:
+                    - img
+                  - generic: AirPods
+            - listitem:
+              - button "AirPods 메뉴":
+                - generic:
+                  - img
+          - list [ref=e67]:
+            - listitem [ref=e68]:
+              - link "TV 및 홈" [ref=e69] [cursor=pointer]:
+                - /url: /kr/tv-home/
+                - generic [ref=e70]:
+                  - generic:
+                    - img
+                  - generic: TV 및 홈
+            - listitem:
+              - button "TV 및 홈 메뉴":
+                - generic:
+                  - img
+          - list [ref=e72]:
+            - listitem [ref=e73]:
+              - link "엔터테인먼트" [ref=e74] [cursor=pointer]:
+                - /url: /kr/entertainment/
+                - generic [ref=e75]:
+                  - generic:
+                    - img
+                  - generic: 엔터테인먼트
+            - listitem:
+              - button "엔터테인먼트 메뉴":
+                - generic:
+                  - img
+          - list [ref=e77]:
+            - listitem [ref=e78]:
+              - link "액세서리" [ref=e79] [cursor=pointer]:
+                - /url: /kr/shop/goto/buy_accessories
+                - generic [ref=e80]:
+                  - generic:
+                    - img
+                  - generic: 액세서리
+            - listitem:
+              - button "액세서리 메뉴":
+                - generic:
+                  - img
+          - list [ref=e82]:
+            - listitem [ref=e83]:
+              - link "지원" [ref=e84] [cursor=pointer]:
+                - /url: https://support.apple.com/ko-kr/?cid=gn-ols-home-hp-tab
+                - generic [ref=e85]:
+                  - generic:
+                    - img
+                  - generic: 고객지원
+            - listitem:
+              - button "지원 메뉴":
+                - generic:
+                  - img
+      - listitem [ref=e86]:
+        - button "apple.com 검색하기" [ref=e87] [cursor=pointer]:
+          - generic:
+            - img
+      - listitem [ref=e88]:
+        - button "쇼핑백" [ref=e90] [cursor=pointer]:
+          - generic:
+            - img
+  - navigation "Local" [ref=e92]:
+    - generic [ref=e95]:
+      - link "Mac Studio" [ref=e97] [cursor=pointer]:
+        - /url: /kr/mac-studio/
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - list:
+            - listitem [ref=e100]:
+              - link "개요" [disabled] [ref=e101]
+            - listitem [ref=e102]:
+              - link "제품 사양" [ref=e103] [cursor=pointer]:
+                - /url: /kr/mac-studio/specs/
+            - listitem [ref=e104]:
+              - link "비교하기" [ref=e105] [cursor=pointer]:
+                - /url: /kr/mac-studio/compare/
+            - listitem [ref=e106]:
+              - link "PC에서 Mac으로 갈아타기" [ref=e107] [cursor=pointer]:
+                - /url: /kr/mac-studio/mac-does-that/
+        - link "구입하기 Mac Studio" [ref=e110] [cursor=pointer]:
+          - /url: /kr/shop/goto/buy_mac/mac_studio
+          - text: 구입하기
+          - generic [ref=e111]: Mac Studio
+  - main [ref=e112]:
+    - paragraph [ref=e117]:
+      - text: 이제 최소 결제 금액 조건 충족 시 제휴 신용카드로 최대 24개월 무이자 할부 결제 가능.
+      - superscript [ref=e118]:
+        - link "Footnote ◊ 기호" [ref=e120] [cursor=pointer]:
+          - /url: "#footnote-24m-2025"
+          - text: ◊
+      - link "할부 결제에 대해 더 알아보기" [ref=e121] [cursor=pointer]:
+        - /url: /kr/shop/browse/financing
+        - generic [ref=e122]:
+          - generic [ref=e123]: 할부 결제에 대해
+          - text: 더 알아보기
+        - generic [ref=e124]: 
+    - generic [ref=e126]:
+      - generic [ref=e131]:
+        - heading "Mac Studio" [level=1] [ref=e132]
+        - paragraph [ref=e133]:
+          - generic [ref=e134]: 더 많은 파워를 당신에게.
+        - img "Mac Studio를 정면에서 바라본 모습" [ref=e136]
+        - generic [ref=e137]:
+          - paragraph [ref=e138]: Apple Intelligence를 위한 탄생.
+          - generic [ref=e139]:
+            - paragraph [ref=e140]: ₩3,290,000부터
+            - text: 
+      - generic [ref=e144]:
+        - heading "막강한 성능의" [level=2] [ref=e145]
+        - heading "M4 Max 또는 M3 Ultra 칩 탑재." [level=2] [ref=e146]
+        - img "Mac Studio의 뒷면" [ref=e148]
+      - generic [ref=e152]:
+        - heading "초능력 대 초초능력. 당신의 선택은?" [level=3] [ref=e153]:
+          - text: 초능력 대 초초능력.
+          - text: 당신의 선택은?
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - img "M4 Max 칩" [ref=e157]:
+              - img "M4 Max 칩" [ref=e160]
+            - list "M4 Max 특징" [ref=e161]:
+              - listitem [ref=e162]: 최대 16코어 CPU
+              - listitem [ref=e163]: 최대 40코어 GPU
+              - listitem [ref=e164]: 최대 128GB 통합 메모리
+              - listitem [ref=e165]: 최대 546GB/s 메모리 대역폭
+              - listitem [ref=e166]: 16코어 Neural Engine
+          - generic [ref=e167]:
+            - img "M3 Ultra 칩" [ref=e169]:
+              - img "M3 Ultra 칩" [ref=e172]
+            - list "M3 Ultra 특징" [ref=e173]:
+              - listitem [ref=e174]: 최대 32코어 CPU
+              - listitem [ref=e175]: 최대 80코어 GPU
+              - listitem [ref=e176]: 최대 256GB 통합 메모리
+              - listitem [ref=e177]: 819GB/s 메모리 대역폭
+              - listitem [ref=e178]: 32코어 Neural Engine
+    - generic [ref=e179]:
+      - generic [ref=e182]:
+        - paragraph [ref=e184]: 가장 앞선 Apple Silicon을 탑재한 궁극의 프로용 데스크탑, Mac Studio. 막대한 CPU 코어 업데이트, 환상적인 그래픽, 더욱 증가한 메모리, 쏜살같이 빠른 연결성을 선사하는 Thunderbolt 5 그리고 차원이 다른 AI 역량까지. 그야말로 괴물급인 Mac Studio는 무엇이든 거뜬히 해낼 수 있도록 설계되었습니다.
+        - button "M4 Max 및 M3 Ultra 심층 탐구 " [ref=e186] [cursor=pointer]
+      - generic [ref=e187]:
+        - generic [ref=e188]:
+          - heading "초능력 대 초초능력. 당신의 선택은?" [level=2] [ref=e189]
+          - paragraph [ref=e190]: M4 Max 또는 M3 Ultra를 탑재한 Mac Studio는 Apple Silicon의 속도와 능력을 최대치로 끌어냅니다. Mac 사상 최대 용량의 통합 메모리와 초고속 SSD 저장 장치를 기반으로, 두 칩 모두 Dynamic Caching 및 하드웨어 가속형 메시 셰이딩을 실행해 그 어떤 전문 워크플로도 빠르게 처리해 주죠. 하드웨어 가속형 레이 트레이싱 덕분에 게임을 즐길 때나 게임 개발 시, 그리고 3D 렌더링에서도 놀랍도록 실감 나는 그래픽을 경험할 수 있습니다. 게다가 더욱 빨라진 Neural Engine이 전체 시스템과 연동하여 온디바이스 AI 작업들을 쌩쌩하게 구동하죠. 어떤 수준의 AI 작업이든 문제없습니다.
+        - generic [ref=e191]:
+          - generic [ref=e192]:
+            - heading "M4 Max" [level=3] [ref=e193]
+            - paragraph [ref=e194]: 경이로운 싱글스레드 및 멀티스레드 성능과 향상된 머신 러닝 가속기를 갖춘 M4 Max는 전문적인 음악 제작과 사진 작업부터 동영상 편집과 코딩에 이르기까지, 당신이 하려는 모든 일을 척척 해낼 수 있도록 세계에서 가장 빠른 CPU 코어를 선사합니다. 더 빠른 통합 메모리, 더욱 강력한 Neural Engine, Apple 사상 가장 앞선 그래픽 아키텍처를 자랑하는 M4 Max는 막대한 GPU 및 AI 성능을 요구하는 작업들도 당신의 창작 속도에 맞춰 거침없이 처리해 주죠.
+            - generic [ref=e195]:
+              - figure [ref=e196]:
+                - generic [ref=e197]:
+                  - generic [ref=e198]: 최대
+                  - generic [ref=e199]: 3.1배
+                  - generic [ref=e200]:
+                    - text: 더 빠른 CPU 성능
+                    - superscript [ref=e201]:
+                      - link "Footnote 2" [ref=e202] [cursor=pointer]:
+                        - /url: "#footnote-2"
+                        - text: "2"
+              - figure [ref=e203]:
+                - generic [ref=e204]:
+                  - generic [ref=e205]: 최대
+                  - generic [ref=e206]: 6.1배
+                  - generic [ref=e207]:
+                    - text: 더 빠른 GPU 성능
+                    - superscript [ref=e208]:
+                      - link "Footnote 3" [ref=e209] [cursor=pointer]:
+                        - /url: "#footnote-3"
+                        - text: "3"
+              - figure [ref=e210]:
+                - generic [ref=e211]:
+                  - generic [ref=e212]: 최대
+                  - generic [ref=e213]: 5배
+                  - generic [ref=e214]:
+                    - text: 더 빠른 머신 러닝 성능
+                    - superscript [ref=e215]:
+                      - link "Footnote 4" [ref=e216] [cursor=pointer]:
+                        - /url: "#footnote-4"
+                        - text: "4"
+          - figure "Adobe Substance 3D Designer, Houdini, Redshift" [ref=e217]:
+            - img "M4 Max Mac Studio에서 Adobe Substance 3D Designer, Houdini 및 Redshift 애플리케이션을 사용해 편집 중인 화면" [ref=e220]
+            - generic [ref=e221]: Adobe Substance 3D Designer, Houdini, Redshift
+        - generic [ref=e222]:
+          - generic [ref=e223]:
+            - heading "M3 Ultra" [level=3] [ref=e224]
+            - paragraph [ref=e225]:
+              - text: Apple이 제작한 칩 사상 가장 강력한 성능을 자랑하는 M3 Ultra는 칩 두 개를 결합해 CPU, GPU, Neural Engine 성능과 메모리 대역폭을 두 배로 높여줍니다. 그래서 방대한 양의 데이터 세트를 처리하는 일부터 3D 장면의 애니메이션과 렌더링을 동시에 진행하는 작업까지, 극한의 워크플로도 거뜬히 해내는 획기적인 성능을 경험할 수 있죠. 게다가 최대 0.5TB에 이르는 통합 메모리 덕분에 LLM(대규모 언어
+              - generic [ref=e226]: 모델)을
+              - text: 전적으로 메모리에서 구동할 수도 있답니다.
+            - generic [ref=e227]:
+              - figure [ref=e228]:
+                - generic [ref=e229]:
+                  - generic [ref=e230]: 최대
+                  - generic [ref=e231]: 3.3배
+                  - generic [ref=e232]:
+                    - text: 더 빠른 CPU 성능
+                    - superscript [ref=e233]:
+                      - link "Footnote 5" [ref=e234] [cursor=pointer]:
+                        - /url: "#footnote-5"
+                        - text: "5"
+              - figure [ref=e235]:
+                - generic [ref=e236]:
+                  - generic [ref=e237]: 최대
+                  - generic [ref=e238]: 6.4배
+                  - generic [ref=e239]:
+                    - text: 더 빠른 GPU 성능
+                    - superscript [ref=e240]:
+                      - link "Footnote 6" [ref=e241] [cursor=pointer]:
+                        - /url: "#footnote-6"
+                        - text: "6"
+              - figure [ref=e242]:
+                - generic [ref=e243]:
+                  - generic [ref=e244]: 최대
+                  - generic [ref=e245]: 9.1배
+                  - generic [ref=e246]:
+                    - text: 더 빠른 머신 러닝 성능
+                    - superscript [ref=e247]:
+                      - link "Footnote 7" [ref=e248] [cursor=pointer]:
+                        - /url: "#footnote-7"
+                        - text: "7"
+          - figure "LM Studio, Apple MLX" [ref=e249]:
+            - img "M3 Ultra Mac Studio에서 LM Studio 및 Apple MLX를 사용해 학습 모델을 검토하는 모습" [ref=e252]
+            - generic [ref=e253]: LM Studio, Apple MLX
+      - generic [ref=e255]:
+        - generic [ref=e259]:
+          - heading "M4 Max" [level=3] [ref=e260]
+          - paragraph [ref=e262]: M4 Max는 프로급 워크로드와 창작 프로젝트에 어마어마한 속도와 성능을 더해줍니다. 덕분에 수백 가지의 가상 악기로 웅장한 영화 음악을 믹싱하고, 더욱 빠른 입자 효과와 시뮬레이션으로 시각 효과를 쏜살같이 처리하고, 이미지 업스케일링, 동영상 자막 생성 같은 AI 작업들도 초스피드로 해치울 수 있죠.
+        - generic [ref=e264]:
+          - generic [ref=e268]:
+            - img [ref=e270]
+            - button "3D 그래픽 애니메이션 동영상 재생" [ref=e273] [cursor=pointer]:
+              - img [ref=e274]
+              - img [ref=e278]
+          - list "M4 Max 역량" [ref=e283]:
+            - listitem [ref=e284]:
+              - generic [ref=e285]:
+                - text: 최대 18개의 8K ProRes 동영상 스트림 재생
+                - superscript [ref=e286]:
+                  - link "Footnote 8" [ref=e287] [cursor=pointer]:
+                    - /url: "#footnote-8"
+                    - text: "8"
+            - listitem [ref=e288]:
+              - generic [ref=e289]: 디스플레이 최대 5대 지원
+            - listitem [ref=e290]:
+              - generic [ref=e291]: H.264, HEVC, ProRes 인코딩 및 디코딩
+        - group "M4 Max 성능 수치 그래프" [ref=e297]:
+          - generic [ref=e299]:
+            - tablist [ref=e300]:
+              - tab "사진 편집"
+              - text: /
+              - tab "과학 분석" [ref=e301] [cursor=pointer]
+              - text: /
+              - tab "동영상 트랜스코딩" [ref=e302] [cursor=pointer]
+              - text: /
+              - tab "동영상 편집" [ref=e303] [cursor=pointer]
+              - text: /
+              - tab "AI 동영상 처리" [ref=e304] [cursor=pointer]
+              - text: /
+              - tab "코드 컴파일링" [ref=e305] [cursor=pointer]
+            - text:  
+          - generic [ref=e306]:
+            - generic [ref=e307]:
+              - paragraph [ref=e308]:
+                - text: Adobe Photoshop상의 더 빠른 Neural Filter 및 기능 관련 성능
+                - superscript [ref=e309]:
+                  - link "Footnote 9" [ref=e310] [cursor=pointer]:
+                    - /url: "#footnote-9"
+                    - text: "9"
+              - generic [ref=e312]:
+                - generic [ref=e313]:
+                  - separator [ref=e315]
+                  - generic [ref=e316]: M4 Max 탑재 Mac Studio
+                - figure [ref=e317]:
+                  - generic [ref=e319]:
+                    - generic [ref=e320]: "2.9"
+                    - generic [ref=e321]: 배
+                - generic [ref=e322]:
+                  - separator [ref=e324]
+                  - generic [ref=e325]: M2 Max 탑재 Mac Studio
+                - figure [ref=e326]:
+                  - generic [ref=e328]:
+                    - generic [ref=e329]: "2.1"
+                    - generic [ref=e330]: 배
+                - generic [ref=e331]:
+                  - separator [ref=e333]
+                  - generic [ref=e334]: M1 Max 탑재 Mac Studio
+                - figure [ref=e335]:
+                  - generic [ref=e337]:
+                    - generic [ref=e338]: "1.8"
+                    - generic [ref=e339]: 배
+                - generic [ref=e340]:
+                  - separator [ref=e342]
+                  - generic [ref=e343]: 10코어 Intel Core i9 및 Radeon Pro 5700 XT 탑재 iMac 27(기준치)
+            - generic:
+              - paragraph:
+                - text: MATLAB상의 더 빠른 동역학계 시뮬레이션
+                - superscript
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M4 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "3.7"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M2 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "2.1"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M1 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "1.6"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: 10코어 Intel Core i9 및 Radeon Pro 5700 XT 탑재 iMac 27(기준치)
+            - generic:
+              - paragraph:
+                - text: Compressor상의 더 빠른 ProRes 트랜스코딩 성능
+                - superscript
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M4 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "2.8"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M2 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "2.4"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M1 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "2.3"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: 10코어 Intel Core i9 및 Radeon Pro 5700 XT 탑재 iMac 27(기준치)
+            - generic:
+              - paragraph:
+                - text: Final Cut Pro상의 더 빠른 8K 렌더링 성능
+                - superscript
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M4 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "4.6"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M2 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "3.2"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M1 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "2.8"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: 10코어 Intel Core i9 및 Radeon Pro 5700 XT 탑재 iMac 27(기준치)
+            - generic:
+              - paragraph:
+                - text: Topaz Video AI상의 더 빠른 동영상 업스케일링 성능
+                - superscript
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M4 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "5"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M2 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "4.1"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M1 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "3"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: 10코어 Intel Core i9 및 Radeon Pro 5700 XT 탑재 iMac 27(기준치)
+            - generic:
+              - paragraph:
+                - text: Xcode상의 더 빠른 프로젝트 빌드 성능
+                - superscript
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M4 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "3.1"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M2 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "1.9"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M1 Max 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "1.5"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: 10코어 Intel Core i9 및 Radeon Pro 5700 XT 탑재 iMac 27(기준치)
+        - generic [ref=e347]:
+          - heading "M3 Ultra" [level=3] [ref=e348]
+          - paragraph [ref=e350]: Apple 사상 가장 앞선 칩이 초고사양을 필요로 하는 전문가들을 위해 이전까지는 경험할 수 없었던 극강의 파워를 뿜어냅니다. 대규모 언어 모델을 위한 방대한 양의 데이터 세트 로딩, 장편 영화 편집, 교향곡 작곡 등 그 어떤 작업도 M3 Ultra는 거침없이 해내죠.
+        - generic [ref=e352]:
+          - generic [ref=e356]:
+            - img [ref=e358]
+            - button "3D 그래픽 애니메이션 동영상 재생" [ref=e361] [cursor=pointer]:
+              - img [ref=e362]
+              - img [ref=e366]
+          - list "M3 Ultra 역량" [ref=e370]:
+            - listitem [ref=e371]:
+              - generic [ref=e372]:
+                - text: 최대 24개의 8K ProRes 동영상 스트림 재생
+                - superscript [ref=e373]:
+                  - link "Footnote 13" [ref=e374] [cursor=pointer]:
+                    - /url: "#footnote-13"
+                    - text: "13"
+            - listitem [ref=e375]:
+              - generic [ref=e376]: 디스플레이 최대 8대 지원
+            - listitem [ref=e377]:
+              - generic [ref=e378]: H.264, HEVC, ProRes 인코딩 및 디코딩
+        - group "M3 Ultra 성능 수치 그래프" [ref=e384]:
+          - generic [ref=e386]:
+            - tablist [ref=e387]:
+              - tab "3D 렌더링"
+              - text: /
+              - tab "LLM 처리율" [ref=e388] [cursor=pointer]
+              - text: /
+              - tab "DNA 염기서열 결정" [ref=e389] [cursor=pointer]
+              - text: /
+              - tab "동영상 편집" [ref=e390] [cursor=pointer]
+              - text: /
+              - tab "AI 동영상 처리" [ref=e391] [cursor=pointer]
+              - text: /
+              - tab "코드 컴파일링" [ref=e392] [cursor=pointer]
+            - text:  
+          - generic [ref=e393]:
+            - generic [ref=e394]:
+              - paragraph [ref=e395]:
+                - text: Redshift상의 더 빠른 렌더링 성능
+                - superscript [ref=e396]:
+                  - link "Footnote 6" [ref=e397] [cursor=pointer]:
+                    - /url: "#footnote-6"
+                    - text: "6"
+              - generic [ref=e399]:
+                - generic [ref=e400]:
+                  - separator [ref=e402]
+                  - generic [ref=e403]: M3 Ultra 탑재 Mac Studio
+                - figure [ref=e404]:
+                  - generic [ref=e406]:
+                    - generic [ref=e407]: "6.4"
+                    - generic [ref=e408]: 배
+                - generic [ref=e409]:
+                  - separator [ref=e411]
+                  - generic [ref=e412]: M2 Ultra 탑재 Mac Studio
+                - figure [ref=e413]:
+                  - generic [ref=e415]:
+                    - generic [ref=e416]: "3.2"
+                    - generic [ref=e417]: 배
+                - generic [ref=e418]:
+                  - separator [ref=e420]
+                  - generic [ref=e421]: M1 Ultra 탑재 Mac Studio
+                - figure [ref=e422]:
+                  - generic [ref=e424]:
+                    - generic [ref=e425]: "2.4"
+                    - generic [ref=e426]: 배
+                - generic [ref=e427]:
+                  - separator [ref=e429]
+                  - generic [ref=e430]: 16코어 Intel Xeon W 및 Radeon Pro W5700X 탑재 Mac Pro(기준치)
+            - generic:
+              - paragraph:
+                - text: 파라미터 수가 수천억 개에 달하는 LLM을 활용한 LM Studio상의 더 빠른 토큰 생성 속도
+                - superscript
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M3 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "16.9"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M2 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "8"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M1 Ultra 탑재 Mac Studio(기준치)
+            - generic:
+              - paragraph:
+                - text: Oxford Nanopore MinKNOW상의 더 빠른 베이스 콜링 성능
+                - superscript
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M3 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "21.1"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M2 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "20.7"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M1 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "18.8"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: 16코어 Intel Xeon W 및 Radeon Pro W5700X 탑재 Mac Pro(기준치)
+            - generic:
+              - paragraph:
+                - text: Final Cut Pro상의 더 빠른 8K 렌더링 성능
+                - superscript
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M3 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "4"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M2 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "3.8"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M1 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "2.8"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: 16코어 Intel Xeon W 및 Radeon Pro W5700X 탑재 Mac Pro(기준치)
+            - generic:
+              - paragraph:
+                - text: Topaz Video AI상의 더 빠른 동영상 리타이밍 성능
+                - superscript
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M3 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "9.1"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M2 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "7.9"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M1 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "6.9"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: 16코어 Intel Xeon W 및 Radeon Pro W5700X 탑재 Mac Pro(기준치)
+            - generic:
+              - paragraph:
+                - text: Xcode상의 더 빠른 프로젝트 빌드 성능
+                - superscript
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M3 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "3.3"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M2 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "2.2"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: M1 Ultra 탑재 Mac Studio
+                  - figure:
+                    - generic:
+                      - generic:
+                        - generic: "1.8"
+                        - generic: 배
+                  - generic:
+                    - generic:
+                      - separator
+                    - generic: 16코어 Intel Xeon W 및 Radeon Pro W5700X 탑재 Mac Pro(기준치)
+    - generic [ref=e431]:
+      - generic [ref=e434]:
+        - heading "Apple Intelligence. 더욱 손쉽게, 더욱 스마트하게." [level=2] [ref=e435]:
+          - generic [ref=e436]: Apple Intelligence.
+          - text: 더욱 손쉽게, 더욱 스마트하게.
+        - generic [ref=e437]:
+          - paragraph [ref=e438]:
+            - text: Apple Intelligence는 당신이 글을 쓰고, 개성을 표출하고, 이것저것 척척 처리하는 것을 도와주는 개인용 지능 시스템입니다. 혁신적인 개인정보 보호 기능도 갖추고 있어 Apple은 물론 그 누구도 당신의 개인정보에 접근할 수 없으니 안심하고 쓸 수 있죠.
+            - superscript [ref=e439]:
+              - link "Footnote 1" [ref=e440] [cursor=pointer]:
+                - /url: "#footnote-1"
+                - text: "1"
+          - paragraph [ref=e441]:
+            - link "Apple Intelligence에 대해 더 알아보기⁠" [ref=e442] [cursor=pointer]:
+              - /url: /kr/apple-intelligence/
+              - text: Apple Intelligence에 대해 더 알아보기⁠
+              - generic [ref=e443]: 
+      - generic [ref=e446]:
+        - generic [ref=e448]:
+          - tablist "Apple Intelligence 기능" [ref=e449]:
+            - link "Siri":
+              - /url: "#apple-intelligence-gallery-item-1"
+            - link "글쓰기 도구" [ref=e450] [cursor=pointer]:
+              - /url: "#apple-intelligence-gallery-item-2"
+            - link "최우선 메시지" [ref=e451] [cursor=pointer]:
+              - /url: "#apple-intelligence-gallery-item-3"
+          - generic:
+            - button [disabled] [ref=e452]: 
+            - button [disabled] [ref=e453]: 
+        - generic [ref=e454]:
+          - generic [ref=e455]:
+            - img "여러 PDF 파일 병합 방법에 대해 사용자가 찾고 있던 정보를 Siri가 텍스트 팝업으로 띄워준 모습." [ref=e458]
+            - paragraph [ref=e460]: 새로운 디자인, 더 풍부해진 언어 이해 역량과 함께 Siri가 그 어느 때보다 유용해졌습니다. 심지어 ChatGPT를 활용해 추가적인 답변을 당신에게 바로 제공해 줄 수도 있죠.
+          - generic [ref=e461]:
+            - img "Apple Intelligence의 글쓰기 도구가 논문을 요약해 주는 모습" [ref=e464]
+            - paragraph [ref=e466]: Apple Intelligence는 클릭 한 번으로 간편하게 당신이 쓴 글을 교정해 주고, 가장 적절한 어조와 표현을 찾을 수 있을 때까지 다양한 버전으로 재작성해 주고, 선택한 텍스트를 요약해 줍니다. ‘작성’ 기능으로 바로 ChatGPT를 활용해 아예 처음부터 독창적인 콘텐츠를 만들 수도 있죠.
+          - generic [ref=e467]:
+            - img "Mail 앱에서 Apple Intelligence 기능인 최우선 메시지를 보여주는 모습" [ref=e470]
+            - paragraph [ref=e472]: 한 시간 뒤에 진행되는 미팅 초대나 자정까지 서명해야 하는 계약서처럼 긴급한 메시지들이 받은 편지함 맨 위에 표시됩니다. 게다가 Mail 앱이 메시지를 요약해 주므로 이메일을 열지 않고도 간편하게 요점을 파악할 수 있죠.
+      - generic [ref=e477]:
+        - generic:
+          - img "개인정보 보호를 상징하는 Apple 로고"
+          - generic:
+            - img
+        - heading "강력한 역량과 함께하는 강력한 개인정보 보호 기능." [level=3] [ref=e478]:
+          - text: 강력한 역량과 함께하는 강력한
+          - generic [ref=e479]: 개인정보 보호 기능.
+        - generic [ref=e480]:
+          - paragraph [ref=e481]: 모든 단계에서 당신의 개인정보를 보호하도록 설계된 Apple Intelligence. 이 시스템은 온디바이스 처리를 통해 Mac의 근간에 통합되어 있습니다. 그래서 당신의 개인정보를 따로 수집하지 않고도 해당 정보들을 인식할 수 있죠.
+          - paragraph [ref=e482]: 또한 혁신적인 ‘비공개 클라우드 컴퓨팅’ 덕분에 Apple Intelligence는 Apple Silicon으로 구동되는 보다 큰 규모의 서버 기반 모델을 활용해 더 복잡한 요청들도 처리할 수 있습니다. 이때도 역시 당신의 개인정보는 안전하게 보호되죠.
+    - generic [ref=e483]:
+      - generic [ref=e486]:
+        - heading "디자인" [level=2] [ref=e487]
+        - paragraph [ref=e488]: 적당한 크기.
+        - img "가로 19.7cm, 두께 9.5cm인 Mac Studio의 치수가 표시된 사진" [ref=e491]:
+          - generic [ref=e492]:
+            - generic [ref=e493]: "가로:"
+            - text: 19.7cm
+          - generic [ref=e494]:
+            - generic [ref=e495]: "두께:"
+            - text: 9.5cm
+      - generic [ref=e512]:
+        - paragraph [ref=e514]: 적당을 모르는 성능.
+        - generic [ref=e515]:
+          - generic [ref=e519]:
+            - img "Studio Display와 Mac Studio로 DaVinci Resolve Studio에서 작업 중인 멀티 카메라 동영상 편집 워크플로를 보여주는 애니메이션" [ref=e521]
+            - img [ref=e523]
+          - paragraph [ref=e525]: DaVinci Resolve Studio
+          - generic [ref=e526]:
+            - button "멀티 카메라 동영상 애니메이션 재생":   
+        - paragraph [ref=e528]: 강력함과 효율성을 겸비한 Apple Silicon. 덕분에 Mac Studio는 놀랍도록 자그마한 폼 팩터 안에서도, M4 Max 및 M3 Ultra가 그 성능을 오롯이 발휘하게 해줍니다. 당신이 창의성을 제약 없이 맘껏 펼칠 수 있도록 말이죠. 대부분의 디스플레이 아래에 배치했을 때 완벽하게 들어맞는 디자인으로, 손만 뻗으면 닿는 책상 위 공간에 엄청난 파워와 연결성을 선사하는 Mac Studio. 그야말로 독보적인 고성능 컴퓨터입니다.
+      - generic [ref=e531]:
+        - generic [ref=e533]:
+          - paragraph [ref=e534]: 쿨하게, 조용하게.
+          - paragraph [ref=e535]: 가로세로 19.7cm의 Mac Studio 외장 안에는 열 관리 시스템이 내장되어 있어 M4 Max 또는 M3 Ultra가 쏜살같은 속도로 막대한 작업량을 척척 처리해 낼 때조차도 조용함을 유지합니다. 덕분에 소음 때문에 방해받는 일 없이, 온전히 작업에 집중할 수 있죠.
+        - generic [ref=e536]:
+          - img "Mac Studio의 열 관리 시스템 애니메이션" [ref=e538]
+          - generic [ref=e539]:
+            - img [ref=e541]
+            - button "열관리 디자인 애니메이션 재생" [ref=e544] [cursor=pointer]:
+              - img [ref=e545]
+              - img [ref=e549]
+          - img [ref=e553]
+    - generic [ref=e554]:
+      - generic [ref=e555]:
+        - generic [ref=e557]:
+          - figure [ref=e559]
+          - heading "든든한 커넥션." [level=2] [ref=e561]
+        - generic [ref=e563]:
+          - paragraph [ref=e564]:
+            - text: 비할 데 없는 다재다능함을 갖춘 꿈의 스튜디오가 현실로. Mac Studio는 최대 120Gb/s의 전송 속도를 자랑하는 Thunderbolt 5를 갖추고 있습니다. 이는 Thunderbolt 4보다 무려 3배 더 빠른 속도죠. 여기에 Wi-Fi 6E와 Bluetooth 5.3도 지원합니다.
+            - superscript [ref=e565]:
+              - link "Footnote 17" [ref=e566] [cursor=pointer]:
+                - /url: "#footnote-17"
+                - text: "17"
+            - text: 여러 외장 디스플레이를 연결하고, SDXC 카드에 담긴 데이터를 바로 가져오고, 고속 주변 기기들을 연결하고, 외장 섀시로 PCIe 확장을 하는 등, Mac Studio로 당신의 창의성을 맘껏 펼칠 최적의 작업 환경을 만들어 보세요.
+          - generic [ref=e567]:
+            - paragraph [ref=e570]: Thunderbolt 4 대비 최대 3배 더 빠른 연결성을 갖춘 Thunderbolt 5.
+            - generic [ref=e571]:
+              - paragraph [ref=e572]: PCIe
+              - paragraph [ref=e573]: 외장 섀시를 통해 최대 120Gb/s의 고속 PCI 확장 가능.
+      - generic [ref=e581]:
+        - heading "전면 포트" [level=3] [ref=e582]: 전면 포트
+        - list [ref=e584]:
+          - listitem [ref=e585]:
+            - text: USB-C 2개 또는 Thunderbolt 5 2개
+            - superscript [ref=e586]:
+              - link "Footnote 18" [ref=e587] [cursor=pointer]:
+                - /url: "#footnote-18"
+                - text: "18"
+          - listitem [ref=e588]: SDXC 1개
+    - generic [ref=e590]:
+      - generic [ref=e592]:
+        - heading "Mac Studio와 Studio Display. 완벽한 조합." [level=2] [ref=e594]:
+          - text: Mac Studio와
+          - text: Studio Display.
+          - text: 완벽한 조합.
+        - img "Studio Display 및 Mac Studio가 함께 배치되어 Adobe Photoshop을 사용 중인 모습" [ref=e597]
+        - paragraph [ref=e599]: Adobe Photoshop
+        - paragraph [ref=e600]: Mac Studio는 널찍한 68.3cm 5K Retina 디스플레이를 갖춘 Studio Display와 아름답게 짝을 이루도록 디자인되었습니다. 둘을 연결하면 궁극의 스튜디오가 완성되죠.
+        - paragraph [ref=e601]:
+          - link "Studio Display에 대해 더 알아보기" [ref=e602] [cursor=pointer]:
+            - /url: /kr/studio-display/
+            - text: Studio Display에 대해 더 알아보기
+            - generic [ref=e603]: 
+      - group "다양한 작업 공간에 배치된 Mac Studio 및 Studio Display의 모습을 담은 갤러리" [ref=e606]:
+        - tablist [ref=e609]:
+          - link "작업 공간 1" [ref=e610] [cursor=pointer]:
+            - /url: "#studio-display-gallery-1"
+            - generic [ref=e611]: 작업 공간 1
+          - link "작업 공간 2" [ref=e612] [cursor=pointer]:
+            - /url: "#studio-display-gallery-2"
+            - generic [ref=e613]: 작업 공간 2
+          - link "작업 공간 3" [ref=e614] [cursor=pointer]:
+            - /url: "#studio-display-gallery-3"
+            - generic [ref=e615]: 작업 공간 3
+        - generic:
+          - list:
+            - listitem:
+              - button "이전" [ref=e616] [cursor=pointer]: 
+            - listitem:
+              - button "다음" [ref=e617] [cursor=pointer]: 
+        - generic [ref=e618]:
+          - img "전문 작업자가 Mac Studio에 세 대의 디스플레이를 연결한 상태로 파일을 편집 중인 모습" [ref=e621]
+          - img "음악가가 피아노를 사용해 Mac Studio 및 Studio Display로 오디오 믹스를 만드는 모습" [ref=e624]
+          - img "전문 작업자가 Mac Studio와 두 대의 Studio Display 모니터로 작업 중인 모습" [ref=e627]
+      - generic [ref=e630]:
+        - generic [ref=e631]:
+          - paragraph [ref=e632]: 당신의 스튜디오를 탈바꿈시키다.
+          - paragraph [ref=e633]: 깜짝 놀랄 정도로 콤팩트한 폼 팩터와 다양한 포트를 갖춘 Mac Studio로 작업 공간의 틀을 깨고 창의력을 맘껏 펼쳐보세요.
+        - generic [ref=e634]:
+          - generic [ref=e637]:
+            - text: x8
+            - generic [ref=e638]: 디스플레이
+          - paragraph [ref=e639]: M3 Ultra로 구성 시 최대 8대, M4 Max로 구성 시 최대 5대의 디스플레이와 연결 가능.
+    - generic [ref=e643]:
+      - heading "환상적인 협업을 자랑하는 액세서리." [level=2] [ref=e645]
+      - img "Magic Keyboard 및 Magic Mouse를 위에서 내려다본 모습" [ref=e648]
+      - generic [ref=e649]:
+        - paragraph [ref=e650]: 정교한 충전식 무선 Magic 액세서리는 서로 매끄럽게 연동되도록 설계되었습니다. 창작 경험을 한 차원 더 끌어올려 줄 Magic Mouse, Magic Trackpad, Touch ID 탑재형 Magic Keyboard를 추가해 보세요.
+        - generic [ref=e651]:
+          - generic [ref=e652]:
+            - heading "Touch ID" [level=3] [ref=e653]
+            - img "Magic Keyboard의 Touch ID를 클로즈업한 모습" [ref=e655]
+          - generic [ref=e656]:
+            - heading "Magic Trackpad" [level=3] [ref=e657]
+            - img "Magic Trackpad의 측면" [ref=e659]
+    - generic [ref=e661]:
+      - heading "macOS. 프로용 앱에 날개를 달다." [level=2] [ref=e662]
+      - img "각 화면에 서로 다른 macOS 앱이 열려 있는 Studio Display 세 대와 Mac Studio" [ref=e664]
+      - paragraph [ref=e666]: JupyterLab, Nuke CopyCat, Oxford Nanopore MinKNOW
+      - generic [ref=e667]:
+        - paragraph [ref=e668]: macOS는 Apple Silicon의 파워를 최대로 끌어낼 수 있도록 강력하고 직관적으로 디자인되었습니다. Final Cut Pro, DaVinci Resolve Studio, Nuke CopyCat, Adobe Photoshop처럼 AI를 지원하는 강력한 프로용 앱을 비롯해 Apple Silicon의 놀라운 그래픽, 메모리, 머신 러닝 역량에 최적화된 앱 등, 수만 개의 앱 중에서 골라 원하는 대로 활용할 수 있죠.
+        - link "macOS에 대해 더 알아보기" [ref=e669] [cursor=pointer]:
+          - /url: /kr/macos/
+          - text: macOS에 대해 더 알아보기
+          - generic [ref=e670]: 
+    - generic [ref=e672]:
+      - heading "업그레이드하기 딱 좋은 때는 바로 지금." [level=2] [ref=e673]
+      - generic [ref=e674]:
+        - generic [ref=e675]:
+          - generic [ref=e676]: 현재 사용 중인 모델을 선택하세요.
+          - button "추가 도움말" [ref=e678] [cursor=pointer]:
+            - generic [ref=e680]: 추가 도움말
+        - generic [ref=e681]:
+          - generic [ref=e684]:
+            - combobox [ref=e685]:
+              - option "Mac Studio(M1 Max 모델)" [selected]
+              - option "Mac Studio(M1 Ultra 모델)"
+              - option "iMac 27(Intel, 2020년 모델)"
+              - option "Mac Pro(16코어 Intel, 2019년 모델)"
+            - generic: 
+          - generic [ref=e686]:
+            - list "Mac Studio(M1 Max 모델)" [ref=e687]:
+              - paragraph [ref=e688]: M4 Max 칩이 탑재된 새로운 Mac Studio는 어떤 점이 다를까요?
+              - list [ref=e689]:
+                - listitem [ref=e690]:
+                  - paragraph [ref=e693]:
+                    - text: 최대
+                    - generic [ref=e694]: 2.1배 더 빠른
+                    - text: CPU 성능으로 고강도 워크플로도 막힘없이 척척.
+                    - superscript [ref=e695]:
+                      - link "Footnote 2" [ref=e696] [cursor=pointer]:
+                        - /url: "#footnote-2"
+                        - text: "2"
+                - listitem [ref=e697]:
+                  - paragraph [ref=e700]:
+                    - text: 최대
+                    - generic [ref=e701]: 3.5배 더 빠른
+                    - text: 그래픽에 하드웨어 가속형 레이 트레이싱까지.
+                    - superscript [ref=e702]:
+                      - link "Footnote 19" [ref=e703] [cursor=pointer]:
+                        - /url: "#footnote-19"
+                        - text: "19"
+                - listitem [ref=e704]:
+                  - paragraph [ref=e710]: 빠르고 빈틈없는 연결성을 선사하는 Thunderbolt 5.
+                - listitem [ref=e711]:
+                  - paragraph [ref=e717]:
+                    - text: 최대 128GB
+                    - text: 통합 메모리로 프로용 앱을 넘나들며 멀티태스킹을 매끄럽게.
+            - list "Mac Studio(M1 Ultra 모델)" [ref=e718]:
+              - paragraph [ref=e719]: M3 Ultra 칩이 탑재된 새로운 Mac Studio는 어떤 점이 다를까요?
+              - list [ref=e720]:
+                - listitem [ref=e721]:
+                  - paragraph [ref=e724]:
+                    - text: 최대
+                    - generic [ref=e725]: 1.8배 더 빠른
+                    - text: CPU 성능으로 고강도 워크플로도 막힘없이 척척.
+                    - superscript [ref=e726]:
+                      - link "Footnote 5" [ref=e727] [cursor=pointer]:
+                        - /url: "#footnote-5"
+                        - text: "5"
+                - listitem [ref=e728]:
+                  - paragraph [ref=e734]:
+                    - text: 최대 2.6배 더 빠른 GPU 기반 그래픽 렌더링.
+                    - superscript [ref=e735]:
+                      - link "Footnote 6" [ref=e736] [cursor=pointer]:
+                        - /url: "#footnote-6"
+                        - text: "6"
+                - listitem [ref=e737]:
+                  - paragraph [ref=e743]: 빠르고 빈틈없는 연결성을 선사하는 Thunderbolt 5.
+                - listitem [ref=e744]:
+                  - paragraph [ref=e750]:
+                    - text: 최대 256GB
+                    - text: 통합 메모리로 막대한 양의 워크로드를 거뜬하게.
+            - list "iMac 27(Intel, 2020년 모델)" [ref=e751]:
+              - paragraph [ref=e752]: M4 Max 칩이 탑재된 새로운 Mac Studio는 어떤 점이 다를까요?
+              - list [ref=e753]:
+                - listitem [ref=e754]:
+                  - paragraph [ref=e757]:
+                    - text: 최대
+                    - generic [ref=e758]: 3.1배 더 빠른
+                    - text: CPU 성능으로 고강도 워크플로도 막힘없이 척척.
+                    - superscript [ref=e759]:
+                      - link "Footnote 2" [ref=e760] [cursor=pointer]:
+                        - /url: "#footnote-2"
+                        - text: "2"
+                - listitem [ref=e761]:
+                  - paragraph [ref=e764]:
+                    - text: 최대
+                    - generic [ref=e765]: 6.1배 더 빠른
+                    - text: 그래픽에 하드웨어 가속형 레이 트레이싱까지.
+                    - superscript [ref=e766]:
+                      - link "Footnote 3" [ref=e767] [cursor=pointer]:
+                        - /url: "#footnote-3"
+                        - text: "3"
+                - listitem [ref=e768]:
+                  - paragraph [ref=e774]: 빠르고 빈틈없는 연결성을 선사하는 Thunderbolt 5.
+                - listitem [ref=e775]:
+                  - paragraph [ref=e783]: Apple Intelligence
+            - list "Mac Pro(16코어 Intel, 2019년 모델)" [ref=e784]:
+              - paragraph [ref=e785]: M3 Ultra 칩이 탑재된 새로운 Mac Studio는 어떤 점이 다를까요?
+              - list [ref=e786]:
+                - listitem [ref=e787]:
+                  - paragraph [ref=e790]:
+                    - text: 최대
+                    - generic [ref=e791]: 3.3배 더 빠른
+                    - text: CPU 성능으로 고강도 워크플로도 막힘없이 척척.
+                    - superscript [ref=e792]:
+                      - link "Footnote 5" [ref=e793] [cursor=pointer]:
+                        - /url: "#footnote-5"
+                        - text: "5"
+                - listitem [ref=e794]:
+                  - paragraph [ref=e797]:
+                    - text: 최대
+                    - generic [ref=e798]: 6.4배 더 빠른
+                    - text: 그래픽에 하드웨어 가속형 레이 트레이싱까지.
+                    - superscript [ref=e799]:
+                      - link "Footnote 6" [ref=e800] [cursor=pointer]:
+                        - /url: "#footnote-6"
+                        - text: "6"
+                - listitem [ref=e801]:
+                  - paragraph [ref=e807]: 빠르고 빈틈없는 연결성을 선사하는 Thunderbolt 5.
+                - listitem [ref=e808]:
+                  - paragraph [ref=e816]: Apple Intelligence
+      - generic [ref=e817]:
+        - img "Apple Trade In" [ref=e820]
+        - generic [ref=e822]:
+          - paragraph [ref=e823]:
+            - text: 보상 판매 대상 기기를 반납하고 새 Mac Studio 구입에 사용할 수 있는 크레딧을 받으세요.
+            - superscript [ref=e824]:
+              - link "Footnote 20" [ref=e825] [cursor=pointer]:
+                - /url: "#footnote-20"
+                - text: "20"
+          - link "쓰던 기기의 보상 판매 가격 알아보기" [ref=e826] [cursor=pointer]:
+            - /url: /kr/shop/goto/trade_in#mac
+            - text: 쓰던 기기의 보상 판매 가격 알아보기
+            - generic [ref=e827]: 
+    - generic [ref=e830]:
+      - generic [ref=e832]:
+        - generic [ref=e833]:
+          - heading "당신의 작업 공간에 놓인 Mac Studio의 모습, AR로 미리 살펴보기." [level=2] [ref=e836]
+          - generic [ref=e837]:
+            - paragraph [ref=e838]: iPhone 또는 iPad에서 이 페이지를 Safari로 열어보세요.
+            - text:  
+        - img "AR로 Mac Studio 미리보기를 보여주고 있는 iPhone 화면" [ref=e841]
+      - generic [ref=e844]:
+        - heading "당신에게 맞는 데스크탑은?" [level=2] [ref=e845]
+        - link "모든 Mac 모델 비교하기" [ref=e847] [cursor=pointer]:
+          - /url: /kr/mac/compare/
+          - text: 모든 Mac 모델 비교하기
+          - generic [ref=e848]: 
+        - generic [ref=e849]:
+          - img "Mac Mini를 정면에서 바라본 모습" [ref=e851]
+          - img "실버 색상으로 제공" [ref=e853]
+          - heading "Mac mini" [level=3] [ref=e854]
+          - paragraph [ref=e855]: ₩890,000부터
+          - paragraph [ref=e856]:
+            - text: Apple M4 또는
+            - text: Apple M4 Pro 칩
+          - paragraph [ref=e857]:
+            - text: Apple Intelligence
+            - superscript [ref=e858]:
+              - link "Footnote 1" [ref=e859] [cursor=pointer]:
+                - /url: "#footnote-1"
+                - text: "1"
+          - paragraph [ref=e860]: 10코어~14코어 CPU
+          - paragraph [ref=e861]: 10코어~20코어 GPU
+          - paragraph [ref=e862]: 16GB~64GB 통합 메모리
+          - paragraph [ref=e863]:
+            - text: 256GB~8TB 저장 장치
+            - superscript [ref=e864]:
+              - link "Footnote 21" [ref=e865] [cursor=pointer]:
+                - /url: "#footnote-21"
+                - text: "21"
+          - link "Mac mini 구입하기" [ref=e867] [cursor=pointer]:
+            - /url: /kr/shop/goto/buy_mac/mac_mini
+            - text: 구입하기
+          - link "Mac mini에 대해 더 알아보기" [ref=e869] [cursor=pointer]:
+            - /url: /kr/mac-mini/
+            - text: 더 알아보기
+            - generic [ref=e870]: 
+          - img "Mac Studio를 정면에서 바라본 모습" [ref=e872]
+          - img "실버 색상으로 제공" [ref=e874]
+          - heading "Mac Studio" [level=3] [ref=e875]
+          - paragraph [ref=e876]: ₩3,290,000부터
+          - paragraph [ref=e877]:
+            - text: Apple M4 Max 또는
+            - text: Apple M3 Ultra 칩
+          - paragraph [ref=e878]:
+            - text: Apple Intelligence
+            - superscript [ref=e879]:
+              - link "Footnote 1" [ref=e880] [cursor=pointer]:
+                - /url: "#footnote-1"
+                - text: "1"
+          - paragraph [ref=e881]: 14코어~32코어 CPU
+          - paragraph [ref=e882]: 32코어~80코어 GPU
+          - paragraph [ref=e883]: 36GB~256GB 통합 메모리
+          - paragraph [ref=e884]:
+            - text: 512GB~16TB 저장 장치
+            - superscript [ref=e885]:
+              - link "Footnote 21" [ref=e886] [cursor=pointer]:
+                - /url: "#footnote-21"
+                - text: "21"
+          - link "Mac Studio 구입하기" [ref=e888] [cursor=pointer]:
+            - /url: /kr/shop/goto/buy_mac/mac_studio
+            - text: 구입하기
+          - img "Mac Pro를 정면에서 바라본 모습" [ref=e890]
+          - img "실버 색상으로 제공" [ref=e892]
+          - heading "Mac Pro" [level=3] [ref=e893]
+          - paragraph [ref=e894]: ₩10,490,000부터
+          - paragraph [ref=e895]: Apple M2 Ultra 칩
+          - paragraph [ref=e896]:
+            - text: Apple Intelligence
+            - superscript [ref=e897]:
+              - link "Footnote 1" [ref=e898] [cursor=pointer]:
+                - /url: "#footnote-1"
+                - text: "1"
+          - paragraph [ref=e899]: 24코어 CPU
+          - paragraph [ref=e900]: 60코어~76코어 GPU
+          - paragraph [ref=e901]: 64GB~192GB 통합 메모리
+          - paragraph [ref=e902]:
+            - text: 1TB~8TB 저장 장치
+            - superscript [ref=e903]:
+              - link "Footnote 21" [ref=e904] [cursor=pointer]:
+                - /url: "#footnote-21"
+                - text: "21"
+          - link "Mac Pro 구입하기" [ref=e906] [cursor=pointer]:
+            - /url: /kr/shop/goto/buy_mac/mac_pro
+            - text: 구입하기
+          - link "Mac Pro에 대해 더 알아보기" [ref=e908] [cursor=pointer]:
+            - /url: /kr/mac-pro/
+            - text: 더 알아보기
+            - generic [ref=e909]: 
+      - generic [ref=e912]:
+        - img [ref=e914]
+        - heading "지구 를 염두에 둔 설계." [level=2] [ref=e915]:
+          - generic [ref=e916]: 지구
+          - text: 를 염두에 둔 설계.
+        - paragraph [ref=e917]: 100% 재활용 소재를 사용해 제작된 메인 로직 보드의 자석과 솔더. 여기에 책임감 있는 포장, 더욱 친환경적인 공급망 구축까지. Mac Studio는 환경에 미치는 영향을 최소화하도록 디자인되었습니다.
+        - paragraph [ref=e918]:
+          - link "Apple과 환경에 대해 더 알아보기" [ref=e919] [cursor=pointer]:
+            - /url: /kr/environment/
+            - text: Apple과 환경에 대해 더 알아보기
+            - generic [ref=e920]: 
+      - generic [ref=e922]:
+        - generic [ref=e923]:
+          - heading "액세서리" [level=2] [ref=e924]
+          - heading "Mac 액세서리 살펴보기." [level=3] [ref=e925]:
+            - text: Mac 액세서리
+            - text: 살펴보기.
+          - paragraph [ref=e926]:
+            - link "Mac 액세서리 쇼핑하기" [ref=e927] [cursor=pointer]:
+              - /url: /kr/shop/goto/mac/accessories
+              - text: 쇼핑하기
+        - img "Magic Keyboard, Magic Mouse, Magic Track Pad, Thunderbolt 4 Pro 케이블 등의 액세서리와 AirPods Pro가 놓여 있는 모습." [ref=e930]
+      - generic [ref=e932]:
+        - generic [ref=e933]:
+          - heading "Apple Trade In" [level=2] [ref=e934]
+          - heading "새 Mac Studio 구입에 사용할 수 있는 크레딧을 받는 법." [level=3] [ref=e935]:
+            - text: 새 Mac Studio
+            - text: 구입에 사용할 수 있는
+            - text: 크레딧을 받는 법.
+          - paragraph [ref=e936]:
+            - text: 보상 판매 대상 컴퓨터를 크레딧으로 교환해 드리거나, 무상으로 재활용해 드립니다. 기기의 가치를 최대한 활용하는 것, 당신은 물론 지구에게도 좋은 일이죠.
+            - superscript [ref=e937]:
+              - link "Footnote 20" [ref=e938] [cursor=pointer]:
+                - /url: "#footnote-20"
+                - text: "20"
+          - paragraph [ref=e939]:
+            - link "쓰던 기기의 보상 판매 가격 알아보기" [ref=e940] [cursor=pointer]:
+              - /url: /kr/shop/goto/trade_in#mac
+              - text: 쓰던 기기의 보상 판매 가격 알아보기
+              - generic [ref=e941]: 
+        - img "Mac Studio를 정면에서 바라본 모습." [ref=e944]
+      - generic [ref=e947]:
+        - heading "Apple at Work" [level=2] [ref=e948]
+        - paragraph [ref=e949]: 비즈니스를 한 단계 더 도약시키는 막강한 힘.
+        - list [ref=e950]:
+          - listitem [ref=e951]:
+            - link "Apple at Work에 대해 알아보기" [ref=e952] [cursor=pointer]:
+              - /url: /kr/business/
+              - text: Apple at Work에 대해 알아보기
+              - generic [ref=e953]: 
+          - listitem [ref=e954]:
+            - link "비즈니스를 위한 Mac에 대해 더 알아보기" [ref=e955] [cursor=pointer]:
+              - /url: /kr/business/mac/
+              - text: 비즈니스를 위한 Mac에 대해 더 알아보기
+              - generic [ref=e956]: 
+      - generic [ref=e961]:
+        - heading "Apple과 교육" [level=2] [ref=e962]
+        - paragraph [ref=e963]:
+          - text: 더 나은 세상을 만들 수 있는 힘을
+          - text: 교육자와 학생들에게.
+        - paragraph [ref=e964]:
+          - link "Apple과 교육에 대해 알아보기" [ref=e965] [cursor=pointer]:
+            - /url: /kr/education/
+            - text: Apple과 교육에 대해 알아보기
+            - generic [ref=e966]: 
+    - generic [ref=e969]:
+      - generic [ref=e971]:
+        - heading "Mac Studio 그리고 환경." [level=2] [ref=e972]
+        - list [ref=e974]:
+          - listitem [ref=e975]:
+            - link "제품 환경 보고서(영문 PDF)에서 더 알아보기, 새로운 윈도우에서 열기" [ref=e976] [cursor=pointer]:
+              - /url: /kr/environment/pdf/products/desktops/Mac_Studio_PER_March2025.pdf
+              - text: 제품 환경 보고서(영문 PDF)에서 더 알아보기
+      - generic "환경 갤러리" [ref=e977]:
+        - list [ref=e979]:
+          - listitem [ref=e980]:
+            - generic [ref=e981]:
+              - heading "제작 시 중량 기준 30% 재활용 소재 사용." [level=3] [ref=e984]
+              - button "재활용 소재에 대해 더 알아보기" [ref=e985] [cursor=pointer]:
+                - img [ref=e988]
+              - text: 
+          - listitem [ref=e990]:
+            - generic [ref=e991]:
+              - heading "제조 시 35% 재생 가능 전력 사용." [level=3] [ref=e994]
+              - button "재생 가능 전력에 대해 더 알아보기" [ref=e995] [cursor=pointer]:
+                - img [ref=e998]
+              - text: 
+          - listitem [ref=e1000]:
+            - generic [ref=e1001]:
+              - heading "운송 시 100% 섬유 기반 포장재 사용." [level=3] [ref=e1004]
+              - button "포장에 대해 더 알아보기" [ref=e1005] [cursor=pointer]:
+                - img [ref=e1008]
+              - text: 
+        - list [ref=e1011]:
+          - listitem [ref=e1012]:
+            - button "환경 갤러리 내 이전 항목" [ref=e1013] [cursor=pointer]:
+              - img [ref=e1015]
+          - listitem [ref=e1017]:
+            - button "환경 갤러리 내 다음 항목" [ref=e1018] [cursor=pointer]:
+              - img [ref=e1020]
+    - generic [ref=e1022]:
+      - heading "우리의 가치관이 곧 우리의 지침." [level=2] [ref=e1025]
+      - generic "가치관 갤러리" [ref=e1026]:
+        - list [ref=e1028]:
+          - listitem [ref=e1029]:
+            - generic [ref=e1030]:
+              - heading "우리의 제품만큼이나 혁신적인 계획." [level=3] [ref=e1032]
+              - paragraph [ref=e1033]: 우리는 2030년까지 자사의 전체 탄소 발자국을 넷 제로로 만들고자 노력하고 있습니다.
+              - paragraph [ref=e1034]:
+                - link "환경에 대해 더 알아보기" [ref=e1035] [cursor=pointer]:
+                  - /url: /kr/environment/
+                  - text: 환경에 대해 더 알아보기
+                  - generic [ref=e1036]: 
+              - link [ref=e1037] [cursor=pointer]:
+                - /url: /kr/environment/
+          - listitem [ref=e1038]:
+            - generic [ref=e1039]:
+              - heading "개인정보 보호. Apple이니까." [level=3] [ref=e1041]:
+                - text: 개인정보 보호.
+                - text: Apple이니까.
+              - paragraph [ref=e1042]: 개인정보 보호는 누구나 누려야 하는 기본적인 인권입니다. 모든 제품 및 서비스는 당신의 데이터를 안전하게 보호할 수 있도록 설계됩니다.
+              - paragraph [ref=e1043]:
+                - link "개인정보 보호에 대해 더 알아보기" [ref=e1044] [cursor=pointer]:
+                  - /url: /kr/privacy/
+                  - text: 개인정보 보호에 대해 더 알아보기
+                  - generic [ref=e1045]: 
+              - link [ref=e1046] [cursor=pointer]:
+                - /url: /kr/privacy/
+          - listitem [ref=e1047]:
+            - generic [ref=e1048]:
+              - heading "손쉬운 사용을 염두에 둔 혁신." [level=3] [ref=e1050]:
+                - text: 손쉬운 사용을
+                - text: 염두에 둔 혁신.
+              - paragraph [ref=e1051]: 우리는 제품 및 서비스를 설계할 때부터 모두를 생각하는 마음을 담습니다. 누구든 기본 탑재된 기능들을 활용해 자신이 원하는 방식으로 좋아하는 일들을 해낼 수 있도록 지원하죠.
+              - paragraph [ref=e1052]:
+                - link "손쉬운 사용에 대해 더 알아보기" [ref=e1053] [cursor=pointer]:
+                  - /url: /kr/accessibility/
+                  - text: 손쉬운 사용에 대해 더 알아보기
+                  - generic [ref=e1054]: 
+              - link [ref=e1055] [cursor=pointer]:
+                - /url: /kr/accessibility/
+        - list [ref=e1057]:
+          - listitem [ref=e1058]:
+            - button "가치관 갤러리 내 이전 항목" [ref=e1059] [cursor=pointer]:
+              - img [ref=e1061]
+          - listitem [ref=e1063]:
+            - button "가치관 갤러리 내 다음 항목" [ref=e1064] [cursor=pointer]:
+              - img [ref=e1066]
+  - contentinfo "Apple Footer" [ref=e1068]:
+    - generic [ref=e1069]:
+      - heading "Apple Footer" [level=2] [ref=e1070]
+      - generic [ref=e1072]:
+        - link "최대 24개월 무이자 할부 결제 제휴 신용카드를 사용해 자신에게 알맞은 결제 옵션을 선택해 보세요. 최소 결제 금액 조건 적용.Footnote ◊ 기호 더 알아보기 " [ref=e1075] [cursor=pointer]:
+          - /url: https://www.apple.com/kr/shop/browse/financing
+          - figure [ref=e1076]
+          - heading "최대 24개월 무이자 할부 결제" [level=3] [ref=e1077]
+          - paragraph [ref=e1078]: 제휴 신용카드를 사용해 자신에게 알맞은 결제 옵션을 선택해 보세요. 최소 결제 금액 조건 적용.◊
+          - generic [ref=e1079]: 더 알아보기 
+        - link "업무일 기준 무료 익일 배송 오후 3시 이전에 주문된 재고 보유 제품에 한합니다. 더 알아보기 " [ref=e1082] [cursor=pointer]:
+          - /url: https://www.apple.com/kr/shop/goto/shipping_and_returns
+          - figure [ref=e1083]
+          - heading "업무일 기준 무료 익일 배송" [level=3] [ref=e1084]
+          - paragraph [ref=e1085]:
+            - text: 오후 3시 이전에 주문된
+            - text: 재고 보유 제품에 한합니다.
+          - generic [ref=e1086]: 더 알아보기 
+        - link "도움이 필요하다면 질문이 있으신가요? 전문가와 전화로 상담하거나 온라인으로 채팅하세요. 문의하기 " [ref=e1089] [cursor=pointer]:
+          - /url: https://contactretail.apple.com/?pg=COM:mac-studio&ap=COM&c=kr&l=ko
+          - figure [ref=e1090]
+          - heading "도움이 필요하다면" [level=3] [ref=e1091]
+          - paragraph [ref=e1092]:
+            - text: 질문이 있으신가요? 전문가와 전화로
+            - generic [ref=e1093]: 상담하거나
+            - text: 온라인으로 채팅하세요.
+          - generic [ref=e1094]: 문의하기 
+      - region "Footnotes" [ref=e1095]:
+        - list [ref=e1096]:
+          - listitem [ref=e1097]:
+            - text: "◊ 해당 자격을 갖춘 일반 소비자 고객과 한국 거주 고객은 제품 구입 시 제휴 신용카드 회사를 통해 무이자 또는 부분 무이자 할부 결제를 이용할 수 있습니다. 무이자 할부를 이용하려면 신용카드 할부 금액 기준으로 최소 결제 금액 조건을 충족해야 합니다. 6개월~12개월 할부는 400,000원 이상, 18개월~24개월 할부는 1,200,000원 이상입니다. 무이자 할부는 현대, 하나, 국민, 신한, 삼성 카드에 한해 적용됩니다. 최소 결제 금액 조건은 신용카드 할부 금액만으로 충족되어야 합니다. 부분 결제(예: Gift Card와 신용카드를 함께 사용)의 경우, 신용카드 결제 금액이 최소 결제 금액 조건 이상이여야 합니다. 모든 할부 구입은 신용카드 발급사의 승인을 받아야 합니다. 신용카드 발급사에서 할부 구입을 승인해 주지 않는 경우에도 Apple 직원에게 승인 거부 사유가 전달되지 않습니다. 할부 조건, 수수료, 청구액 등 승인 결과는 신용카드 발급사에 문의하십시오. 결제액은 상품이 입고되거나 배송될 때 고객 계정으로 청구됩니다. 할부 서비스를 이용하려면 구입 시 현지 발급 신용카드로 결제해야 합니다. 해외 신용카드(한국 외 다른 국가 또는 지역에서 발급 받은 신용카드), 직불/체크카드 및 현지 발급/제휴 법인카드는 할부 서비스를 이용할 수 없습니다. 할부는 광고 가격 또는 정찰 가격을 기준으로 합니다. 위 할부 서비스는 이용 가능한 기간, 할부 기간 및 적용 대상 제품을 포함하되 이에 국한되지 않은 관련 내용이 사전 공지 없이 언제든지 변경 또는 중단될 수 있습니다. 위 할부 서비스는 일반 소비자 구입 건에 한하여 적용되며, 교육 할인 구입 건에는 적용되지 않습니다. 신용카드 회사에서 진행하는 소비자 대상 프로모션 및 교육 할인 스토어에서 진행되는 프로모션에 대한 자세한 내용은"
+            - link "https://www.inicis.com/apple/popup/retail.html" [ref=e1098] [cursor=pointer]:
+              - /url: https://www.inicis.com/apple/popup/retail.html
+              - text: https://www.inicis.com/apple
+              - text: /popup/retail.html
+            - text: ⁠을
+            - text: 참고하십시오. 이 정보는 2026년 1월 6일 기준 최신 정보입니다.
+        - list [ref=e1099]:
+          - listitem [ref=e1100]:
+            - text: Apple Intelligence는 베타로 사용할 수 있습니다. 일부 기능은 한국어로 제공되지 않습니다. 기능 및 언어 지원 여부 그리고 시스템 요구 사양은
+            - generic [ref=e1101]:
+              - link "support.apple.com/ko-kr/121115" [ref=e1102] [cursor=pointer]:
+                - /url: https://support.apple.com/ko-kr/121115
+              - text: 를
+            - text: 참고하십시오.
+          - listitem [ref=e1103]: 테스트는 2025년 1월과 2월 Apple에서 Apple M4 Max, 16코어 CPU, 40코어 GPU 및 128GB RAM을 탑재한 Mac Studio 시제품, Apple M2 Max, 12코어 CPU, 38코어 GPU 및 96GB RAM을 탑재한 Mac Studio 판매용 제품, Apple M1 Max, 10코어 CPU, 32코어 GPU 및 64GB RAM을 탑재한 Mac Studio 판매용 제품 그리고 Radeon Pro 5700 XT 그래픽(16GB GDDR6) 및 128GB RAM을 탑재한 3.6GHz 10코어 Intel Core i9 기반 iMac 27 판매용 제품을 사용해 진행했습니다. 모든 시스템은 8TB SSD로 구성되었습니다. 오픈 소스 프로젝트는 Apple Clang 16.0.0, Ninja 1.10.0 git 및 CMake 3.26.4를 사용해 Xcode 16.2에서 빌드되었습니다. Mac Studio 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio 및 iMac의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1104]: 테스트는 2025년 1월과 2월 Apple에서 Apple M4 Max, 16코어 CPU, 40코어 GPU 및 128GB RAM을 탑재한 Mac Studio 시제품과 Radeon Pro 5700 XT 그래픽(16GB GDDR6) 및 128GB RAM을 탑재한 3.6GHz 10코어 Intel Core i9 기반 iMac 27 판매용 제품을 사용해 진행했습니다. 모든 시스템은 8TB SSD로 구성되었습니다. Redshift 2025.0.2에서 29.2MB 용량의 장면을 사용해 테스트했습니다. M4 Max 탑재 시스템에서는 하드웨어 가속형 레이 트레이싱을 사용했습니다. Mac Studio 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio 및 iMac의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1105]: 테스트는 2025년 1월과 2월 Apple에서 Apple M4 Max, 16코어 CPU, 40코어 GPU 및 128GB RAM을 탑재한 Mac Studio 시제품, Apple M2 Max, 12코어 CPU, 38코어 GPU 및 96GB RAM을 탑재한 Mac Studio 판매용 제품, Apple M1 Max, 10코어 CPU, 32코어 GPU 및 64GB RAM을 탑재한 Mac Studio 판매용 제품 그리고 Radeon Pro 5700 XT 그래픽(16GB GDDR6) 및 128GB RAM을 탑재한 3.6GHz 10코어 Intel Core i9 기반 iMac 27 판매용 제품을 사용해 진행했습니다. 모든 시스템은 8TB SSD로 구성되었습니다. Topaz Video AI v6.0.3에서 45초 분량의 1920x800 H.264 동영상 파일을 대상으로 2배 해상도를 적용해 테스트했습니다. Mac Studio 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio 및 iMac의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1106]:
+            - text: 테스트는 2025년 1월과 2월 Apple에서 Apple M3 Ultra, 32코어 CPU, 80코어 GPU 및 512GB RAM을 탑재한 Mac Studio 시제품, Apple M2 Ultra, 24코어 CPU, 76코어 GPU 및 192GB RAM을 탑재한 Mac Studio 판매용 제품, Apple M1 Ultra, 20코어 CPU, 64코어 GPU 및 128GB RAM을 탑재한 Mac Studio 판매용 제품(각각 8TB SSD로 구성) 그리고 192GB RAM, AMD Radeon Pro W5700X 그래픽(16GB
+            - generic [ref=e1107]: GDDR6)을
+            - text: 탑재하고 Afterburner 및 4TB SSD로 구성된 3.2GHz 16코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. 오픈 소스 프로젝트는 Apple Clang 16.0.0, Ninja 1.10.0 git 및 CMake 3.26.4를 사용해 Xcode 16.2에서 빌드되었습니다. Mac Studio 및 Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio 및 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1108]:
+            - text: 테스트는 2025년 1월과 2월 Apple에서 Apple M3 Ultra, 32코어 CPU, 80코어 GPU 및 512GB RAM을 탑재한 Mac Studio 시제품, Apple M2 Ultra, 24코어 CPU, 76코어 GPU 및 192GB RAM을 탑재한 Mac Studio 판매용 제품, Apple M1 Ultra, 20코어 CPU, 64코어 GPU 및 128GB RAM을 탑재한 Mac Studio 판매용 제품(각각 8TB SSD로 구성) 그리고 192GB RAM, AMD Radeon Pro W5700X 그래픽(16GB
+            - generic [ref=e1109]: GDDR6)을
+            - text: 탑재하고 Afterburner 및 4TB SSD로 구성된 3.2GHz 16코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. Redshift v2025.0.2에서 29.2MB 용량의 장면을 사용해 테스트했습니다. M3 Ultra 탑재 시스템에서는 하드웨어 가속형 레이 트레이싱을 사용했습니다. Mac Studio 및 Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio 및 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1110]:
+            - text: 테스트는 2025년 1월과 2월 Apple에서 Apple M3 Ultra, 32코어 CPU, 80코어 GPU 및 512GB RAM을 탑재한 Mac Studio 시제품, Apple M2 Ultra, 24코어 CPU, 76코어 GPU 및 192GB RAM을 탑재한 Mac Studio 판매용 제품, Apple M1 Ultra, 20코어 CPU, 64코어 GPU 및 128GB RAM을 탑재한 Mac Studio 판매용 제품(각각 8TB SSD로 구성) 그리고 192GB RAM, AMD Radeon Pro W5700X 그래픽(16GB
+            - generic [ref=e1111]: GDDR6)을
+            - text: 탑재하고 Afterburner 및 4TB SSD로 구성된 3.2GHz 16코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. Topaz Video AI v6.0.3에서 45초 분량의 1920x800 H.264 동영상 파일을 대상으로 2배 슬로 모션을 적용해 테스트했습니다. Mac Studio 및 Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio 및 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1112]: 테스트는 2025년 1월과 2월 Apple에서 Apple M4 Max, 16코어 CPU, 40코어 GPU, 128GB RAM 및 8TB SSD를 탑재한 Mac Studio 시제품을 사용해 진행했습니다. Final Cut Pro 11.0.1에서 Apple ProRes 422 동영상(8192x4320 해상도 및 초당 30 프레임) 스트림 18개가 있는 1분 분량의 ‘화면 속 화면’ 프로젝트를 사용해 테스트했습니다. Mac Studio 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1113]: 테스트는 2025년 1월과 2월 Apple에서 Apple M4 Max, 16코어 CPU, 40코어 GPU 및 128GB RAM을 탑재한 Mac Studio 시제품, Apple M2 Max, 12코어 CPU, 38코어 GPU 및 96GB RAM을 탑재한 Mac Studio 판매용 제품, Apple M1 Max, 10코어 CPU, 32코어 GPU 및 64GB RAM을 탑재한 Mac Studio 판매용 제품 그리고 Radeon Pro 5700 XT 그래픽(16GB GDDR6) 및 128GB RAM을 탑재한 3.6GHz 10코어 Intel Core i9 기반 iMac 27 판매용 제품을 사용해 진행했습니다. 모든 시스템은 8TB SSD로 구성되었습니다. Adobe Photoshop 26.3.0에서 JPEG artifact removal, super zoom, select subject, depth aware haze, skin smoothing 등의 필터 및 기능을 사용해 테스트했습니다. Mac Studio 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio 및 iMac의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1114]: 테스트는 2025년 1월과 2월 Apple에서 Apple M4 Max, 16코어 CPU, 40코어 GPU 및 128GB RAM을 탑재한 Mac Studio 시제품, Apple M2 Max, 12코어 CPU, 38코어 GPU 및 96GB RAM을 탑재한 Mac Studio 판매용 제품, Apple M1 Max, 10코어 CPU, 32코어 GPU 및 64GB RAM을 탑재한 Mac Studio 판매용 제품 그리고 Radeon Pro 5700 XT 그래픽(16GB GDDR6) 및 128GB RAM을 탑재한 3.6GHz 10코어 Intel Core i9 기반 iMac 27 판매용 제품을 사용해 진행했습니다. 모든 시스템은 8TB SSD로 구성되었습니다. MATLAB과 Simulink R2024b Update 4 v24.2.0.2833386 및 Parallel Computing Toolbox에서 자동차 역학 모델을 사용해 테스트했습니다. Mac Studio 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio 및 iMac의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1115]: 테스트는 2025년 1월과 2월 Apple에서 Apple M4 Max, 16코어 CPU, 40코어 GPU 및 128GB RAM을 탑재한 Mac Studio 시제품, Apple M2 Max, 12코어 CPU, 38코어 GPU 및 96GB RAM을 탑재한 Mac Studio 판매용 제품, Apple M1 Max, 10코어 CPU, 32코어 GPU 및 64GB RAM을 탑재한 Mac Studio 판매용 제품 그리고 Radeon Pro 5700 XT 그래픽(16GB GDDR6) 및 128GB RAM을 탑재한 3.6GHz 10코어 Intel Core i9 기반 iMac 27 판매용 제품을 사용해 진행했습니다. 모든 시스템은 8TB SSD로 구성되었습니다. Compressor 4.9에서 8192x4320 해상도 및 초당 30 프레임의 8K Apple ProRes 422 미디어로 구성된 2분 분량의 영상을 Apple Devices 4K HEVC 10비트로 인코딩 변환하여 테스트했습니다. Mac Studio 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio 및 iMac의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1116]: 테스트는 2025년 1월과 2월 Apple에서 Apple M4 Max, 16코어 CPU, 40코어 GPU 및 128GB RAM을 탑재한 Mac Studio 시제품, Apple M2 Max, 12코어 CPU, 38코어 GPU 및 96GB RAM을 탑재한 Mac Studio 판매용 제품, Apple M1 Max, 10코어 CPU, 32코어 GPU 및 64GB RAM을 탑재한 Mac Studio 판매용 제품 그리고 Radeon Pro 5700 XT 그래픽(16GB GDDR6) 및 128GB RAM을 탑재한 3.6GHz 10코어 Intel Core i9 기반 iMac 27 판매용 제품을 사용해 진행했습니다. 모든 시스템은 8TB SSD로 구성되었습니다. Final Cut Pro 11.0.1에서 8K ProRes 422 미디어로 이루어진 5분 분량의 복잡한 프로젝트를 사용해 테스트했습니다. Mac Studio 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio 및 iMac의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1117]: 테스트는 2025년 1월과 2월 Apple에서 Apple M3 Ultra, 32코어 CPU, 80코어 GPU, 512GB RAM 및 8TB SSD를 탑재한 Mac Studio 시제품을 사용해 진행했습니다. Final Cut Pro 11.0.1에서 Apple ProRes 422 동영상(8192x4320 해상도 및 초당 30 프레임) 스트림 24개가 있는 1분 분량의 ‘화면 속 화면’ 프로젝트를 사용해 테스트했습니다. Mac Studio 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1118]:
+            - text: 테스트는 2025년 1월과 2월 Apple에서 Apple M3 Ultra, 32코어 CPU, 80코어 GPU 및 512GB RAM을 탑재한 Mac Studio 시제품, Apple M2 Ultra, 24코어 CPU, 76코어 GPU 및 192GB RAM을 탑재한 Mac Studio 판매용 제품 그리고 Apple M1 Ultra, 20코어 CPU, 64코어 GPU 및 128GB RAM을 탑재한 Mac Studio 판매용 제품(각각 8TB SSD로
+            - generic [ref=e1119]: 구성)을
+            - text: 사용해 진행했습니다. LM Studio v0.3.9에서 174.63GB 모델로 토큰 생성 속도를 측정해 테스트했습니다. Mac Studio 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1120]:
+            - text: 테스트는 2025년 1월과 2월 Apple에서 Apple M3 Ultra, 32코어 CPU, 80코어 GPU 및 512GB RAM을 탑재한 Mac Studio 시제품, Apple M2 Ultra, 24코어 CPU, 76코어 GPU 및 192GB RAM을 탑재한 Mac Studio 판매용 제품, Apple M1 Ultra, 20코어 CPU, 64코어 GPU 및 128GB RAM을 탑재한 Mac Studio 판매용 제품(각각 8TB SSD로 구성) 그리고 192GB RAM, AMD Radeon Pro W5700X 그래픽(16GB
+            - generic [ref=e1121]: GDDR6)을
+            - text: 탑재하고 Afterburner 및 4TB SSD로 구성된 3.2GHz 16코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. Oxford Nanopore Technologies MinKNOW 24.11 베이스 콜링 모델을 사용해 테스트했습니다. Mac Studio 및 Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio 및 Mac Pro의 대략적인 성능을 반영합니다. MinKNOW를 사용하려면 Oxford Nanopore에서 제공하는 추가적인 하드웨어 기기 MinION이 필요합니다.
+          - listitem [ref=e1122]:
+            - text: 테스트는 2025년 1월과 2월 Apple에서 Apple M3 Ultra, 32코어 CPU, 80코어 GPU 및 512GB RAM을 탑재한 Mac Studio 시제품, Apple M2 Ultra, 24코어 CPU, 76코어 GPU 및 192GB RAM을 탑재한 Mac Studio 판매용 제품, Apple M1 Ultra, 20코어 CPU, 64코어 GPU 및 128GB RAM을 탑재한 Mac Studio 판매용 제품(각각 8TB SSD로 구성) 그리고 192GB RAM, AMD Radeon Pro W5700X 그래픽(16GB
+            - generic [ref=e1123]: GDDR6)을
+            - text: 탑재하고 Afterburner 및 4TB SSD로 구성된 3.2GHz 16코어 Intel Xeon W 기반 Mac Pro 판매용 제품을 사용해 진행했습니다. Final Cut Pro 11.0.1에서 8K ProRes 422 미디어로 이루어진 5분 분량의 복잡한 프로젝트를 사용해 테스트했습니다. Mac Studio 및 Mac Pro 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio 및 Mac Pro의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1124]: 속도는 이론적 처리량에 근거한 수치이며 실제 결과는 다를 수 있습니다. Wi-Fi 6E는 지원되는 국가 및 지역에서만 이용할 수 있습니다.
+          - listitem [ref=e1125]: M3 Ultra로 구성 시 2개의 USB-C 포트는 최대 120Gb/s 속도로 Thunderbolt 5를 지원합니다.
+          - listitem [ref=e1126]: 테스트는 2025년 1월과 2월 Apple에서 Apple M4 Max, 16코어 CPU, 40코어 GPU 및 128GB RAM을 탑재한 Mac Studio 시제품과 Apple M1 Max, 10코어 CPU, 32코어 GPU 및 64GB RAM을 탑재한 Mac Studio 판매용 제품을 사용해 진행했습니다. 모든 시스템은 8TB SSD로 구성되었습니다. Redshift 2025.0.2에서 29.2MB 용량의 장면을 사용해 테스트했습니다. M4 Max 탑재 시스템에서는 하드웨어 가속형 레이 트레이싱을 사용했습니다. Mac Studio 시스템은 5K 디스플레이에 연결해 테스트했습니다. 성능 테스트는 특정 컴퓨터 시스템을 사용해 실시되었으며 Mac Studio의 대략적인 성능을 반영합니다.
+          - listitem [ref=e1127]: 보상 판매 서비스는 Apple의 보상 판매 파트너사를 통해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다. 보상 판매 견적액은 예상 금액일 뿐이며, 실제 보상 판매 금액이 예상 금액보다 낮을 수도 있습니다. 보상 판매 금액은 보상 판매 대상이 되는 제품의 상태, 연도, 모델, 그리고 보상 판매 대상이 되는 제품이 최초 판매된 국가/지역에 따라 달라집니다. 일부 기기는 보상 판매 대상이 아닙니다. 기기를 보상 판매하기 위해서는 민법상 성년이어야 합니다. 보상 판매 금액은 적용 가능한 새 기기 구입 시 적용하거나 Apple Store Gift Card로 받을 수 있습니다. 새 Apple 기기 구매 시, 현재 소유한 기기의 가치만큼 할인을 받을 수도 있습니다. 최종 확정 금액은 보상 판매 대상 기기를 수령한 후, 예상 금액 산정 시 제시한 기기의 설명과 일치하는지 비교 검수 후 정해집니다. 부가세는 새로 구입한 기기의 총액을 바탕으로 부과됩니다. 일부 매장에서는 보상 판매를 제공하지 않으며, 매장 내 보상 판매와 온라인 보상 판매 프로그램 간 내용에 차이가 있을 수 있습니다. 일부 매장은 추가 요구 사항이 있을 수 있습니다. Apple의 보상 판매 파트너는 보상 판매 거래를 거부, 취소하거나 보상 판매 수량을 제한할 권리를 보유합니다. 적용 대상 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상 판매 파트너사에서 확인할 수 있습니다. 규제 및 제한이 적용될 수 있습니다.
+          - listitem [ref=e1128]: 1GB = 10억 바이트, 1TB = 1조 바이트입니다. 실제 포맷된 용량은 더 적습니다.
+        - list [ref=e1129]:
+          - listitem [ref=e1130]: 기능은 변경될 수 있습니다. 일부 기능, 애플리케이션 및 서비스를 이용할 수 없는 국가나 언어도 있습니다.
+      - navigation "Breadcrumbs" [ref=e1131]:
+        - link "Apple" [ref=e1132] [cursor=pointer]:
+          - /url: /kr/
+          - generic [ref=e1133]: 
+          - generic [ref=e1134]: Apple
+        - generic [ref=e1135]:
+          - list:
+            - listitem [ref=e1136]:
+              - link "Mac" [ref=e1137] [cursor=pointer]:
+                - /url: /kr/mac/
+            - listitem [ref=e1138]: Mac Studio
+      - navigation "Apple 디렉토리" [ref=e1139]:
+        - generic [ref=e1140]:
+          - generic:
+            - heading "쇼핑 및 알아보기" [level=3] [ref=e1141]:
+              - generic [ref=e1142]: 쇼핑 및 알아보기
+            - list [ref=e1143]:
+              - listitem [ref=e1144]:
+                - link "스토어" [ref=e1145] [cursor=pointer]:
+                  - /url: /kr/shop/goto/store
+              - listitem [ref=e1146]:
+                - link "Mac" [ref=e1147] [cursor=pointer]:
+                  - /url: /kr/mac/
+              - listitem [ref=e1148]:
+                - link "iPad" [ref=e1149] [cursor=pointer]:
+                  - /url: /kr/ipad/
+              - listitem [ref=e1150]:
+                - link "iPhone" [ref=e1151] [cursor=pointer]:
+                  - /url: /kr/iphone/
+              - listitem [ref=e1152]:
+                - link "Watch" [ref=e1153] [cursor=pointer]:
+                  - /url: /kr/watch/
+              - listitem [ref=e1154]:
+                - link "Vision" [ref=e1155] [cursor=pointer]:
+                  - /url: /kr/apple-vision-pro/
+              - listitem [ref=e1156]:
+                - link "AirPods" [ref=e1157] [cursor=pointer]:
+                  - /url: /kr/airpods/
+              - listitem [ref=e1158]:
+                - link "TV 및 홈" [ref=e1159] [cursor=pointer]:
+                  - /url: /kr/tv-home/
+              - listitem [ref=e1160]:
+                - link "AirTag" [ref=e1161] [cursor=pointer]:
+                  - /url: /kr/airtag/
+              - listitem [ref=e1162]:
+                - link "액세서리" [ref=e1163] [cursor=pointer]:
+                  - /url: /kr/shop/goto/buy_accessories
+          - generic:
+            - heading "Apple 지갑" [level=3] [ref=e1164]:
+              - generic [ref=e1165]: Apple 지갑
+            - list [ref=e1166]:
+              - listitem [ref=e1167]:
+                - link "지갑" [ref=e1168] [cursor=pointer]:
+                  - /url: /kr/wallet/
+              - listitem [ref=e1169]:
+                - link "Apple Pay" [ref=e1170] [cursor=pointer]:
+                  - /url: /kr/apple-pay/
+        - generic [ref=e1171]:
+          - generic:
+            - heading "계정" [level=3] [ref=e1172]:
+              - generic [ref=e1173]: 계정
+            - list [ref=e1174]:
+              - listitem [ref=e1175]:
+                - link "Apple 계정 관리" [ref=e1176] [cursor=pointer]:
+                  - /url: https://account.apple.com/kr/
+              - listitem [ref=e1177]:
+                - link "Apple Store 계정" [ref=e1178] [cursor=pointer]:
+                  - /url: /kr/shop/goto/account
+              - listitem [ref=e1179]:
+                - link "iCloud.com" [ref=e1180] [cursor=pointer]:
+                  - /url: https://www.icloud.com
+          - generic:
+            - heading "엔터테인먼트" [level=3] [ref=e1181]:
+              - generic [ref=e1182]: 엔터테인먼트
+            - list [ref=e1183]:
+              - listitem [ref=e1184]:
+                - link "Apple One" [ref=e1185] [cursor=pointer]:
+                  - /url: /kr/apple-one/
+              - listitem [ref=e1186]:
+                - link "Apple TV" [ref=e1187] [cursor=pointer]:
+                  - /url: /kr/apple-tv/
+              - listitem [ref=e1188]:
+                - link "Apple Music" [ref=e1189] [cursor=pointer]:
+                  - /url: /kr/apple-music/
+              - listitem [ref=e1190]:
+                - link "Apple Arcade" [ref=e1191] [cursor=pointer]:
+                  - /url: /kr/apple-arcade/
+              - listitem [ref=e1192]:
+                - link "Apple 팟캐스트" [ref=e1193] [cursor=pointer]:
+                  - /url: /kr/apple-podcasts/
+              - listitem [ref=e1194]:
+                - link "Apple Books" [ref=e1195] [cursor=pointer]:
+                  - /url: /kr/apple-books/
+              - listitem [ref=e1196]:
+                - link "App Store" [ref=e1197] [cursor=pointer]:
+                  - /url: /kr/app-store/
+        - generic [ref=e1198]:
+          - generic:
+            - heading "Apple Store" [level=3] [ref=e1199]:
+              - generic [ref=e1200]: Apple Store
+            - list [ref=e1201]:
+              - listitem [ref=e1202]:
+                - link "매장 찾기" [ref=e1203] [cursor=pointer]:
+                  - /url: /kr/retail/
+              - listitem [ref=e1204]:
+                - link "Genius Bar" [ref=e1205] [cursor=pointer]:
+                  - /url: /kr/retail/geniusbar/
+              - listitem [ref=e1206]:
+                - link "Today at Apple" [ref=e1207] [cursor=pointer]:
+                  - /url: /kr/today/
+              - listitem [ref=e1208]:
+                - link "그룹 예약" [ref=e1209] [cursor=pointer]:
+                  - /url: /kr/today/groups/
+              - listitem [ref=e1210]:
+                - link "Apple 캠프" [ref=e1211] [cursor=pointer]:
+                  - /url: /kr/today/camp/
+              - listitem [ref=e1212]:
+                - link "Apple Store 앱" [ref=e1213] [cursor=pointer]:
+                  - /url: https://apps.apple.com/kr/app/apple-store/id375380948
+              - listitem [ref=e1214]:
+                - link "인증 리퍼비쉬 제품" [ref=e1215] [cursor=pointer]:
+                  - /url: /kr/shop/goto/special_deals
+              - listitem [ref=e1216]:
+                - link "Apple Trade In" [ref=e1217] [cursor=pointer]:
+                  - /url: /kr/shop/goto/trade_in
+              - listitem [ref=e1218]:
+                - link "할부 방식" [ref=e1219] [cursor=pointer]:
+                  - /url: /kr/shop/goto/financing
+              - listitem [ref=e1220]:
+                - link "주문 상태" [ref=e1221] [cursor=pointer]:
+                  - /url: /kr/shop/goto/order/list
+              - listitem [ref=e1222]:
+                - link "쇼핑 도움말" [ref=e1223] [cursor=pointer]:
+                  - /url: /kr/shop/goto/help
+        - generic [ref=e1224]:
+          - generic:
+            - heading "비즈니스" [level=3] [ref=e1225]:
+              - generic [ref=e1226]: 비즈니스
+            - list [ref=e1227]:
+              - listitem [ref=e1228]:
+                - link "Apple과 비즈니스" [ref=e1229] [cursor=pointer]:
+                  - /url: /kr/business/
+              - listitem [ref=e1230]:
+                - link "비즈니스를 위한 제품 쇼핑하기" [ref=e1231] [cursor=pointer]:
+                  - /url: /kr/retail/business/
+          - generic:
+            - heading "교육" [level=3] [ref=e1232]:
+              - generic [ref=e1233]: 교육
+            - list [ref=e1234]:
+              - listitem [ref=e1235]:
+                - link "Apple과 교육" [ref=e1236] [cursor=pointer]:
+                  - /url: /kr/education/
+              - listitem [ref=e1237]:
+                - link "초중고용 제품 쇼핑하기" [ref=e1238] [cursor=pointer]:
+                  - /url: /kr/education/k12/how-to-buy/
+              - listitem [ref=e1239]:
+                - link "대학 생활을 위한 제품 쇼핑하기" [ref=e1240] [cursor=pointer]:
+                  - /url: /kr/shop/goto/educationrouting
+        - generic [ref=e1241]:
+          - generic:
+            - heading "Apple의 가치관" [level=3] [ref=e1242]:
+              - generic [ref=e1243]: Apple의 가치관
+            - list [ref=e1244]:
+              - listitem [ref=e1245]:
+                - link "손쉬운 사용" [ref=e1246] [cursor=pointer]:
+                  - /url: /kr/accessibility/
+              - listitem [ref=e1247]:
+                - link "교육" [ref=e1248] [cursor=pointer]:
+                  - /url: /kr/education-initiative/
+              - listitem [ref=e1249]:
+                - link "환경" [ref=e1250] [cursor=pointer]:
+                  - /url: /kr/environment/
+              - listitem [ref=e1251]:
+                - link "개인정보 보호" [ref=e1252] [cursor=pointer]:
+                  - /url: /kr/privacy/
+              - listitem [ref=e1253]:
+                - link "공급망 혁신" [ref=e1254] [cursor=pointer]:
+                  - /url: /kr/supply-chain/
+          - generic:
+            - heading "Apple 정보" [level=3] [ref=e1255]:
+              - generic [ref=e1256]: Apple 정보
+            - list [ref=e1257]:
+              - listitem [ref=e1258]:
+                - link "Newsroom" [ref=e1259] [cursor=pointer]:
+                  - /url: /kr/newsroom/
+              - listitem [ref=e1260]:
+                - link "Apple 리더십" [ref=e1261] [cursor=pointer]:
+                  - /url: /kr/leadership/
+              - listitem [ref=e1262]:
+                - link "채용 안내" [ref=e1263] [cursor=pointer]:
+                  - /url: /careers/kr/
+              - listitem [ref=e1264]:
+                - link "윤리 및 규정 준수" [ref=e1265] [cursor=pointer]:
+                  - /url: /compliance/
+              - listitem [ref=e1266]:
+                - link "이벤트" [ref=e1267] [cursor=pointer]:
+                  - /url: /kr/apple-events/
+              - listitem [ref=e1268]:
+                - link "일자리 창출" [ref=e1269] [cursor=pointer]:
+                  - /url: /kr/job-creation/
+              - listitem [ref=e1270]:
+                - link "Apple 연락처" [ref=e1271] [cursor=pointer]:
+                  - /url: /kr/contact/
+      - generic [ref=e1272]:
+        - generic [ref=e1273]:
+          - text: "다양한 쇼핑 방법:"
+          - link "Apple Store를 방문" [ref=e1274] [cursor=pointer]:
+            - /url: /kr/retail/
+          - text: 하거나,
+          - link "리셀러" [ref=e1275] [cursor=pointer]:
+            - /url: https://locate.apple.com/kr/ko/
+          - text: 를 찾아보거나,
+          - link "080-330-8877" [ref=e1276] [cursor=pointer]:
+            - /url: tel:080-330-8877
+          - text: 번으로 전화하세요.
+        - link "대한민국. 국가 또는 지역을 선택하세요." [ref=e1278] [cursor=pointer]:
+          - /url: /choose-country-region/
+          - text: 대한민국
+        - generic [ref=e1279]:
+          - generic [ref=e1280]: Copyright © 2026 Apple Inc. 모든 권리 보유.
+          - list [ref=e1281]:
+            - listitem [ref=e1282]:
+              - link "개인정보 처리방침" [ref=e1283] [cursor=pointer]:
+                - /url: /kr/legal/privacy/
+            - listitem [ref=e1284]:
+              - link "웹 사이트 이용 약관" [ref=e1285] [cursor=pointer]:
+                - /url: /kr/legal/internet-services/terms/site.html
+            - listitem [ref=e1286]:
+              - link "판매 및 환불" [ref=e1287] [cursor=pointer]:
+                - /url: /kr/shop/goto/help/sales_refunds
+            - listitem [ref=e1288]:
+              - link "법적 고지" [ref=e1289] [cursor=pointer]:
+                - /url: /kr/legal/
+            - listitem [ref=e1290]:
+              - link "사이트 맵" [ref=e1291] [cursor=pointer]:
+                - /url: /kr/sitemap/
