@@ -86,27 +86,10 @@ export default function ProductCard({ product, rank, certified }: { product: Pro
             </div>
           )}
 
-          {/* 픽 뱃지 */}
-          {badge && !isSoldOut && !rank && (
-            <span
-              className={`absolute top-[10px] left-[10px] px-[7px] py-[3px] text-[10px] tracking-wider rounded-sm ${badge.className}`}
-              style={badge.style}
-            >
-              {badge.label}
-            </span>
-          )}
-
           {/* 인증 상품 배지 */}
           {certified && !isSoldOut && (
-            <span className="absolute top-[10px] left-[10px] px-[7px] py-[3px] text-[10px] font-bold text-white rounded-sm" style={{ background: '#059669' }}>
+            <span className="absolute top-[8px] left-[8px] px-[7px] py-[3px] text-[10px] font-bold text-white rounded-sm" style={{ background: '#059669' }}>
               인증
-            </span>
-          )}
-
-          {/* 할인율 뱃지 */}
-          {discount >= 10 && !isSoldOut && (
-            <span className="absolute top-[10px] right-[10px] px-[8px] py-[3px] text-[11px] font-extrabold text-white rounded-md shadow-sm" style={{ background: '#C0392B' }}>
-              -{discount}%
             </span>
           )}
 
@@ -158,10 +141,27 @@ export default function ProductCard({ product, rank, certified }: { product: Pro
 
         {/* 정보 영역 */}
         <div className="px-[12px] pt-[11px] pb-[14px] lg:px-[14px] lg:pt-[13px] lg:pb-[16px] border-t border-gray-3">
-          {/* 브랜드 */}
-          <p className="text-[10px] font-bold text-blue-6 uppercase tracking-widest mb-[4px]">
-            {product.brandName}
-          </p>
+          {/* 브랜드 + 배지 */}
+          <div className="flex items-center justify-between mb-[4px]">
+            <p className="text-[10px] font-bold text-blue-6 uppercase tracking-widest">
+              {product.brandName}
+            </p>
+            <div className="flex items-center gap-[4px]">
+              {badge && !isSoldOut && !rank && (
+                <span
+                  className={`px-[6px] py-[2px] text-[9px] tracking-wider rounded-sm ${badge.className}`}
+                  style={badge.style}
+                >
+                  {badge.label}
+                </span>
+              )}
+              {discount >= 10 && !isSoldOut && (
+                <span className="px-[6px] py-[2px] text-[9px] font-extrabold text-white rounded-sm" style={{ background: '#C0392B' }}>
+                  -{discount}%
+                </span>
+              )}
+            </div>
+          </div>
 
           {/* 상품명 */}
           <p className="text-[13px] lg:text-[14px] font-medium text-gray-9 leading-[1.45] line-clamp-2 mb-[9px]">

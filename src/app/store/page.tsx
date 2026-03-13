@@ -206,22 +206,22 @@ export default async function StoreHomePage() {
         <div className="scrollbar-hide overflow-x-auto">
           <div className="flex items-center gap-[16px] px-[20px] py-[9px] whitespace-nowrap lg:justify-center lg:gap-[28px]">
             <span className="flex items-center gap-[5px] text-[11px] text-gray-7 font-medium">
-              <span className="text-amber-500">&#9733;</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#C9A227"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               <span>평균 4.8점</span>
             </span>
-            <span className="text-gray-2 text-[10px]">|</span>
+            <span className="text-gray-4 text-[10px]">|</span>
             <span className="flex items-center gap-[5px] text-[11px] text-gray-7 font-medium">
-              <span>&#128101;</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#888898" strokeWidth="2" strokeLinecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
               <span>15,000+ 구매</span>
             </span>
-            <span className="text-gray-2 text-[10px]">|</span>
+            <span className="text-gray-4 text-[10px]">|</span>
             <span className="flex items-center gap-[5px] text-[11px] text-gray-7 font-medium">
-              <span className="text-emerald-600 font-bold">&#10003;</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C9A227" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
               <span>정품 보증</span>
             </span>
-            <span className="text-gray-2 text-[10px]">|</span>
+            <span className="text-gray-4 text-[10px]">|</span>
             <span className="flex items-center gap-[5px] text-[11px] text-gray-7 font-medium">
-              <span>&#128666;</span>
+              <svg width="13" height="12" viewBox="0 0 24 24" fill="none" stroke="#888898" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 4v4h-7V8zM5.5 20a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM18.5 20a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>
               <span>무료배송</span>
             </span>
           </div>
