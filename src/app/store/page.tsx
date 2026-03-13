@@ -73,7 +73,7 @@ const STORE_CATEGORIES = [
     ),
   },
   {
-    label: "애플관",
+    label: "Apple",
     href: "/store/apple",
     bg: "#1C1C1E",
     icon: (
@@ -83,7 +83,7 @@ const STORE_CATEGORIES = [
     ),
   },
   {
-    label: "삼성관",
+    label: "Samsung",
     href: "/store/samsung",
     bg: "#1C1400",
     icon: (
@@ -95,7 +95,7 @@ const STORE_CATEGORIES = [
     ),
   },
   {
-    label: "LG관",
+    label: "LG",
     href: "/store/lg",
     bg: "#A50034",
     icon: (
@@ -107,7 +107,7 @@ const STORE_CATEGORIES = [
     ),
   },
   {
-    label: "모니터관",
+    label: "모니터",
     href: "/store/monitor",
     bg: "#1C1C3E",
     icon: (
@@ -174,21 +174,21 @@ export default async function StoreHomePage() {
       accent: "인기",
     },
     {
-      title: "모니터관",
+      title: "모니터",
       description: "오디세이 G9 · UltraGear · ROG — 게이밍·전문가용",
       href: "/store/monitor",
       products: monitorList,
       accent: "신규",
     },
     {
-      title: "음향기기관",
+      title: "음향기기",
       description: "Sony · Apple · Bose · Sennheiser 프리미엄 라인업",
       href: "/store/audio",
       products: audioList,
       accent: "신규",
     },
     {
-      title: "가전관",
+      title: "가전",
       description: "Dyson · LG · Samsung 청소기·건조기·에어컨·냉장고",
       href: "/store/home",
       products: homeList,
