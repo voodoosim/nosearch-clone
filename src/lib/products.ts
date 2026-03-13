@@ -334,13 +334,13 @@ export function getCategoryByKey(key: string): CategoryInfo | undefined {
 }
 
 export async function getMonitorProducts(): Promise<Product[]> {
-  return monitorProducts as Product[];
+  return monitorProducts as unknown as Product[];
 }
 
 export async function getAudioProducts(): Promise<Product[]> {
-  return audioProducts as Product[];
+  return audioProducts as unknown as Product[];
 }
 
 export async function getHomeProducts(): Promise<Product[]> {
-  return homeProducts as Product[];
+  return homeProducts as unknown as Product[];
 }
