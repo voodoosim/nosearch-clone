@@ -32,7 +32,7 @@ export default function CountdownTimer({ endDate }: { endDate: string }) {
     setMounted(true);
     const update = () => {
       const left = getTimeLeft(endDate);
-      setText(left ?? "마감됨");
+      setText(left ?? "");
     };
     update();
     const interval = setInterval(update, 1000);
