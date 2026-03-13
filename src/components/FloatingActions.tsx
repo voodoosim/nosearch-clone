@@ -124,7 +124,7 @@ export default function FloatingActions() {
         <button
           onClick={toggleChat}
           title="실시간 상담"
-          className="group relative flex h-[52px] w-[52px] flex-col items-center justify-center rounded-full bg-blue-7 text-white shadow-[0_4px_16px_rgba(201,162,39,0.4)] transition-all hover:scale-105 hover:shadow-[0_6px_24px_rgba(201,162,39,0.55)] active:scale-95"
+          className="group relative flex h-[52px] w-[52px] flex-col items-center justify-center rounded-full bg-[#C9A227] text-[#0D0D14] shadow-[0_4px_16px_rgba(201,162,39,0.4)] transition-all hover:scale-105 hover:bg-[#D4AE35] hover:shadow-[0_6px_24px_rgba(201,162,39,0.55)] active:scale-95"
         >
           {isChatOpen ? (
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
@@ -148,13 +148,13 @@ export default function FloatingActions() {
           target="_blank"
           rel="noopener noreferrer"
           title="카카오톡 상담"
-          className="group relative flex h-[52px] w-[52px] flex-col items-center justify-center rounded-full bg-[#FEE500] shadow-[0_4px_14px_rgba(254,229,0,0.4)] transition-all hover:scale-105 hover:shadow-[0_6px_22px_rgba(254,229,0,0.55)] active:scale-95"
+          className="group relative flex h-[52px] w-[52px] flex-col items-center justify-center rounded-full bg-[#1A1200] border border-[#C9A227]/50 shadow-[0_4px_14px_rgba(201,162,39,0.3)] transition-all hover:scale-105 hover:border-[#C9A227] hover:shadow-[0_6px_22px_rgba(201,162,39,0.5)] active:scale-95"
         >
           {/* 카카오 말풍선 아이콘 */}
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <ellipse cx="12" cy="11" rx="9" ry="7.5" fill="#3A1D1D" />
-            <path d="M7 15.5l1.5-3.5" stroke="#FEE500" strokeWidth="1.2" strokeLinecap="round" />
-            <path d="M9.5 11.5h5M12 9.5v4" stroke="#FEE500" strokeWidth="1.5" strokeLinecap="round" />
+            <ellipse cx="12" cy="11" rx="9" ry="7.5" fill="#C9A227" />
+            <path d="M7 15.5l1.5-3.5" stroke="#0D0D14" strokeWidth="1.2" strokeLinecap="round" />
+            <path d="M9.5 11.5h5M12 9.5v4" stroke="#0D0D14" strokeWidth="1.5" strokeLinecap="round" />
           </svg>
           <span className="pointer-events-none absolute right-[60px] whitespace-nowrap rounded-[8px] bg-gray-1 border border-gray-3 px-[10px] py-[5px] text-[11px] font-semibold text-gray-7 opacity-0 transition-opacity group-hover:opacity-100">
             카톡 상담
@@ -165,7 +165,7 @@ export default function FloatingActions() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           title="맨 위로"
-          className={`group relative flex h-[44px] w-[44px] flex-col items-center justify-center rounded-full border border-gray-4 bg-gray-2 text-gray-6 shadow-md transition-all hover:border-blue-7 hover:text-blue-7 active:scale-95 ${showTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"}`}
+          className={`group relative flex h-[44px] w-[44px] flex-col items-center justify-center rounded-full border border-[#C9A227]/40 bg-[#0D0D14] text-[#C9A227] shadow-md transition-all hover:border-[#C9A227] hover:shadow-[0_4px_14px_rgba(201,162,39,0.3)] active:scale-95 ${showTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"}`}
         >
           <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
@@ -180,7 +180,7 @@ export default function FloatingActions() {
       {isChatOpen && (
         <div className="fixed bottom-[96px] right-[80px] z-50 flex h-[480px] w-[360px] flex-col overflow-hidden rounded-[16px] border border-gray-3 bg-gray-1 shadow-2xl">
           {/* 헤더 */}
-          <div className="flex items-center gap-[10px] bg-blue-7 px-[16px] py-[14px]">
+          <div className="flex items-center gap-[10px] bg-[#1A1200] border-b border-[#C9A227]/30 px-[16px] py-[14px]">
             <div className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-white/20">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                 <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" stroke="white" strokeWidth="2" strokeLinecap="round" />
@@ -203,10 +203,10 @@ export default function FloatingActions() {
             {messages.map((msg) => (
               <div key={msg.id} className={`mb-[10px] flex ${msg.from === "user" ? "justify-end" : "justify-start"}`}>
                 <div className={`max-w-[240px] rounded-[12px] px-[12px] py-[8px] text-[13px] leading-[20px] ${
-                  msg.from === "user" ? "bg-blue-7 text-white" : "bg-gray-2 text-gray-10"
+                  msg.from === "user" ? "bg-[#C9A227] text-[#0D0D14]" : "bg-gray-2 text-gray-10"
                 }`}>
                   <p className="whitespace-pre-wrap">{msg.text}</p>
-                  <p className={`mt-[4px] text-[10px] ${msg.from === "user" ? "text-white/60" : "text-gray-5"}`}>
+                  <p className={`mt-[4px] text-[10px] ${msg.from === "user" ? "text-[#0D0D14]/60" : "text-gray-5"}`}>
                     {msg.time}
                   </p>
                 </div>
@@ -224,13 +224,13 @@ export default function FloatingActions() {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); sendMessage(); } }}
                 placeholder="메시지를 입력하세요..."
-                className="flex-1 rounded-[8px] border border-gray-3 bg-gray-2 px-[12px] py-[10px] text-[13px] text-gray-10 outline-none focus:border-blue-7"
+                className="flex-1 rounded-[8px] border border-gray-3 bg-gray-2 px-[12px] py-[10px] text-[13px] text-gray-10 outline-none focus:border-[#C9A227]"
                 disabled={!isConnected}
               />
               <button
                 onClick={sendMessage}
                 disabled={!isConnected || !input.trim()}
-                className="flex h-[40px] w-[40px] shrink-0 items-center justify-center rounded-[8px] bg-blue-7 text-white disabled:bg-gray-4"
+                className="flex h-[40px] w-[40px] shrink-0 items-center justify-center rounded-[8px] bg-[#C9A227] text-[#0D0D14] disabled:bg-gray-4"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                   <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
