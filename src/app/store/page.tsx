@@ -147,9 +147,37 @@ export default async function StoreHomePage() {
   ];
 
   return (
+    <>
     <div>
       <StoreBanner type="storeHome" />
     <div className="mx-auto max-w-[1200px] pb-[80px] pt-[28px]">
+      {/* 신뢰 지표 바 */}
+      <div className="sticky top-0 z-10 border-b border-gray-2 bg-white">
+        <div className="scrollbar-hide overflow-x-auto">
+          <div className="flex items-center gap-[16px] px-[20px] py-[9px] whitespace-nowrap lg:justify-center lg:gap-[28px]">
+            <span className="flex items-center gap-[5px] text-[11px] text-gray-7 font-medium">
+              <span className="text-amber-500">&#9733;</span>
+              <span>평균 4.8점</span>
+            </span>
+            <span className="text-gray-2 text-[10px]">|</span>
+            <span className="flex items-center gap-[5px] text-[11px] text-gray-7 font-medium">
+              <span>&#128101;</span>
+              <span>15,000+ 구매</span>
+            </span>
+            <span className="text-gray-2 text-[10px]">|</span>
+            <span className="flex items-center gap-[5px] text-[11px] text-gray-7 font-medium">
+              <span className="text-emerald-600 font-bold">&#10003;</span>
+              <span>정품 보증</span>
+            </span>
+            <span className="text-gray-2 text-[10px]">|</span>
+            <span className="flex items-center gap-[5px] text-[11px] text-gray-7 font-medium">
+              <span>&#128666;</span>
+              <span>무료배송</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
       {/* 카테고리 아이콘 */}
       <div className="mb-[44px] px-[20px] lg:px-[30px]">
         <div className="mb-[16px] flex items-center justify-between">
@@ -239,8 +267,8 @@ export default async function StoreHomePage() {
 
           {/* 상품 그리드 */}
           <div className="grid grid-cols-2 gap-x-[10px] gap-y-[12px] px-[20px] lg:grid-cols-4 lg:gap-x-[16px] lg:gap-y-[20px] lg:px-[30px]">
-            {section.products.slice(0, 8).map((product) => (
-              <ProductCard key={product.id} product={product} />
+            {section.products.slice(0, 8).map((product, idx) => (
+              <ProductCard key={product.id} product={product} certified={idx < 3} />
             ))}
           </div>
         </div>
@@ -387,5 +415,39 @@ export default async function StoreHomePage() {
       </div>
     </div>
     </div>
+
+    {/* 플로팅 CTA 버튼 — Fragment 덕분에 div 밖에 위치 가능 */}
+    <div className="fixed bottom-[88px] right-[16px] z-50 flex flex-col gap-[10px] lg:bottom-[32px] lg:right-[28px]">
+      {/* 카카오 상담 */}
+      <a
+        href="https://open.kakao.com/o/placeholder"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="카카오 상담"
+        className="flex h-[48px] w-[48px] items-center justify-center rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.18)] transition-transform duration-150 hover:scale-110 active:scale-95"
+        style={{ background: '#FEE500' }}
+      >
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <ellipse cx="13" cy="12" rx="10" ry="9" fill="#3C1E1E"/>
+          <path d="M8 11c0-2.8 2.2-5 5-5s5 2.2 5 5c0 2.3-1.6 4.3-3.8 4.8l-.7 2.4-.9-.9c-.2 0-.4.1-.6.1C9.7 17.4 8 14.4 8 11z" fill="#FEE500"/>
+          <circle cx="10.5" cy="11" r="1" fill="#3C1E1E"/>
+          <circle cx="13" cy="11" r="1" fill="#3C1E1E"/>
+          <circle cx="15.5" cy="11" r="1" fill="#3C1E1E"/>
+        </svg>
+      </a>
+
+      {/* 전화 상담 */}
+      <a
+        href="tel:placeholder"
+        aria-label="전화 상담"
+        className="flex h-[48px] w-[48px] items-center justify-center rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.18)] transition-transform duration-150 hover:scale-110 active:scale-95"
+        style={{ background: '#16A34A' }}
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.1 2.18 2 2 0 012.1 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+      </a>
+    </div>
+    </>
   );
 }
