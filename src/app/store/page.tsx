@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
 import StoreBanner from "@/components/StoreBanner";
-import { getDealProducts, getBestProducts, getTimedealProducts, getLgProducts } from "@/lib/products";
+import { getDealProducts, getBestProducts, getTimedealProducts, getLgProducts, getMonitorProducts, getAudioProducts } from "@/lib/products";
 
 export const revalidate = 60;
 
@@ -107,9 +107,35 @@ const STORE_CATEGORIES = [
     ),
   },
   {
+    label: "모니터관",
+    href: "/store/monitor",
+    bg: "#1C1C3E",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+        <rect x="3" y="4" width="20" height="14" rx="2" stroke="white" strokeWidth="1.6"/>
+        <path d="M9 21h8M13 18v3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+        <rect x="5" y="6" width="16" height="10" rx="1" stroke="white" strokeWidth="1" opacity="0.4"/>
+        <circle cx="13" cy="11" r="2.5" stroke="#C9A227" strokeWidth="1.4"/>
+      </svg>
+    ),
+  },
+  {
+    label: "음향기기",
+    href: "/store/audio",
+    bg: "#1A0A2E",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+        <circle cx="13" cy="13" r="9" stroke="white" strokeWidth="1.6"/>
+        <circle cx="13" cy="13" r="4" stroke="#C9A227" strokeWidth="1.4"/>
+        <circle cx="13" cy="13" r="1.5" fill="white"/>
+        <path d="M13 4v3M13 19v3M4 13h3M19 13h3" stroke="white" strokeWidth="1.2" strokeLinecap="round" opacity="0.5"/>
+      </svg>
+    ),
+  },
+  {
     label: "전체보기",
     href: "/store/best",
-    bg: "#636366",
+    bg: "#2A2A2A",
     icon: (
       <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
         <rect x="5" y="5" width="6" height="6" rx="1.5" fill="white" fillOpacity="0.85"/>
@@ -122,11 +148,13 @@ const STORE_CATEGORIES = [
 ];
 
 export default async function StoreHomePage() {
-  const [dealProducts, bestProducts, timedealProducts, lgProductsList] = await Promise.all([
+  const [dealProducts, bestProducts, timedealProducts, lgProductsList, monitorList, audioList] = await Promise.all([
     getDealProducts(),
     getBestProducts(),
     getTimedealProducts(),
     getLgProducts(),
+    getMonitorProducts(),
+    getAudioProducts(),
   ]);
 
   const SECTIONS = [
@@ -144,6 +172,20 @@ export default async function StoreHomePage() {
       products: bestProducts,
       accent: "인기",
     },
+    {
+      title: "모니터관",
+      description: "오디세이 G9 · UltraGear · ROG — 게이밍·전문가용",
+      href: "/store/monitor",
+      products: monitorList,
+      accent: "신규",
+    },
+    {
+      title: "음향기기관",
+      description: "Sony · Apple · Bose · Sennheiser 프리미엄 라인업",
+      href: "/store/audio",
+      products: audioList,
+      accent: "신규",
+    },
   ];
 
   return (
@@ -152,7 +194,7 @@ export default async function StoreHomePage() {
       <StoreBanner type="storeHome" />
     <div className="mx-auto max-w-[1200px] pb-[80px] pt-[28px]">
       {/* 신뢰 지표 바 */}
-      <div className="sticky top-0 z-10 border-b border-gray-2 bg-white">
+      <div className="sticky top-0 z-10 border-b border-gray-3 bg-gray-1">
         <div className="scrollbar-hide overflow-x-auto">
           <div className="flex items-center gap-[16px] px-[20px] py-[9px] whitespace-nowrap lg:justify-center lg:gap-[28px]">
             <span className="flex items-center gap-[5px] text-[11px] text-gray-7 font-medium">

@@ -65,9 +65,9 @@ export default function ProductCard({ product, rank, certified }: { product: Pro
 
   return (
     <Link href={href} className="block group">
-      <article className="w-full overflow-hidden bg-white rounded-2xl border border-gray-2 transition-all duration-200 group-hover:-translate-y-[4px] group-hover:shadow-[0_16px_36px_-8px_rgba(0,0,0,0.14)] group-hover:border-blue-4">
+      <article className="w-full overflow-hidden bg-gray-1 rounded-2xl border border-gray-3 transition-all duration-200 group-hover:-translate-y-[4px] group-hover:shadow-[0_16px_36px_-8px_rgba(201,162,39,0.18)] group-hover:border-blue-7/40">
         {/* 이미지 영역 */}
-        <div className="relative w-full bg-[#F7F5F0] overflow-hidden" style={{ aspectRatio: "1 / 1" }}>
+        <div className="relative w-full bg-[#1A1A22] overflow-hidden" style={{ aspectRatio: "1 / 1" }}>
           <Image
             src={product.imageUrl}
             alt={product.goodsNm}
@@ -157,7 +157,7 @@ export default function ProductCard({ product, rank, certified }: { product: Pro
         </div>
 
         {/* 정보 영역 */}
-        <div className="px-[12px] pt-[11px] pb-[14px] lg:px-[14px] lg:pt-[13px] lg:pb-[16px] border-t border-gray-1">
+        <div className="px-[12px] pt-[11px] pb-[14px] lg:px-[14px] lg:pt-[13px] lg:pb-[16px] border-t border-gray-3">
           {/* 브랜드 */}
           <p className="text-[10px] font-bold text-blue-6 uppercase tracking-widest mb-[4px]">
             {product.brandName}

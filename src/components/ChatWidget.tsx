@@ -18,7 +18,7 @@ function ScrollToTopButton() {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      className="fixed bottom-[88px] right-[20px] z-50 flex h-[44px] w-[44px] items-center justify-center rounded-full bg-white border border-gray-3 text-gray-7 shadow-md transition-all hover:bg-gray-1 hover:shadow-lg active:scale-95"
+      className="fixed bottom-[88px] right-[20px] z-50 flex h-[44px] w-[44px] items-center justify-center rounded-full bg-gray-2 border border-gray-3 text-gray-7 shadow-md transition-all hover:bg-gray-3 hover:shadow-lg active:scale-95"
       aria-label="맨 위로"
     >
       <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
@@ -224,7 +224,7 @@ export default function ChatWidget() {
 
       {/* 채팅 패널 */}
       {isOpen && (
-        <div className="fixed bottom-[88px] right-[20px] z-50 flex h-[480px] w-[360px] flex-col overflow-hidden rounded-[16px] border border-gray-3 bg-white shadow-2xl">
+        <div className="fixed bottom-[88px] right-[20px] z-50 flex h-[480px] w-[360px] flex-col overflow-hidden rounded-[16px] border border-gray-3 bg-gray-1 shadow-2xl">
           {/* 헤더 */}
           <div className="flex items-center gap-[10px] bg-blue-7 px-[16px] py-[14px]">
             <div className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-white/20">

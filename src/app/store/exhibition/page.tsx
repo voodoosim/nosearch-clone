@@ -112,7 +112,7 @@ export default async function ExhibitionPage() {
           {EXHIBITIONS.map((exhibition) => (
             <button
               key={exhibition.id}
-              className="shrink-0 rounded-full border border-gray-3 bg-white px-[14px] py-[8px] text-[13px] font-medium text-gray-7 hover:border-gray-6 hover:text-gray-10 transition-colors first:border-gray-10 first:bg-gray-10 first:text-white"
+              className="shrink-0 rounded-full border border-gray-3 bg-gray-2 px-[14px] py-[8px] text-[13px] font-medium text-gray-7 hover:border-gray-6 hover:text-gray-10 transition-colors first:border-blue-7 first:bg-blue-7 first:text-white"
             >
               {exhibition.title}
             </button>

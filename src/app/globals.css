@@ -5,36 +5,37 @@
 @theme inline {
   --default-font-family: "pretendard", -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-sans: "pretendard", -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --color-background: #F0EAE0;
-  --color-foreground: #2A1F14;
+  --color-background: #09090C;
+  --color-foreground: #F0F0F8;
 
-  /* 스마트홈딜 — 베이지 + 그린 액센트 */
-  --color-blue-7: #1E6B3E;
-  --color-blue-6: #257A48;
-  --color-blue-5: #35A062;
-  --color-blue-1: #E8F5EE;
-  --color-blue-8: #155530;
+  /* 스마트홈딜 — 딥블랙 + 골드 */
+  --color-blue-7: #C9A227;
+  --color-blue-6: #D4AD32;
+  --color-blue-5: #E0BB45;
+  --color-blue-4: #ECC95A;
+  --color-blue-1: #1A150A;
+  --color-blue-8: #B89120;
 
-  /* 베이지 서피스 */
-  --color-gray-1: #FAF7F2;
-  --color-gray-2: #F2EDE4;
-  --color-gray-3: #E2D8CC;
-  --color-gray-4: #CEC3B4;
-  --color-gray-5: #A09080;
-  --color-gray-6: #8C7B6B;
-  --color-gray-7: #6B5C4E;
-  --color-gray-9: #3A2E24;
-  --color-gray-10: #2A1F14;
+  /* 다크 서피스 */
+  --color-gray-1: #111116;
+  --color-gray-2: #1A1A22;
+  --color-gray-3: #252530;
+  --color-gray-4: #3A3A48;
+  --color-gray-5: #606074;
+  --color-gray-6: #888898;
+  --color-gray-7: #A8A8BA;
+  --color-gray-9: #E0E0F0;
+  --color-gray-10: #F5F5FA;
 
-  --color-red-4: #C0392B;
-  --color-red-5: #C0392B;
-  --color-primary: #1E6B3E;
-  --color-gold: #C9933A;
-  --color-gold-light: #F5E6C8;
+  --color-red-4: #E53935;
+  --color-red-5: #C62828;
+  --color-primary: #C9A227;
+  --color-gold: #C9A227;
+  --color-gold-light: #1A150A;
 }
 
 body {
-  background: #F0EAE0;
+  background: #09090C;
   color: var(--color-foreground);
   font-family: var(--font-pretendard), 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   min-width: 280px;
@@ -69,7 +70,7 @@ body {
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px -8px rgba(100, 70, 40, 0.15);
+  box-shadow: 0 12px 24px -8px rgba(201, 162, 39, 0.15);
 }
 
 html {
@@ -82,7 +83,7 @@ html {
 }
 
 .skeleton-shimmer {
-  background: linear-gradient(90deg, #F2EDE4 25%, #E8E0D4 50%, #F2EDE4 75%);
+  background: linear-gradient(90deg, #1A1A22 25%, #252530 50%, #1A1A22 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
 }
@@ -93,7 +94,7 @@ html {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #7C4F2A, #B87A4A);
+  background: linear-gradient(135deg, #C9A227, #E8C547);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -106,7 +107,7 @@ html {
 }
 
 *:focus-visible {
-  outline: 2px solid #7C4F2A;
+  outline: 2px solid #C9A227;
   outline-offset: 2px;
   border-radius: 4px;
 }

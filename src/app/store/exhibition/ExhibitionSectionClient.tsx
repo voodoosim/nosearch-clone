@@ -55,7 +55,7 @@ export default function ExhibitionSectionClient({ exhibition, products, index }:
           </div>
           <div className="hidden shrink-0 items-center gap-[6px] lg:flex">
             {exhibition.categoryNames.slice(0, 3).map((name) => (
-              <span key={name} className="rounded-full border border-gray-3 bg-white px-[10px] py-[4px] text-[12px] font-medium text-gray-7">
+              <span key={name} className="rounded-full border border-gray-3 bg-gray-2 px-[10px] py-[4px] text-[12px] font-medium text-gray-7">
                 {name}
               </span>
             ))}
@@ -78,7 +78,7 @@ export default function ExhibitionSectionClient({ exhibition, products, index }:
         <div className="mt-[24px] flex justify-center">
           <button
             onClick={() => setExpanded((v) => !v)}
-            className="flex h-[44px] w-full max-w-[300px] items-center justify-center gap-[6px] rounded-[10px] border border-gray-3 bg-white text-[14px] font-semibold text-gray-8 hover:border-gray-5 hover:bg-gray-1 transition-colors"
+            className="flex h-[44px] w-full max-w-[300px] items-center justify-center gap-[6px] rounded-[10px] border border-gray-3 bg-gray-2 text-[14px] font-semibold text-gray-7 hover:border-gray-5 hover:bg-gray-3 transition-colors"
           >
             {expanded ? (
               <>

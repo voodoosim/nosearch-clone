@@ -728,7 +728,7 @@ export default function TabSection({ product, discount }: Props) {
           <table className="w-full text-[14px]">
             <tbody>
               {Object.entries(specs).map(([key, val], i) => (
-                <tr key={key} className={i % 2 === 0 ? 'bg-gray-1' : 'bg-white'}>
+                <tr key={key} className={i % 2 === 0 ? 'bg-gray-1' : 'bg-gray-2'}>
                   <td className="px-[16px] py-[13px] font-semibold text-gray-7 w-[130px] lg:w-[180px] align-top border-r border-gray-3">
                     {key}
                   </td>

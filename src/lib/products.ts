@@ -9,6 +9,9 @@ import overseasProducts from '@/data/products-overseas.json';
 import smartExtraProducts from '@/data/products-smart-extra.json';
 import appleProducts from '@/data/products-apple.json';
 import lgProducts from '@/data/products-lg.json';
+import monitorProducts from '@/data/products-monitor.json';
+import audioProducts from '@/data/products-audio.json';
+import homeProducts from '@/data/products-home.json';
 
 export interface CategoryInfo {
   key: string;
@@ -328,4 +331,16 @@ export async function getProductsGroupedByCategory(): Promise<
 
 export function getCategoryByKey(key: string): CategoryInfo | undefined {
   return RECOMMENDATION_CATEGORIES.find((c) => c.key === key);
+}
+
+export async function getMonitorProducts(): Promise<Product[]> {
+  return monitorProducts as Product[];
+}
+
+export async function getAudioProducts(): Promise<Product[]> {
+  return audioProducts as Product[];
+}
+
+export async function getHomeProducts(): Promise<Product[]> {
+  return homeProducts as Product[];
 }

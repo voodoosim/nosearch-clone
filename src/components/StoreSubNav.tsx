@@ -6,13 +6,14 @@ import { usePathname } from "next/navigation";
 const STORE_TABS = [
   { label: "스토어홈", href: "/store" },
   { label: "공동구매", href: "/store/deal" },
-  { label: "리뷰템", href: "/store/reviewTem" },
-  { label: "타임딜", href: "/store/timedeal" },
   { label: "이번주 인기", href: "/store/best" },
-  { label: "기획전", href: "/store/exhibition" },
-  { label: "스마트관", href: "/store/smart" },
+  { label: "리뷰템", href: "/store/reviewTem" },
+  { label: "모니터관", href: "/store/monitor" },
+  { label: "음향기기관", href: "/store/audio" },
   { label: "애플관", href: "/store/apple" },
   { label: "삼성관", href: "/store/samsung" },
+  { label: "LG관", href: "/store/lg" },
+  { label: "기획전", href: "/store/exhibition" },
   { label: "가이드", href: "/store/contents" },
 ];
 
@@ -20,7 +21,7 @@ export default function StoreSubNav() {
   const pathname = usePathname();
 
   return (
-    <div className="border-b border-gray-3" style={{ background: '#FAF7F2' }}>
+    <div className="border-b border-gray-3" style={{ background: '#111116' }}>
       <ul className="scrollbar-hide flex w-full overflow-auto px-[16px] lg:px-[30px] gap-x-[4px]" style={{ minHeight: '44px' }}>
         {STORE_TABS.map((tab) => {
           const isActive = pathname === tab.href;
