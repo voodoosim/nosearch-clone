@@ -57,7 +57,7 @@ export default async function SamsungStorePage() {
       {/* 히어로 배너 */}
       <div
         className="relative overflow-hidden"
-        style={{ background: 'linear-gradient(160deg, #010D1F 0%, #0A2A6E 60%, #1034A6 100%)' }}
+        style={{ background: 'linear-gradient(160deg, #0A0800 0%, #1A1200 60%, #0F0C00 100%)' }}
       >
         <div
           className="absolute inset-0 opacity-15"

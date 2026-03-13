@@ -31,7 +31,7 @@ export default async function AppleStorePage() {
       >
         <div
           className="absolute inset-0 opacity-20"
-          style={{ backgroundImage: 'radial-gradient(circle at 70% 40%, #5E5CE6 0%, transparent 55%), radial-gradient(circle at 20% 80%, #30D158 0%, transparent 50%)' }}
+          style={{ backgroundImage: 'radial-gradient(circle at 70% 40%, #C9A227 0%, transparent 55%), radial-gradient(circle at 20% 80%, #D4AD32 0%, transparent 50%)' }}
         />
         <div className="relative mx-auto max-w-[1200px] px-[20px] lg:px-[30px] py-[56px] lg:py-[80px]">
           <div className="flex items-center gap-[10px] mb-[16px]">

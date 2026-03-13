@@ -85,7 +85,7 @@ const STORE_CATEGORIES = [
   {
     label: "삼성관",
     href: "/store/samsung",
-    bg: "#1034A6",
+    bg: "#1C1400",
     icon: (
       <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
         <rect x="6" y="5" width="14" height="16" rx="2" stroke="white" strokeWidth="1.6"/>
@@ -341,7 +341,7 @@ export default async function StoreHomePage() {
           {/* Apple */}
           <Link href="/store/apple" className="group">
             <div className="relative overflow-hidden rounded-2xl h-[120px] lg:h-[140px]" style={{ background: 'linear-gradient(135deg, #0A0A0A 0%, #2C2C2E 100%)' }}>
-              <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at 70% 30%, #5E5CE6 0%, transparent 60%)' }} />
+              <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle at 70% 30%, #C9A227 0%, transparent 60%)' }} />
               <div className="absolute inset-0 flex flex-col justify-end px-[16px] pb-[14px]">
                 <svg width="22" height="22" viewBox="0 0 28 28" fill="white" className="mb-[8px] opacity-90">
                   <path d="M22.5 17.9c-.5 1.1-1 2.1-1.8 3-.9 1.1-1.8 1.7-2.8 1.7-.7 0-1.6-.4-2.5-.8-.9-.4-1.8-.8-2.9-.8s-2 .4-2.9.8c-.9.4-1.8.8-2.6.8-1 0-2-.6-2.9-1.8-.9-1.1-1.7-2.6-2.2-4.2-.5-1.7-.8-3.3-.8-4.9 0-1.9.4-3.5 1.2-4.8.8-1.3 2-2 3.4-2 .8 0 1.7.4 2.7.8.9.4 1.6.6 2.1.6.5 0 1.2-.2 2.1-.7 1-.5 1.9-.7 2.8-.6 2.2.2 3.8 1.3 4.8 3.3-1.9 1.2-2.9 2.9-2.9 5.1 0 1.7.6 3.1 1.8 4.2.5.5 1.1.9 1.7 1.1-.1.4-.3.8-.5 1.2zM17.5 1c0 1.3-.5 2.5-1.4 3.6-.9 1-2 1.7-3.1 1.6 0-.1 0-.3 0-.5 0-1.2.5-2.4 1.4-3.4.9-1 2-1.5 3.1-1.5 0 .1 0 .1 0 .2z"/>
@@ -354,8 +354,8 @@ export default async function StoreHomePage() {
 
           {/* Samsung */}
           <Link href="/store/samsung" className="group">
-            <div className="relative overflow-hidden rounded-2xl h-[120px] lg:h-[140px]" style={{ background: 'linear-gradient(135deg, #0A1628 0%, #1034A6 100%)' }}>
-              <div className="absolute inset-0 opacity-15" style={{ backgroundImage: 'radial-gradient(circle at 70% 30%, #42A5F5 0%, transparent 60%)' }} />
+            <div className="relative overflow-hidden rounded-2xl h-[120px] lg:h-[140px]" style={{ background: 'linear-gradient(135deg, #0A0A0A 0%, #1C1400 100%)' }}>
+              <div className="absolute inset-0 opacity-15" style={{ backgroundImage: 'radial-gradient(circle at 70% 30%, #C9A227 0%, transparent 60%)' }} />
               <div className="absolute inset-0 flex flex-col justify-end px-[16px] pb-[14px]">
                 <div className="w-[22px] h-[22px] mb-[8px] opacity-90 flex items-center">
                   <svg width="22" height="13" viewBox="0 0 50 14" fill="white">
@@ -384,12 +384,12 @@ export default async function StoreHomePage() {
 
           {/* 전체보기 */}
           <Link href="/store/recommendation" className="group">
-            <div className="relative overflow-hidden rounded-2xl h-[120px] lg:h-[140px] border-2 border-dashed border-gray-3 bg-gray-1 hover:border-blue-5 hover:bg-blue-1/30 transition-colors">
+            <div className="relative overflow-hidden rounded-2xl h-[120px] lg:h-[140px] border-2 border-dashed border-gray-3 bg-gray-1 hover:border-gold hover:bg-gold-light/30 transition-colors">
               <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" className="text-gray-5 mb-[8px] group-hover:text-blue-7 transition-colors">
+                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" className="text-gray-5 mb-[8px] group-hover:text-gold transition-colors">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                 </svg>
-                <p className="text-[13px] font-semibold text-gray-6 group-hover:text-blue-7 transition-colors">전체 카테고리</p>
+                <p className="text-[13px] font-semibold text-gray-6 group-hover:text-gold transition-colors">전체 카테고리</p>
               </div>
             </div>
           </Link>
@@ -398,10 +398,10 @@ export default async function StoreHomePage() {
 
       {/* 왜 스마트홈딜? 섹션 */}
       <div className="mb-[56px] px-[20px] lg:px-[30px]">
-        <div className="rounded-2xl overflow-hidden" style={{ background: 'linear-gradient(160deg, #0C1B2E 0%, #0F2A4A 60%, #0E3460 100%)' }}>
+        <div className="rounded-2xl overflow-hidden" style={{ background: 'linear-gradient(160deg, #0A0800 0%, #1A1200 60%, #0F0C00 100%)', border: '1px solid rgba(201,162,39,0.15)' }}>
           <div className="px-[24px] py-[32px] lg:px-[48px] lg:py-[44px]">
             <div className="mb-[28px]">
-              <p className="text-[10px] font-bold tracking-[0.22em] text-blue-4 uppercase mb-[8px]">WHY SMARTHOMDEAL</p>
+              <p className="text-[10px] font-bold tracking-[0.22em] text-gold uppercase mb-[8px]">WHY SMARTHOMDEAL</p>
               <h2 className="text-[22px] font-extrabold text-white lg:text-[26px] tracking-tight leading-tight">
                 스마트홈딜을<br className="lg:hidden"/> 선택하는 이유
               </h2>
@@ -412,25 +412,25 @@ export default async function StoreHomePage() {
                   stat: '100%',
                   title: '정품 보장',
                   desc: '공식 인증 정품만 취급',
-                  color: '#3B82F6',
+                  color: '#C9A227',
                 },
                 {
                   stat: '최저가',
                   title: '가격 도전',
                   desc: '가격 비교 후 최저가 제공',
-                  color: '#10B981',
+                  color: '#D4AD32',
                 },
                 {
                   stat: '당일',
                   title: '발송 보장',
                   desc: '오전 주문 시 당일 출고',
-                  color: '#F59E0B',
+                  color: '#E0BB45',
                 },
                 {
                   stat: '24시',
                   title: '전문 상담',
                   desc: '구매 후 전담 AS 연결',
-                  color: '#8B5CF6',
+                  color: '#C9A227',
                 },
               ].map((item) => (
                 <div key={item.title} className="rounded-xl px-[16px] py-[18px] lg:px-[20px] lg:py-[20px]" style={{ background: 'rgba(255,255,255,0.06)' }}>
