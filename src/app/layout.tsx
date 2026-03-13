@@ -4,7 +4,7 @@ import AuthProvider from "@/components/AuthProvider";
 import { CartProvider } from "@/components/CartProvider";
 import { WishlistProvider } from "@/components/WishlistProvider";
 import { RecentlyViewedProvider } from "@/components/RecentlyViewedProvider";
-import ChatWidget from "@/components/ChatWidget";
+import FloatingActions from "@/components/FloatingActions";
 import "./globals.css";
 
 const pretendard = localFont({
@@ -50,7 +50,7 @@ export default function RootLayout({
             <WishlistProvider>
               <RecentlyViewedProvider>
                 {children}
-                <ChatWidget />
+                <FloatingActions />
               </RecentlyViewedProvider>
             </WishlistProvider>
           </CartProvider>
