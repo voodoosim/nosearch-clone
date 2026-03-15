@@ -104,7 +104,7 @@ export default function OrdersPage() {
             onClick={() => setActiveTab(tab)}
             className={`flex-shrink-0 px-4 py-3 text-sm font-medium border-b-2 transition-colors ${
               activeTab === tab
-                ? 'border-red-500 text-red-500'
+                ? 'border-blue-7 text-blue-7'
                 : 'border-transparent text-gray-500'
             }`}
           >
@@ -130,7 +130,7 @@ export default function OrdersPage() {
             <p className="text-gray-400 text-sm">주문 내역이 없습니다.</p>
             <Link
               href="/store"
-              className="mt-4 inline-block px-6 py-2 bg-red-500 text-white text-sm rounded-full"
+              className="mt-4 inline-block px-6 py-2 bg-blue-7 text-white text-sm rounded-full"
             >
               쇼핑하러 가기
             </Link>
